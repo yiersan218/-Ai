@@ -1,0 +1,40 @@
+{
+  "encoding": "UTF-8",
+  "file_pattern": "**/*.md",
+  "exclude": [
+    "README.md",
+    "_meta/**"
+  ],
+  "recommended_chunking": {
+    "strategy": "recursive_or_markdown_heading",
+    "target_chars": 1200,
+    "overlap_chars": 150,
+    "preserve_headings": true
+  },
+  "collections": [
+    {
+      "intent_node": "参数与卖点 KB",
+      "directory": "01_参数与卖点_KB"
+    },
+    {
+      "intent_node": "鸿蒙生态兼容 KB",
+      "directory": "02_鸿蒙生态兼容_KB"
+    },
+    {
+      "intent_node": "使用与选购指南 KB",
+      "directory": "03_使用与选购指南_KB"
+    },
+    {
+      "intent_node": "配送与安装 KB",
+      "directory": "04_配送与安装_KB"
+    },
+    {
+      "intent_node": "退换货与保修 KB",
+      "directory": "05_退换货与保修_KB"
+    },
+    {
+      "intent_node": "发票与售后 KB",
+      "directory": "06_发票与售后_KB"
+    }
+  ]
+}
