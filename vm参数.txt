@@ -1,0 +1,7 @@
+-Dunique-name=-yiersan218
+-Dframework.cache.redis.prefix=yiersan218:
+-Dspring.data.redis.host=common-redis-dev.magestack.cn
+-Dspring.data.redis.password=<REDIS_PASSWORD>
+-Dspring.data.redis.port=19389
+-Drocketmq.name-server=common-rocketmq-dev.magestack.cn:9876
+-Dspring.cloud.nacos.discovery.server-addr=common-nacos-dev.magestack.cn:8848

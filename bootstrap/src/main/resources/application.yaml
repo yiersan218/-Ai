@@ -1,0 +1,321 @@
+server:
+  port: ${SERVER_PORT:9090}
+  servlet:
+    context-path: /api/ragent
+
+spring:
+  config:
+    import: "optional:file:.env[.properties]"
+
+  application:
+    name: ragent${unique-name:}-service
+
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 100MB
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:}
+    url: jdbc:postgresql://${POSTGRES_HOST:127.0.0.1}:${POSTGRES_PORT:5432}/${POSTGRES_DB:ragent}?client_encoding=UTF8
+    hikari:
+      connection-timeout: 5000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      maximum-pool-size: 10
+      minimum-idle: 5
+      pool-name: RagentHikariPool
+
+  data:
+    redis:
+      host: ${REDIS_HOST:127.0.0.1}
+      port: ${REDIS_PORT:6379}
+      password: ${REDIS_PASSWORD:}
+
+rocketmq:
+  name-server: ${ROCKETMQ_NAME_SERVER:127.0.0.1:9876}
+  producer:
+    group: ragent-producer${unique-name:}_pg
+    send-message-timeout: 2000
+
+milvus:
+  uri: ${MILVUS_URI:http://localhost:19530}
+
+rag:
+  storage:
+    type: s3  # 可选 s3（rustfs / minio）/ oss（阿里云）
+    kb-bucket: ragent-sources        # 全局知识库桶（私有），所有知识库文档按 collectionName 目录隔离；OSS 桶名全局唯一，生产需按部署覆盖
+    asset-bucket: ragent-assets # 多模态资产桶（公共读），PDF 抽出的图片等供浏览器匿名直连预览
+    s3:
+      endpoint: ${S3_ENDPOINT:}
+      access-key: ${S3_ACCESS_KEY:}
+      secret-key: ${S3_SECRET_KEY:}
+      region: us-east-1
+      path-style: true
+      public-url: ${S3_PUBLIC_URL:}  # 内外网端点不同时配置，留空回退 endpoint
+    oss:
+      endpoint: https://oss-cn-hangzhou.aliyuncs.com
+      access-key: ${OSS_ACCESS_KEY:}
+      secret-key: ${OSS_SECRET_KEY:}
+      region: cn-hangzhou
+      public-url:   # 虚拟主机式基址（含 bucket 子域），如 https://ragent-assets.oss-cn-hangzhou.aliyuncs.com；留空由 endpoint 推导
+
+  vector:
+    type: pg  # 可选 milvus / pg
+
+  keyword:
+    type: es  # 可选 none / es
+    es:
+      uris: ${ELASTICSEARCH_URIS:http://127.0.0.1:9200}
+      index: rag_keyword_store  # 全库共享索引，按 collection_name 字段区分知识库
+      analyzer: ik_max_word
+      search-analyzer: ik_smart
+
+  graph:
+    type: none  # 图谱后端总开关，可选 none / lightrag。lightrag 即接入后端供「后台可视化 / 检索读取」；是否参与检索、是否写入分别由 rag.search.channels.graph.enabled 与下方 ingestion.enabled 独立控制
+    lightrag:
+      base-url: ${LIGHTRAG_BASE_URL:http://127.0.0.1:9621}
+      query-mode: mix  # naive / local / global / hybrid / mix
+      timeout-ms: 30000
+    embedding-model: qwen-emb-8b  # 与 LightRAG 的 SiliconFlow Qwen3-Embedding-8B 配置一致
+    ingestion:
+      enabled: false           # 写入同步开关：false 冻结图谱写入（向量写不再重建图谱），仅保留可视化 / 检索读取，避免为不检索的图谱持续付出实体抽取成本；true 恢复随向量写自动同步
+      async: true              # 标脏入队 + 后台防抖重建，不阻塞主写链路
+      global-workspace: false  # 跨库方案B（独立全局图）；默认关，Phase1 用 fan-out 兜底
+
+  default:
+    collection-name: rag_default_store
+    dimension: 1536
+    metric-type: COSINE
+    sse-timeout-ms: 300000  # SSE 全局超时（毫秒），默认 5 分钟
+
+  query-rewrite:
+    enabled: true
+
+  rerank:
+    enabled: true
+
+  citation:
+    enabled: true  # 回答行内引用角标 [N](#cite-N)：开启会动态追加引用规则并为资料注入编号，增加首字延迟；关闭不影响文档级来源面板
+
+  rate-limit:
+    global:
+      enabled: true
+      max-concurrent: 10
+      max-wait-seconds: 15
+      lease-seconds: 30
+      poll-interval-ms: 200
+
+  memory:
+    history-keep-turns: 8
+    summary-enabled: true
+    summary-start-turns: 9
+    summary-max-chars: 400
+    title-max-length: 30
+
+  semaphore:
+    document-upload:
+      name: rag:document:upload
+      max-concurrent: 10
+      max-wait-seconds: 5
+      lease-seconds: 300
+
+  knowledge:
+    schedule:
+      scan-delay-ms: 10000
+      lock-seconds: 900
+      batch-size: 20
+      min-interval-seconds: 60
+
+  mcp:
+    servers:
+      - name: default
+        url: http://localhost:9099
+
+  search:
+    # 检索漏斗三段预算，各自独立、单调收窄，启动时校验 recall-budget ≥ default-top-k 且 rerank-candidate-limit ≥ default-top-k
+    default-top-k: 10           # ③ 最终进 LLM 的条数（产品语义的 topK）
+    recall-budget: 20           # ① 每通道召回条数（绝对值，向量意图路/关键词/图谱共用）；须 ≥ default-top-k，0=回退 default-top-k
+    channels:
+      vector:
+        enabled: true       # 向量通道总开关；意图定向与全局是同一通道按意图置信度内部二选一的两种作用域
+        intent-directed:    # 有足够置信的 KB 意图时，收窄到命中库检索
+          min-intent-score: 0.4
+        global:             # 无 / 低置信 KB 意图时，退化为全库检索兜底
+          confidence-threshold: 0.6              # KB 意图最高分低于此值 → 走全局作用域
+          single-intent-supplement-threshold: 0.8  # 仅单个 KB 意图且分数低于此值 → 走全局作用域兜底
+          candidate-budget: 0                    # 全局作用域取数上限；0=跟随 rerank-candidate-limit（超出即被下游截断属空转），确需更宽跨库广度时填正值
+      keyword:
+        enabled: true     # mode 已移除，固定为「有 KB 意图收窄命中库、无意图全局兜底」
+      graph:
+        enabled: false    # 图谱检索通道开关：false 不参与问答召回（后端仍在，后台可视化照常）；置 true 前需先开 rag.graph.type=lightrag
+      web-search:
+        enabled: true
+        count: 5
+        timeout-seconds: 10
+        api-key: ${YDC_API_KEY:}
+    fusion:
+      strategy: rrf
+      rrf-k: 20                   # 候选池通常仅 20~40 条，k=60 会过度平滑名次；调低至 20 让头部更有区分度（配合「检索归因」日志校准）
+      rerank-candidate-limit: 40  # ② RRF 融合后送入 Rerank 的候选池上限，<=0 不截断（经验值 40~100）
+      channel-weights:            # 各通道 RRF 贡献权重：向量最可信=1.0；图谱为新通道、跑在全局图上、证据仅经结果侧过滤，暂降权=0.5
+        vector: 1.0
+        keyword: 1.0
+        graph: 0.5
+        web-search: 0.5
+
+  trace:
+    enabled: true
+    max-error-length: 1000
+
+  # 图片解析（图生文）配置
+  # 产出一段自包含的知识文本：既说清"图是什么"，又完整保留所有文字与层级
+  image-parse:
+    description-prompt: |-
+      请把这张图片的内容转写成一段自包含的知识文本，用于知识库检索与问答，不要描述颜色、布局、字体等视觉样式。要求：
+      1. 开头用一两句话说明这张图是什么（主题、类型、用途），让人不看图也能明白讲的是什么。
+      2. 随后按图中的分组、层级、流程关系，完整转写所有文字内容（OCR），保留每个分组标题与其下属条目的归属关系，不要遗漏任何文字。
+      3. 若是图表、架构图或流程图，请补充说明各部分之间的关系（如包含、调用、先后顺序），而不只是罗列文字。
+      4. 保持术语准确完整，表述贴近用户可能的提问方式。
+      5. 最后另起一行，用一句话自然引出图片（例如"下方为该内容对应的原始图片："），以便在这段文字后紧接着展示图片。
+    max-output-tokens: 4096
+
+ai:
+  providers:
+    ollama:
+      url: http://localhost:11434
+      endpoints:
+        chat: /v1/chat/completions
+        embedding: /v1/embeddings
+    bailian:
+      url: https://dashscope.aliyuncs.com
+      api-key: ${BAILIAN_API_KEY:}
+      endpoints:
+        chat: /compatible-mode/v1/chat/completions
+        rerank: /api/v1/services/rerank/text-rerank/text-rerank
+    aihubmix:
+      url: https://aihubmix.com
+      api-key: ${AIHUBMIX_API_KEY:}
+      endpoints:
+        chat: /v1/chat/completions
+        embedding: /v1/embeddings
+    siliconflow:
+      url: https://api.siliconflow.cn
+      api-key: ${SILICONFLOW_API_KEY:}
+      endpoints:
+        chat: /v1/chat/completions
+        embedding: /v1/embeddings
+
+  selection:
+    failure-threshold: 2
+    open-duration-ms: 30000
+
+  stream:
+    message-chunk-size: 1
+
+  chat:
+    candidates:
+      - id: qwen-plus
+        provider: bailian
+        model: qwen-plus-latest
+      - id: qwen-flash
+        provider: bailian
+        model: qwen-flash
+      - id: qwen3-local
+        provider: ollama
+        model: qwen3:8b-fp16
+      - id: qwen3-max
+        provider: bailian
+        model: qwen3-max
+        supports-thinking: true
+      - id: glm-4.7
+        provider: siliconflow
+        model: Pro/zai-org/GLM-4.7
+        supports-thinking: true
+      - id: gpt-5.4
+        provider: aihubmix
+        model: gpt-5.4
+
+    default-tier: standard
+    deep-thinking-tier: deep
+
+    tiers:
+      fast:
+        candidates: [ qwen-flash, qwen-plus, qwen3-local ]
+        timeout-ms: 5000
+      standard:
+        candidates: [ qwen-plus, qwen3-local, gpt-5.4 ]
+        timeout-ms: 30000
+      deep:
+        candidates: [ qwen3-max, glm-4.7 ]
+        timeout-ms: 120000
+
+  embedding:
+    default-model: qwen-emb-8b
+    candidates:
+      - id: qwen-emb-8b
+        provider: siliconflow
+        model: Qwen/Qwen3-Embedding-8B
+        dimension: ${rag.default.dimension}
+        priority: 1
+      - id: qwen-emb-local
+        provider: ollama
+        model: qwen3-embedding:8b-fp16
+        dimension: ${rag.default.dimension}
+        priority: 2
+      - id: text-embedding-3-large
+        provider: aihubmix
+        model: text-embedding-3-large
+        dimension: ${rag.default.dimension}
+        priority: 3
+
+  rerank:
+    default-model: qwen3-rerank
+    candidates:
+      - id: qwen3-rerank
+        provider: bailian
+        model: qwen3-rerank
+        priority: 1
+      - id: rerank-noop
+        provider: noop
+        model: noop
+        priority: 100
+
+  vlm:
+    default-model: qwen-vl-max
+    candidates:
+      - id: qwen-vl-max
+        provider: bailian
+        model: qwen-vl-max
+
+# MinerU SaaS API 配置（PDF / Word / PPT 走 MinerU 解析）
+mineru:
+  api-url: https://mineru.net/api/v4
+  api-key: ${MINERU_API_KEY:}
+  poll-interval-seconds: 5
+  timeout-seconds: 300
+  enable-table: true
+  enable-formula: true
+  ocr: false
+  language: ch
+  concurrency-limit: 5
+  semaphore-name: rag:mineru:parse
+  max-wait-seconds: 30
+  lease-seconds: 900
+
+sa-token:
+  token-name: Authorization
+  timeout: 2592000
+  is-concurrent: true
+  is-share: false
+  token-style: simple-uuid
+  is-log: false
+  is-print: false
+
+app:
+  demo-mode: false
+  eval:
+    enabled: true

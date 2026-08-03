@@ -1,0 +1,112 @@
+name: lightrag-neo4j-stack
+
+# 知识图谱检索栈：Neo4j（图存储）+ LightRAG（构建 / 检索微服务）
+# KV / 向量 / 文档状态复用宿主机现有 PostgreSQL（pgvector 已装），本栈只新增 Neo4j + LightRAG 两进程
+#
+# 与后端对接：application.yaml 置 rag.graph.type=lightrag、rag.graph.lightrag.base-url=http://127.0.0.1:9621
+# 个性化参数从同目录 .env 读取（模板见 .env.example）；LightRAG 不启用 API 鉴权
+#
+# IDEA：复制 .env.example 为 .env 并填写密钥后，直接点击本文件的 Compose 启动按钮
+# Neo4j Browser http://localhost:7474 ｜ LightRAG WebUI http://localhost:9621/webui
+
+services:
+  neo4j:
+    container_name: neo4j
+    # GDS 固定进本地镜像，避免官方插件安装器在每次重启时重新联网下载 62 MB JAR
+    image: ragent/neo4j-gds:5.26-2.13.11
+    build:
+      context: .
+      dockerfile: neo4j-gds.Dockerfile
+    ports:
+      - "7474:7474"   # HTTP Browser
+      - "7687:7687"   # Bolt
+    environment:
+      NEO4J_AUTH: "${NEO4J_USERNAME:-neo4j}/${NEO4J_PASSWORD:?NEO4J_PASSWORD is required}"
+      # APOC 已随 Neo4j 镜像提供；GDS 由 neo4j-gds.Dockerfile 固定，不再放入此运行时下载列表
+      NEO4J_PLUGINS: '["apoc"]'
+      NEO4J_dbms_security_procedures_unrestricted: "apoc.*,gds.*"
+      NEO4J_server_memory_heap_max__size: "1G"
+      NEO4J_server_memory_pagecache_size: "512m"
+    volumes:
+      - neo4j-data:/data
+      - neo4j-logs:/logs
+    healthcheck:
+      test: ["CMD-SHELL", "auth=$${NEO4J_AUTH}; cypher-shell -u \"$${auth%%/*}\" -p \"$${auth#*/}\" 'RETURN 1' >/dev/null 2>&1 || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 40s
+    restart: unless-stopped
+
+  lightrag:
+    container_name: lightrag
+    # ⚠️ 生产务必 pin 到已验证的具体 tag（社区仓库存在超前日期版本 / 虚构模型名，勿长期用 latest）
+    image: ghcr.io/hkuds/lightrag:${LIGHTRAG_IMAGE_TAG:-latest}
+    ports:
+      - "9621:9621"
+    # Docker Desktop / IDEA 可能独立重启容器，绕过 depends_on 的就绪顺序。
+    # 将等待门闩放在 LightRAG 容器内部，确保 Neo4j Bolt 就绪后才启动应用。
+    entrypoint:
+      - /bin/sh
+      - -ec
+      - |
+        echo "Waiting for Neo4j Bolt at neo4j:7687..."
+        until python -c "import socket; socket.create_connection(('neo4j', 7687), 2).close()" >/dev/null 2>&1; do
+          sleep 2
+        done
+        echo "Neo4j Bolt is ready; starting LightRAG."
+        exec python -m lightrag.api.lightrag_server
+    environment:
+      WORKING_DIR: "/app/data/rag_storage"
+      INPUT_DIR: "/app/data/inputs"
+      # —— LLM 与后端默认模型一致使用百炼；Embedding 使用 SiliconFlow ——
+      LLM_BINDING: "${LLM_BINDING:-openai}"
+      LLM_BINDING_HOST: "${LLM_BINDING_HOST:-https://dashscope.aliyuncs.com/compatible-mode/v1}"
+      LLM_BINDING_API_KEY: "${BAILIAN_API_KEY:?BAILIAN_API_KEY is required}"
+      LLM_MODEL: "${LLM_MODEL:-qwen-plus-latest}"
+      # 实体 / 关系的描述与摘要输出语言，LightRAG 默认 English；本项目为中文库故置中文
+      # 仅对改后新建 / 重建的索引生效，已抽取出的英文描述需重建索引才会转为中文
+      SUMMARY_LANGUAGE: "${SUMMARY_LANGUAGE:-简体中文}"
+      EMBEDDING_BINDING: "${EMBEDDING_BINDING:-openai}"
+      EMBEDDING_BINDING_HOST: "${EMBEDDING_BINDING_HOST:-https://api.siliconflow.cn/v1}"
+      EMBEDDING_BINDING_API_KEY: "${SILICONFLOW_API_KEY:?SILICONFLOW_API_KEY is required}"
+      EMBEDDING_MODEL: "${EMBEDDING_MODEL:-Qwen/Qwen3-Embedding-8B}"
+      EMBEDDING_DIM: "${EMBEDDING_DIM:-1536}" # 与 application.yaml 的 rag.default.dimension 一致
+      EMBEDDING_SEND_DIM: "true"  # 要求 SiliconFlow 实际返回 1536 维，而非模型默认维度
+      # —— 存储：图 = Neo4j；KV / 向量 / 文档状态 = 复用宿主 PostgreSQL ——
+      LIGHTRAG_GRAPH_STORAGE: "Neo4JStorage"
+      LIGHTRAG_KV_STORAGE: "PGKVStorage"
+      LIGHTRAG_VECTOR_STORAGE: "PGVectorStorage"
+      LIGHTRAG_DOC_STATUS_STORAGE: "PGDocStatusStorage"
+      NEO4J_URI: "neo4j://neo4j:7687"
+      NEO4J_USERNAME: "${NEO4J_USERNAME:-neo4j}"
+      NEO4J_PASSWORD: "${NEO4J_PASSWORD:?NEO4J_PASSWORD is required}"
+      NEO4J_DATABASE: "${NEO4J_DATABASE:-neo4j}"
+      POSTGRES_HOST: "${POSTGRES_HOST:-host.docker.internal}"
+      POSTGRES_PORT: "${POSTGRES_PORT:-5432}"
+      POSTGRES_USER: "${POSTGRES_USER:-postgres}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:?POSTGRES_PASSWORD is required}"
+      POSTGRES_DATABASE: "${POSTGRES_DATABASE:-ragent}"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"   # Linux 也能解析宿主机；Mac/Win 原生支持
+    volumes:
+      - lightrag-data:/app/data
+    depends_on:
+      neo4j:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://localhost:9621/health')\" >/dev/null 2>&1 || exit 1"]
+      interval: 20s
+      timeout: 10s
+      retries: 10
+      start_period: 90s
+    restart: unless-stopped
+
+volumes:
+  neo4j-data:
+  neo4j-logs:
+  lightrag-data:
+
+networks:
+  default:
+    name: lightrag-net
