@@ -182,7 +182,7 @@ RAG 项目的核心竞争力不在于你用了多强的模型，而在于工程�
 | `framework` | 统一响应与异常、认证上下文、幂等、分布式 ID、MQ 适配、Trace 与 SSE 等通用基础能力 |
 | `infra-ai` | Chat / Embedding / Rerank / VLM 模型客户端、模型档位、路由、首包探测、健康状态与降级 |
 | `bootstrap` | RAG 问答、知识库、入库 Pipeline、意图树、检索、会话、审计及管理端 API |
-| `mcp-server` | 基于 MCP Java SDK 的独立工具服务，内置天气、票务、销售与联网搜索示例 |
+| `mcp-server` | 基于 MCP Java SDK 的独立工具服务，内置限定华为商城域名的 You.com 联网搜索工具 |
 
 这个分层不是为了炫技，而是把业务编排、AI 供应商差异和通用基础设施隔离开。切换模型、向量库或对象存储时，核心问答流程不需要跟着重写。
 

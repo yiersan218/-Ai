@@ -40,13 +40,14 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 /**
  * You.com 联网搜索 MCP 工具
  * <p>
  * 基于 You.com Search API（GET <a href="https://ydc-index.io/v1/search">...</a>，X-API-Key 鉴权），
- * 返回带来源链接和摘录片段的网页与新闻结果；API Key 从环境变量 YDC_API_KEY 读取
+ * 仅检索华为商城域名，返回带来源链接和摘录片段的网页与新闻结果；API Key 从环境变量 YDC_API_KEY 读取
  * <p>
  * 仅当环境变量 YDC_API_KEY 存在时才注册本工具（{@code @ConditionalOnProperty}）：工具清单是给 LLM
  * 消费的能力目录，登记一个缺 Key 不可用的工具只会诱导模型调用后失败、污染清单，故「工具存在 ⟺ 可用」，
@@ -67,6 +68,11 @@ public class YouComSearchMcpExecutor {
      * API Key 环境变量名（团队约定，勿改）
      */
     private static final String ENV_API_KEY = "YDC_API_KEY";
+
+    /**
+     * You.com 域名严格白名单。使用注册域名可覆盖 www.vmall.com 等华为商城子域名。
+     */
+    private static final String SEARCH_DOMAIN = "vmall.com";
 
     private static final int DEFAULT_COUNT = 5;
 
@@ -96,7 +102,7 @@ public class YouComSearchMcpExecutor {
 
         properties.put("query", Map.of(
                 "type", "string",
-                "description", "检索关键词或问题"
+                "description", "要在华为商城（vmall.com）中检索的商品、参数或问题"
         ));
 
         properties.put("count", Map.of(
@@ -116,7 +122,7 @@ public class YouComSearchMcpExecutor {
 
         return Tool.builder()
                 .name(TOOL_ID)
-                .description("基于 You.com Search API 的联网搜索，返回带来源链接和摘录片段的网页与新闻结果。需要配置 YDC_API_KEY 环境变量")
+                .description("基于 You.com Search API 检索华为商城（vmall.com），仅返回该域名及其子域名的来源链接和摘录。需要配置 YDC_API_KEY 环境变量")
                 .inputSchema(inputSchema)
                 .build();
     }
@@ -162,7 +168,9 @@ public class YouComSearchMcpExecutor {
     private String doSearch(String query, int count, String freshness, String apiKey) throws Exception {
         StringBuilder url = new StringBuilder(apiUrl)
                 .append("?query=").append(URLEncoder.encode(query, StandardCharsets.UTF_8))
-                .append("&count=").append(count);
+                .append("&count=").append(count)
+                .append("&include_domains=")
+                .append(URLEncoder.encode(SEARCH_DOMAIN, StandardCharsets.UTF_8));
         if (freshness != null && !freshness.isBlank()) {
             url.append("&freshness=").append(freshness);
         }
@@ -241,7 +249,35 @@ public class YouComSearchMcpExecutor {
 
     private void collectItems(List<JsonNode> items, JsonNode array) {
         if (array != null && array.isArray()) {
-            array.forEach(items::add);
+            array.forEach(item -> {
+                if (isAllowedResult(item)) {
+                    items.add(item);
+                }
+            });
+        }
+    }
+
+    /**
+     * 对 API 响应做第二层域名校验，避免异常或伪造的站外链接进入 RAG 上下文。
+     */
+    private boolean isAllowedResult(JsonNode item) {
+        String url = item.path("url").asText("");
+        if (url.isBlank()) {
+            return false;
+        }
+        try {
+            URI uri = URI.create(url);
+            String scheme = uri.getScheme();
+            String host = uri.getHost();
+            if (scheme == null || host == null
+                    || !("http".equalsIgnoreCase(scheme) || "https".equalsIgnoreCase(scheme))) {
+                return false;
+            }
+            String normalizedHost = host.toLowerCase(Locale.ROOT);
+            return normalizedHost.equals(SEARCH_DOMAIN)
+                    || normalizedHost.endsWith("." + SEARCH_DOMAIN);
+        } catch (IllegalArgumentException ignored) {
+            return false;
         }
     }
 

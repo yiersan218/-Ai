@@ -44,12 +44,13 @@ class YouComSearchMcpExecutorLiveTest {
         YouComSearchMcpExecutor executor = new YouComSearchMcpExecutor();
 
         CallToolResult result = executor.handleCall(new CallToolRequest("youcom_search",
-                Map.of("query", "Model Context Protocol", "count", 3)));
+                Map.of("query", "华为手机", "count", 3)));
 
         assertFalse(result.isError(), "真实调用不应返回错误");
         String text = ((TextContent) result.content().get(0)).text();
         assertTrue(text.contains("1. "), "结果应包含编号列表");
         assertTrue(text.contains("链接: "), "结果应包含来源链接");
+        assertTrue(text.contains("vmall.com"), "结果链接应来自华为商城域名");
         System.out.println("[LIVE] youcom_search 返回:\n" + text);
     }
 }

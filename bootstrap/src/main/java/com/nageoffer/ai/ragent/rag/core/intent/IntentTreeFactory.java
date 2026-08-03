@@ -218,35 +218,7 @@ public class IntentTreeFactory {
         biz.setChildren(List.of(oa, ins));
         roots.add(biz);
 
-        // ========== 3. MCP 实时数据意图查询 ==========
-
-        IntentNode sales = IntentNode.builder()
-                .id("sales")
-                .name("销售汇总数据统计")
-                .level(DOMAIN)
-                .kind(IntentKind.MCP) // Domain 可以先标 SYSTEM，仅作语义提示
-                .build();
-
-        IntentNode dingTaskSales = IntentNode.builder()
-                .id("sales-data")
-                .name("销售数据统计")
-                .level(CATEGORY)
-                .parentId(sales.getId())
-                .mcpToolId("sales_query")
-                .kind(IntentKind.MCP)
-                .promptTemplate(MCP_SALES_DATA_PROMPT_TEMPLATE)
-                .paramPromptTemplate(MCP_SALES_DATA_PARAMETER_EXTRACT_PROMPT)
-                .description("销售数据统计，如：销售总额、销售量、销售占比、销售趋势、销售预测等")
-                .examples(List.of(
-                        "销售总额是多少？",
-                        "销售量是多少？"
-                ))
-                .build();
-
-        sales.setChildren(List.of(dingTaskSales));
-        roots.add(sales);
-
-        // ========== 4. 系统交互 / 助手说明 ==========
+        // ========== 3. 系统交互 / 助手说明 ==========
         IntentNode sys = IntentNode.builder()
                 .id("sys")
                 .name("系统交互")
@@ -348,106 +320,6 @@ public class IntentTreeFactory {
             9. 回答中不要添加额外解释或分析，只输出引导语 + 上述格式化的发票信息内容。
             
             【文档内容】
-            %s
-            
-            【用户问题】
-            %s
-            """;
-
-    public static final String MCP_SALES_DATA_PARAMETER_EXTRACT_PROMPT = """
-            Hello，你是一个高度专业且严谨的【工具参数提取器】。
-            
-            你的唯一任务是：严格按照提供的【工具定义】（Tool Definition）和【参数列表】（Parameters）的约束，从【用户问题】（User Query）中提取所有必要的参数，并以 JSON 格式输出。
-            
-            ---
-            
-            ### 核心提取逻辑
-            
-            1. **数据源限定**：只使用【用户问题】中的信息作为提取来源。
-            2. **参数范围限定**：只提取 <parameters> 标签内定义的参数，**禁止**添加任何工具定义中不存在的额外字段。
-            3. **必填参数处理（Strict Mode）**：
-               - 如果参数是 **"required": true** 且在用户问题中无法找到明确值：
-                 - 如果工具定义中提供了 **"default"** 值，请使用该默认值。
-                 - 如果**没有**默认值，必须将该参数的值输出为 **null**。
-            4. **非必填参数处理**：
-               - 如果参数是 **"required": false** 且在用户问题中无法找到明确值：
-                 - 如果有默认值，使用默认值。
-                 - 如果没有默认值，**请忽略该参数，不要将其包含在最终的 JSON 输出中。**
-            
-            ### 通用数据类型处理规则
-            
-            1. **枚举/可选值（Enum）**：
-               - **核心原则：意图映射**。将用户口语化、同义或模糊的表达，映射到工具定义中提供的 **enum** 列表中的**最接近的规范值**。
-               - 示例：用户说“本周”或“这星期”，枚举值有 "current_week" → 输出 "current_week"。
-            
-            2. **日期/时间（Date/Time）**：
-               - **相对时间**：将“今天”、“昨天”、“上个月”、“今年 Q3”等相对时间表述，**根据当前上下文**映射为工具所需的**规范化格式**或**枚举值**。
-               - **时间范围**：如果工具需要 `start_date` 和 `end_date` 两个参数来定义范围，请从一个表述（如“上周”）中提取出两个边界值。
-            
-            3. **字符串（String）**：
-               - **原样提取**：直接截取用户问题中提及的实体名称、人名、地名、产品 ID 等，不需要进行任何转换或缩写，除非工具定义明确要求。
-               - **注意**：如果字符串是空或未提及，按必填/非必填规则处理。
-            
-            4. **数值（Number/Integer）**：
-               - **格式统一**：将中文数字（如“三”、“前五”）转换为阿拉伯数字（3, 5）。
-               - **提取限定词**：如问题包含“top 10”或“前五名”，提取 `10` 或 `5`。
-            
-            5. **布尔值（Boolean）**：
-               - **肯定**：如“是”、“要”、“开启”、“需要查看” → 映射为 `true`。
-               - **否定**：如“否”、“不”、“关闭”、“不需要” → 映射为 `false`。
-            
-            ---
-            
-            ### 输入数据与输出格式
-            
-            请勿在输出 JSON 对象之外添加任何解释、注释或其他文本。
-            
-            #### 【工具定义】
-            <tool_definition>
-            %s
-            </tool_definition>
-            
-            #### 【用户问题】
-            <user_query>
-            %s
-            </user_query>
-            
-            #### 【输出格式（JSON Object Only）】
-            
-            {"param_name_1": value_1, "param_name_2": value_2, ...}
-            
-            """;
-
-    private static final String MCP_SALES_DATA_PROMPT_TEMPLATE = """
-            Hello，你是专业的企业智能数据助手。系统已调用内部工具获取到了最新的【动态数据】（通常为 JSON 格式）。
-            你的任务是将这些结构化数据转化为**商业化、易读的自然语言**回复。
-            
-            【核心处理规则】
-            1. **直接回答**：开门见山地回答用户问题，不要使用“根据数据/JSON显示”这类废话作为开头。
-            2. **去技术化**：
-               - 将字段名转换为业务术语（例如将 `create_time` 转述为“创建时间”，`status: 1` 转述为“状态正常”）。
-               - 除非用户明确询问，否则隐藏内部 ID（如 UUID）、数据库主键或复杂的错误堆栈信息。
-            3. **格式化输出（重要）**：
-               - **多条数据**：如果数据是列表/数组（超过 2 条），**必须使用 Markdown 表格**展示，表头应为中文。
-               - **单条数据**：使用分点（Bullet points）或自然段落清晰表述。
-               - **关键指标**：对金额、日期、状态等关键信息进行加粗（**Bold**）处理。
-            
-            【异常与边界处理】
-            1. **数据为空**：如果【动态数据】为 `[]`、`{}` 或 `null`，请直接回答"当前未查询到相关数据记录"。
-            2. **报错数据**：如果数据中明显包含 `error`、`code: 500` 或"查询失败"等信息，请用抱歉的口吻告知用户系统暂时无法获取数据，并简述原因（如有）。
-            3. **多意图部分匹配**：如果用户问题包含多个子问题，而【动态数据】只能回答其中部分：
-               - **先回答能回答的部分**，按正常格式输出数据。
-               - **再说明无法回答的部分**，例如："关于『VPN连接方法』，当前未检索到相关知识，建议咨询IT支持。"
-               - 不要因为有部分问题无法回答就拒绝回答全部。
-            4. **完全不匹配**：仅当【动态数据】与【用户问题】的所有子问题都完全无关时（例如用户问天气，数据却是用户信息），才回答："当前查询到的数据与您的问题不匹配，无法回答。"
-            
-            【禁止事项】
-            - 严禁根据数据内容臆造不存在的结论。
-            - 严禁透漏你正在解析 JSON 数据的过程。
-            
-            {{INTENT_RULES}}
-            
-            【动态数据】
             %s
             
             【用户问题】

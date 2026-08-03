@@ -51,19 +51,24 @@ class YouComSearchMcpExecutorTest {
               "results": {
                 "web": [
                   {
-                    "url": "https://example.com/a",
+                    "url": "https://www.vmall.com/product/a",
                     "title": "网页结果A",
                     "description": "描述A",
                     "snippets": ["片段A1"]
                   },
                   {
-                    "url": "https://example.com/b",
+                    "url": "https://vmall.com.evil.example/external",
+                    "title": "站外结果",
+                    "description": "该结果必须被过滤"
+                  },
+                  {
+                    "url": "https://m.vmall.com/product/b",
                     "title": "网页结果B",
                     "snippets": ["片段B1"]
                   }
                 ],
                 "news": [
-                  {"url": "https://example.com/news", "title": "新闻结果", "description": "新闻描述"}
+                  {"url": "https://www.vmall.com/news", "title": "新闻结果", "description": "新闻描述"}
                 ]
               }
             }
@@ -106,6 +111,7 @@ class YouComSearchMcpExecutorTest {
 
         assertEquals("youcom_search", tool.name());
         assertTrue(tool.description().contains("You.com"));
+        assertTrue(tool.description().contains("vmall.com"));
         assertTrue(tool.description().contains("YDC_API_KEY"));
         assertEquals(java.util.List.of("query"), tool.inputSchema().required());
         assertTrue(tool.inputSchema().properties().containsKey("query"));
@@ -152,17 +158,21 @@ class YouComSearchMcpExecutorTest {
         assertEquals("test-key", lastApiKey.get());
         assertEquals("什么是 RAG", lastQueryParams.get().get("query"));
         assertEquals("3", lastQueryParams.get().get("count"));
+        assertEquals("vmall.com", lastQueryParams.get().get("include_domains"));
         assertEquals("week", lastQueryParams.get().get("freshness"));
 
         String text = text(result);
         assertTrue(text.contains("共 3 条结果"));
         assertTrue(text.contains("1. 网页结果A"));
-        assertTrue(text.contains("链接: https://example.com/a"));
+        assertTrue(text.contains("链接: https://www.vmall.com/product/a"));
         assertTrue(text.contains("摘录: 描述A"));
         // description 缺失时回退第一条 snippet
         assertTrue(text.contains("摘录: 片段B1"));
         // news 结果也在列表内
         assertTrue(text.contains("3. 新闻结果"));
+        // 即使 API 异常返回站外链接，响应层也必须再次过滤
+        assertFalse(text.contains("evil.example"));
+        assertFalse(text.contains("站外结果"));
     }
 
     @Test
