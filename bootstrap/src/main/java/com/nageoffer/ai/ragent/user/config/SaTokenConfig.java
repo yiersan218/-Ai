@@ -47,6 +47,8 @@ public class SaTokenConfig implements WebMvcConfigurer {
      */
     private final UserContextInterceptor userContextInterceptor;
 
+    private final RegistrationRequestRateLimitInterceptor registrationRequestRateLimitInterceptor;
+
     /**
      * 添加拦截器配置
      *
@@ -54,6 +56,11 @@ public class SaTokenConfig implements WebMvcConfigurer {
      */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
+        // 注册接口独立限流，早于参数绑定执行，确保非法请求也计入请求次数
+        registry.addInterceptor(registrationRequestRateLimitInterceptor)
+                .addPathPatterns("/auth/register")
+                .order(-100);
+
         // 注册 SaToken 登录拦截器
         registry.addInterceptor(new SaInterceptor(handler -> {
                     // 异步调度请求跳过登录检查（SSE 完成回调会触发 asyncDispatch，此时 SaToken 上下文已丢失）

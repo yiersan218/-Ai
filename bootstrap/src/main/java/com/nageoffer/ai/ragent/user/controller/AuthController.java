@@ -18,10 +18,14 @@
 package com.nageoffer.ai.ragent.user.controller;
 
 import com.nageoffer.ai.ragent.user.controller.request.LoginRequest;
+import com.nageoffer.ai.ragent.user.controller.request.RegisterRequest;
 import com.nageoffer.ai.ragent.user.controller.vo.LoginVO;
 import com.nageoffer.ai.ragent.framework.convention.Result;
 import com.nageoffer.ai.ragent.framework.web.Results;
+import com.nageoffer.ai.ragent.user.config.ClientIpResolver;
 import com.nageoffer.ai.ragent.user.service.AuthService;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -36,6 +40,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthController {
 
     private final AuthService authService;
+    private final ClientIpResolver clientIpResolver;
 
     /**
      * 用户登录接口
@@ -43,6 +48,16 @@ public class AuthController {
     @PostMapping("/auth/login")
     public Result<LoginVO> login(@RequestBody LoginRequest requestParam) {
         return Results.success(authService.login(requestParam));
+    }
+
+    /**
+     * 用户注册接口，注册成功后直接创建登录会话
+     */
+    @PostMapping("/auth/register")
+    public Result<LoginVO> register(@Valid @RequestBody RegisterRequest requestParam,
+                                    HttpServletRequest servletRequest) {
+        String clientIp = clientIpResolver.resolve(servletRequest);
+        return Results.success(authService.register(requestParam, clientIp));
     }
 
     /**

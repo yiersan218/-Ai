@@ -109,7 +109,9 @@ public class TikaDocumentParser implements DocumentParser {
             return false;
         }
         String lower = mimeType.toLowerCase(java.util.Locale.ROOT);
-        if (lower.startsWith("text/markdown") || lower.startsWith("text/x-markdown")) {
+        if (lower.startsWith("text/markdown")
+                || lower.startsWith("text/x-markdown")
+                || lower.startsWith("text/x-web-markdown")) {
             return false;
         }
         // CSV 交给 CsvDocumentParser 产 key-val 表格，不走 Tika 平文本

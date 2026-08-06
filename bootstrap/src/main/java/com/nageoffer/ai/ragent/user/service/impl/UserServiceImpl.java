@@ -37,6 +37,7 @@ import com.nageoffer.ai.ragent.user.controller.vo.UserVO;
 import com.nageoffer.ai.ragent.user.dao.entity.UserDO;
 import com.nageoffer.ai.ragent.user.dao.mapper.UserMapper;
 import com.nageoffer.ai.ragent.user.enums.UserRole;
+import com.nageoffer.ai.ragent.user.service.PasswordService;
 import com.nageoffer.ai.ragent.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -49,6 +50,7 @@ public class UserServiceImpl implements UserService {
 
     private final UserMapper userMapper;
     private final BizChangeLogContext bizChangeLogContext;
+    private final PasswordService passwordService;
 
     @Override
     public IPage<UserVO> pageQuery(UserPageRequest requestParam) {
@@ -80,7 +82,7 @@ public class UserServiceImpl implements UserService {
     public String create(UserCreateRequest requestParam) {
         Assert.notNull(requestParam, () -> new ClientException("请求不能为空"));
         String username = StrUtil.trimToNull(requestParam.getUsername());
-        String password = StrUtil.trimToNull(requestParam.getPassword());
+        String password = requestParam.getPassword();
         String role = StrUtil.trimToNull(requestParam.getRole());
         Assert.notBlank(username, () -> new ClientException("用户名不能为空"));
         Assert.notBlank(password, () -> new ClientException("密码不能为空"));
@@ -93,7 +95,7 @@ public class UserServiceImpl implements UserService {
 
         UserDO record = UserDO.builder()
                 .username(username)
-                .password(password)
+                .password(passwordService.encode(password))
                 .role(role)
                 .avatar(StrUtil.trimToNull(requestParam.getAvatar()))
                 .build();
@@ -139,9 +141,9 @@ public class UserServiceImpl implements UserService {
         }
 
         if (requestParam.getPassword() != null) {
-            String password = StrUtil.trimToNull(requestParam.getPassword());
+            String password = requestParam.getPassword();
             Assert.notBlank(password, () -> new ClientException("新密码不能为空"));
-            record.setPassword(password);
+            record.setPassword(passwordService.encode(password));
         }
 
         userMapper.updateById(record);
@@ -178,8 +180,8 @@ public class UserServiceImpl implements UserService {
     )
     public void changePassword(ChangePasswordRequest requestParam) {
         Assert.notNull(requestParam, () -> new ClientException("请求不能为空"));
-        String current = StrUtil.trimToNull(requestParam.getCurrentPassword());
-        String next = StrUtil.trimToNull(requestParam.getNewPassword());
+        String current = requestParam.getCurrentPassword();
+        String next = requestParam.getNewPassword();
         Assert.notBlank(current, () -> new ClientException("当前密码不能为空"));
         Assert.notBlank(next, () -> new ClientException("新密码不能为空"));
 
@@ -191,10 +193,10 @@ public class UserServiceImpl implements UserService {
         );
         Assert.notNull(record, () -> new ClientException("用户不存在"));
         UserVO before = toVO(record);
-        if (!passwordMatches(current, record.getPassword())) {
+        if (!passwordService.matches(current, record.getPassword())) {
             throw new ClientException("当前密码不正确");
         }
-        record.setPassword(next);
+        record.setPassword(passwordService.encode(next));
         userMapper.updateById(record);
         bizChangeLogContext.put(loginUser.getUserId(), before, toVO(userMapper.selectById(loginUser.getUserId())));
     }
@@ -239,13 +241,6 @@ public class UserServiceImpl implements UserService {
             return UserRole.USER.getCode();
         }
         throw new ClientException("角色类型不合法");
-    }
-
-    private boolean passwordMatches(String input, String stored) {
-        if (stored == null) {
-            return input == null;
-        }
-        return stored.equals(input);
     }
 
     private UserVO toVO(UserDO record) {

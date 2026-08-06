@@ -153,7 +153,7 @@ rag:
       graph:
         enabled: false    # 图谱检索通道开关：false 不参与问答召回（后端仍在，后台可视化照常）；置 true 前需先开 rag.graph.type=lightrag
       web-search:
-        enabled: true
+        enabled: false
         count: 5
         timeout-seconds: 10
         api-key: ${YDC_API_KEY:}
@@ -317,5 +317,11 @@ sa-token:
 
 app:
   demo-mode: false
+  registration:
+    # 仅当应用位于可信反向代理之后，且代理会覆盖外部传入的 X-Forwarded-For 时开启
+    trust-forwarded-headers: ${REGISTRATION_TRUST_FORWARDED_HEADERS:false}
+    window-seconds: 600
+    request-limit: 20
+    success-limit: 3
   eval:
     enabled: true

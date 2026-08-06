@@ -34,6 +34,7 @@ import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -74,29 +75,94 @@ class YouComSearchMcpExecutorTest {
             }
             """;
 
+    private static final String PRODUCT_DETAIL_BODY = """
+            <!doctype html><html><body>
+            <script id="__NEXT_DATA__" type="application/json">
+            {
+              "props": {
+                "pageProps": {
+                  "mainData": {
+                    "current": {
+                      "name": "华为畅享 90",
+                      "briefName": "华为畅享 90",
+                      "disPrdId": 10086174757473,
+                      "currentSbomCode": "2601010613210",
+                      "base": {
+                        "2601010613207": {
+                          "sbomCode": "2601010613207",
+                          "sbomAbbr": "华为畅享 90 128GB 星空黑",
+                          "price": 1299,
+                          "buttonMode": "1",
+                          "defaultSbom": 0,
+                          "gbomAttrList": [
+                            {"attrName": "颜色", "attrValue": "星空黑"},
+                            {"attrName": "版本", "attrValue": "128GB"}
+                          ]
+                        },
+                        "2601010613210": {
+                          "sbomCode": "2601010613210",
+                          "sbomAbbr": "华为畅享 90 256GB 星空黑",
+                          "price": 1599,
+                          "originalPrice": 1699,
+                          "buttonMode": "1",
+                          "defaultSbom": 1,
+                          "benefitInfos": [
+                            {"title": "分期", "content": "至高可享 6 期 0 分期利息"}
+                          ],
+                          "gbomAttrList": [
+                            {"attrName": "颜色", "attrValue": "星空黑"},
+                            {"attrName": "版本", "attrValue": "256GB"}
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            </script></body></html>
+            """;
+
     private HttpServer server;
+    private String stubBaseUrl;
     private String stubUrl;
 
     private final AtomicReference<String> lastApiKey = new AtomicReference<>();
     private final AtomicReference<Map<String, String>> lastQueryParams = new AtomicReference<>();
+    private final AtomicInteger searchRequestCount = new AtomicInteger();
+    private final AtomicInteger detailRequestCount = new AtomicInteger();
 
     private volatile int responseCode = 200;
     private volatile String responseBody = SAMPLE_BODY;
+    private volatile int searchFailuresBeforeSuccess;
+    private volatile int detailResponseCode = 200;
+    private volatile String detailResponseBody = PRODUCT_DETAIL_BODY;
 
     @BeforeEach
     void setUp() throws IOException {
         server = HttpServer.create(new InetSocketAddress(0), 0);
         server.createContext("/v1/search", exchange -> {
+            int requestNumber = searchRequestCount.incrementAndGet();
             lastApiKey.set(exchange.getRequestHeaders().getFirst("X-API-Key"));
             lastQueryParams.set(parseQuery(exchange.getRequestURI().getRawQuery()));
             byte[] bytes = responseBody.getBytes(StandardCharsets.UTF_8);
-            exchange.sendResponseHeaders(responseCode, bytes.length);
+            int actualResponseCode = requestNumber <= searchFailuresBeforeSuccess ? 503 : responseCode;
+            exchange.sendResponseHeaders(actualResponseCode, bytes.length);
+            try (OutputStream os = exchange.getResponseBody()) {
+                os.write(bytes);
+            }
+        });
+        server.createContext("/product/comdetail/index.html", exchange -> {
+            detailRequestCount.incrementAndGet();
+            byte[] bytes = detailResponseBody.getBytes(StandardCharsets.UTF_8);
+            exchange.sendResponseHeaders(detailResponseCode, bytes.length);
             try (OutputStream os = exchange.getResponseBody()) {
                 os.write(bytes);
             }
         });
         server.start();
-        stubUrl = "http://localhost:" + server.getAddress().getPort() + "/v1/search";
+        stubBaseUrl = "http://localhost:" + server.getAddress().getPort();
+        stubUrl = stubBaseUrl + "/v1/search";
     }
 
     @AfterEach
@@ -221,6 +287,85 @@ class YouComSearchMcpExecutorTest {
     }
 
     @Test
+    @DisplayName("价格查询严格匹配商品并补取详情页 SKU 标价")
+    void priceStockEnrichesVerifiedProductDetail() {
+        responseBody = """
+                {"results":{"web":[
+                  {
+                    "url":"https://item.vmall.com/product/comdetail/index.html?prdId=10086454848882",
+                    "title":"HUAWEI Pura 90 Pro Max",
+                    "description":"错误候选",
+                    "snippets":["¥6499"]
+                  },
+                  {
+                    "url":"https://www.vmall.com/product/comdetail/index.html?prdId=10086174757473&sbomCode=2601010613210",
+                    "title":"华为畅享 90 256GB 星空黑",
+                    "description":"官方商品页"
+                  }
+                ]}}
+                """;
+
+        CallToolResult result = executor("k").handleCall(request(Map.of(
+                "query", "华为畅享 90的价格",
+                "search_type", "price_stock",
+                "product_name", "华为畅享 90"
+        )));
+
+        String text = text(result);
+        assertFalse(result.isError());
+        assertEquals(1, detailRequestCount.get());
+        assertTrue(text.contains("商品详情补取状态: 成功"));
+        assertTrue(text.contains("详情页证据级别: 华为商城商品详情页公开的服务端渲染结构化数据"));
+        assertTrue(text.contains("页面商品: 华为畅享 90"));
+        assertTrue(text.contains("prdId=10086174757473"));
+        assertTrue(text.contains("sbomCode=2601010613207"));
+        assertTrue(text.contains("页面标价=1299 元"));
+        assertTrue(text.contains("页面标价=1599 元"));
+        assertTrue(text.contains("页面原价=1699 元"));
+        assertTrue(text.contains("分期：至高可享 6 期 0 分期利息"));
+        assertTrue(text.contains("已忽略 1 条"));
+        assertFalse(text.contains("Pura 90 Pro Max"));
+        assertFalse(text.contains("6499"));
+    }
+
+    @Test
+    @DisplayName("相似系列但不同型号不得被当作目标商品或输出其价格")
+    void priceStockRejectsSimilarProductVariant() {
+        responseBody = """
+                {"results":{"web":[{
+                  "url":"https://www.vmall.com/product/comdetail/index.html?prdId=10086454848882",
+                  "title":"HUAWEI Pura 90 Pro Max 12GB+256GB",
+                  "description":"页面价格 ¥6499"
+                }]}}
+                """;
+
+        CallToolResult result = executor("k").handleCall(request(Map.of(
+                "query", "HUAWEI Pura 90价格",
+                "search_type", "price_stock",
+                "product_name", "HUAWEI Pura 90"
+        )));
+
+        String text = text(result);
+        assertFalse(result.isError());
+        assertEquals(0, detailRequestCount.get());
+        assertTrue(text.contains("没有与目标商品严格匹配"));
+        assertTrue(text.contains("已忽略 1 条"));
+        assertFalse(text.contains("6499"));
+    }
+
+    @Test
+    @DisplayName("You.com 短暂返回 503 时重试一次")
+    void retriesTransientSearchFailure() {
+        searchFailuresBeforeSuccess = 1;
+
+        CallToolResult result = executor("k").handleCall(request(Map.of("query", "华为手机")));
+
+        assertFalse(result.isError());
+        assertEquals(2, searchRequestCount.get());
+        assertTrue(text(result).contains("检索结果数"));
+    }
+
+    @Test
     @DisplayName("参数与兼容查询扩展到华为消费者业务官网并过滤其他站点")
     void compatibilitySearchUsesOfficialHuaweiDomains() {
         responseBody = """
@@ -291,6 +436,7 @@ class YouComSearchMcpExecutorTest {
             }
         };
         executor.apiUrl = stubUrl;
+        executor.productDetailClient.detailUrl = stubBaseUrl + "/product/comdetail/index.html";
         return executor;
     }
 

@@ -31,30 +31,36 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
+import java.io.IOException;
+import java.math.BigDecimal;
 import java.net.URI;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.net.http.HttpTimeoutException;
 import java.nio.charset.StandardCharsets;
+import java.text.Normalizer;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * 华为商城导购场景的 You.com 联网搜索 MCP 工具
  * <p>
  * 基于 You.com Search API（GET <a href="https://ydc-index.io/v1/search">...</a>，X-API-Key 鉴权），
  * 按查询类型定向检索华为商城和华为消费者业务官网，返回带检索元数据、来源链接和摘录片段的官方网页结果；
+ * 对价格查询会继续读取严格匹配商品详情页公开的服务端渲染结构化数据，提取对应 SKU 的页面标价。
  * API Key 从环境变量 YDC_API_KEY 读取。
  * <p>
- * 本工具是公开网页搜索，不是华为商城交易接口。价格、库存、优惠等动态信息只能作为搜索摘要证据返回，
- * 不保证与用户当前地区、账号或结算页实时状态一致。
+ * 本工具不是华为商城交易接口。商品详情页公开标价与搜索摘要都不保证与用户当前地区、账号或结算页实时状态一致。
  * <p>
  * 仅当环境变量 YDC_API_KEY 存在时才注册本工具（{@code @ConditionalOnProperty}）：工具清单是给 LLM
  * 消费的能力目录，登记一个缺 Key 不可用的工具只会诱导模型调用后失败、污染清单，故「工具存在 ⟺ 可用」，
@@ -111,11 +117,20 @@ public class YouComSearchMcpExecutor {
 
     private static final int MAX_PRODUCT_NAME_LENGTH = 120;
 
+    private static final Duration SEARCH_REQUEST_TIMEOUT = Duration.ofSeconds(8);
+
+    private static final int MAX_SEARCH_ATTEMPTS = 2;
+
+    private static final int MAX_DETAIL_CANDIDATES = 3;
+
     private final HttpClient httpClient = HttpClient.newBuilder()
-            .connectTimeout(Duration.ofSeconds(10))
+            .connectTimeout(Duration.ofSeconds(5))
+            .followRedirects(HttpClient.Redirect.NORMAL)
             .build();
 
     private final ObjectMapper objectMapper = new ObjectMapper();
+
+    VmallProductDetailClient productDetailClient = new VmallProductDetailClient();
 
     /**
      * You.com Search API 地址（可测试性：单元测试可指向本地 stub 服务）
@@ -175,7 +190,7 @@ public class YouComSearchMcpExecutor {
 
         return Tool.builder()
                 .name(TOOL_ID)
-                .description("通过 You.com Search API 面向华为商城智能导购检索 vmall.com 和华为官方支持页面：查询商品页、参数规格、价格库存搜索摘要、优惠活动、兼容支持和服务政策。动态信息不等同于交易系统实时结果。需要配置 YDC_API_KEY 环境变量")
+                .description("通过 You.com Search API 面向华为商城智能导购检索 vmall.com 和华为官方支持页面；价格查询会对严格匹配的商城商品详情页补取公开结构化 SKU 标价。页面标价不等同于结算价，库存与个人权益不作保证。需要配置 YDC_API_KEY 环境变量")
                 .inputSchema(inputSchema)
                 .build();
     }
@@ -209,6 +224,12 @@ public class YouComSearchMcpExecutor {
             if (productName != null && productName.length() > MAX_PRODUCT_NAME_LENGTH) {
                 return errorResult("product_name 过长，最多允许 " + MAX_PRODUCT_NAME_LENGTH + " 个字符");
             }
+            if (prdId != null && !prdId.matches("\\d{4,32}")) {
+                return errorResult("prd_id 参数格式不合法");
+            }
+            if (sbomCode != null && !sbomCode.matches("\\d{4,32}")) {
+                return errorResult("sbom_code 参数格式不合法");
+            }
             if (count == null || count <= 0) count = DEFAULT_COUNT;
             if (count > MAX_COUNT) count = MAX_COUNT;
             if (freshness != null && !freshness.isBlank() && !FRESHNESS_VALUES.contains(freshness)) {
@@ -223,7 +244,8 @@ public class YouComSearchMcpExecutor {
 
             List<String> domains = resolveSearchDomains(searchType);
             String effectiveQuery = buildEffectiveQuery(query, searchType, productName, prdId, sbomCode);
-            String result = doSearch(query, effectiveQuery, searchType, count, freshness, domains, apiKey);
+            String result = doSearch(query, effectiveQuery, searchType, count, freshness, domains, apiKey,
+                    productName, prdId, sbomCode);
 
             log.info("MCP 工具调用完成, toolId={}, searchType={}, query={}, count={}, domains={}, elapsed={}ms",
                     TOOL_ID, searchType, query, count, domains, System.currentTimeMillis() - startMs);
@@ -244,7 +266,10 @@ public class YouComSearchMcpExecutor {
                             int count,
                             String freshness,
                             List<String> domains,
-                            String apiKey) throws Exception {
+                            String apiKey,
+                            String productName,
+                            String requestedPrdId,
+                            String requestedSbomCode) throws Exception {
         StringBuilder url = new StringBuilder(apiUrl)
                 .append("?query=").append(URLEncoder.encode(effectiveQuery, StandardCharsets.UTF_8))
                 .append("&count=").append(count)
@@ -255,19 +280,52 @@ public class YouComSearchMcpExecutor {
         }
 
         HttpRequest httpRequest = HttpRequest.newBuilder(URI.create(url.toString()))
-                .timeout(Duration.ofSeconds(10))
+                .timeout(SEARCH_REQUEST_TIMEOUT)
                 .header("X-API-Key", apiKey)
                 .GET()
                 .build();
 
-        HttpResponse<String> response = httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofString());
+        HttpResponse<String> response = sendSearchWithRetry(httpRequest);
         if (response.statusCode() != 200) {
             // 不回显响应体，避免泄露账号信息；401 鉴权失败 / 429 限流 / 5xx 服务端异常
             throw new IllegalStateException("You.com API 返回异常状态码: " + response.statusCode());
         }
 
         return formatResults(objectMapper.readTree(response.body()), count, originalQuery,
-                effectiveQuery, searchType, domains, freshness);
+                effectiveQuery, searchType, domains, freshness, productName, requestedPrdId, requestedSbomCode);
+    }
+
+    private HttpResponse<String> sendSearchWithRetry(HttpRequest request) throws Exception {
+        Exception lastException = null;
+        for (int attempt = 1; attempt <= MAX_SEARCH_ATTEMPTS; attempt++) {
+            try {
+                HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+                if (attempt < MAX_SEARCH_ATTEMPTS && isRetryableStatus(response.statusCode())) {
+                    log.warn("You.com 搜索返回可重试状态, status={}, attempt={}/{}",
+                            response.statusCode(), attempt, MAX_SEARCH_ATTEMPTS);
+                    continue;
+                }
+                return response;
+            } catch (HttpTimeoutException e) {
+                lastException = e;
+                if (attempt < MAX_SEARCH_ATTEMPTS) {
+                    log.warn("You.com 搜索超时，立即重试, attempt={}/{}", attempt, MAX_SEARCH_ATTEMPTS);
+                    continue;
+                }
+            } catch (IOException e) {
+                lastException = e;
+                if (attempt < MAX_SEARCH_ATTEMPTS) {
+                    log.warn("You.com 搜索网络异常，立即重试, attempt={}/{}, reason={}",
+                            attempt, MAX_SEARCH_ATTEMPTS, e.getClass().getSimpleName());
+                    continue;
+                }
+            }
+        }
+        throw lastException != null ? lastException : new IllegalStateException("You.com 搜索失败");
+    }
+
+    private boolean isRetryableStatus(int statusCode) {
+        return statusCode == 429 || statusCode == 502 || statusCode == 503 || statusCode == 504;
     }
 
     /**
@@ -285,7 +343,10 @@ public class YouComSearchMcpExecutor {
                                  String effectiveQuery,
                                  String searchType,
                                  List<String> domains,
-                                 String freshness) {
+                                 String freshness,
+                                 String productName,
+                                 String requestedPrdId,
+                                 String requestedSbomCode) {
         JsonNode results = root.path("results");
         List<JsonNode> items = new ArrayList<>();
         collectItems(items, results.path("web"), domains);
@@ -295,6 +356,15 @@ public class YouComSearchMcpExecutor {
             items = items.subList(0, count);
         }
 
+        int originalItemCount = items.size();
+        DetailLookup detailLookup = "price_stock".equals(searchType)
+                ? lookupProductDetail(items, productName, requestedPrdId, requestedSbomCode)
+                : DetailLookup.notRequested();
+        if ("price_stock".equals(searchType) && (productName != null || requestedPrdId != null)) {
+            items = verifiedProductItems(items, detailLookup.detail(), productName, requestedPrdId);
+        }
+        int ignoredItemCount = originalItemCount - items.size();
+
         StringBuilder sb = new StringBuilder();
         sb.append("工具: ").append(TOOL_ID).append('\n');
         sb.append("查询类型: ").append(searchType).append('\n');
@@ -303,11 +373,21 @@ public class YouComSearchMcpExecutor {
         sb.append("检索时间(UTC): ").append(Instant.now()).append('\n');
         sb.append("官方来源范围: ").append(String.join(", ", domains)).append('\n');
         sb.append("时效过滤: ").append(freshness == null || freshness.isBlank() ? "未限定" : freshness).append('\n');
-        sb.append("证据级别: 公开网页搜索摘要（不是商品交易系统实时接口）\n");
-        sb.append("动态信息说明: 价格、库存、优惠及活动状态可能受索引延迟、地区、账号和结算条件影响；仅能作为当前搜索摘要，最终以华为商城商品页或结算页展示为准。\n");
+        sb.append("搜索证据级别: 公开网页搜索摘要（不是商品交易系统实时接口）\n");
+        sb.append("动态信息说明: 搜索摘要可能存在索引延迟；详情页公开标价也可能受地区、账号、活动和结算条件影响，最终以华为商城结算页展示为准。\n");
+
+        appendProductDetail(sb, detailLookup);
+        if (ignoredItemCount > 0) {
+            sb.append("严格匹配过滤: 已忽略 ").append(ignoredItemCount)
+                    .append(" 条与目标商品名称或 prdId 不一致的搜索结果。\n");
+        }
 
         if (items.isEmpty()) {
-            sb.append("检索结果: 未检索到相关官方网页结果，请核对产品型号或更换关键词。");
+            if ("price_stock".equals(searchType) && (productName != null || requestedPrdId != null)) {
+                sb.append("检索结果: 未检索到与目标商品严格匹配的官方网页结果，请核对产品型号或更换关键词。");
+            } else {
+                sb.append("检索结果: 未检索到相关官方网页结果，请核对产品型号或更换关键词。");
+            }
             return sb.toString();
         }
 
@@ -336,19 +416,206 @@ public class YouComSearchMcpExecutor {
         return sb.toString().trim();
     }
 
+    private void appendProductDetail(StringBuilder sb, DetailLookup lookup) {
+        if (!lookup.requested()) {
+            return;
+        }
+        if (lookup.detail() == null) {
+            sb.append("商品详情补取状态: 未获得可验证价格");
+            if (lookup.message() != null) {
+                sb.append("（").append(lookup.message()).append('）');
+            }
+            sb.append('\n');
+            return;
+        }
+
+        VmallProductDetailClient.ProductDetail detail = lookup.detail();
+        sb.append("商品详情补取状态: 成功\n");
+        sb.append("详情页证据级别: 华为商城商品详情页公开的服务端渲染结构化数据（不是结算价或库存接口）\n");
+        sb.append("页面商品: ").append(detail.productName()).append('\n');
+        sb.append("商品标识: prdId=").append(detail.prdId()).append('\n');
+        sb.append("详情读取时间(UTC): ").append(detail.fetchedAt()).append('\n');
+        sb.append("详情链接: ").append(detail.sourceUrl()).append('\n');
+        sb.append("页面公开 SKU 标价:\n");
+        for (VmallProductDetailClient.SkuPrice sku : detail.skus()) {
+            sb.append("- ").append(sku.skuName())
+                    .append(" | sbomCode=").append(sku.sbomCode());
+            if (!sku.attributes().isEmpty()) {
+                sb.append(" | 配置=").append(String.join("，", sku.attributes()));
+            }
+            sb.append(" | 页面标价=").append(formatPrice(sku.price()));
+            if (sku.price() != null && sku.originalPrice() != null
+                    && sku.originalPrice().compareTo(sku.price()) > 0) {
+                sb.append(" | 页面原价=").append(formatPrice(sku.originalPrice()));
+            }
+            sb.append(" | 标准购买入口=").append(sku.purchaseEntryVisible() ? "页面显示" : "页面未显示");
+            if (sku.defaultSku()) {
+                sb.append(" | 默认SKU");
+            }
+            sb.append('\n');
+        }
+        if (!detail.benefits().isEmpty()) {
+            sb.append("页面权益提示: ").append(String.join("；", detail.benefits())).append('\n');
+        }
+        sb.append("状态边界: “标准购买入口=页面显示”不等同于已确认实时库存；标价和权益以用户实际结算页为准。\n");
+    }
+
+    private DetailLookup lookupProductDetail(List<JsonNode> items,
+                                              String productName,
+                                              String requestedPrdId,
+                                              String requestedSbomCode) {
+        if (productName == null && requestedPrdId == null) {
+            return DetailLookup.failed("缺少可校验的商品名称或 prdId");
+        }
+
+        Set<String> candidatePrdIds = new LinkedHashSet<>();
+        if (requestedPrdId != null) {
+            candidatePrdIds.add(requestedPrdId);
+        } else {
+            for (JsonNode item : items) {
+                String title = item.path("title").asText("");
+                String candidatePrdId = queryParameter(item.path("url").asText(""), "prdId");
+                if (candidatePrdId != null && isStrictProductTitleMatch(title, productName)) {
+                    candidatePrdIds.add(candidatePrdId);
+                    if (candidatePrdIds.size() >= MAX_DETAIL_CANDIDATES) {
+                        break;
+                    }
+                }
+            }
+        }
+
+        if (candidatePrdIds.isEmpty()) {
+            return DetailLookup.failed("搜索结果中没有与目标商品严格匹配且包含 prdId 的详情页");
+        }
+
+        String lastFailure = null;
+        for (String candidatePrdId : candidatePrdIds) {
+            try {
+                VmallProductDetailClient.ProductDetail detail = productDetailClient.fetch(
+                        candidatePrdId, requestedSbomCode);
+                if (productName != null && !isSameProduct(detail.productName(), productName)) {
+                    lastFailure = "详情页商品名称与查询商品不一致";
+                    continue;
+                }
+                return DetailLookup.success(detail);
+            } catch (Exception e) {
+                if (e instanceof InterruptedException) {
+                    Thread.currentThread().interrupt();
+                    return DetailLookup.failed("商品详情页请求已取消");
+                }
+                lastFailure = safeDetailFailure(e);
+                log.warn("华为商城商品详情补取失败, prdId={}, reason={}",
+                        candidatePrdId, e.getClass().getSimpleName());
+            }
+        }
+        return DetailLookup.failed(lastFailure != null ? lastFailure : "没有可验证的商品详情数据");
+    }
+
+    private List<JsonNode> verifiedProductItems(List<JsonNode> items,
+                                                VmallProductDetailClient.ProductDetail detail,
+                                                String productName,
+                                                String requestedPrdId) {
+        String verifiedPrdId = detail != null ? detail.prdId() : requestedPrdId;
+        return items.stream()
+                .filter(item -> {
+                    String url = item.path("url").asText("");
+                    if (verifiedPrdId != null) {
+                        return verifiedPrdId.equals(queryParameter(url, "prdId"));
+                    }
+                    return productName != null
+                            && isStrictProductTitleMatch(item.path("title").asText(""), productName);
+                })
+                .toList();
+    }
+
+    private boolean isStrictProductTitleMatch(String title, String productName) {
+        if (title == null || title.isBlank() || productName == null || productName.isBlank()) {
+            return false;
+        }
+        String normalizedTitle = normalizeProductName(title);
+        String normalizedProduct = normalizeProductName(productName);
+        int matchIndex = normalizedTitle.indexOf(normalizedProduct);
+        if (normalizedProduct.length() < 3 || matchIndex < 0) {
+            return false;
+        }
+        String remainder = normalizedTitle.substring(matchIndex + normalizedProduct.length());
+        return !startsWithVariantQualifier(remainder);
+    }
+
+    private boolean isSameProduct(String pageProductName, String requestedProductName) {
+        String page = normalizeProductName(pageProductName);
+        String requested = normalizeProductName(requestedProductName);
+        if (page.equals(requested)) {
+            return true;
+        }
+        if (requested.startsWith(page)) {
+            return !startsWithVariantQualifier(requested.substring(page.length()));
+        }
+        if (page.startsWith(requested)) {
+            return !startsWithVariantQualifier(page.substring(requested.length()));
+        }
+        return false;
+    }
+
+    private String normalizeProductName(String value) {
+        String normalized = Normalizer.normalize(value, Normalizer.Form.NFKC)
+                .replaceAll("[（(][^）)]*[）)]", " ")
+                .toLowerCase(Locale.ROOT)
+                .replace("huawei", "")
+                .replace("华为", "");
+        return normalized.replaceAll("[^\\p{L}\\p{N}]", "");
+    }
+
+    private boolean startsWithVariantQualifier(String value) {
+        return value.startsWith("pro")
+                || value.startsWith("max")
+                || value.startsWith("plus")
+                || value.startsWith("ultra")
+                || value.startsWith("air")
+                || value.startsWith("se");
+    }
+
+    private String safeDetailFailure(Exception exception) {
+        if (exception instanceof HttpTimeoutException) {
+            return "商品详情页请求超时";
+        }
+        String message = exception.getMessage();
+        if (message == null || message.isBlank()) {
+            return "商品详情页读取失败";
+        }
+        return message.length() <= 120 ? message : message.substring(0, 120);
+    }
+
+    private String formatPrice(BigDecimal price) {
+        if (price == null) {
+            return "未提供";
+        }
+        return price.stripTrailingZeros().toPlainString() + " 元";
+    }
+
     /**
-     * 摘录优先取 description，缺失时回退第一条 snippet
+     * 合并 description 与最多两条不重复的 snippet，避免搜索 API 把价格等关键信息仅放在 snippets 时被丢弃。
      */
     private String resolveExcerpt(JsonNode item) {
+        LinkedHashSet<String> excerpts = new LinkedHashSet<>();
         String description = item.path("description").asText("");
         if (!description.isBlank()) {
-            return description;
+            excerpts.add(compactExcerpt(description));
         }
         JsonNode snippets = item.path("snippets");
-        if (snippets.isArray() && !snippets.isEmpty()) {
-            return snippets.get(0).asText("");
+        if (snippets.isArray()) {
+            snippets.forEach(snippet -> {
+                if (excerpts.size() < 3 && snippet.isTextual() && !snippet.asText().isBlank()) {
+                    excerpts.add(compactExcerpt(snippet.asText()));
+                }
+            });
         }
-        return "";
+        return String.join("；补充片段：", excerpts);
+    }
+
+    private String compactExcerpt(String value) {
+        String compact = value.replaceAll("\\s+", " ").trim();
+        return compact.length() <= 800 ? compact : compact.substring(0, 800) + "…";
     }
 
     private void collectItems(List<JsonNode> items, JsonNode array, List<String> allowedDomains) {
@@ -521,5 +788,22 @@ public class YouComSearchMcpExecutor {
                 .content(List.of(new TextContent(message)))
                 .isError(true)
                 .build();
+    }
+
+    private record DetailLookup(boolean requested,
+                                VmallProductDetailClient.ProductDetail detail,
+                                String message) {
+
+        private static DetailLookup notRequested() {
+            return new DetailLookup(false, null, null);
+        }
+
+        private static DetailLookup success(VmallProductDetailClient.ProductDetail detail) {
+            return new DetailLookup(true, detail, null);
+        }
+
+        private static DetailLookup failed(String message) {
+            return new DetailLookup(true, null, message);
+        }
     }
 }

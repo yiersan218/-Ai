@@ -11,9 +11,10 @@ import {
   SearchCheck,
   ShieldCheck,
   Sparkles,
+  UserPlus,
   UserRound
 } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -41,16 +42,22 @@ const productHighlights = [
 type FieldErrors = {
   username?: string;
   password?: string;
+  confirmPassword?: string;
 };
 
-export function LoginPage() {
+type AuthMode = "login" | "register";
+
+function AuthPage({ mode }: { mode: AuthMode }) {
+  const isRegister = mode === "register";
   const navigate = useNavigate();
-  const { login, isLoading } = useAuthStore();
+  const { login, register, isLoading } = useAuthStore();
   const [showPassword, setShowPassword] = React.useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = React.useState(false);
   const [remember, setRemember] = React.useState(false);
   const [form, setForm] = React.useState({
     username: "",
-    password: ""
+    password: "",
+    confirmPassword: ""
   });
   const [fieldErrors, setFieldErrors] = React.useState<FieldErrors>({});
   const [error, setError] = React.useState<string | null>(null);
@@ -60,11 +67,29 @@ export function LoginPage() {
     setError(null);
 
     const nextErrors: FieldErrors = {};
-    if (!form.username.trim()) {
+    const username = form.username.trim();
+    if (!username) {
       nextErrors.username = "请输入用户名";
+    } else if (isRegister && (username.length < 3 || username.length > 32)) {
+      nextErrors.username = "用户名长度应为 3-32 个字符";
+    } else if (isRegister && !/^[\p{L}\p{N}_-]+$/u.test(username)) {
+      nextErrors.username = "用户名只能包含文字、数字、下划线和短横线";
     }
-    if (!form.password.trim()) {
+    if (!form.password) {
       nextErrors.password = "请输入密码";
+    } else if (
+      isRegister &&
+      (form.password.length < 8 ||
+        form.password.length > 64 ||
+        !/\p{L}/u.test(form.password) ||
+        !/\d/u.test(form.password))
+    ) {
+      nextErrors.password = "密码需为 8-64 位，且同时包含字母和数字";
+    }
+    if (isRegister && !form.confirmPassword) {
+      nextErrors.confirmPassword = "请再次输入密码";
+    } else if (isRegister && form.password !== form.confirmPassword) {
+      nextErrors.confirmPassword = "两次输入的密码不一致";
     }
     setFieldErrors(nextErrors);
 
@@ -73,13 +98,20 @@ export function LoginPage() {
     }
 
     try {
-      await login(form.username.trim(), form.password.trim());
-      if (!remember) {
+      if (isRegister) {
+        await register(username, form.password, form.confirmPassword);
+      } else {
+        await login(username, form.password);
+      }
+      if (!isRegister && !remember) {
         // 如需仅在内存中保存登录态，可在此扩展。
       }
       navigate("/chat");
     } catch (err) {
-      setError((err as Error).message || "登录失败，请检查账号信息后重试。");
+      setError(
+        (err as Error).message ||
+          (isRegister ? "注册失败，请稍后重试。" : "登录失败，请检查账号信息后重试。")
+      );
     }
   };
 
@@ -182,17 +214,21 @@ export function LoginPage() {
             <div className="flex items-start justify-between gap-4">
               <div>
                 <p className="text-sm font-semibold text-indigo-600 dark:text-indigo-300">
-                  账号登录
+                  {isRegister ? "创建账号" : "账号登录"}
                 </p>
                 <h2 className="mt-2 font-display text-3xl font-semibold tracking-[-0.03em] text-slate-950 dark:text-white">
-                  欢迎回来
+                  {isRegister ? "开始探索知识" : "欢迎回来"}
                 </h2>
                 <p className="mt-2 text-sm leading-6 text-slate-500 dark:text-slate-400">
-                  登录后继续你的检索增强对话
+                  {isRegister ? "注册后即可进入检索增强对话" : "登录后继续你的检索增强对话"}
                 </p>
               </div>
               <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 text-slate-500 dark:border-white/10 dark:bg-white/[0.04] dark:text-slate-300">
-                <ShieldCheck className="h-5 w-5" aria-hidden="true" />
+                {isRegister ? (
+                  <UserPlus className="h-5 w-5" aria-hidden="true" />
+                ) : (
+                  <ShieldCheck className="h-5 w-5" aria-hidden="true" />
+                )}
               </span>
             </div>
 
@@ -251,7 +287,7 @@ export function LoginPage() {
                     id="login-password"
                     name="password"
                     type={showPassword ? "text" : "password"}
-                    placeholder="请输入密码"
+                    placeholder={isRegister ? "请输入 8-64 位密码" : "请输入密码"}
                     value={form.password}
                     onChange={(event) => {
                       setForm((prev) => ({ ...prev, password: event.target.value }));
@@ -259,7 +295,7 @@ export function LoginPage() {
                       setError(null);
                     }}
                     className="h-12 rounded-xl border-slate-200 bg-slate-50/70 pl-11 pr-12 text-base text-slate-900 shadow-none transition-[border-color,box-shadow,background-color] placeholder:text-slate-400 hover:border-slate-300 focus-visible:border-indigo-500 focus-visible:bg-white focus-visible:ring-4 focus-visible:ring-indigo-100 dark:border-white/10 dark:bg-white/[0.04] dark:text-white dark:hover:border-white/20 dark:focus-visible:border-indigo-400 dark:focus-visible:bg-white/[0.07] dark:focus-visible:ring-indigo-400/10 motion-reduce:transition-none"
-                    autoComplete="current-password"
+                    autoComplete={isRegister ? "new-password" : "current-password"}
                     aria-invalid={Boolean(fieldErrors.password)}
                     aria-describedby={fieldErrors.password ? "login-password-error" : undefined}
                   />
@@ -287,18 +323,80 @@ export function LoginPage() {
                 ) : null}
               </div>
 
-              <label
-                htmlFor="login-remember"
-                className="flex min-h-11 cursor-pointer items-center gap-3 rounded-xl px-1 text-sm text-slate-600 transition-colors hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100 motion-reduce:transition-none"
-              >
-                <Checkbox
-                  id="login-remember"
-                  checked={remember}
-                  onCheckedChange={(value) => setRemember(Boolean(value))}
-                  className="h-5 w-5 rounded-md border-slate-300 data-[state=checked]:border-indigo-600 data-[state=checked]:bg-indigo-600 dark:border-slate-600"
-                />
-                记住我
-              </label>
+              {isRegister ? (
+                <div className="space-y-2">
+                  <label
+                    htmlFor="register-confirm-password"
+                    className="text-sm font-medium text-slate-700 dark:text-slate-200"
+                  >
+                    确认密码
+                  </label>
+                  <div className="relative">
+                    <ShieldCheck
+                      className="pointer-events-none absolute left-4 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-slate-400"
+                      aria-hidden="true"
+                    />
+                    <Input
+                      id="register-confirm-password"
+                      name="confirmPassword"
+                      type={showConfirmPassword ? "text" : "password"}
+                      placeholder="请再次输入密码"
+                      value={form.confirmPassword}
+                      onChange={(event) => {
+                        setForm((prev) => ({ ...prev, confirmPassword: event.target.value }));
+                        setFieldErrors((prev) => ({ ...prev, confirmPassword: undefined }));
+                        setError(null);
+                      }}
+                      className="h-12 rounded-xl border-slate-200 bg-slate-50/70 pl-11 pr-12 text-base text-slate-900 shadow-none transition-[border-color,box-shadow,background-color] placeholder:text-slate-400 hover:border-slate-300 focus-visible:border-indigo-500 focus-visible:bg-white focus-visible:ring-4 focus-visible:ring-indigo-100 dark:border-white/10 dark:bg-white/[0.04] dark:text-white dark:hover:border-white/20 dark:focus-visible:border-indigo-400 dark:focus-visible:bg-white/[0.07] dark:focus-visible:ring-indigo-400/10 motion-reduce:transition-none"
+                      autoComplete="new-password"
+                      aria-invalid={Boolean(fieldErrors.confirmPassword)}
+                      aria-describedby={
+                        fieldErrors.confirmPassword ? "register-confirm-password-error" : undefined
+                      }
+                    />
+                    <button
+                      type="button"
+                      onClick={() => setShowConfirmPassword((prev) => !prev)}
+                      className="absolute right-0.5 top-1/2 flex h-11 w-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-lg text-slate-400 transition-colors hover:bg-slate-200/70 hover:text-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-1 dark:hover:bg-white/10 dark:hover:text-white motion-reduce:transition-none"
+                      aria-label={showConfirmPassword ? "隐藏确认密码" : "显示确认密码"}
+                      aria-pressed={showConfirmPassword}
+                    >
+                      {showConfirmPassword ? (
+                        <EyeOff className="h-[18px] w-[18px]" aria-hidden="true" />
+                      ) : (
+                        <Eye className="h-[18px] w-[18px]" aria-hidden="true" />
+                      )}
+                    </button>
+                  </div>
+                  {fieldErrors.confirmPassword ? (
+                    <p
+                      id="register-confirm-password-error"
+                      className="text-xs font-medium text-red-600 dark:text-red-400"
+                    >
+                      {fieldErrors.confirmPassword}
+                    </p>
+                  ) : null}
+                </div>
+              ) : null}
+
+              {isRegister ? (
+                <p className="rounded-xl bg-indigo-50/80 px-3.5 py-3 text-xs leading-5 text-indigo-700 dark:bg-indigo-400/10 dark:text-indigo-200">
+                  为防止批量注册，同一网络短时间内的注册请求和成功账号数量会受到限制。
+                </p>
+              ) : (
+                <label
+                  htmlFor="login-remember"
+                  className="flex min-h-11 cursor-pointer items-center gap-3 rounded-xl px-1 text-sm text-slate-600 transition-colors hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100 motion-reduce:transition-none"
+                >
+                  <Checkbox
+                    id="login-remember"
+                    checked={remember}
+                    onCheckedChange={(value) => setRemember(Boolean(value))}
+                    className="h-5 w-5 rounded-md border-slate-300 data-[state=checked]:border-indigo-600 data-[state=checked]:bg-indigo-600 dark:border-slate-600"
+                  />
+                  记住我
+                </label>
+              )}
 
               {error ? (
                 <div
@@ -322,24 +420,37 @@ export function LoginPage() {
                       className="h-4 w-4 animate-spin motion-reduce:animate-none"
                       aria-hidden="true"
                     />
-                    <span aria-live="polite">正在登录...</span>
+                    <span aria-live="polite">{isRegister ? "正在注册..." : "正在登录..."}</span>
                   </>
                 ) : (
                   <>
-                    登录
+                    {isRegister ? "注册并登录" : "登录"}
                     <ArrowRight className="h-4 w-4" aria-hidden="true" />
                   </>
                 )}
               </Button>
             </form>
 
-            <div className="mt-7 flex items-center justify-center gap-2 border-t border-slate-100 pt-6 text-xs text-slate-400 dark:border-white/10 dark:text-slate-500">
-              <ShieldCheck className="h-3.5 w-3.5" aria-hidden="true" />
-              登录信息仅用于身份验证
+            <div className="mt-7 flex flex-wrap items-center justify-center gap-x-2 gap-y-3 border-t border-slate-100 pt-6 text-sm text-slate-500 dark:border-white/10 dark:text-slate-400">
+              <span>{isRegister ? "已经有账号？" : "还没有账号？"}</span>
+              <Link
+                to={isRegister ? "/login" : "/register"}
+                className="inline-flex min-h-11 items-center rounded-lg px-2 font-semibold text-indigo-600 transition-colors hover:bg-indigo-50 hover:text-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:text-indigo-300 dark:hover:bg-indigo-400/10 dark:hover:text-indigo-200 motion-reduce:transition-none"
+              >
+                {isRegister ? "返回登录" : "立即注册"}
+              </Link>
             </div>
           </div>
         </section>
       </div>
     </main>
   );
+}
+
+export function LoginPage() {
+  return <AuthPage mode="login" />;
+}
+
+export function RegisterPage() {
+  return <AuthPage mode="register" />;
 }
