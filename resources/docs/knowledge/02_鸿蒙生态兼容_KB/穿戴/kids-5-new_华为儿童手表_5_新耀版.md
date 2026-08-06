@@ -3,7 +3,7 @@ doc_id: "kbplus-wearable-kids-5-new"
 title: "华为儿童手表 5 新耀版 兼容与搭配档案"
 domain: "华为商城导购"
 intent_node: "鸿蒙生态兼容 KB"
-scope: ["穿戴（兼容）", "生态关联商品", "KBplus补充"]
+scope: ["穿戴（兼容）", "华为硬件", "华为硬件"]
 source_type: "official_search_listing_plus_support"
 source_urls: ["https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true", "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"]
 collected_at: "2026-08-02"

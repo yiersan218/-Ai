@@ -1,944 +1,1345 @@
 {
   "domain": "华为商城导购",
-  "generated_at": "2026-08-02T15:13:46+08:00",
-  "document_count": 172,
-  "estimated_chunks_1200": 366,
+  "generated_at": "2026-08-04T23:00:00+08:00",
+  "document_count": 283,
+  "estimated_chunks_1200": 546,
   "documents": [
+    {
+      "doc_id": "product-主要配件-adapter-140w",
+      "title": "华为超级快充电源适配器（Max 140 W） 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/adapter-140w_华为超级快充电源适配器（Max 140 W）.md",
+      "characters": 1222,
+      "estimated_chunks_1200": 2,
+      "sha256": "1f1fd1abc2036d0594694a1db0205404018f7849f036594371c83f6d28d97e91"
+    },
+    {
+      "doc_id": "product-主要配件-cable-6a-a-c",
+      "title": "华为 6A 数据线 USB-A 转 USB-C 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/cable-6a-a-c_华为 6A 数据线 USB-A 转 USB-C.md",
+      "characters": 1231,
+      "estimated_chunks_1200": 2,
+      "sha256": "133c69147c7a1633b964482cec956023aecb750d3b90532fbc84fdf7cd589a11"
+    },
+    {
+      "doc_id": "product-主要配件-cable-6a-c-c",
+      "title": "华为 6A 数据线 USB-C 转 USB-C 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/cable-6a-c-c_华为 6A 数据线 USB-C 转 USB-C.md",
+      "characters": 1231,
+      "estimated_chunks_1200": 2,
+      "sha256": "d8a7065eb6526810aea79090dbdc8d0e84565b9363c448fe94330e739a6a8b75"
+    },
+    {
+      "doc_id": "product-主要配件-charger-40w",
+      "title": "华为超级快充充电器（Max 40 W） 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/charger-40w_华为超级快充充电器（Max 40 W）.md",
+      "characters": 1216,
+      "estimated_chunks_1200": 2,
+      "sha256": "536d6f482e453037466172cffbc14f01839f75e88ca5517fc51bb71fad8bc4f9"
+    },
+    {
+      "doc_id": "product-主要配件-charger-ice-100w",
+      "title": "华为冰糖全能充电器（Max 100 W） 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/charger-ice-100w_华为冰糖全能充电器（Max 100 W）.md",
+      "characters": 1226,
+      "estimated_chunks_1200": 2,
+      "sha256": "d0569825ef09d72f0a6d6b1c41ed0e9a60ef73dcd3bebbb8cc50562e4c01eb40"
+    },
+    {
+      "doc_id": "product-主要配件-charger-ice-66w",
+      "title": "华为冰糖全能充电器（Max 66 W） 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/charger-ice-66w_华为冰糖全能充电器（Max 66 W）.md",
+      "characters": 1219,
+      "estimated_chunks_1200": 2,
+      "sha256": "cde2a9872d1189c4507a9c27b3c16bfc784d582aff20ce60e886b02bca698eec"
+    },
+    {
+      "doc_id": "product-主要配件-charger-multiport-100w-premium",
+      "title": "华为全能充多口充电器（Max 100 W）黑色 尊享版 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/charger-multiport-100w-premium_华为全能充多口充电器（Max 100 W）黑色 尊享版.md",
+      "characters": 1251,
+      "estimated_chunks_1200": 2,
+      "sha256": "bfc2d58473cfec7b8aa6a56afb231ce2723ef95bdcd066eb11da48798b4a58ab"
+    },
+    {
+      "doc_id": "product-主要配件-charger-multiport-100w",
+      "title": "华为全能充多口充电器（Max 100 W） 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/charger-multiport-100w_华为全能充多口充电器（Max 100 W）.md",
+      "characters": 1229,
+      "estimated_chunks_1200": 2,
+      "sha256": "53092ec1627bae9b2ee4764b1291f93bc60e436752f32daf0e00cdfea1327b97"
+    },
+    {
+      "doc_id": "product-主要配件-m-pen-3-mini",
+      "title": "M-Pen 3 Mini 多功能笔 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/m-pen-3-mini_M-Pen 3 Mini 多功能笔.md",
+      "characters": 1211,
+      "estimated_chunks_1200": 2,
+      "sha256": "bb5cd5fdd149ac597cdb2e8826d3fa81176983f46e5f3a6379efcd4ca134bff9"
+    },
+    {
+      "doc_id": "product-主要配件-m-pencil-3-set",
+      "title": "M-Pencil（第三代）平板创作笔套装 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/m-pencil-3-set_M-Pencil（第三代）平板创作笔套装.md",
+      "characters": 1221,
+      "estimated_chunks_1200": 2,
+      "sha256": "b0f099096a3f834a6ff50182f7e3f147cab7ea31699a6b08dfd69c3373ac87bc"
+    },
+    {
+      "doc_id": "product-主要配件-m-pencil-pro",
+      "title": "M-Pencil Pro 平板创作笔 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/m-pencil-pro_M-Pencil Pro 平板创作笔.md",
+      "characters": 1214,
+      "estimated_chunks_1200": 2,
+      "sha256": "38a01310270478855ab149aa6458245f6a7a3fb1f609d7578ddd0fc13c4669f9"
+    },
+    {
+      "doc_id": "product-主要配件-magnetic-powerbank",
+      "title": "华为全能充磁吸移动电源 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/magnetic-powerbank_华为全能充磁吸移动电源.md",
+      "characters": 1204,
+      "estimated_chunks_1200": 2,
+      "sha256": "0e3100f9251ca9c60ae772bbca92b9f70275f0fa848800e2989e2cbc0b471ce6"
+    },
+    {
+      "doc_id": "product-主要配件-mate80-leather-case",
+      "title": "Mate 80/Mate 80 Pro 素皮保护壳 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/mate80-leather-case_Mate 80_Mate 80 Pro 素皮保护壳.md",
+      "characters": 1233,
+      "estimated_chunks_1200": 2,
+      "sha256": "9daed58d425d156bf48d1ac24a9c11d1fa054999a7ab995867f18063ff52835e"
+    },
+    {
+      "doc_id": "product-主要配件-matex7-rotating-case",
+      "title": "Mate X7 旋转支架保护壳 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/matex7-rotating-case_Mate X7 旋转支架保护壳.md",
+      "characters": 1215,
+      "estimated_chunks_1200": 2,
+      "sha256": "0178fb663de90fd4173e5f0e698daf66acd180f0edd17a433478ae7677928688"
+    },
+    {
+      "doc_id": "product-主要配件-powerbank-100w-12000",
+      "title": "华为自带线全能充移动电源（100 W 12000） 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/powerbank-100w-12000_华为自带线全能充移动电源（100 W 12000）.md",
+      "characters": 1234,
+      "estimated_chunks_1200": 2,
+      "sha256": "652a03df77ad2f5f54bdccde4640072c2994e7e59622c5cfa53d42055e7d33b2"
+    },
+    {
+      "doc_id": "product-主要配件-powerbank-22w5-se",
+      "title": "华为多协议超级快充移动电源 10000 mAh（Max 22.5W SE） 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/powerbank-22w5-se_华为多协议超级快充移动电源 10000 mAh（Max 22.5W SE）.md",
+      "characters": 1256,
+      "estimated_chunks_1200": 2,
+      "sha256": "30e634ecd8e90985c2cbda0739d02d446ac6c3a43fc8ae22e7ae0c8af3e14bc7"
+    },
+    {
+      "doc_id": "product-主要配件-powerbank-66w-12000",
+      "title": "华为自带线全能充移动电源（66 W 12000） 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/powerbank-66w-12000_华为自带线全能充移动电源（66 W 12000）.md",
+      "characters": 1228,
+      "estimated_chunks_1200": 2,
+      "sha256": "ea3a6c78a30a84915d5ced0bad35bdeeb45407793896b8ada6db0dff81e3edb0"
+    },
+    {
+      "doc_id": "product-主要配件-watch-gt6-pro-strap",
+      "title": "WATCH GT 6 Pro 表带 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/watch-gt6-pro-strap_WATCH GT 6 Pro 表带.md",
+      "characters": 1233,
+      "estimated_chunks_1200": 2,
+      "sha256": "c12f00334bb6441c463a960e9739e17539bb715bbcd8d6e728f45edd14aee2cc"
+    },
+    {
+      "doc_id": "product-主要配件-wireless-charger-80w",
+      "title": "华为超级快充立式无线充电器（Max 80 W） 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/wireless-charger-80w_华为超级快充立式无线充电器（Max 80 W）.md",
+      "characters": 1234,
+      "estimated_chunks_1200": 2,
+      "sha256": "5d9737b84ddfbfe98aa861288c1a0808b486c50be09ac353db5460d85d1a7d62"
+    },
+    {
+      "doc_id": "product-主要配件-woven-cable-120w",
+      "title": "华为编织数据线（Max 120 W） 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/主要配件/woven-cable-120w_华为编织数据线（Max 120 W）.md",
+      "characters": 1225,
+      "estimated_chunks_1200": 2,
+      "sha256": "549d561972aab9c5abc5f3d831c95ab2e890a636379e364e0c3a3fc65a870057"
+    },
+    {
+      "doc_id": "product-家庭存储-home-storage",
+      "title": "华为家庭存储 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/家庭存储/home-storage_华为家庭存储.md",
+      "characters": 1251,
+      "estimated_chunks_1200": 2,
+      "sha256": "29c775dcef6e22e24ce8c0f7fd36f7dc0bb88062ee4a40ee87dfdecf1f633c59"
+    },
     {
       "doc_id": "product-10086106814226",
       "title": "HUAWEI MatePad Pro 12.2 英寸 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "平板",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086106814226&sbomCode=2701010122029"
-      ],
       "path": "01_参数与卖点_KB/平板/10086106814226_HUAWEI_MatePad_Pro_12.2_英寸.md",
-      "characters": 4211,
+      "characters": 4210,
       "estimated_chunks_1200": 4,
-      "sha256": "946b95853a4046922e95d26ff807dfdf0120f88b4e86d7a6b0920c06b57073b1"
+      "sha256": "c0fd2506536b1f10c65133887cc2e2f2d7c9b5aa70c3ac1cf81cd68d1f4bf65b"
     },
     {
       "doc_id": "product-10086120212240",
       "title": "HUAWEI MatePad Pro 13.2 英寸 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "平板",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086120212240"
-      ],
       "path": "01_参数与卖点_KB/平板/10086120212240_HUAWEI_MatePad_Pro_13.2_英寸.md",
-      "characters": 1371,
+      "characters": 1370,
       "estimated_chunks_1200": 2,
-      "sha256": "04f7445c44c9c3a0aed3f519a59e6e878ff6e42341fd36945871c28c8d0e35b3"
+      "sha256": "d9aa4c4735f78f530464438d94f819ae0a73fc5742a12cacead75505e1ba724e"
     },
     {
       "doc_id": "product-10086127502687",
       "title": "HUAWEI MatePad Pro Max 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "平板",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086127502687&sbomCode=2701010130502"
-      ],
       "path": "01_参数与卖点_KB/平板/10086127502687_HUAWEI_MatePad_Pro_Max.md",
-      "characters": 4693,
+      "characters": 4692,
       "estimated_chunks_1200": 4,
-      "sha256": "1dcdb7872ee381f54dc19b63e2460a44b3a9b2801564e90f894df7e7c89a2358"
+      "sha256": "dbd2b611ff85d026bf61385f92dafe6ff93610c7bd1d8507cd083059b4ef31a4"
     },
     {
       "doc_id": "product-10086287244006",
       "title": "HUAWEI MatePad Mini 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "平板",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086287244006&sbomCode=2701010123211"
-      ],
       "path": "01_参数与卖点_KB/平板/10086287244006_HUAWEI_MatePad_Mini.md",
-      "characters": 4346,
+      "characters": 4345,
       "estimated_chunks_1200": 4,
-      "sha256": "5e6d5dab593405a0176d0478d8dac11f7d6fd81511d2c17c4b02297f5750b9e3"
+      "sha256": "7e9c939dee9898e373918c7021ddf76bf9e9693e19790d8f113c0e7f2c5a5af7"
     },
     {
       "doc_id": "product-10086294960453",
       "title": "HUAWEI MatePad 11.5 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "平板",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086294960453"
-      ],
       "path": "01_参数与卖点_KB/平板/10086294960453_HUAWEI_MatePad_11.5.md",
-      "characters": 1366,
+      "characters": 1365,
       "estimated_chunks_1200": 2,
-      "sha256": "1693c827bb99c3459a7db710734ff941d641e3693a65bbe31921134d8f3069c1"
+      "sha256": "0f7e2763dd524dbf61f563ce1fd81fb468e84188cc6b4feafdcef21aa6fa1f5d"
     },
     {
       "doc_id": "product-10086426290126",
       "title": "HUAWEI MatePad SE 11英寸 焕新版 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "平板",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086426290126&sbomCode=2701010132701"
-      ],
       "path": "01_参数与卖点_KB/平板/10086426290126_HUAWEI_MatePad_SE_11英寸_焕新版.md",
-      "characters": 3538,
+      "characters": 3537,
       "estimated_chunks_1200": 3,
-      "sha256": "9ad07306f86314b9107033f92cceada56cb6d834ab778912c7c697f45b35e345"
+      "sha256": "9efcfd35181d6f77b8720eba354e19671b392229f3698f54439148af568e4739"
     },
     {
       "doc_id": "product-10086486839777",
       "title": "HUAWEI MatePad Air 12英寸 鸿蒙焕新版 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "平板",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086486839777&sbomCode=2701010131701"
-      ],
       "path": "01_参数与卖点_KB/平板/10086486839777_HUAWEI_MatePad_Air_12英寸_鸿蒙焕新版.md",
-      "characters": 4106,
+      "characters": 4105,
       "estimated_chunks_1200": 4,
-      "sha256": "ecc628ff69536dffa476ff63b60912303e4c58fce260a02cd40ea8f35599f47f"
+      "sha256": "d2c3aec3d8811ef9100f2db63abc8c20aca457a67f800e211fdede3cc8b00eab"
     },
     {
       "doc_id": "product-10086518319242",
       "title": "HUAWEI MatePad 11.5 S 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "平板",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086518319242&sbomCode=2701010122623"
-      ],
       "path": "01_参数与卖点_KB/平板/10086518319242_HUAWEI_MatePad_11.5_S.md",
-      "characters": 3971,
+      "characters": 3970,
       "estimated_chunks_1200": 4,
-      "sha256": "3af04055dc597606228061f68f9617e51a59f2af01db68a57002e5806a0e6720"
+      "sha256": "43eb86d61147c0b86386fc9f90009c4c1ad8a1e7ba1cfb9b81507bb1486899c9"
     },
     {
       "doc_id": "product-10086590821009",
       "title": "HUAWEI MatePad Edge 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "平板",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086590821009&sbomCode=2701010126301"
-      ],
       "path": "01_参数与卖点_KB/平板/10086590821009_HUAWEI_MatePad_Edge.md",
-      "characters": 4304,
+      "characters": 4303,
       "estimated_chunks_1200": 4,
-      "sha256": "b7a00a7b4d0541a1d8ac9deefc3919b9d89ad7c1f60938814d65e238072ab32a"
+      "sha256": "6a665693159333aa7bb887e9388b399c8e5075df969c57ceff0f6a5b82ef94b6"
     },
     {
       "doc_id": "product-current-matepad-11-5-s-flex-2025",
       "title": "HUAWEI MatePad 11.5 S 灵动款 鸿蒙焕新版 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "平板",
-        "核心商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_product_or_specs_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/tablets/matepad-11-5-s-2025/specs/",
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E5%25B9%25B3%25E6%259D%25BF&searchHistoryShow=true&searchResultPageProdShow=true"
-      ],
       "path": "01_参数与卖点_KB/平板/current_HUAWEI_MatePad_11.5_S_灵动款_鸿蒙焕新版.md",
-      "characters": 1444,
+      "characters": 1440,
       "estimated_chunks_1200": 2,
-      "sha256": "810da653d1744e5978605184e017582fa5902c50d743cd507c95581a50fe2b55"
+      "sha256": "06e4571de194adbdffc2328179d6836cdbad6178115202fcf5e88dbea1e80d72"
     },
     {
       "doc_id": "product-current-matepad-11-5-2026",
       "title": "HUAWEI MatePad 11.5 鸿蒙焕新版 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "平板",
-        "核心商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_product_or_specs_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/tablets/matepad-11-5-2026/specs/",
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E5%25B9%25B3%25E6%259D%25BF&searchHistoryShow=true&searchResultPageProdShow=true"
-      ],
       "path": "01_参数与卖点_KB/平板/current_HUAWEI_MatePad_11.5_鸿蒙焕新版.md",
-      "characters": 1378,
+      "characters": 1374,
       "estimated_chunks_1200": 2,
-      "sha256": "dfdf97c34f6974a960f6bb29fc5c84b1792abbddec8e3153eef066f94c3b82e8"
+      "sha256": "c3a4eb90f6811ec6b20399e5d604e8aa151085b37d1382f8e9a291941f58ecca"
     },
     {
       "doc_id": "product-10086061975812",
       "title": "HUAWEI Pura X 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_product_or_specs_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086061975812",
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2589%258B%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"
-      ],
       "path": "01_参数与卖点_KB/手机/10086061975812_HUAWEI_Pura_X.md",
-      "characters": 1374,
+      "characters": 1370,
       "estimated_chunks_1200": 2,
-      "sha256": "9ba1509f158432486f8aff851f7b35a10fd6c4280aa05d746a8818e02c0c15ff"
+      "sha256": "1346d11064e178eaedb348bd2e28e56bb96479fea68df98091a3c77883d17917"
     },
     {
       "doc_id": "product-10086133363559",
       "title": "HUAWEI Mate 80 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086133363559&sbomCode=2601010586341"
-      ],
       "path": "01_参数与卖点_KB/手机/10086133363559_HUAWEI_Mate_80.md",
-      "characters": 6793,
+      "characters": 6792,
       "estimated_chunks_1200": 6,
-      "sha256": "27e0e1fca1bb639ee5a8256339e99a3d64203b4edd9395488d2cdcb417298ce3"
+      "sha256": "ce1988acdcd96b6f5eb11c821e695a455e8858cd0de4d41cd0a2812678971da4"
     },
     {
       "doc_id": "product-10086153236238",
       "title": "HUAWEI Pura 80 Pro+ 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086153236238"
-      ],
       "path": "01_参数与卖点_KB/手机/10086153236238_HUAWEI_Pura_80_Pro+.md",
-      "characters": 2079,
+      "characters": 2078,
       "estimated_chunks_1200": 2,
-      "sha256": "655c53aeaca382e733b8d4d44789b46ce7aad5e7eba1db78dc3fb8fb3b949550"
+      "sha256": "451e5dcc89f49867ebfc89f74bd8d27c7b2ee7866892670611240a881838a15c"
     },
     {
       "doc_id": "product-10086174757473",
       "title": "华为畅享 90 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086174757473"
-      ],
       "path": "01_参数与卖点_KB/手机/10086174757473_华为畅享_90.md",
-      "characters": 1483,
+      "characters": 1482,
       "estimated_chunks_1200": 2,
-      "sha256": "c30f74820259faf0ae69cba20a3917a5bbc42426d84009037aceedfece02ac8d"
+      "sha256": "7d9abda0475ccbea95371a05af72e2d83bb627ade907d9d0fbf5fc5904678b22"
     },
     {
       "doc_id": "product-10086259366534",
       "title": "HUAWEI Mate 70 Pro 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086259366534"
-      ],
       "path": "01_参数与卖点_KB/手机/10086259366534_HUAWEI_Mate_70_Pro.md",
-      "characters": 2045,
+      "characters": 2044,
       "estimated_chunks_1200": 2,
-      "sha256": "23e253ce75773603b5378549b2530f15c08841fa326ca09c1f11dff3d6198c73"
+      "sha256": "4e3b696b6df919596c9e46cd857d01257675821ac14ba0021bb6294b34a6d201"
     },
     {
       "doc_id": "product-10086270081540",
       "title": "华为畅享 90 Pro Max 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086270081540"
-      ],
       "path": "01_参数与卖点_KB/手机/10086270081540_华为畅享_90_Pro_Max.md",
-      "characters": 1576,
+      "characters": 1575,
       "estimated_chunks_1200": 2,
-      "sha256": "3ee9b934758122c17ff9ec518da5e392c68065f97dd61d29a88880b8794ee111"
+      "sha256": "3a47dbd459c5f31b32ce03e9dd675b5e8934970d1634bb99c069879039965943"
     },
     {
       "doc_id": "product-10086316355082",
       "title": "HUAWEI Pura 80 Pro 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086316355082"
-      ],
       "path": "01_参数与卖点_KB/手机/10086316355082_HUAWEI_Pura_80_Pro.md",
-      "characters": 2068,
+      "characters": 2067,
       "estimated_chunks_1200": 2,
-      "sha256": "7c4b17a68e25417796b79f5ab24d473b4175603a2f9a912eb6fb72300f14c217"
+      "sha256": "07ebfca7e756299d750d2de23bb519a5a4fbbf1edfd5f7044483dcaf9713df24"
     },
     {
       "doc_id": "product-10086364337052",
       "title": "HUAWEI Pura 80 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086364337052"
-      ],
       "path": "01_参数与卖点_KB/手机/10086364337052_HUAWEI_Pura_80.md",
-      "characters": 2023,
+      "characters": 2022,
       "estimated_chunks_1200": 2,
-      "sha256": "bc8327f6ef8a53365e8729b267f95f1bd624dbd8d93b7d3875d72ea5d520debe"
+      "sha256": "90fc828bcc9ac0b1d293bdb66815aaace8a3184f7ad462b305d2db5eb8115ebc"
     },
     {
       "doc_id": "product-10086384239615",
       "title": "HUAWEI Mate 70 Air 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086384239615"
-      ],
       "path": "01_参数与卖点_KB/手机/10086384239615_HUAWEI_Mate_70_Air.md",
-      "characters": 1952,
+      "characters": 1951,
       "estimated_chunks_1200": 2,
-      "sha256": "c98183e19d5a0b85a8e2e39841a40d469e251477ba509458cfa643a78309c37d"
+      "sha256": "1eda01ecf34e38c2623cdabafa9d265f0fff9ec61748acf94ca21e13d2353a97"
     },
     {
       "doc_id": "product-10086454848882",
       "title": "HUAWEI Pura 90 Pro Max 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086454848882&sbomCode=2601010614324"
-      ],
       "path": "01_参数与卖点_KB/手机/10086454848882_HUAWEI_Pura_90_Pro_Max.md",
-      "characters": 6757,
+      "characters": 6756,
       "estimated_chunks_1200": 6,
-      "sha256": "bf1912a0b8ce973dd22182ab4b3ae784496ec1dc75046b7e0ac1f4661ec7bfcd"
+      "sha256": "d13faaa1f82502bf11755bab7600656f83bb8e50c37e4143332bebb553a90de6"
     },
     {
       "doc_id": "product-10086476013098",
       "title": "HUAWEI Mate 80 Pro 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086476013098"
-      ],
       "path": "01_参数与卖点_KB/手机/10086476013098_HUAWEI_Mate_80_Pro.md",
-      "characters": 2133,
+      "characters": 2132,
       "estimated_chunks_1200": 2,
-      "sha256": "6591c72a85af613e7189e3e2a1acff2e4a96645cc87b3d8da37739d522ab4c7c"
+      "sha256": "3d6255f8880dd31408a7a030e946ce687ae73a57661e5f3759e889fd5e3b910e"
     },
     {
       "doc_id": "product-10086511284892",
       "title": "HUAWEI Mate 80 RS 非凡大师 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086511284892"
-      ],
       "path": "01_参数与卖点_KB/手机/10086511284892_HUAWEI_Mate_80_RS_非凡大师.md",
-      "characters": 2257,
+      "characters": 2256,
       "estimated_chunks_1200": 2,
-      "sha256": "308ad8e80a68ded422c77303726013c09fc91fa1247d974422fee0bae83b9d3c"
+      "sha256": "b9d6b80f1cb71caed6baebef6b269372176cc988318112e174f4ca0985ec5a41"
     },
     {
       "doc_id": "product-10086524794571",
       "title": "nova 16 Ultra 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086524794571&sbomCode=2601010625710"
-      ],
       "path": "01_参数与卖点_KB/手机/10086524794571_nova_16_Ultra.md",
-      "characters": 6429,
+      "characters": 6428,
       "estimated_chunks_1200": 6,
-      "sha256": "225af0683833271975b5831f62028c2321f416b75e247e90a682cabc933cc303"
+      "sha256": "2c52dd49653c4aaed3cc12ffae96e64d6dbc01c8afcb3302c5b3b335243daac8"
     },
     {
       "doc_id": "product-10086621059876",
       "title": "HUAWEI Pura X Max 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086621059876"
-      ],
       "path": "01_参数与卖点_KB/手机/10086621059876_HUAWEI_Pura_X_Max.md",
-      "characters": 2301,
+      "characters": 2300,
       "estimated_chunks_1200": 2,
-      "sha256": "d2ff232c6bce444930ecb57da8b15b451afb6ed4b17fdb5f186b2fb090b5ed20"
+      "sha256": "f80522d22f91b2e66a597243b82051c2f42f3650ec0524863c9d55342496a2c7"
     },
     {
       "doc_id": "product-10086658434293",
       "title": "nova 16z 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086658434293&sbomCode=2601010626007"
-      ],
       "path": "01_参数与卖点_KB/手机/10086658434293_nova_16z.md",
-      "characters": 5659,
+      "characters": 5658,
       "estimated_chunks_1200": 5,
-      "sha256": "51850741e6c87b619e4a206abbe82a99b78beea1238fc78ecdd2b71e689a90c9"
+      "sha256": "c2aa5bd506e7248f7b7e3f04146d68adcc9f19729cde4053f56076baf777a47b"
     },
     {
       "doc_id": "product-10086724171251",
       "title": "HUAWEI Mate 80 Pro Max 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086724171251&sbomCode=2601010586509"
-      ],
       "path": "01_参数与卖点_KB/手机/10086724171251_HUAWEI_Mate_80_Pro_Max.md",
-      "characters": 7072,
+      "characters": 7071,
       "estimated_chunks_1200": 6,
-      "sha256": "7a54b4da8d3416ef66adcb8124455243198b75234d8110977e47f011a306f9ff"
+      "sha256": "5317867e88c858e8876973d10843e56f5c5779efb3b55cda0e3547abda1177b9"
     },
     {
       "doc_id": "product-10086754422315",
       "title": "HUAWEI Mate XTs 非凡大师 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_product_or_specs_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086754422315&sbomCode=2601010580035",
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2589%258B%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"
-      ],
       "path": "01_参数与卖点_KB/手机/10086754422315_HUAWEI_Mate_XTs_非凡大师.md",
-      "characters": 1449,
+      "characters": 1445,
       "estimated_chunks_1200": 2,
-      "sha256": "3bb9e93b4d945235061b4a1018820db4f669c0b8404f8b805cf305f90e5080d7"
+      "sha256": "1f6ced5947267d8ca8de12b615601079f0078d7669404f1f00555dc087026c53"
     },
     {
       "doc_id": "product-10086838189168",
       "title": "HUAWEI Mate X7 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086838189168"
-      ],
       "path": "01_参数与卖点_KB/手机/10086838189168_HUAWEI_Mate_X7.md",
-      "characters": 2215,
+      "characters": 2214,
       "estimated_chunks_1200": 2,
-      "sha256": "0d514d953dca0a407ffdcae513515f014c9dbe276cd25fd5a45a86fd71b5d01a"
+      "sha256": "bb9e8564a6542979644a3e4261d59806db0e08ed16b882034a1e939e95d33de1"
     },
     {
       "doc_id": "product-10086839537149",
       "title": "HUAWEI Pura 80 Ultra 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086839537149"
-      ],
       "path": "01_参数与卖点_KB/手机/10086839537149_HUAWEI_Pura_80_Ultra.md",
-      "characters": 2146,
+      "characters": 2145,
       "estimated_chunks_1200": 2,
-      "sha256": "6a57dcf16529767b40bc48ea8330faef8094b598ad005c6ea1d468f522c65400"
+      "sha256": "e5ae2ccbfbbb077d5d8087e5e5b856d288f4f599b2c0d130737fabfbc77617f4"
     },
     {
       "doc_id": "product-10086843224230",
       "title": "HUAWEI Mate X6 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086843224230"
-      ],
       "path": "01_参数与卖点_KB/手机/10086843224230_HUAWEI_Mate_X6.md",
-      "characters": 2198,
+      "characters": 2197,
       "estimated_chunks_1200": 2,
-      "sha256": "efe8f72d0f5246663418c2d892b782add5107ff6472a31d29241d71f00b14d0b"
+      "sha256": "c0e055cfc19f81efc6dc968ed07da4a09cdbba73983c85ffad127d36a6d98131"
     },
     {
       "doc_id": "product-10086850799769",
       "title": "nova 16 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086850799769&sbomCode=2601010625916"
-      ],
       "path": "01_参数与卖点_KB/手机/10086850799769_nova_16.md",
-      "characters": 5662,
+      "characters": 5661,
       "estimated_chunks_1200": 5,
-      "sha256": "953ae50003ab4bd2006256ac373ae729e0b2d675c51e973746063eaa25e05772"
+      "sha256": "c1de086d5fb03ae55ff4a7e733f2abf0385f9aba3eef5bc980929e597a3edbf1"
     },
     {
       "doc_id": "product-10086866372688",
       "title": "HUAWEI Pura 90 Pro 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086866372688&sbomCode=2601010614420"
-      ],
       "path": "01_参数与卖点_KB/手机/10086866372688_HUAWEI_Pura_90_Pro.md",
-      "characters": 6546,
+      "characters": 6545,
       "estimated_chunks_1200": 6,
-      "sha256": "62ef8ffa3017791ace586d916948b1281244481a729ef04c849a820924c75c54"
+      "sha256": "f983a69538cdaf82b7812cb37bdb996656386c93f12b3541762f4901b3bd91c9"
     },
     {
       "doc_id": "product-10086898360689",
       "title": "HUAWEI Mate 70 Pro 优享版 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086898360689"
-      ],
       "path": "01_参数与卖点_KB/手机/10086898360689_HUAWEI_Mate_70_Pro_优享版.md",
-      "characters": 2048,
+      "characters": 2047,
       "estimated_chunks_1200": 2,
-      "sha256": "a4ced71bacb648df2fe84319b9fcdeeacfb75a49c557a64904d73956bcd2d09f"
+      "sha256": "5fc0d1905a5c03d0a5488b7adb869d00e7f43d348fc83438b61a96939ee5a286"
     },
     {
       "doc_id": "product-10086941643085",
       "title": "nova 16 Pro 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086941643085&sbomCode=2601010625815"
-      ],
       "path": "01_参数与卖点_KB/手机/10086941643085_nova_16_Pro.md",
-      "characters": 5892,
+      "characters": 5891,
       "estimated_chunks_1200": 5,
-      "sha256": "1bd9fb643416309eea20bee034fbf17d6b06ec81c04de18f7d0ef9d33e85d0c2"
+      "sha256": "fb4cefddce8ad59b134678601909219d55a8136d84f0227072ece8b653473343"
     },
     {
       "doc_id": "product-10086981094378",
       "title": "HUAWEI Mate 80 Pro Max 风驰版 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086981094378"
-      ],
       "path": "01_参数与卖点_KB/手机/10086981094378_HUAWEI_Mate_80_Pro_Max_风驰版.md",
-      "characters": 2165,
+      "characters": 2164,
       "estimated_chunks_1200": 2,
-      "sha256": "ec1656ed4b6afa97b1ac82b7b32875f5a5a6ac112c09ccb6031ed22c1bba3edf"
+      "sha256": "ffd3c90eb2ed50228702b6aeb37cf8e9aa8b103765111e1310037cb82981077b"
     },
     {
       "doc_id": "product-10086989076790",
       "title": "HUAWEI Mate 70 Pro+ 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086989076790"
-      ],
       "path": "01_参数与卖点_KB/手机/10086989076790_HUAWEI_Mate_70_Pro+.md",
-      "characters": 2090,
+      "characters": 2089,
       "estimated_chunks_1200": 2,
-      "sha256": "7f94ddf160f3ee5cf62844cd09277c44a99b613910036f35e820d93293f46d40"
+      "sha256": "bd354053fb3ae6d973f2df470a38dbe7732ece7eb6e87e3bd7f0c3d4648e0a1c"
     },
     {
       "doc_id": "product-current-pura-90",
       "title": "HUAWEI Pura 90 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_product_or_specs_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/phones/pura90/specs/",
-        "https://consumer.huawei.com/cn/phones/pura90/",
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2589%258B%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"
-      ],
       "path": "01_参数与卖点_KB/手机/current_HUAWEI_Pura_90.md",
-      "characters": 1514,
+      "characters": 1510,
       "estimated_chunks_1200": 2,
-      "sha256": "cd58605663ec29feb516a8abcd25404150ea618d8bc7c5bfb4187887f6d5ec8e"
+      "sha256": "2103cb544a158444f383b1c01cb7247d2f703f8b64e5828011bfc8119fce28f7"
     },
     {
       "doc_id": "product-current-changxiang-90-plus",
       "title": "华为畅享 90 Plus 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_product_or_specs_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/phones/changxiang-90-plus/specs/",
-        "https://consumer.huawei.com/cn/phones/changxiang-90-plus/",
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2589%258B%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"
-      ],
       "path": "01_参数与卖点_KB/手机/current_华为畅享_90_Plus.md",
-      "characters": 1409,
+      "characters": 1405,
       "estimated_chunks_1200": 2,
-      "sha256": "ab7528ca4512dd88cd5fbd1d7b041924f549191cdf99e3bc4d7f51753f3ab1e8"
+      "sha256": "b808ddfd813b01a21203fd3a2491c4b0e3ac90706555a463a305d4b05e2c4856"
+    },
+    {
+      "doc_id": "product-打印机-bisheng-laser-x1",
+      "title": "华为毕昇激光打印机 X1 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/打印机/bisheng-laser-x1_华为毕昇激光打印机 X1.md",
+      "characters": 1161,
+      "estimated_chunks_1200": 1,
+      "sha256": "d9a00fb89892d609b849f87088ed9d88b67b486fe048177ae0ae0bb38d3ebe09"
+    },
+    {
+      "doc_id": "product-智慧屏-matetv-max",
+      "title": "华为智慧屏 MateTV Max 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智慧屏/matetv-max_华为智慧屏 MateTV Max.md",
+      "characters": 1274,
+      "estimated_chunks_1200": 2,
+      "sha256": "6097b8939d4e00dc94a8f705d4be36865fc02dc07edb78efa45cd5f25e8a0b40"
+    },
+    {
+      "doc_id": "product-智慧屏-matetv-pro",
+      "title": "华为智慧屏 MateTV Pro 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智慧屏/matetv-pro_华为智慧屏 MateTV Pro.md",
+      "characters": 1274,
+      "estimated_chunks_1200": 2,
+      "sha256": "b58ba1140110adc5bba17757e470693593a47eec1a66057a11fc147179e006c6"
+    },
+    {
+      "doc_id": "product-智慧屏-matetv",
+      "title": "华为智慧屏 MateTV 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智慧屏/matetv_华为智慧屏 MateTV.md",
+      "characters": 1267,
+      "estimated_chunks_1200": 2,
+      "sha256": "b27ba455cfb80d6a396cfc949a7396f4972a91b3a483ac9dd6714e50211367d8"
+    },
+    {
+      "doc_id": "product-智慧屏-s6-pro",
+      "title": "华为智慧屏 S6 Pro 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智慧屏/s6-pro_华为智慧屏 S6 Pro.md",
+      "characters": 1272,
+      "estimated_chunks_1200": 2,
+      "sha256": "293c97a4762565ec1e6cfc60128f69800a30fe19641213d5a3599c768a37507c"
+    },
+    {
+      "doc_id": "product-智慧屏-s7-pro",
+      "title": "华为智慧屏 S7 Pro 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智慧屏/s7-pro_华为智慧屏 S7 Pro.md",
+      "characters": 1261,
+      "estimated_chunks_1200": 2,
+      "sha256": "d8a5150151263a8909bf84618e79c1fbb7beeedb555b33f033c04ea6949861e9"
+    },
+    {
+      "doc_id": "product-智慧屏-s7",
+      "title": "华为智慧屏 S7 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智慧屏/s7_华为智慧屏 S7.md",
+      "characters": 1247,
+      "estimated_chunks_1200": 2,
+      "sha256": "df8715c1c2c5951fd0bab92703af88dcbb2d059e14406bd73516889fb44a8088"
+    },
+    {
+      "doc_id": "product-智慧屏-s7x-pro",
+      "title": "华为智慧屏 S7X Pro 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智慧屏/s7x-pro_华为智慧屏 S7X Pro.md",
+      "characters": 1264,
+      "estimated_chunks_1200": 2,
+      "sha256": "0f2839fffd288f835b0dea1891849b147771023fa564bf825c5e6b1035a44006"
+    },
+    {
+      "doc_id": "product-智慧屏-se43",
+      "title": "华为智慧屏 SE43 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智慧屏/se43_华为智慧屏 SE43.md",
+      "characters": 1258,
+      "estimated_chunks_1200": 2,
+      "sha256": "f6e434e7ce378b982a301a62f0d43f45629bf7b1c4c93fdbe2a2351d11a46a1b"
+    },
+    {
+      "doc_id": "product-智慧屏-v6",
+      "title": "华为智慧屏 V6 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智慧屏/v6_华为智慧屏 V6.md",
+      "characters": 1259,
+      "estimated_chunks_1200": 2,
+      "sha256": "19045992d0ad4eb81880a89cb6601e29811fdb30b29e0fec6dd17583f455e50a"
+    },
+    {
+      "doc_id": "product-智慧屏-vision-4-new",
+      "title": "华为Vision智慧屏 4 New 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智慧屏/vision-4-new_华为Vision智慧屏 4 New.md",
+      "characters": 1352,
+      "estimated_chunks_1200": 2,
+      "sha256": "7bef90cd0c43ca0adc8b37b3507a196d5b6e7d1f7291bd83a2d43fc48d287007"
+    },
+    {
+      "doc_id": "product-智慧屏-vision-5-pro",
+      "title": "华为Vision智慧屏 5 Pro 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智慧屏/vision-5-pro_华为Vision智慧屏 5 Pro.md",
+      "characters": 1275,
+      "estimated_chunks_1200": 2,
+      "sha256": "d817df3560ba04a36fc15f4bc6ae3eb823b45f4a347087c3a360d73b76a58415"
+    },
+    {
+      "doc_id": "product-智慧屏-vision-5-se-enjoy",
+      "title": "华为Vision智慧屏 5 SE 优享版 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智慧屏/vision-5-se-enjoy_华为Vision智慧屏 5 SE 优享版.md",
+      "characters": 1287,
+      "estimated_chunks_1200": 2,
+      "sha256": "146a4ef66930d473f00989a4fca06861a8cbd6ff54b0188ccc3e19eaf3b90a0e"
+    },
+    {
+      "doc_id": "product-智慧屏-vision-5-se",
+      "title": "华为Vision智慧屏 5 SE 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智慧屏/vision-5-se_华为Vision智慧屏 5 SE.md",
+      "characters": 1276,
+      "estimated_chunks_1200": 2,
+      "sha256": "0636a971f1ca5c9d40a72312c4dcf80f6e5673ecd65ba0e8fab86d1df2a64da0"
+    },
+    {
+      "doc_id": "product-智慧屏-vision-5",
+      "title": "华为Vision智慧屏 5 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智慧屏/vision-5_华为Vision智慧屏 5.md",
+      "characters": 1276,
+      "estimated_chunks_1200": 2,
+      "sha256": "70f9c5157e4697e7edcdc3a6aee379c8baf45604a7c7e253f9349fc9b5d57703"
+    },
+    {
+      "doc_id": "product-智慧屏-vision-6-pro",
+      "title": "华为Vision智慧屏 6 Pro 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智慧屏/vision-6-pro_华为Vision智慧屏 6 Pro.md",
+      "characters": 1194,
+      "estimated_chunks_1200": 1,
+      "sha256": "8bc1fbbf6314f65d7ac0f5684510394564351db0760c22d8ca7d65fff15370ba"
+    },
+    {
+      "doc_id": "product-智慧屏-vision-6-se-rgb",
+      "title": "华为Vision智慧屏 6 SE RGB 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智慧屏/vision-6-se-rgb_华为Vision智慧屏 6 SE RGB.md",
+      "characters": 1365,
+      "estimated_chunks_1200": 2,
+      "sha256": "14435fdd168094db96f5b5b380f63825103c63e556d739cd5b967635fa692b37"
+    },
+    {
+      "doc_id": "product-智慧屏-vision-6-se",
+      "title": "华为Vision智慧屏 6 SE 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智慧屏/vision-6-se_华为Vision智慧屏 6 SE.md",
+      "characters": 1194,
+      "estimated_chunks_1200": 1,
+      "sha256": "62912a745cf9262efdde12bc5142455953b6f17418aab50ce680461b9528d61c"
+    },
+    {
+      "doc_id": "product-智慧屏-vision-6",
+      "title": "华为Vision智慧屏 6 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智慧屏/vision-6_华为Vision智慧屏 6.md",
+      "characters": 1181,
+      "estimated_chunks_1200": 1,
+      "sha256": "168a7fadf4c2f9204d611625fd713adeb6b7ba481bd5c8d845cbe4171c1eddb5"
+    },
+    {
+      "doc_id": "product-智能眼镜-ai-glasses",
+      "title": "华为 AI 眼镜 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智能眼镜/ai-glasses_华为 AI 眼镜.md",
+      "characters": 1255,
+      "estimated_chunks_1200": 2,
+      "sha256": "0fec260acee8615717a2c1fb3cdaf6f09a8070d972fffc9047918163abc35b83"
+    },
+    {
+      "doc_id": "product-智能眼镜-smart-glasses-2",
+      "title": "华为智能眼镜 2 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智能眼镜/smart-glasses-2_华为智能眼镜 2.md",
+      "characters": 1266,
+      "estimated_chunks_1200": 2,
+      "sha256": "d2d9c06fbf296e0c48c6de7c824ca6a678bf3298460a49ea1c73c0cda3299197"
+    },
+    {
+      "doc_id": "product-智能门锁-lock-2-enjoy",
+      "title": "华为智能门锁 2 悦享版 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智能门锁/lock-2-enjoy_华为智能门锁 2 悦享版.md",
+      "characters": 1298,
+      "estimated_chunks_1200": 2,
+      "sha256": "6acc37b8eef569e93abd1eb8d986d2b2d191b1a86350f30920e35a8925ec51dd"
+    },
+    {
+      "doc_id": "product-智能门锁-lock-2-premium",
+      "title": "华为智能门锁 2 尊享版 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智能门锁/lock-2-premium_华为智能门锁 2 尊享版.md",
+      "characters": 1300,
+      "estimated_chunks_1200": 2,
+      "sha256": "a9988eeb1748fdd1a4327dcc2465de720f34cf076b45e997cfadceb06478012f"
+    },
+    {
+      "doc_id": "product-智能门锁-lock-2-pro",
+      "title": "华为智能门锁 2 Pro 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智能门锁/lock-2-pro_华为智能门锁 2 Pro.md",
+      "characters": 1197,
+      "estimated_chunks_1200": 1,
+      "sha256": "1c9cea929595c9e4397e9f1a54d0d14dc318f8b54d4dba3b365304bcf88e2f69"
+    },
+    {
+      "doc_id": "product-智能门锁-lock-2-ultra",
+      "title": "华为智能门锁 2 Ultra 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智能门锁/lock-2-ultra_华为智能门锁 2 Ultra.md",
+      "characters": 1303,
+      "estimated_chunks_1200": 2,
+      "sha256": "b668b0b9e60da671d3284059d22f1814e03c5f615a4e2d39593d174dfe1aefaa"
+    },
+    {
+      "doc_id": "product-智能门锁-lock-2",
+      "title": "华为智能门锁 2 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智能门锁/lock-2_华为智能门锁 2.md",
+      "characters": 1282,
+      "estimated_chunks_1200": 2,
+      "sha256": "9b3f4db3fc64087c3d8df6c533149520b15da5d9f92cc880c3496d6521f82e74"
+    },
+    {
+      "doc_id": "product-智能门锁-lock-m2",
+      "title": "华为智能门锁 M2 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智能门锁/lock-m2_华为智能门锁 M2.md",
+      "characters": 1288,
+      "estimated_chunks_1200": 2,
+      "sha256": "39e254852f3570137dd860350babadc544702bbcf9aa8a91dd9eb68d91e1b180"
+    },
+    {
+      "doc_id": "product-智能门锁-lock-x1",
+      "title": "华为智能门锁 X1 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/智能门锁/lock-x1_华为智能门锁 X1.md",
+      "characters": 1189,
+      "estimated_chunks_1200": 1,
+      "sha256": "12d7a733b090ebdd8b1904a5935038e571bdf883c471ed689ed29d1d7ef5fca2"
+    },
+    {
+      "doc_id": "catalog-主要配件",
+      "title": "主要配件产品知识目录",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/目录与范围/catalog_主要配件.md",
+      "characters": 2377,
+      "estimated_chunks_1200": 2,
+      "sha256": "3bf63427987871166169d36141bd7b205025ba676908fe7f104395fbe66f5e64"
+    },
+    {
+      "doc_id": "catalog-家庭存储",
+      "title": "家庭存储产品知识目录",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/目录与范围/catalog_家庭存储.md",
+      "characters": 729,
+      "estimated_chunks_1200": 1,
+      "sha256": "c56fe9b1ccd47d61be1218aa94055e1bdb7f6b8b2a2c00a083c92e317d3f6583"
     },
     {
       "doc_id": "catalog-平板",
-      "title": "第一版平板商品知识目录",
+      "title": "平板产品知识目录",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "平板",
-        "核心商品"
-      ],
-      "source_type": "derived_catalog_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086518319242&sbomCode=2701010122623",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086294960453",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086486839777&sbomCode=2701010131701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086590821009&sbomCode=2701010126301",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086287244006&sbomCode=2701010123211",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086106814226&sbomCode=2701010122029",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086120212240",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086127502687&sbomCode=2701010130502",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086426290126&sbomCode=2701010132701"
-      ],
       "path": "01_参数与卖点_KB/目录与范围/catalog_平板.md",
-      "characters": 2379,
-      "estimated_chunks_1200": 2,
-      "sha256": "bf12bd9cef68d51474b4b91712933d7dc6e803379994c090293b0fab266a12eb"
+      "characters": 1022,
+      "estimated_chunks_1200": 1,
+      "sha256": "82e6a1c8c212c7a0ae7ca5c8a3db5dac300ac3d535b4f8168cd798213c076e6c"
     },
     {
       "doc_id": "catalog-手机",
-      "title": "第一版手机商品知识目录",
+      "title": "手机产品知识目录",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "手机",
-        "核心商品"
-      ],
-      "source_type": "derived_catalog_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086384239615",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086898360689",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086259366534",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086989076790",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086724171251&sbomCode=2601010586509",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086981094378",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086476013098",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086511284892",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086133363559&sbomCode=2601010586341",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086843224230",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086838189168",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086316355082",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086153236238",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086839537149",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086364337052",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086454848882&sbomCode=2601010614324",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086866372688&sbomCode=2601010614420",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086621059876",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086941643085&sbomCode=2601010625815",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086524794571&sbomCode=2601010625710",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086850799769&sbomCode=2601010625916",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086658434293&sbomCode=2601010626007",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086270081540",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086174757473"
-      ],
       "path": "01_参数与卖点_KB/目录与范围/catalog_手机.md",
-      "characters": 4852,
-      "estimated_chunks_1200": 5,
-      "sha256": "24f6c3adf9b2d6c4de64743a3a131486e7338e6721e153ff6050eb8773016587"
+      "characters": 1793,
+      "estimated_chunks_1200": 2,
+      "sha256": "46e46c8c509ae61138f82a64e2b4dfa905fe9dbf462d3abe78b0a6e871652aee"
+    },
+    {
+      "doc_id": "catalog-打印机",
+      "title": "打印机产品知识目录",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/目录与范围/catalog_打印机.md",
+      "characters": 708,
+      "estimated_chunks_1200": 1,
+      "sha256": "68d5d6295163f32fc5dc285a8af8c090127f03e6900f2be78a314c8f4a1909f3"
+    },
+    {
+      "doc_id": "catalog-智慧屏",
+      "title": "智慧屏产品知识目录",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/目录与范围/catalog_智慧屏.md",
+      "characters": 1939,
+      "estimated_chunks_1200": 2,
+      "sha256": "5bee0d0d4c732db5b0078a36aa014d03c72132ead401b5c15aac5e8fa1483ec4"
+    },
+    {
+      "doc_id": "catalog-智能眼镜",
+      "title": "智能眼镜产品知识目录",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/目录与范围/catalog_智能眼镜.md",
+      "characters": 762,
+      "estimated_chunks_1200": 1,
+      "sha256": "55970da7e07fb5075c4e44a1d2e04c33ab8e55f6c5510a29a873895917a3dd86"
+    },
+    {
+      "doc_id": "catalog-智能门锁",
+      "title": "智能门锁产品知识目录",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/目录与范围/catalog_智能门锁.md",
+      "characters": 1122,
+      "estimated_chunks_1200": 1,
+      "sha256": "a5ce8605d00871031616ccf14e4af21eb257fdef190bb1512e1fd8c8186b936e"
     },
     {
       "doc_id": "catalog-笔记本",
-      "title": "第一版笔记本商品知识目录",
+      "title": "笔记本产品知识目录",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "笔记本",
-        "核心商品"
-      ],
-      "source_type": "derived_catalog_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086627212823&sbomCode=2801010174936",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086097339191&sbomCode=2801010196902",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086159780677&sbomCode=2801010170615",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086032697504",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086600621238&sbomCode=2801010152845",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086715793338&sbomCode=2801010168126",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086297718748",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086309170231",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086702263930&sbomCode=2801010187204"
-      ],
       "path": "01_参数与卖点_KB/目录与范围/catalog_笔记本.md",
-      "characters": 2235,
+      "characters": 872,
+      "estimated_chunks_1200": 1,
+      "sha256": "ab9db69404d6dffd593769d6ac9b86773b9db5e38edaf1dd18011fa1fc476aff"
+    },
+    {
+      "doc_id": "catalog-路由",
+      "title": "路由产品知识目录",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/目录与范围/catalog_路由.md",
+      "characters": 2381,
       "estimated_chunks_1200": 2,
-      "sha256": "1ec4c88e4acd9f0d8c690ed150771b3f079d0e0d1b16589b2fcddda29beb7db8"
+      "sha256": "3fcd974733b7a896e11b5827565c5faffa19704bd97caefc59a34b5feab67474"
+    },
+    {
+      "doc_id": "catalog-音箱",
+      "title": "音箱产品知识目录",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/目录与范围/catalog_音箱.md",
+      "characters": 1038,
+      "estimated_chunks_1200": 1,
+      "sha256": "08334acee807e601c4eedda2fcb6e80a4efbb86775eaf85cc84df017a32b021a"
     },
     {
       "doc_id": "product-10086032697504",
       "title": "HUAWEI MateBook D 14 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "笔记本",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086032697504"
-      ],
       "path": "01_参数与卖点_KB/笔记本/10086032697504_HUAWEI_MateBook_D_14.md",
-      "characters": 1215,
+      "characters": 1214,
       "estimated_chunks_1200": 2,
-      "sha256": "c62dcce8c46645d61a02b580798c5f57ef4c355e4a7baf0e6596f9c299c8711b"
+      "sha256": "7f884d8e96e9b163c2a6f066595b959ba99022de09b9cad8943050a171d5a428"
     },
     {
       "doc_id": "product-10086097339191",
       "title": "HUAWEI MateBook 14 鸿蒙版 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "笔记本",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086097339191&sbomCode=2801010196902"
-      ],
       "path": "01_参数与卖点_KB/笔记本/10086097339191_HUAWEI_MateBook_14_鸿蒙版.md",
-      "characters": 2890,
+      "characters": 2889,
       "estimated_chunks_1200": 3,
-      "sha256": "5269ab8f28c4203d731eeacff981a1af0bcf431e78462d84601ea59d43ee9137"
+      "sha256": "758358ab92672812e336041c28470d2e072f4079efb5d54dc93c856b9de4bde8"
     },
     {
       "doc_id": "product-10086159780677",
       "title": "HUAWEI MateBook D 14 SE 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "笔记本",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086159780677&sbomCode=2801010170615"
-      ],
       "path": "01_参数与卖点_KB/笔记本/10086159780677_HUAWEI_MateBook_D_14_SE.md",
-      "characters": 3031,
+      "characters": 3030,
       "estimated_chunks_1200": 3,
-      "sha256": "f334e4470d9ecf52a53dc55a995ef19c57c0bf896c4a6b36826d8ccae4241527"
+      "sha256": "d63fad1060ab31affb315d738a5cd41d8697d5d9ad06b3d6aeef703f376c8a28"
     },
     {
       "doc_id": "product-10086297718748",
       "title": "HUAWEI MateBook Fold 非凡大师 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "笔记本",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086297718748"
-      ],
       "path": "01_参数与卖点_KB/笔记本/10086297718748_HUAWEI_MateBook_Fold_非凡大师.md",
-      "characters": 1302,
+      "characters": 1301,
       "estimated_chunks_1200": 2,
-      "sha256": "eb5aa53849b6f038087223e98a33a3f55de774c7f559ee91340aedb90b0c1ecb"
+      "sha256": "503d94415d75ab5537cf37f0d484eabaeeb026b978fd3d7b5d9129f26aacfe6f"
     },
     {
       "doc_id": "product-10086309170231",
       "title": "HUAWEI MateBook GT 14 酷睿 Ultra 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "笔记本",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086309170231"
-      ],
       "path": "01_参数与卖点_KB/笔记本/10086309170231_HUAWEI_MateBook_GT_14_酷睿_Ultra.md",
-      "characters": 1220,
+      "characters": 1219,
       "estimated_chunks_1200": 2,
-      "sha256": "f52577ded7ade35a5c747983946eea8a756775ebb822e6eaa03720c0e27c8070"
+      "sha256": "3d9701b0a64323c7df843970999519e62f2137f7c66a79f6f068748026fdae21"
     },
     {
       "doc_id": "product-10086600621238",
       "title": "HUAWEI MateBook D 16 SE 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "笔记本",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086600621238&sbomCode=2801010152845"
-      ],
       "path": "01_参数与卖点_KB/笔记本/10086600621238_HUAWEI_MateBook_D_16_SE.md",
-      "characters": 2947,
+      "characters": 2946,
       "estimated_chunks_1200": 3,
-      "sha256": "aabae923257a58a33cfe175f0b9bd46ef5e0167890d6228eae14480126a42cfb"
+      "sha256": "c87e85db78eceb82fa556f86934eb478c6ab4c84980de3ac149f79388821d2b8"
     },
     {
       "doc_id": "product-10086627212823",
       "title": "HUAWEI MateBook 14 酷睿 Ultra 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "笔记本",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086627212823&sbomCode=2801010174936"
-      ],
       "path": "01_参数与卖点_KB/笔记本/10086627212823_HUAWEI_MateBook_14_酷睿_Ultra.md",
-      "characters": 2972,
+      "characters": 2971,
       "estimated_chunks_1200": 3,
-      "sha256": "2f8e4834a4b351f98636061b63535053d8b687a4c900b79c96bc7b3f057b500b"
+      "sha256": "c3a0d9778f3e83cfb65fa85752ac167e0bc4b7d836b23656a1fa575b43d36ef5"
     },
     {
       "doc_id": "product-10086702263930",
       "title": "HUAWEI MateBook Pro 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "笔记本",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086702263930&sbomCode=2801010187204"
-      ],
       "path": "01_参数与卖点_KB/笔记本/10086702263930_HUAWEI_MateBook_Pro.md",
-      "characters": 3256,
+      "characters": 3255,
       "estimated_chunks_1200": 3,
-      "sha256": "08732e92d1e205325c8d15eb28d264df78cfe47fc87c654068cccbe6a526911b"
+      "sha256": "c4367559b49ff601280cc6cc74248d57ebd00bb2aebdd6d32b1629a40a356548"
     },
     {
       "doc_id": "product-10086715793338",
       "title": "HUAWEI MateBook D 16 参数与卖点",
       "intent_node": "参数与卖点 KB",
-      "scope": [
-        "笔记本",
-        "核心商品"
-      ],
-      "source_type": "official_product_page",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086715793338&sbomCode=2801010168126"
-      ],
       "path": "01_参数与卖点_KB/笔记本/10086715793338_HUAWEI_MateBook_D_16.md",
-      "characters": 2974,
+      "characters": 2973,
       "estimated_chunks_1200": 3,
-      "sha256": "6ff86dee7d3c6de28411bdaa0ac622c753f2fa171a7072f839b55e55e44ec591"
+      "sha256": "cd79b1687184fa864ad88f1789702817f0a579766ce01117d3e93214c048d97b"
+    },
+    {
+      "doc_id": "product-路由-ax1",
+      "title": "华为路由 AX1 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/ax1_华为路由 AX1.md",
+      "characters": 1252,
+      "estimated_chunks_1200": 2,
+      "sha256": "b5b014ff21f998a8c58079f66774e82726d85d2a45f8fdc9a88bf5f3189f1f49"
+    },
+    {
+      "doc_id": "product-路由-ax2-pro",
+      "title": "华为路由 AX2 Pro 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/ax2-pro_华为路由 AX2 Pro.md",
+      "characters": 1259,
+      "estimated_chunks_1200": 2,
+      "sha256": "efa76829ea42c6e1d0b9d50eadd898f54cf66474c33af6b646ff975f7054c09a"
+    },
+    {
+      "doc_id": "product-路由-ax3-pro-enjoy",
+      "title": "华为路由 AX3 Pro 悦享版 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/ax3-pro-enjoy_华为路由 AX3 Pro 悦享版.md",
+      "characters": 1205,
+      "estimated_chunks_1200": 2,
+      "sha256": "356b38d7a3f622138717aebf37961d86c89d0ce9704b81d755bc0352ac155adb"
+    },
+    {
+      "doc_id": "product-路由-ax3",
+      "title": "华为路由 AX3 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/ax3_华为路由 AX3.md",
+      "characters": 1259,
+      "estimated_chunks_1200": 2,
+      "sha256": "54e7a1a89c82eab6101da24208cd6ee91248c745159de54de0443cd299a522e3"
+    },
+    {
+      "doc_id": "product-路由-ax6-new",
+      "title": "华为路由 AX6 new 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/ax6-new_华为路由 AX6 new.md",
+      "characters": 1262,
+      "estimated_chunks_1200": 2,
+      "sha256": "7f3e557735db849a98c4267b832bd6effeac72b121a0c2e12e7cd22ce583aeeb"
+    },
+    {
+      "doc_id": "product-路由-ax6-pro",
+      "title": "华为路由 AX6 Pro 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/ax6-pro_华为路由 AX6 Pro.md",
+      "characters": 1264,
+      "estimated_chunks_1200": 2,
+      "sha256": "8b334421ae2f79186943c674dc0bb954a8249f18da7c43ab4ee13c76952ccc86"
+    },
+    {
+      "doc_id": "product-路由-be3-pro-plus",
+      "title": "华为路由 BE3 Pro+ 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/be3-pro-plus_华为路由 BE3 Pro+.md",
+      "characters": 1272,
+      "estimated_chunks_1200": 2,
+      "sha256": "1a7bd623df48a9afa51e9b8beb9af80778eea06d46317ad5cc29fc8f6df9cd4c"
+    },
+    {
+      "doc_id": "product-路由-be3-pro-thunder",
+      "title": "华为路由 BE3 Pro 雷电版 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/be3-pro-thunder_华为路由 BE3 Pro 雷电版.md",
+      "characters": 1281,
+      "estimated_chunks_1200": 2,
+      "sha256": "4398daed4c6ab211dc4c70f32317c6b89c050066e50c1ba237de7aa54e2d05e0"
+    },
+    {
+      "doc_id": "product-路由-be3-pro-wind",
+      "title": "华为路由 BE3 Pro 疾风版 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/be3-pro-wind_华为路由 BE3 Pro 疾风版.md",
+      "characters": 1278,
+      "estimated_chunks_1200": 2,
+      "sha256": "b9c7e1699372a6590645825aabc6262d291119c33892b070aeed640a623122d6"
+    },
+    {
+      "doc_id": "product-路由-be7-pro",
+      "title": "华为路由 BE7 Pro 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/be7-pro_华为路由 BE7 Pro.md",
+      "characters": 1262,
+      "estimated_chunks_1200": 2,
+      "sha256": "2da274fbdbe81d9a4ee12f55561e42ec1834ed5fb5422b778dd7e2c5c1a8ab74"
+    },
+    {
+      "doc_id": "product-路由-be7",
+      "title": "华为路由 BE7 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/be7_华为路由 BE7.md",
+      "characters": 1250,
+      "estimated_chunks_1200": 2,
+      "sha256": "1b0f2e9161d6c3e319f7648afc7073fc446023e5d12dbb9d2fcdcf581fb8de43"
+    },
+    {
+      "doc_id": "product-路由-mobile-router-2",
+      "title": "华为移动路由 2 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/mobile-router-2_华为移动路由 2.md",
+      "characters": 1258,
+      "estimated_chunks_1200": 2,
+      "sha256": "8d3393c732267dcc8dac0f9d58570a95fb788265648ae255150541fdca3f1964"
+    },
+    {
+      "doc_id": "product-路由-mobile-router-5",
+      "title": "华为移动路由 5 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/mobile-router-5_华为移动路由 5.md",
+      "characters": 1258,
+      "estimated_chunks_1200": 2,
+      "sha256": "66f559bf5c98aa43f7ba741b1ac0a0a42e48e0cf5dabb17e6d9db27ce3f34f1c"
+    },
+    {
+      "doc_id": "product-路由-mobile-router-pro",
+      "title": "华为移动路由 Pro 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/mobile-router-pro_华为移动路由 Pro.md",
+      "characters": 1268,
+      "estimated_chunks_1200": 2,
+      "sha256": "4cb178731c3e129fe376a335be16efdb77aed4dcc3c85b7ede60b43c333bd9f2"
+    },
+    {
+      "doc_id": "product-路由-mobile-wifi-3-pro",
+      "title": "华为随行 WiFi 3 Pro 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/mobile-wifi-3-pro_华为随行 WiFi 3 Pro.md",
+      "characters": 1273,
+      "estimated_chunks_1200": 2,
+      "sha256": "0dbf0441a500a24d2b7be9b227936aa56ee74528c3a7ed46d0753d87afe7209a"
+    },
+    {
+      "doc_id": "product-路由-mobile-wifi-5",
+      "title": "华为随行 WiFi 5 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/mobile-wifi-5_华为随行 WiFi 5.md",
+      "characters": 1260,
+      "estimated_chunks_1200": 2,
+      "sha256": "9966e5f80cb0dcef408e76d3ae5cbcfe22c2ffbc044a6f0d224688329375a8fa"
+    },
+    {
+      "doc_id": "product-路由-mobile-wifi-x",
+      "title": "华为随行 WiFi X 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/mobile-wifi-x_华为随行 WiFi X.md",
+      "characters": 1262,
+      "estimated_chunks_1200": 2,
+      "sha256": "669f410b8b3b16591bb446fb5f9e1b8f07214b8c265ccc89b7eefc65acb328af"
+    },
+    {
+      "doc_id": "product-路由-q6-ethernet-enjoy",
+      "title": "华为凌霄子母路由 Q6 网线版 优享版 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/q6-ethernet-enjoy_华为凌霄子母路由 Q6 网线版 优享版.md",
+      "characters": 1347,
+      "estimated_chunks_1200": 2,
+      "sha256": "8e45f9f048b15d4d9f40ac280c3fe767a12d8add0031a54a4fb84a92f9b92cad"
+    },
+    {
+      "doc_id": "product-路由-q6",
+      "title": "华为凌霄子母路由 Q6 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/q6_华为凌霄子母路由 Q6.md",
+      "characters": 1322,
+      "estimated_chunks_1200": 2,
+      "sha256": "46d4c647193cf69bed3223916e2db39f9a6e377f878b4dc7bfc80298dd63e086"
+    },
+    {
+      "doc_id": "product-路由-q6e",
+      "title": "华为凌霄子母路由 Q6E 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/q6e_华为凌霄子母路由 Q6E.md",
+      "characters": 1316,
+      "estimated_chunks_1200": 2,
+      "sha256": "76ea49836a53efae514b0439502892ab144e614b999adcdcbc4a1d9eb2a3f411"
+    },
+    {
+      "doc_id": "product-路由-q7-ethernet",
+      "title": "华为凌霄子母路由 Q7 网线版 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/q7-ethernet_华为凌霄子母路由 Q7 网线版.md",
+      "characters": 1346,
+      "estimated_chunks_1200": 2,
+      "sha256": "7edc8b882f91197e7fa053bc1076e17e5833da8dcbbb5baac94e84b74a7eb9cd"
+    },
+    {
+      "doc_id": "product-路由-q7-powerline",
+      "title": "华为凌霄子母路由 Q7 电线版 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/q7-powerline_华为凌霄子母路由 Q7 电线版.md",
+      "characters": 1261,
+      "estimated_chunks_1200": 2,
+      "sha256": "f49164e4f3970bbe979dccd4e196db588ad413ac69e48966641089d3d13bf8f9"
+    },
+    {
+      "doc_id": "product-路由-x1-pro-gaming",
+      "title": "华为路由 X1 Pro 电竞涂装版 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/x1-pro-gaming_华为路由 X1 Pro 电竞涂装版.md",
+      "characters": 1202,
+      "estimated_chunks_1200": 2,
+      "sha256": "e5f01291b7a947bb7ce18bcc3a05c15fa6ba61cca862efa9456c018fdde1ad59"
+    },
+    {
+      "doc_id": "product-路由-x1-pro",
+      "title": "华为路由 X1 Pro 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/x1-pro_华为路由 X1 Pro.md",
+      "characters": 1253,
+      "estimated_chunks_1200": 2,
+      "sha256": "1efdbd364be58fb417300566f571490755fea466a9c37561b325ac053648f8b7"
+    },
+    {
+      "doc_id": "product-路由-x1",
+      "title": "华为路由 X1 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/x1_华为路由 X1.md",
+      "characters": 1244,
+      "estimated_chunks_1200": 2,
+      "sha256": "7b51019b325fa6950d45d08b172861cdffd86f431f52c1094d6a0e7eca2f22b7"
+    },
+    {
+      "doc_id": "product-路由-x3-pro",
+      "title": "华为路由 X3 Pro 日照金山 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/路由/x3-pro_华为路由 X3 Pro 日照金山.md",
+      "characters": 1337,
+      "estimated_chunks_1200": 2,
+      "sha256": "86fde5debe8b19816f7a3fa5872a965575b9739f4758f2078ddbb831d460ee62"
+    },
+    {
+      "doc_id": "product-音箱-ai-speaker-2e-home",
+      "title": "华为AI音箱 2e 全屋版 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/音箱/ai-speaker-2e-home_华为AI音箱 2e 全屋版.md",
+      "characters": 1175,
+      "estimated_chunks_1200": 1,
+      "sha256": "03141d733579980e44acac669444193d36fe9f74433b0b041f780cc7f8fd0c98"
+    },
+    {
+      "doc_id": "product-音箱-home-theater",
+      "title": "华为悦彰家庭影院 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/音箱/home-theater_华为悦彰家庭影院.md",
+      "characters": 1227,
+      "estimated_chunks_1200": 2,
+      "sha256": "51be010838f725b58fad7f7b75b2dccda01507c5cdf0e0f5b78dd10379602e09"
+    },
+    {
+      "doc_id": "product-音箱-sound-joy-2",
+      "title": "HUAWEI Sound Joy 2 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/音箱/sound-joy-2_HUAWEI Sound Joy 2.md",
+      "characters": 1244,
+      "estimated_chunks_1200": 2,
+      "sha256": "9c12002e59a1d267d23233b7f7073123446cdc934468a5ad412cda088886ffd7"
+    },
+    {
+      "doc_id": "product-音箱-sound-x-gold-theater",
+      "title": "HUAWEI Sound X 鎏金剧院版 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/音箱/sound-x-gold-theater_HUAWEI Sound X 鎏金剧院版.md",
+      "characters": 1261,
+      "estimated_chunks_1200": 2,
+      "sha256": "77af06342dbc2e1ab624bf8510fa5d5500099deba843aaaca587f75efad2605b"
+    },
+    {
+      "doc_id": "product-音箱-sound-x4",
+      "title": "HUAWEI Sound X4 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/音箱/sound-x4_HUAWEI Sound X4.md",
+      "characters": 1235,
+      "estimated_chunks_1200": 2,
+      "sha256": "b7079c03456f8aade0943a8a72b1d7f071bc9a66f83a613f9bf82f9fd4cda467"
+    },
+    {
+      "doc_id": "product-音箱-sound-x5",
+      "title": "HUAWEI Sound X5 产品档案",
+      "intent_node": "参数与卖点 KB",
+      "path": "01_参数与卖点_KB/音箱/sound-x5_HUAWEI Sound X5.md",
+      "characters": 1165,
+      "estimated_chunks_1200": 1,
+      "sha256": "1402e21065f51e50ebcddb282053dee3b015b26268dcdda5535b3dfa23427b74"
+    },
+    {
+      "doc_id": "compat-category-主要配件",
+      "title": "主要配件生态兼容判断规则",
+      "intent_node": "鸿蒙生态兼容 KB",
+      "path": "02_鸿蒙生态兼容_KB/品类兼容规则/compat_主要配件.md",
+      "characters": 933,
+      "estimated_chunks_1200": 1,
+      "sha256": "2738417a51217b26369a416a16d7b1c1cf771c4bc3befb3234fa8f0a2fa3066a"
+    },
+    {
+      "doc_id": "compat-category-家庭存储",
+      "title": "家庭存储生态兼容判断规则",
+      "intent_node": "鸿蒙生态兼容 KB",
+      "path": "02_鸿蒙生态兼容_KB/品类兼容规则/compat_家庭存储.md",
+      "characters": 921,
+      "estimated_chunks_1200": 1,
+      "sha256": "89d1d5b46017d8b123535f4cc90716c47538f313449cdb17be9dea72dd57fac2"
+    },
+    {
+      "doc_id": "compat-category-打印机",
+      "title": "打印机生态兼容判断规则",
+      "intent_node": "鸿蒙生态兼容 KB",
+      "path": "02_鸿蒙生态兼容_KB/品类兼容规则/compat_打印机.md",
+      "characters": 888,
+      "estimated_chunks_1200": 1,
+      "sha256": "21a1dfc010e6d250e9e1224b7f96690f71ca777b0cf4e116254bb1e6c556e2fe"
+    },
+    {
+      "doc_id": "compat-category-智慧屏",
+      "title": "智慧屏生态兼容判断规则",
+      "intent_node": "鸿蒙生态兼容 KB",
+      "path": "02_鸿蒙生态兼容_KB/品类兼容规则/compat_智慧屏.md",
+      "characters": 909,
+      "estimated_chunks_1200": 1,
+      "sha256": "78d9621ac2f0957fa472eea9ce1315230b1cee733fba97ae5ee0c44f0f1c6ee2"
+    },
+    {
+      "doc_id": "compat-category-智能眼镜",
+      "title": "智能眼镜生态兼容判断规则",
+      "intent_node": "鸿蒙生态兼容 KB",
+      "path": "02_鸿蒙生态兼容_KB/品类兼容规则/compat_智能眼镜.md",
+      "characters": 899,
+      "estimated_chunks_1200": 1,
+      "sha256": "24263c60a76c32840624ad8a1292f7427139530003aebac95ec01a55e7b86324"
+    },
+    {
+      "doc_id": "compat-category-智能门锁",
+      "title": "智能门锁生态兼容判断规则",
+      "intent_node": "鸿蒙生态兼容 KB",
+      "path": "02_鸿蒙生态兼容_KB/品类兼容规则/compat_智能门锁.md",
+      "characters": 928,
+      "estimated_chunks_1200": 1,
+      "sha256": "8562864d6d8a80530db4324e0d1bf82dbd82a4e4b6bd5981c8a9f8ceaa4c84e8"
+    },
+    {
+      "doc_id": "compat-category-路由",
+      "title": "路由生态兼容判断规则",
+      "intent_node": "鸿蒙生态兼容 KB",
+      "path": "02_鸿蒙生态兼容_KB/品类兼容规则/compat_路由.md",
+      "characters": 920,
+      "estimated_chunks_1200": 1,
+      "sha256": "5166d967947061b53097588a4c8b76e2732a4578303219fb3fce2ba7dde307b8"
+    },
+    {
+      "doc_id": "compat-category-音箱",
+      "title": "音箱生态兼容判断规则",
+      "intent_node": "鸿蒙生态兼容 KB",
+      "path": "02_鸿蒙生态兼容_KB/品类兼容规则/compat_音箱.md",
+      "characters": 892,
+      "estimated_chunks_1200": 1,
+      "sha256": "5071ef3ec940a89b26226e7f12d1428f962ed6d88ef2bf747d236884cf60e6c2"
     },
     {
       "doc_id": "compat-earphone-connect",
       "title": "耳机连接手机平板和电脑",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn15868501/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/官方资料/compat-earphone-connect_耳机连接手机平板和电脑.md",
       "characters": 1917,
       "estimated_chunks_1200": 2,
@@ -948,17 +1349,6 @@
       "doc_id": "compat-earphone-multi",
       "title": "华为耳机多设备连接",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907440/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/官方资料/compat-earphone-multi_华为耳机多设备连接.md",
       "characters": 2513,
       "estimated_chunks_1200": 3,
@@ -968,17 +1358,6 @@
       "doc_id": "compat-huawei-share",
       "title": "华为分享操作指南",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/huaweishareonehop/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/官方资料/compat-huawei-share_华为分享操作指南.md",
       "characters": 3468,
       "estimated_chunks_1200": 3,
@@ -988,17 +1367,6 @@
       "doc_id": "compat-pc-fail",
       "title": "电脑与手机平板多屏协同连接失败",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn15923138"
-      ],
       "path": "02_鸿蒙生态兼容_KB/官方资料/compat-pc-fail_电脑与手机平板多屏协同连接失败.md",
       "characters": 1435,
       "estimated_chunks_1200": 2,
@@ -1008,17 +1376,6 @@
       "doc_id": "compat-pc-list",
       "title": "电脑多屏协同与华为分享支持清单",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn15988997/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/官方资料/compat-pc-list_电脑多屏协同与华为分享支持清单.md",
       "characters": 3755,
       "estimated_chunks_1200": 4,
@@ -1028,17 +1385,6 @@
       "doc_id": "compat-phone-tablet",
       "title": "手机和平板多屏协同",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn16101643/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/官方资料/compat-phone-tablet_手机和平板多屏协同.md",
       "characters": 727,
       "estimated_chunks_1200": 1,
@@ -1048,17 +1394,6 @@
       "doc_id": "compat-stylus-list",
       "title": "华为手写笔适配清单",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn00737675/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/官方资料/compat-stylus-list_华为手写笔适配清单.md",
       "characters": 7555,
       "estimated_chunks_1200": 7,
@@ -1068,17 +1403,6 @@
       "doc_id": "compat-super-device-list",
       "title": "手机平板超级终端支持设备清单",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn15905593/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/官方资料/compat-super-device-list_手机平板超级终端支持设备清单.md",
       "characters": 3484,
       "estimated_chunks_1200": 3,
@@ -1088,17 +1412,6 @@
       "doc_id": "compat-super-device",
       "title": "超级终端实现多设备协同",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn15941521/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/官方资料/compat-super-device_超级终端实现多设备协同.md",
       "characters": 2366,
       "estimated_chunks_1200": 2,
@@ -1108,17 +1421,6 @@
       "doc_id": "compat-tablet-pc",
       "title": "平板与笔记本多屏协同",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn15880996/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/官方资料/compat-tablet-pc_平板与笔记本多屏协同.md",
       "characters": 1373,
       "estimated_chunks_1200": 2,
@@ -1128,618 +1430,276 @@
       "doc_id": "compat-watch-pair",
       "title": "华为手表手环与安卓手机配对",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/官方资料/compat-watch-pair_华为手表手环与安卓手机配对.md",
       "characters": 1261,
       "estimated_chunks_1200": 2,
       "sha256": "7ee1f18ff0f51349917a70904c7f384ab819a91042ce3977e4f6946f4aabd018"
     },
     {
-      "doc_id": "kbplus-catalog-current-wearables",
-      "title": "当前在售穿戴兼容档案目录",
+      "doc_id": "catalog-穿戴",
+      "title": "穿戴产品知识目录",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "目录与范围",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_catalog",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-      ],
       "path": "02_鸿蒙生态兼容_KB/目录与范围/catalog_当前在售穿戴兼容档案.md",
-      "characters": 2634,
-      "estimated_chunks_1200": 3,
-      "sha256": "e88c690325d69faa244e492aae3cb40bcd54a2c8ecb4fe7bcac36ce525ccff5d"
+      "characters": 1781,
+      "estimated_chunks_1200": 2,
+      "sha256": "c6006ec574883ae13d2e1abcc813ce701c7e52b5fb8a755497f0f942d2becf5b"
     },
     {
-      "doc_id": "kbplus-catalog-current-earphones",
-      "title": "当前在售耳机兼容档案目录",
+      "doc_id": "catalog-耳机",
+      "title": "耳机产品知识目录",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "耳机（兼容）",
-        "目录与范围",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_catalog",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"
-      ],
       "path": "02_鸿蒙生态兼容_KB/目录与范围/catalog_当前在售耳机兼容档案.md",
-      "characters": 1797,
-      "estimated_chunks_1200": 2,
-      "sha256": "14cda9d836f9b46fe85fa8285efc896e31c27812c4ece8d4df7b3f34ad1aa67f"
+      "characters": 1128,
+      "estimated_chunks_1200": 1,
+      "sha256": "c658b15213a1a2061c2fe2de51b54536db2923f337b8076232f1f112c9c76e0c"
     },
     {
       "doc_id": "kbplus-wearable-band-10",
       "title": "华为手环 10 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/band-10_华为手环_10.md",
-      "characters": 1118,
+      "characters": 1112,
       "estimated_chunks_1200": 1,
-      "sha256": "c156dfd6a20e43baceec6c681e7a3322e1f3d3887dfc1d6b938d7d2a3079d689"
+      "sha256": "5077078b98ccd349006924bd25f0decd82961f31a063410df4d056b5f9d04c2e"
     },
     {
       "doc_id": "kbplus-wearable-band-11-pro",
       "title": "华为手环 11 Pro 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/band-11-pro_华为手环_11_Pro.md",
-      "characters": 1150,
+      "characters": 1144,
       "estimated_chunks_1200": 1,
-      "sha256": "fca82b9bd79d051249019065f9b78df8135fdbccbfd13607d6fbe4772131313f"
+      "sha256": "7c699c77a4d84806fb626dcee974d5ce777c2197cdadaddc316f3d4cb9b9a50f"
     },
     {
       "doc_id": "kbplus-wearable-band-11",
       "title": "华为手环 11 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/band-11_华为手环_11.md",
-      "characters": 1129,
+      "characters": 1123,
       "estimated_chunks_1200": 1,
-      "sha256": "4102d1dad85877cee8519b9581695f322bff2887887bfbb38138a0e8d6ac6ad0"
+      "sha256": "49bbdfef51469051d6994556fc1d385c40aa57c8c4db33ecb4b6a25a951ec456"
     },
     {
       "doc_id": "kbplus-wearable-fit-4-pro",
       "title": "HUAWEI WATCH FIT 4 Pro 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/fit-4-pro_HUAWEI_WATCH_FIT_4_Pro.md",
-      "characters": 1153,
+      "characters": 1147,
       "estimated_chunks_1200": 1,
-      "sha256": "afc814c30309615543a12897700cc06f859fb4a1b2911f1bbcba3a8d9e58f9e6"
+      "sha256": "68583d4cf36a173944fd4864f2020afb8832302f85018711b37320992e223f13"
     },
     {
       "doc_id": "kbplus-wearable-fit-4",
       "title": "HUAWEI WATCH FIT 4 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/fit-4_HUAWEI_WATCH_FIT_4.md",
-      "characters": 1138,
+      "characters": 1132,
       "estimated_chunks_1200": 1,
-      "sha256": "68fd73f746be3fb5090ca10083d98ad3f1eb04c380a634be5c14dff42a7de5fa"
+      "sha256": "b66b442db30af576885ed05ed84ca57c971c69abf97dcf30388495c3b189d8dc"
     },
     {
       "doc_id": "kbplus-wearable-fit-5-pro",
       "title": "HUAWEI WATCH FIT 5 Pro 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/fit-5-pro_HUAWEI_WATCH_FIT_5_Pro.md",
-      "characters": 1151,
+      "characters": 1145,
       "estimated_chunks_1200": 1,
-      "sha256": "794b64d31447d6ccbf4e5784e2a7336d3048593e220f9a74a7f588d2a6bcc680"
+      "sha256": "5cd2faac9d2de756d24c9bb5adedddc81b14fdf39fe72a93db2ed69399388cbb"
     },
     {
       "doc_id": "kbplus-wearable-fit-5",
       "title": "HUAWEI WATCH FIT 5 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/fit-5_HUAWEI_WATCH_FIT_5.md",
-      "characters": 1137,
+      "characters": 1131,
       "estimated_chunks_1200": 1,
-      "sha256": "90a5be36f7e05186b8f8f5664f4211a15eb3c6c12ac82c5a8e874dc78bb21f11"
+      "sha256": "0598466b0776e5d95d53660c724101fe2ca4ee9a964442d167ff1f0996dbede6"
     },
     {
       "doc_id": "kbplus-wearable-gt-6-41",
       "title": "HUAWEI WATCH GT 6 41mm 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/gt-6-41_HUAWEI_WATCH_GT_6_41mm.md",
-      "characters": 1154,
+      "characters": 1148,
       "estimated_chunks_1200": 1,
-      "sha256": "072c11f4155e26228888ad1619b66186f887227527a247b520d2e8f988dc987d"
+      "sha256": "38d48b68ecf9520a98af4070564560e7f99c215f854fd5028be6224b388af443"
     },
     {
       "doc_id": "kbplus-wearable-gt-6-46",
       "title": "HUAWEI WATCH GT 6 46mm 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/gt-6-46_HUAWEI_WATCH_GT_6_46mm.md",
-      "characters": 1154,
+      "characters": 1148,
       "estimated_chunks_1200": 1,
-      "sha256": "aee80ee471a99ec87ce52d8dcf6b2e9cbc346b34a369a4e62277b11ba8736a3f"
+      "sha256": "cc24191e66132cfe6bf99d2e4c01455dd1baf075e7850b580290eebeeb91497e"
     },
     {
       "doc_id": "kbplus-wearable-gt-6-pro",
       "title": "HUAWEI WATCH GT 6 Pro 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/gt-6-pro_HUAWEI_WATCH_GT_6_Pro.md",
-      "characters": 1155,
+      "characters": 1149,
       "estimated_chunks_1200": 1,
-      "sha256": "e40bea8e3e72f754c0c60201d1550f8df71a5b23a3d5ebd290491c1a78d10c56"
+      "sha256": "aecd9a914aaffeb540a362565707f061426fa5a7c0be764123d0a5d7275e0300"
     },
     {
       "doc_id": "kbplus-wearable-gt-runner-2",
       "title": "HUAWEI WATCH GT Runner 2 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/gt-runner-2_HUAWEI_WATCH_GT_Runner_2.md",
-      "characters": 1163,
+      "characters": 1157,
       "estimated_chunks_1200": 1,
-      "sha256": "115281e8f26e752418aaf26acd262915f036f2fc564d938092aa3ec8b95a56fa"
+      "sha256": "42b1abdbf9916c899ac16cdbac2ab0c4b9ada268efc59a114f8c1486c8332e02"
     },
     {
       "doc_id": "kbplus-wearable-kids-5-active",
       "title": "华为儿童手表 5 活力版 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/kids-5-active_华为儿童手表_5_活力版.md",
-      "characters": 1125,
+      "characters": 1119,
       "estimated_chunks_1200": 1,
-      "sha256": "7e005ce3654980a3dc9059c884250902167fae7e05fd8df5b2c9956be6413ec9"
+      "sha256": "e7386a48c579cf7fbfe5cf350487c27460ebb28a64ced9f2ec24ea253c8da35a"
     },
     {
       "doc_id": "kbplus-wearable-kids-5-new",
       "title": "华为儿童手表 5 新耀版 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/kids-5-new_华为儿童手表_5_新耀版.md",
-      "characters": 1135,
+      "characters": 1129,
       "estimated_chunks_1200": 1,
-      "sha256": "ac7bc271d1b816fdd3d7bd4a40afb5dd9223d04e7251f25b0c46e851b22bc1d2"
+      "sha256": "f9babab1f9037f3855dd485b5dd30c0bec5269e5b5c302b9b6b0ec62e0696800"
     },
     {
       "doc_id": "kbplus-wearable-kids-5-pro",
       "title": "华为儿童手表 5 Pro 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/kids-5-pro_华为儿童手表_5_Pro.md",
-      "characters": 1119,
+      "characters": 1113,
       "estimated_chunks_1200": 1,
-      "sha256": "0bfa662e35ce77ea44b22ecb914a343d73d8566eaa4e86770631c9af62b0a3df"
+      "sha256": "ea6071ee4a9ac541c8818784ca98467c89490716985eb170ec9a259bc40ca74b"
     },
     {
       "doc_id": "kbplus-wearable-kids-5",
       "title": "华为儿童手表 5 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/kids-5_华为儿童手表_5.md",
-      "characters": 1123,
+      "characters": 1117,
       "estimated_chunks_1200": 1,
-      "sha256": "3c1e408085a40df33c462327c4f00749bafc0440b4ecf87d3ff07d2dab13e160"
+      "sha256": "7394b6c6905cdd2fe4ef8430bd396c46b787582e67238464eb6c6b21e766c79a"
     },
     {
       "doc_id": "kbplus-wearable-kids-5x",
       "title": "华为儿童手表 5X 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/kids-5x_华为儿童手表_5X.md",
-      "characters": 1115,
+      "characters": 1109,
       "estimated_chunks_1200": 1,
-      "sha256": "5f5229756e48543af5149bd3be1d81f599891d25d0c2538d9c766da966fd5b6d"
+      "sha256": "ef138a7bc7d7c37af27580442aac5aaaa5f206f1cf94a58d03b54e301f327c6a"
     },
     {
       "doc_id": "kbplus-wearable-supernova-x1-pro",
       "title": "华为超新星手表 X1 Pro 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/supernova-x1-pro_华为超新星手表_X1_Pro.md",
-      "characters": 1145,
+      "characters": 1139,
       "estimated_chunks_1200": 1,
-      "sha256": "f4daf07253dd849d3ff2799edf780c74e196f8e4c72e90fe10868bacd8ca90b3"
+      "sha256": "ad0e1a1eb723c74ca61c5d5999ea285abba305b065a9849b6186fa21860ff29f"
     },
     {
       "doc_id": "kbplus-wearable-supernova-x1",
       "title": "华为超新星手表 X1 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/supernova-x1_华为超新星手表_X1.md",
-      "characters": 1141,
+      "characters": 1135,
       "estimated_chunks_1200": 1,
-      "sha256": "23d0db00b2b24db0c462f37aea911dbb3a1a1ba762328d722059b626c613e887"
+      "sha256": "b4b74fff41a80094aa3a99348af940290f8870a67e5917e7375a145a23f426b4"
     },
     {
       "doc_id": "kbplus-wearable-ultimate-2",
       "title": "HUAWEI WATCH Ultimate 2 非凡探索 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/ultimate-2_HUAWEI_WATCH_Ultimate_2_非凡探索.md",
-      "characters": 1169,
+      "characters": 1163,
       "estimated_chunks_1200": 1,
-      "sha256": "092ea16178a3d0ad0f33921cb44ccf6503a0e02e4c8847f3139da5155d75ae71"
+      "sha256": "216fe4c6a2193f462fcefe7f9fa8bc2d99579be2a9da1d9c43afcd4056c82b13"
     },
     {
       "doc_id": "kbplus-wearable-ultimate-design-diamond",
       "title": "HUAWEI WATCH ULTIMATE DESIGN 星钻绽放款 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/ultimate-design-diamond_HUAWEI_WATCH_ULTIMATE_DESIGN_星钻绽放款.md",
-      "characters": 1209,
+      "characters": 1203,
       "estimated_chunks_1200": 2,
-      "sha256": "15f4cfad30249f96c8e178416e06e42db1627fe701a276344ec48dd8153b8797"
+      "sha256": "d01823c9abe45b48bc6645b66ea581fe3d1365d461954bfd39d2c8e80074e7c5"
     },
     {
       "doc_id": "kbplus-wearable-ultimate-design-gold",
       "title": "HUAWEI WATCH ULTIMATE DESIGN 蓝宝石黄金款 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/ultimate-design-gold_HUAWEI_WATCH_ULTIMATE_DESIGN_蓝宝石黄金款.md",
-      "characters": 1200,
+      "characters": 1194,
       "estimated_chunks_1200": 1,
-      "sha256": "1532590cb76d6ba826e83ea3f07690d944890e00ff39d50af34f157b2b13f1a1"
+      "sha256": "78d6d064202e1ec1f9b3b5fb189eac761f2d6a8111b34c90e2aca2d25c97be44"
     },
     {
       "doc_id": "kbplus-wearable-ultimate-design-purple",
       "title": "HUAWEI WATCH ULTIMATE DESIGN 紫金款 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/ultimate-design-purple_HUAWEI_WATCH_ULTIMATE_DESIGN_紫金款.md",
-      "characters": 1200,
+      "characters": 1194,
       "estimated_chunks_1200": 1,
-      "sha256": "9de02310a9271a410574305993180f89eb94a9c3fdcd4ec0f78d243f194a5a8d"
+      "sha256": "77456b610bc3b25a41a0d46780862796804ffe42842b5153e36955edcf44f83c"
     },
     {
       "doc_id": "kbplus-wearable-watch-5",
       "title": "HUAWEI WATCH 5 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/watch-5_HUAWEI_WATCH_5.md",
-      "characters": 1139,
+      "characters": 1133,
       "estimated_chunks_1200": 1,
-      "sha256": "07ef3b9acae184160c243cd8a78b558495675766b5f24c4c9642c698610e6685"
+      "sha256": "790f1dde462cddf54afc7c5cf9944cc822396874e1895850227247fb390b495b"
     },
     {
       "doc_id": "kbplus-wearable-watch-buds-2",
       "title": "HUAWEI WATCH Buds 2 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/watch-buds-2_HUAWEI_WATCH_Buds_2.md",
-      "characters": 1155,
+      "characters": 1149,
       "estimated_chunks_1200": 1,
-      "sha256": "ca5deff21608f560d0ab9aefbd4d53f9e07e1b0b7b8352919dc6c3acd4185db7"
+      "sha256": "2b432ab22ae09b1b04c81442893e0776a7817c5c008c3d489cce7c7aab9fd99d"
     },
     {
       "doc_id": "kbplus-wearable-watch-d2",
       "title": "HUAWEI WATCH D2 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "穿戴（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/穿戴/watch-d2_HUAWEI_WATCH_D2.md",
-      "characters": 1120,
+      "characters": 1114,
       "estimated_chunks_1200": 1,
-      "sha256": "8761cbbb0d16cb38b1327c287e3483a126fc3bdde46569f5b76e4437a4bc2f26"
+      "sha256": "0d317f746e032a1424e412cca58f88af625c353d06c2aec5803d77a0423d986d"
     },
     {
       "doc_id": "compat-matrix",
       "title": "手机平板电脑穿戴耳机兼容关系矩阵",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "normalized_rules_from_official_support_pages",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn00737675/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15868501/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15880996/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15905593/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907440/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15923138",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15941521/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15988997/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16101643/",
-        "https://consumer.huawei.com/cn/support/huaweishareonehop/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/综合规则/compat-matrix_手机平板电脑穿戴耳机兼容关系矩阵.md",
-      "characters": 1551,
+      "characters": 1550,
       "estimated_chunks_1200": 2,
-      "sha256": "7f2722550b25141f8f0ba42e04c0e5e29a53e43aec644da50d16a8c6ad3ae889"
+      "sha256": "fca26f3be4bd857c98b31beb3ea80ce9e14e19bc7a3bb7b9bf3e248b5f769459"
     },
     {
       "doc_id": "compat-overview",
-      "title": "第一版鸿蒙生态兼容范围与判断顺序",
+      "title": "当前鸿蒙生态兼容范围与判断顺序",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "normalized_rules_from_official_support_pages",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn00737675/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15868501/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15880996/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15905593/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907440/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15923138",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15941521/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15988997/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16101643/",
-        "https://consumer.huawei.com/cn/support/huaweishareonehop/"
-      ],
-      "path": "02_鸿蒙生态兼容_KB/综合规则/compat-overview_第一版鸿蒙生态兼容范围与判断顺序.md",
-      "characters": 1240,
+      "path": "02_鸿蒙生态兼容_KB/综合规则/compat-overview_鸿蒙生态兼容范围与判断顺序.md",
+      "characters": 1237,
       "estimated_chunks_1200": 2,
-      "sha256": "9ee974cddfe291b29d8aecffa621a24a4031c3ff438ebab79d63bbd751a22b3f"
+      "sha256": "0d1f0e12e970c499d3be3c792ef610fbc95253c17aa27511b35408901af8ddb1"
     },
     {
       "doc_id": "compat-recommendation-rules",
       "title": "生态搭配推荐规则与回答边界",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "normalized_rules_from_official_support_pages",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn00737675/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15868501/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15880996/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15905593/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907440/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15923138",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15941521/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15988997/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16008856/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn16101643/",
-        "https://consumer.huawei.com/cn/support/huaweishareonehop/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/综合规则/compat-recommendation-rules_生态搭配推荐规则与回答边界.md",
       "characters": 1258,
       "estimated_chunks_1200": 2,
@@ -1749,275 +1709,123 @@
       "doc_id": "kbplus-earphone-classic-usbc",
       "title": "华为经典耳机（USB Type-C版） 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "耳机（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15868501/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907440/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/耳机/classic-usbc_华为经典耳机（USB_Type-C版）.md",
-      "characters": 1176,
+      "characters": 1170,
       "estimated_chunks_1200": 1,
-      "sha256": "21c022f3d3b68d1f49501508ed3192965f7d4f2e840cbbad837b3a9be9ada97c"
+      "sha256": "ad6895b719aff0053a96fa4caaaa87ec3892191ee309e698465c6d943bac533b"
     },
     {
       "doc_id": "kbplus-earphone-freearc",
       "title": "HUAWEI FreeArc 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "耳机（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15868501/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907440/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/耳机/freearc_HUAWEI_FreeArc.md",
-      "characters": 1253,
+      "characters": 1247,
       "estimated_chunks_1200": 2,
-      "sha256": "27d3c4a804bdebf8620e1de4ae915f69a3c157ce087d4aad4baebeb7df01f766"
+      "sha256": "ecd0bc61dc34c90f6084b7c62c61e14bd9a6ab2e8e284ff27883964154cca88c"
     },
     {
       "doc_id": "kbplus-earphone-freebuds-6",
       "title": "HUAWEI FreeBuds 6 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "耳机（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15868501/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907440/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/耳机/freebuds-6_HUAWEI_FreeBuds_6.md",
-      "characters": 1255,
+      "characters": 1249,
       "estimated_chunks_1200": 2,
-      "sha256": "6c4b867e5b3a27a1e4da27e26cd37ccec466d913e266baca73c85b2b0ac43871"
+      "sha256": "abcfdbeb2ee80f150abe1d4c8c33ade6e62209e890e97485b5a1db725e0dd926"
     },
     {
       "doc_id": "kbplus-earphone-freebuds-6i",
       "title": "HUAWEI FreeBuds 6i 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "耳机（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15868501/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907440/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/耳机/freebuds-6i_HUAWEI_FreeBuds_6i.md",
-      "characters": 1255,
+      "characters": 1249,
       "estimated_chunks_1200": 2,
-      "sha256": "4c034be8a9e8bb0adc8338948d62ec81097c7b4c63938b11b055d31bf9eabb16"
+      "sha256": "09b07152bb2bb76c2fc6455d4b9cb62600c070ac8474d7b103a54a9091a78579"
     },
     {
       "doc_id": "kbplus-earphone-freebuds-7i",
       "title": "HUAWEI FreeBuds 7i 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "耳机（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15868501/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907440/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/耳机/freebuds-7i_HUAWEI_FreeBuds_7i.md",
-      "characters": 1262,
+      "characters": 1256,
       "estimated_chunks_1200": 2,
-      "sha256": "bb7fd2dbc3c2c2454b28c955057f8841148e4cd3c162ee6efeb0c76d35111b93"
+      "sha256": "9e223fc5f03a0dfc722e948cd899fa043f3fdb701caef48aa625820deaf4c7c6"
     },
     {
       "doc_id": "kbplus-earphone-freebuds-pro-5",
       "title": "HUAWEI FreeBuds Pro 5 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "耳机（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15868501/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907440/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/耳机/freebuds-pro-5_HUAWEI_FreeBuds_Pro_5.md",
-      "characters": 1276,
+      "characters": 1270,
       "estimated_chunks_1200": 2,
-      "sha256": "b974e65b96d4e7e209a9838fb0d4d2a6ea4ce3e3bac2fc92aec84bf96924a0cb"
+      "sha256": "cbb26309bd81ee21bd09d9acd0ca93751ecb64ba280dca40ebcc26f1794176a0"
     },
     {
       "doc_id": "kbplus-earphone-freebuds-se-2",
       "title": "HUAWEI FreeBuds SE 2 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "耳机（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15868501/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907440/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/耳机/freebuds-se-2_HUAWEI_FreeBuds_SE_2.md",
-      "characters": 1257,
+      "characters": 1251,
       "estimated_chunks_1200": 2,
-      "sha256": "cea767cc1a8a3c427ac59ed98faa8c48e6767a7ee234b9c82172cd7f5240b8bf"
+      "sha256": "bb4f889cd9eaa31588dc0f217709a78dee978332da5406d8010c385571f4e60a"
     },
     {
       "doc_id": "kbplus-earphone-freebuds-se-3",
       "title": "HUAWEI FreeBuds SE 3 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "耳机（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15868501/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907440/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/耳机/freebuds-se-3_HUAWEI_FreeBuds_SE_3.md",
-      "characters": 1257,
+      "characters": 1251,
       "estimated_chunks_1200": 2,
-      "sha256": "ee07f85a779475632a25a6a39d080ed5acb100e496ea76e45935e0c2be0039ea"
+      "sha256": "eb2fe1dc869e3bfe79c6adb603f0d038475a5ca31219de973a034f18ec0d1d88"
     },
     {
       "doc_id": "kbplus-earphone-freebuds-se-4-anc",
       "title": "HUAWEI FreeBuds SE 4 ANC 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "耳机（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15868501/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907440/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/耳机/freebuds-se-4-anc_HUAWEI_FreeBuds_SE_4_ANC.md",
-      "characters": 1271,
+      "characters": 1265,
       "estimated_chunks_1200": 2,
-      "sha256": "b479d863f91b55105ab1a10a820fef90806f6f3c3ae53f23119103066df3c58a"
+      "sha256": "c542c21f29d2c435e0ee4fbf0bc0d743c5f8712fe1f7a2020924e8dec192fc81"
     },
     {
       "doc_id": "kbplus-earphone-freeclip-2-collectors",
       "title": "HUAWEI FreeClip 2 典藏版 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "耳机（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15868501/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907440/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/耳机/freeclip-2-collectors_HUAWEI_FreeClip_2_典藏版.md",
-      "characters": 1281,
+      "characters": 1275,
       "estimated_chunks_1200": 2,
-      "sha256": "678595e5c2a36b6980ba404f5997053df307b33c04637e07b701e106430adf1d"
+      "sha256": "26ee05e7273edf599017d05a23e26bb2d2c9812f66b1ae97f3b8b840653a4b90"
     },
     {
       "doc_id": "kbplus-earphone-freeclip-2",
       "title": "HUAWEI FreeClip 2 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "耳机（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15868501/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907440/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/耳机/freeclip-2_HUAWEI_FreeClip_2.md",
-      "characters": 1269,
+      "characters": 1263,
       "estimated_chunks_1200": 2,
-      "sha256": "72fba867926a753475f4f951303c6726df03cfd1dcb7f70d4fc27f5853d0e32e"
+      "sha256": "b73296b69c426f05845a5f28105359637b1eef5eeb68071ec0baddb81b483211"
     },
     {
       "doc_id": "kbplus-earphone-freeclip",
       "title": "HUAWEI FreeClip 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "耳机（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15868501/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907440/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/耳机/freeclip_HUAWEI_FreeClip.md",
-      "characters": 1247,
+      "characters": 1241,
       "estimated_chunks_1200": 2,
-      "sha256": "5f1594bbbd4ebb51cbe27c00741f43b0d003afa5ec1e921d2b96078dbdcb45aa"
+      "sha256": "7834a62d059bc66142ec5c8c5c2dfc976090821ddc875b08c321cf50cc1d5d94"
     },
     {
       "doc_id": "kbplus-earphone-freelace-active",
       "title": "HUAWEI FreeLace 活力版 兼容与搭配档案",
       "intent_node": "鸿蒙生态兼容 KB",
-      "scope": [
-        "耳机（兼容）",
-        "生态关联商品",
-        "KBplus补充"
-      ],
-      "source_type": "official_search_listing_plus_support",
-      "source_urls": [
-        "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15868501/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907440/"
-      ],
       "path": "02_鸿蒙生态兼容_KB/耳机/freelace-active_HUAWEI_FreeLace_活力版.md",
-      "characters": 1242,
+      "characters": 1236,
       "estimated_chunks_1200": 2,
-      "sha256": "c1a4688a4a383223fc25592eb19c9c18c5cd3e626f1f044bc03b9c6009303dce"
+      "sha256": "6070d7a3bb1b6b4b7f58fb368e40c4983a1e9e396be271a7c989e9f4dfc93536"
     },
     {
       "doc_id": "compare-01-10086850799769-10086941643085",
       "title": "nova 16 与 nova 16 Pro 静态参数对比参考",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机",
-        "手机"
-      ],
-      "source_type": "derived_comparison_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086850799769&sbomCode=2601010625916",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086941643085&sbomCode=2601010625815"
-      ],
       "path": "03_使用与选购指南_KB/商品对比参考/compare-01_nova_16_vs_nova_16_Pro.md",
       "characters": 1377,
       "estimated_chunks_1200": 2,
@@ -2027,15 +1835,6 @@
       "doc_id": "compare-02-10086941643085-10086524794571",
       "title": "nova 16 Pro 与 nova 16 Ultra 静态参数对比参考",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机",
-        "手机"
-      ],
-      "source_type": "derived_comparison_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086941643085&sbomCode=2601010625815",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086524794571&sbomCode=2601010625710"
-      ],
       "path": "03_使用与选购指南_KB/商品对比参考/compare-02_nova_16_Pro_vs_nova_16_Ultra.md",
       "characters": 1461,
       "estimated_chunks_1200": 2,
@@ -2045,15 +1844,6 @@
       "doc_id": "compare-03-10086133363559-10086724171251",
       "title": "Mate 80 与 Mate 80 Pro Max 静态参数对比参考",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机",
-        "手机"
-      ],
-      "source_type": "derived_comparison_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086133363559&sbomCode=2601010586341",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086724171251&sbomCode=2601010586509"
-      ],
       "path": "03_使用与选购指南_KB/商品对比参考/compare-03_Mate_80_vs_Mate_80_Pro_Max.md",
       "characters": 1581,
       "estimated_chunks_1200": 2,
@@ -2063,15 +1853,6 @@
       "doc_id": "compare-04-10086866372688-10086454848882",
       "title": "Pura 90 Pro 与 Pura 90 Pro Max 静态参数对比参考",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机",
-        "手机"
-      ],
-      "source_type": "derived_comparison_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086866372688&sbomCode=2601010614420",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086454848882&sbomCode=2601010614324"
-      ],
       "path": "03_使用与选购指南_KB/商品对比参考/compare-04_Pura_90_Pro_vs_Pura_90_Pro_Max.md",
       "characters": 1505,
       "estimated_chunks_1200": 2,
@@ -2081,15 +1862,6 @@
       "doc_id": "compare-05-10086133363559-10086866372688",
       "title": "Mate 80 与 Pura 90 Pro 静态参数对比参考",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机",
-        "手机"
-      ],
-      "source_type": "derived_comparison_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086133363559&sbomCode=2601010586341",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086866372688&sbomCode=2601010614420"
-      ],
       "path": "03_使用与选购指南_KB/商品对比参考/compare-05_Mate_80_vs_Pura_90_Pro.md",
       "characters": 1477,
       "estimated_chunks_1200": 2,
@@ -2099,15 +1871,6 @@
       "doc_id": "compare-06-10086941643085-10086866372688",
       "title": "nova 16 Pro 与 Pura 90 Pro 静态参数对比参考",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机",
-        "手机"
-      ],
-      "source_type": "derived_comparison_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086941643085&sbomCode=2601010625815",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086866372688&sbomCode=2601010614420"
-      ],
       "path": "03_使用与选购指南_KB/商品对比参考/compare-06_nova_16_Pro_vs_Pura_90_Pro.md",
       "characters": 1455,
       "estimated_chunks_1200": 2,
@@ -2117,15 +1880,6 @@
       "doc_id": "compare-07-10086106814226-10086518319242",
       "title": "MatePad Pro 12.2 与 MatePad 11.5 S 静态参数对比参考",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "平板",
-        "平板"
-      ],
-      "source_type": "derived_comparison_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086106814226&sbomCode=2701010122029",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086518319242&sbomCode=2701010122623"
-      ],
       "path": "03_使用与选购指南_KB/商品对比参考/compare-07_MatePad_Pro_12.2_vs_MatePad_11.5_S.md",
       "characters": 1107,
       "estimated_chunks_1200": 1,
@@ -2135,15 +1889,6 @@
       "doc_id": "compare-08-10086486839777-10086426290126",
       "title": "MatePad Air 12 与 MatePad SE 11 静态参数对比参考",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "平板",
-        "平板"
-      ],
-      "source_type": "derived_comparison_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086486839777&sbomCode=2701010131701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086426290126&sbomCode=2701010132701"
-      ],
       "path": "03_使用与选购指南_KB/商品对比参考/compare-08_MatePad_Air_12_vs_MatePad_SE_11.md",
       "characters": 1088,
       "estimated_chunks_1200": 1,
@@ -2153,15 +1898,6 @@
       "doc_id": "compare-09-10086590821009-10086127502687",
       "title": "MatePad Edge 与 MatePad Pro Max 静态参数对比参考",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "平板",
-        "平板"
-      ],
-      "source_type": "derived_comparison_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086590821009&sbomCode=2701010126301",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086127502687&sbomCode=2701010130502"
-      ],
       "path": "03_使用与选购指南_KB/商品对比参考/compare-09_MatePad_Edge_vs_MatePad_Pro_Max.md",
       "characters": 1110,
       "estimated_chunks_1200": 1,
@@ -2171,15 +1907,6 @@
       "doc_id": "compare-10-10086287244006-10086426290126",
       "title": "MatePad Mini 与 MatePad SE 11 静态参数对比参考",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "平板",
-        "平板"
-      ],
-      "source_type": "derived_comparison_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086287244006&sbomCode=2701010123211",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086426290126&sbomCode=2701010132701"
-      ],
       "path": "03_使用与选购指南_KB/商品对比参考/compare-10_MatePad_Mini_vs_MatePad_SE_11.md",
       "characters": 1104,
       "estimated_chunks_1200": 1,
@@ -2189,15 +1916,6 @@
       "doc_id": "compare-11-10086106814226-10086127502687",
       "title": "MatePad Pro 12.2 与 MatePad Pro Max 静态参数对比参考",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "平板",
-        "平板"
-      ],
-      "source_type": "derived_comparison_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086106814226&sbomCode=2701010122029",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086127502687&sbomCode=2701010130502"
-      ],
       "path": "03_使用与选购指南_KB/商品对比参考/compare-11_MatePad_Pro_12.2_vs_MatePad_Pro_Max.md",
       "characters": 1127,
       "estimated_chunks_1200": 1,
@@ -2207,15 +1925,6 @@
       "doc_id": "compare-12-10086702263930-10086097339191",
       "title": "MateBook Pro 与 MateBook 14 鸿蒙版 静态参数对比参考",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "笔记本",
-        "笔记本"
-      ],
-      "source_type": "derived_comparison_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086702263930&sbomCode=2801010187204",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086097339191&sbomCode=2801010196902"
-      ],
       "path": "03_使用与选购指南_KB/商品对比参考/compare-12_MateBook_Pro_vs_MateBook_14_鸿蒙版.md",
       "characters": 1067,
       "estimated_chunks_1200": 1,
@@ -2225,15 +1934,6 @@
       "doc_id": "compare-13-10086159780677-10086600621238",
       "title": "MateBook D 14 SE 与 MateBook D 16 SE 静态参数对比参考",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "笔记本",
-        "笔记本"
-      ],
-      "source_type": "derived_comparison_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086159780677&sbomCode=2801010170615",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086600621238&sbomCode=2801010152845"
-      ],
       "path": "03_使用与选购指南_KB/商品对比参考/compare-13_MateBook_D_14_SE_vs_MateBook_D_16_SE.md",
       "characters": 1096,
       "estimated_chunks_1200": 1,
@@ -2243,15 +1943,6 @@
       "doc_id": "compare-14-10086627212823-10086715793338",
       "title": "MateBook 14 酷睿 与 MateBook D 16 静态参数对比参考",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "笔记本",
-        "笔记本"
-      ],
-      "source_type": "derived_comparison_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086627212823&sbomCode=2801010174936",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086715793338&sbomCode=2801010168126"
-      ],
       "path": "03_使用与选购指南_KB/商品对比参考/compare-14_MateBook_14_酷睿_vs_MateBook_D_16.md",
       "characters": 1073,
       "estimated_chunks_1200": 1,
@@ -2261,512 +1952,204 @@
       "doc_id": "guide-earphone-match",
       "title": "手机平板电脑与耳机搭配",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "跨品类"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086702263930&sbomCode=2801010187204",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086941643085&sbomCode=2601010625815",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086658434293&sbomCode=2601010626007",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086724171251&sbomCode=2601010586509",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086133363559&sbomCode=2601010586341",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086454848882&sbomCode=2601010614324",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086850799769&sbomCode=2601010625916",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086524794571&sbomCode=2601010625710",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086106814226&sbomCode=2701010122029",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086518319242&sbomCode=2701010122623"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-earphone-match_手机平板电脑与耳机搭配.md",
-      "characters": 2321,
+      "characters": 2320,
       "estimated_chunks_1200": 2,
-      "sha256": "b8aad295f8f13c5e7fca6eebdce18a53ee86f2ea6c51ce43f4923640ea4f5ce0"
+      "sha256": "fc089e39c57af1f0b6a54d9b082640f517caccd7a1f448b9df159cb8f797b187"
     },
     {
       "doc_id": "guide-ecosystem-combo",
       "title": "手机平板电脑生态套装选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "跨品类"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086702263930&sbomCode=2801010187204",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086941643085&sbomCode=2601010625815",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086658434293&sbomCode=2601010626007",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086724171251&sbomCode=2601010586509",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086133363559&sbomCode=2601010586341",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086454848882&sbomCode=2601010614324",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086850799769&sbomCode=2601010625916",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086524794571&sbomCode=2601010625710",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086106814226&sbomCode=2701010122029",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086518319242&sbomCode=2701010122623"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-ecosystem-combo_手机平板电脑生态套装选购.md",
-      "characters": 2318,
+      "characters": 2317,
       "estimated_chunks_1200": 2,
-      "sha256": "e63cd945e92fed6b872304b1eef1cb59a584eaff0e30a50773fcaa9fc40ae23b"
+      "sha256": "7559c15149cf82cab7e26911dae409f2f8023c36842e11f0e7bc26d99161272c"
     },
     {
       "doc_id": "guide-laptop-office",
       "title": "商务办公笔记本选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "笔记本"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086702263930&sbomCode=2801010187204",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086097339191&sbomCode=2801010196902",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086715793338&sbomCode=2801010168126",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086627212823&sbomCode=2801010174936",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086159780677&sbomCode=2801010170615",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086600621238&sbomCode=2801010152845"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-laptop-office_商务办公笔记本选购.md",
-      "characters": 1660,
+      "characters": 1659,
       "estimated_chunks_1200": 2,
-      "sha256": "3603b814212710d5124e1c0864cfb8b09d10c4f84c67a4d8c75b59f0f157b0fd"
+      "sha256": "3cb6501266e324bf1fce5af6cb4d1458db16afd89919220d3b8f1c95c17f6c8a"
     },
     {
       "doc_id": "guide-laptop-portable",
       "title": "轻薄便携笔记本选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "笔记本"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086702263930&sbomCode=2801010187204",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086097339191&sbomCode=2801010196902",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086715793338&sbomCode=2801010168126",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086627212823&sbomCode=2801010174936",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086159780677&sbomCode=2801010170615",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086600621238&sbomCode=2801010152845"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-laptop-portable_轻薄便携笔记本选购.md",
-      "characters": 1650,
+      "characters": 1649,
       "estimated_chunks_1200": 2,
-      "sha256": "c2243de3aa8b0f19dabc68f3bc279ffdab11a12361f6b863abac3612cfcfdc06"
+      "sha256": "7add7999b5a252d98fa90a746145d383f3d8a04e23e9cb31640c6b0faba93647"
     },
     {
       "doc_id": "guide-laptop-size",
       "title": "14英寸与16英寸笔记本选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "笔记本"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086702263930&sbomCode=2801010187204",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086097339191&sbomCode=2801010196902",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086715793338&sbomCode=2801010168126",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086627212823&sbomCode=2801010174936",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086159780677&sbomCode=2801010170615",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086600621238&sbomCode=2801010152845"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-laptop-size_14英寸与16英寸笔记本选购.md",
-      "characters": 1655,
+      "characters": 1654,
       "estimated_chunks_1200": 2,
-      "sha256": "efe927b55c854402b6ba4223ea1c0c880a0b8d330eeed72b45d096bab42f6e3a"
+      "sha256": "3f77f171779643be43c93762dbc5eddd8ac96ee25ba9d3ca2ce5edfa952be8e9"
     },
     {
       "doc_id": "guide-laptop-student",
       "title": "学生笔记本选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "笔记本"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086702263930&sbomCode=2801010187204",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086097339191&sbomCode=2801010196902",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086715793338&sbomCode=2801010168126",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086627212823&sbomCode=2801010174936",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086159780677&sbomCode=2801010170615",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086600621238&sbomCode=2801010152845"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-laptop-student_学生笔记本选购.md",
-      "characters": 1646,
+      "characters": 1645,
       "estimated_chunks_1200": 2,
-      "sha256": "6e70101edbf876ea584bcba78dcc9dbe9e6af49aa4ef188eb1bae9006f281882"
+      "sha256": "4e4b661fa64323536f8bed37b60936a95417d6bdb75db3e66d2c89de17fba459"
     },
     {
       "doc_id": "guide-laptop-system",
       "title": "鸿蒙电脑与 Windows 笔记本选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "笔记本"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086702263930&sbomCode=2801010187204",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086097339191&sbomCode=2801010196902",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086715793338&sbomCode=2801010168126",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086627212823&sbomCode=2801010174936",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086159780677&sbomCode=2801010170615",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086600621238&sbomCode=2801010152845"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-laptop-system_鸿蒙电脑与_Windows_笔记本选购.md",
-      "characters": 1681,
+      "characters": 1680,
       "estimated_chunks_1200": 2,
-      "sha256": "e12d10c608cf936b37ad74cfc4c3161b613bc495e58dc3d31ed3c86afae9ece1"
+      "sha256": "dabb22b8a08f38716c7798acaed6d1429b1ccf70c28eed291d624d34dc563b12"
     },
     {
       "doc_id": "guide-phone-battery",
       "title": "手机续航与充电选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086941643085&sbomCode=2601010625815",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086658434293&sbomCode=2601010626007",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086724171251&sbomCode=2601010586509",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086133363559&sbomCode=2601010586341",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086454848882&sbomCode=2601010614324",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086850799769&sbomCode=2601010625916",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086524794571&sbomCode=2601010625710",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086866372688&sbomCode=2601010614420"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-phone-battery_手机续航与充电选购.md",
-      "characters": 1934,
+      "characters": 1933,
       "estimated_chunks_1200": 2,
-      "sha256": "11bf757ee7a1bbee78d7d25f1e098add93c5d9fd630f40ac58ca821d68f9c02e"
+      "sha256": "c60798c851c9fb89ca02014569c9b7b6fa814e7530d4d8eb8851506f9803c038"
     },
     {
       "doc_id": "guide-phone-business",
       "title": "商务办公手机选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086941643085&sbomCode=2601010625815",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086658434293&sbomCode=2601010626007",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086724171251&sbomCode=2601010586509",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086133363559&sbomCode=2601010586341",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086454848882&sbomCode=2601010614324",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086850799769&sbomCode=2601010625916",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086524794571&sbomCode=2601010625710",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086866372688&sbomCode=2601010614420"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-phone-business_商务办公手机选购.md",
-      "characters": 1930,
+      "characters": 1929,
       "estimated_chunks_1200": 2,
-      "sha256": "ee37e23b3f9cc8eda037580a37076117e168320ccce4f1512ba25533ddfb0292"
+      "sha256": "a9ceba3380fb9e28f5652a3f38a6e0e0519e7c63adf023844b73769b8ef4eff0"
     },
     {
       "doc_id": "guide-phone-camera",
       "title": "手机影像能力选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086941643085&sbomCode=2601010625815",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086658434293&sbomCode=2601010626007",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086724171251&sbomCode=2601010586509",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086133363559&sbomCode=2601010586341",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086454848882&sbomCode=2601010614324",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086850799769&sbomCode=2601010625916",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086524794571&sbomCode=2601010625710",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086866372688&sbomCode=2601010614420"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-phone-camera_手机影像能力选购.md",
-      "characters": 1926,
+      "characters": 1925,
       "estimated_chunks_1200": 2,
-      "sha256": "9f1bb319e9bb24e083ea88f3413920960cb426026a181032e637bb92bbd196de"
+      "sha256": "b1f9386b914aa780be195aa3a559b35e17c4b993ce2f0985102d6dc711ed1b19"
     },
     {
       "doc_id": "guide-phone-portability",
       "title": "手机尺寸重量与便携选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086941643085&sbomCode=2601010625815",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086658434293&sbomCode=2601010626007",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086724171251&sbomCode=2601010586509",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086133363559&sbomCode=2601010586341",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086454848882&sbomCode=2601010614324",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086850799769&sbomCode=2601010625916",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086524794571&sbomCode=2601010625710",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086866372688&sbomCode=2601010614420"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-phone-portability_手机尺寸重量与便携选购.md",
-      "characters": 1929,
+      "characters": 1928,
       "estimated_chunks_1200": 2,
-      "sha256": "10a6e647e9b6135163cacd47bf4bec33d4f963e2f08275efe1b240f4d923473d"
+      "sha256": "fa93fd938f6d0cf8964cd3ea6cc38aca5ecbe2d688f0efecc7ba1c4adcd8d208"
     },
     {
       "doc_id": "guide-phone-screen",
       "title": "手机屏幕与护眼选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086941643085&sbomCode=2601010625815",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086658434293&sbomCode=2601010626007",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086724171251&sbomCode=2601010586509",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086133363559&sbomCode=2601010586341",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086454848882&sbomCode=2601010614324",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086850799769&sbomCode=2601010625916",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086524794571&sbomCode=2601010625710",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086866372688&sbomCode=2601010614420"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-phone-screen_手机屏幕与护眼选购.md",
-      "characters": 1931,
+      "characters": 1930,
       "estimated_chunks_1200": 2,
-      "sha256": "b53a14526c1f76f132f311f37826491ff65c5a394f2f3d1ce89b9712b3b0ef6f"
+      "sha256": "ebd78f1b9fb879a3ec1a3659cd0487875beee21892b33fc81d7d54ea616ed6d8"
     },
     {
       "doc_id": "guide-phone-series",
       "title": "手机系列定位选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086941643085&sbomCode=2601010625815",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086658434293&sbomCode=2601010626007",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086724171251&sbomCode=2601010586509",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086133363559&sbomCode=2601010586341",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086454848882&sbomCode=2601010614324",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086850799769&sbomCode=2601010625916",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086524794571&sbomCode=2601010625710",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086866372688&sbomCode=2601010614420"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-phone-series_手机系列定位选购.md",
-      "characters": 1945,
+      "characters": 1944,
       "estimated_chunks_1200": 2,
-      "sha256": "d3972962a541a9fa7fc52731ebd7c04cad675911ff43542993dcd01013df9030"
+      "sha256": "8a5eb7ce3d94ef57eb439ae561e8caa03f43e68d353abedd948bceea2f7719d3"
     },
     {
       "doc_id": "guide-phone-student",
       "title": "学生手机选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086941643085&sbomCode=2601010625815",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086658434293&sbomCode=2601010626007",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086724171251&sbomCode=2601010586509",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086133363559&sbomCode=2601010586341",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086454848882&sbomCode=2601010614324",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086850799769&sbomCode=2601010625916",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086524794571&sbomCode=2601010625710",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086866372688&sbomCode=2601010614420"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-phone-student_学生手机选购.md",
-      "characters": 1926,
+      "characters": 1925,
       "estimated_chunks_1200": 2,
-      "sha256": "363e44af02136e0771d79bfac36147bfc465f8814c8da5ed1fe69c4c19051fb5"
+      "sha256": "d0d456e0da1b5e9171fcf75568b5c772b52a6a841658158ce808b272a3c4281c"
     },
     {
       "doc_id": "guide-tablet-drawing",
       "title": "绘画与手写平板选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "平板"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086106814226&sbomCode=2701010122029",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086518319242&sbomCode=2701010122623",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086426290126&sbomCode=2701010132701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086486839777&sbomCode=2701010131701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086590821009&sbomCode=2701010126301",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086127502687&sbomCode=2701010130502",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086287244006&sbomCode=2701010123211"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-tablet-drawing_绘画与手写平板选购.md",
-      "characters": 1812,
+      "characters": 1811,
       "estimated_chunks_1200": 2,
-      "sha256": "a679f083384c823c70b79e733137a6a9f27b57d29ba8e9b52abc708b99b49fd5"
+      "sha256": "00099555a7a38d1ecf7b15719b4eb1ccf9e95b27bec0d9b53d2c8641fcbeab63"
     },
     {
       "doc_id": "guide-tablet-keyboard",
       "title": "平板键盘与手写笔搭配",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "平板"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086106814226&sbomCode=2701010122029",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086518319242&sbomCode=2701010122623",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086426290126&sbomCode=2701010132701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086486839777&sbomCode=2701010131701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086590821009&sbomCode=2701010126301",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086127502687&sbomCode=2701010130502",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086287244006&sbomCode=2701010123211"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-tablet-keyboard_平板键盘与手写笔搭配.md",
-      "characters": 1806,
+      "characters": 1805,
       "estimated_chunks_1200": 2,
-      "sha256": "8d877f8db8a3fd4278aaddae49c2f543fad56a3488ec14fc9ad6e333ff3a92a4"
+      "sha256": "09252a4a177643cc57a4ef3b9cdca7a093d3864524c6cd9ea847dfd4853a4d08"
     },
     {
       "doc_id": "guide-tablet-office",
       "title": "办公场景平板选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "平板"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086106814226&sbomCode=2701010122029",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086518319242&sbomCode=2701010122623",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086426290126&sbomCode=2701010132701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086486839777&sbomCode=2701010131701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086590821009&sbomCode=2701010126301",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086127502687&sbomCode=2701010130502",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086287244006&sbomCode=2701010123211"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-tablet-office_办公场景平板选购.md",
-      "characters": 1809,
+      "characters": 1808,
       "estimated_chunks_1200": 2,
-      "sha256": "e5e8969c56c7c02a60000b028a37763102c7117306146aaebf706536a83e9c3a"
+      "sha256": "2fa212ebad59d3790ffc589f75aad907ea413782279fba8ee700dbe92dce308a"
     },
     {
       "doc_id": "guide-tablet-pc-mode",
       "title": "平板电脑双模式选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "平板"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086106814226&sbomCode=2701010122029",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086518319242&sbomCode=2701010122623",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086426290126&sbomCode=2701010132701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086486839777&sbomCode=2701010131701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086590821009&sbomCode=2701010126301",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086127502687&sbomCode=2701010130502",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086287244006&sbomCode=2701010123211"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-tablet-pc-mode_平板电脑双模式选购.md",
-      "characters": 1813,
+      "characters": 1812,
       "estimated_chunks_1200": 2,
-      "sha256": "bf120d1e268b5faec8596a9f3eba2ede09f7261376bfe6bd43b146bf416a5b3d"
+      "sha256": "879c53e01cbfbb849c9453d601d739d9ccbc431ecd8383f198ad17a0e432df17"
     },
     {
       "doc_id": "guide-tablet-portable",
       "title": "便携平板选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "平板"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086106814226&sbomCode=2701010122029",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086518319242&sbomCode=2701010122623",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086426290126&sbomCode=2701010132701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086486839777&sbomCode=2701010131701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086590821009&sbomCode=2701010126301",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086127502687&sbomCode=2701010130502",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086287244006&sbomCode=2701010123211"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-tablet-portable_便携平板选购.md",
-      "characters": 1801,
+      "characters": 1800,
       "estimated_chunks_1200": 2,
-      "sha256": "b8dc5bcf47d261e00c2e3a0145d031e159b500c77aa871d47084faca3e9e88a5"
+      "sha256": "75db88a939038addf2a2691a713b1c363b208a90bd4a69bd261b23f9b9675c76"
     },
     {
       "doc_id": "guide-tablet-screen",
       "title": "平板屏幕与柔光版选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "平板"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086106814226&sbomCode=2701010122029",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086518319242&sbomCode=2701010122623",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086426290126&sbomCode=2701010132701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086486839777&sbomCode=2701010131701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086590821009&sbomCode=2701010126301",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086127502687&sbomCode=2701010130502",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086287244006&sbomCode=2701010123211"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-tablet-screen_平板屏幕与柔光版选购.md",
-      "characters": 1817,
+      "characters": 1816,
       "estimated_chunks_1200": 2,
-      "sha256": "ef22c316eca20cb67387056e9c51eb308665095c54d710345af5562bb4b92f67"
+      "sha256": "227deb1486bf253f94ca9aebcbf89dfbb4e3c66c1755b7a47d710ac0bc42abf1"
     },
     {
       "doc_id": "guide-tablet-study",
       "title": "学习场景平板选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "平板"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086106814226&sbomCode=2701010122029",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086518319242&sbomCode=2701010122623",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086426290126&sbomCode=2701010132701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086486839777&sbomCode=2701010131701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086590821009&sbomCode=2701010126301",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086127502687&sbomCode=2701010130502",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086287244006&sbomCode=2701010123211"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-tablet-study_学习场景平板选购.md",
-      "characters": 1807,
+      "characters": 1806,
       "estimated_chunks_1200": 2,
-      "sha256": "9ccac5787883c7df4c1967fe55cea9bef32f768d2c8a64dbed69a794a3ab9515"
+      "sha256": "c5ac4387eaac3ae82e99572b4ea00a766acb56ec6fb17140ddd39eddfdb1ffa3"
     },
     {
       "doc_id": "guide-wearable-match",
       "title": "手机与穿戴设备搭配选购",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "跨品类"
-      ],
-      "source_type": "derived_from_official_product_pages",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086702263930&sbomCode=2801010187204",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086941643085&sbomCode=2601010625815",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086658434293&sbomCode=2601010626007",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086724171251&sbomCode=2601010586509",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086133363559&sbomCode=2601010586341",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086454848882&sbomCode=2601010614324",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086850799769&sbomCode=2601010625916",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086524794571&sbomCode=2601010625710",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086106814226&sbomCode=2701010122029",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086518319242&sbomCode=2701010122623"
-      ],
       "path": "03_使用与选购指南_KB/场景选购指南/guide-wearable-match_手机与穿戴设备搭配选购.md",
-      "characters": 2320,
+      "characters": 2328,
       "estimated_chunks_1200": 2,
-      "sha256": "9efb10265d13af916b8ac1fbfbf6812c1aefa75ddf51304e957e27725f2ad350"
+      "sha256": "00897f3ec156860b879758c73bd7237868bacaf613fb775021e88aad60ab3595"
     },
     {
       "doc_id": "guide-android-migration",
       "title": "安卓设备迁移到HarmonyOS指南",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn16079092/"
-      ],
       "path": "03_使用与选购指南_KB/官方资料/guide-android-migration_安卓设备迁移到HarmonyOS指南.md",
       "characters": 2136,
       "estimated_chunks_1200": 2,
@@ -2776,17 +2159,6 @@
       "doc_id": "guide-battery-care",
       "title": "手机平板续航与电池保养",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn00409982/"
-      ],
       "path": "03_使用与选购指南_KB/官方资料/guide-battery-care_手机平板续航与电池保养.md",
       "characters": 1220,
       "estimated_chunks_1200": 2,
@@ -2796,17 +2168,6 @@
       "doc_id": "guide-laptop-new",
       "title": "华为笔记本新机入手指南",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/laptop-user-guide/"
-      ],
       "path": "03_使用与选购指南_KB/官方资料/guide-laptop-new_华为笔记本新机入手指南.md",
       "characters": 702,
       "estimated_chunks_1200": 1,
@@ -2816,17 +2177,6 @@
       "doc_id": "guide-laptop-query",
       "title": "笔记本参数与设备权益查询",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/laptop-user-guide/query/"
-      ],
       "path": "03_使用与选购指南_KB/官方资料/guide-laptop-query_笔记本参数与设备权益查询.md",
       "characters": 1407,
       "estimated_chunks_1200": 2,
@@ -2836,17 +2186,6 @@
       "doc_id": "guide-phone-clone",
       "title": "手机克隆换机指南",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn16078619/"
-      ],
       "path": "03_使用与选购指南_KB/官方资料/guide-phone-clone_手机克隆换机指南.md",
       "characters": 1470,
       "estimated_chunks_1200": 2,
@@ -2856,17 +2195,6 @@
       "doc_id": "guide-product-support",
       "title": "华为产品支持入口",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/product/"
-      ],
       "path": "03_使用与选购指南_KB/官方资料/guide-product-support_华为产品支持入口.md",
       "characters": 1051,
       "estimated_chunks_1200": 1,
@@ -2876,139 +2204,123 @@
       "doc_id": "guide-stylus",
       "title": "平板手写笔使用指南",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn15983946/"
-      ],
       "path": "03_使用与选购指南_KB/官方资料/guide-stylus_平板手写笔使用指南.md",
       "characters": 4020,
       "estimated_chunks_1200": 4,
       "sha256": "765970125801b3adf3134c3e3355bae9976d825ceace96be184d1be4712b1fed"
     },
     {
+      "doc_id": "guide-category-主要配件",
+      "title": "主要配件场景化选购指南",
+      "intent_node": "使用与选购指南 KB",
+      "path": "03_使用与选购指南_KB/新增硬件指南/guide_主要配件.md",
+      "characters": 872,
+      "estimated_chunks_1200": 1,
+      "sha256": "71c2e4072137379e8c386cf4d38fa5ff1f893847d9e38247dc1454f61a56ddae"
+    },
+    {
+      "doc_id": "guide-category-家庭存储",
+      "title": "家庭存储场景化选购指南",
+      "intent_node": "使用与选购指南 KB",
+      "path": "03_使用与选购指南_KB/新增硬件指南/guide_家庭存储.md",
+      "characters": 876,
+      "estimated_chunks_1200": 1,
+      "sha256": "797a3fdbd9ca10e0f3319c87877de7b0b502f7b7c2b7f995a2c874d6437be311"
+    },
+    {
+      "doc_id": "guide-category-打印机",
+      "title": "打印机场景化选购指南",
+      "intent_node": "使用与选购指南 KB",
+      "path": "03_使用与选购指南_KB/新增硬件指南/guide_打印机.md",
+      "characters": 853,
+      "estimated_chunks_1200": 1,
+      "sha256": "9046b560d08b845c2e8acda8c2fd65e2e0edcdae1d0d1d1819076a84a86a2bd1"
+    },
+    {
+      "doc_id": "guide-category-智慧屏",
+      "title": "智慧屏场景化选购指南",
+      "intent_node": "使用与选购指南 KB",
+      "path": "03_使用与选购指南_KB/新增硬件指南/guide_智慧屏.md",
+      "characters": 859,
+      "estimated_chunks_1200": 1,
+      "sha256": "8349f450a278d6dbde861d525c8366a243cdff52a0be6547c2b4b20744f49032"
+    },
+    {
+      "doc_id": "guide-category-智能眼镜",
+      "title": "智能眼镜场景化选购指南",
+      "intent_node": "使用与选购指南 KB",
+      "path": "03_使用与选购指南_KB/新增硬件指南/guide_智能眼镜.md",
+      "characters": 848,
+      "estimated_chunks_1200": 1,
+      "sha256": "06867e8be04643b6fa907faafd41e1452b9971a1d94bc7a794fb9632c5c94394"
+    },
+    {
+      "doc_id": "guide-category-智能门锁",
+      "title": "智能门锁场景化选购指南",
+      "intent_node": "使用与选购指南 KB",
+      "path": "03_使用与选购指南_KB/新增硬件指南/guide_智能门锁.md",
+      "characters": 878,
+      "estimated_chunks_1200": 1,
+      "sha256": "9ed45b825f66b70c9b576b14ac2c171ee76a1d672f839726661422658d1307c9"
+    },
+    {
+      "doc_id": "guide-category-路由",
+      "title": "路由场景化选购指南",
+      "intent_node": "使用与选购指南 KB",
+      "path": "03_使用与选购指南_KB/新增硬件指南/guide_路由.md",
+      "characters": 850,
+      "estimated_chunks_1200": 1,
+      "sha256": "9e3a9c3701a64075c782f8fb99a6823351e6ebcf45e33a751bc08da45836e009"
+    },
+    {
+      "doc_id": "guide-category-音箱",
+      "title": "音箱场景化选购指南",
+      "intent_node": "使用与选购指南 KB",
+      "path": "03_使用与选购指南_KB/新增硬件指南/guide_音箱.md",
+      "characters": 844,
+      "estimated_chunks_1200": 1,
+      "sha256": "8ca0f7d058e31fa6bbef4093350cd18304738532c91c5cfc247762dee82680ab"
+    },
+    {
       "doc_id": "framework-bundle",
       "title": "跨设备套装选购追问流程",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "跨品类"
-      ],
-      "source_type": "decision_framework_derived_from_official_catalog",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086702263930&sbomCode=2801010187204",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086941643085&sbomCode=2601010625815",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086658434293&sbomCode=2601010626007",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086724171251&sbomCode=2601010586509",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086133363559&sbomCode=2601010586341",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086454848882&sbomCode=2601010614324",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086850799769&sbomCode=2601010625916",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086524794571&sbomCode=2601010625710",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086106814226&sbomCode=2701010122029",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086518319242&sbomCode=2701010122623",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086426290126&sbomCode=2701010132701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086486839777&sbomCode=2701010131701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086590821009&sbomCode=2701010126301",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086127502687&sbomCode=2701010130502",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086287244006&sbomCode=2701010123211",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086097339191&sbomCode=2801010196902",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086715793338&sbomCode=2801010168126",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086627212823&sbomCode=2801010174936",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086866372688&sbomCode=2601010614420",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086159780677&sbomCode=2801010170615",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086600621238&sbomCode=2801010152845"
-      ],
       "path": "03_使用与选购指南_KB/选购框架/framework-bundle_跨设备套装选购追问流程.md",
-      "characters": 2963,
+      "characters": 2962,
       "estimated_chunks_1200": 3,
-      "sha256": "52b82e269ca9b66ee29f11380d1bec73a3c11912d1f1f95bcedbe9809609614e"
+      "sha256": "7b4c3b691a70217478b8c3b372aadc6511850cd5001c6cc1879c38689e217357"
     },
     {
       "doc_id": "framework-laptop",
       "title": "笔记本选购字段与追问框架",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "笔记本"
-      ],
-      "source_type": "decision_framework_derived_from_official_catalog",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086702263930&sbomCode=2801010187204",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086097339191&sbomCode=2801010196902",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086715793338&sbomCode=2801010168126",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086627212823&sbomCode=2801010174936",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086159780677&sbomCode=2801010170615",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086600621238&sbomCode=2801010152845"
-      ],
       "path": "03_使用与选购指南_KB/选购框架/framework-laptop_笔记本选购字段与追问框架.md",
-      "characters": 1179,
+      "characters": 1178,
       "estimated_chunks_1200": 1,
-      "sha256": "467873f2341474626ccec708a8979d49b17396b411ecd30d4efa4c31b0092c23"
+      "sha256": "23fae137a12a4ba82a785c9937acf33c47c9fae83fec47757f3a961a4beff618"
     },
     {
       "doc_id": "framework-phone",
       "title": "手机选购字段与追问框架",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "手机"
-      ],
-      "source_type": "decision_framework_derived_from_official_catalog",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086941643085&sbomCode=2601010625815",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086658434293&sbomCode=2601010626007",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086724171251&sbomCode=2601010586509",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086133363559&sbomCode=2601010586341",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086454848882&sbomCode=2601010614324",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086850799769&sbomCode=2601010625916",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086524794571&sbomCode=2601010625710",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086866372688&sbomCode=2601010614420"
-      ],
       "path": "03_使用与选购指南_KB/选购框架/framework-phone_手机选购字段与追问框架.md",
-      "characters": 1372,
+      "characters": 1371,
       "estimated_chunks_1200": 2,
-      "sha256": "fe862da83718c3dd7d99ad99f90afcf577ec2fe0a6f2c32ea5df344cc7820cb7"
+      "sha256": "72339d71fb7b04ab0fffe8f7ffc6d71104cb6dd101e04d78599d45c0e0498df7"
     },
     {
       "doc_id": "framework-tablet",
       "title": "平板选购字段与追问框架",
       "intent_node": "使用与选购指南 KB",
-      "scope": [
-        "平板"
-      ],
-      "source_type": "decision_framework_derived_from_official_catalog",
-      "source_urls": [
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086106814226&sbomCode=2701010122029",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086518319242&sbomCode=2701010122623",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086426290126&sbomCode=2701010132701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086486839777&sbomCode=2701010131701",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086590821009&sbomCode=2701010126301",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086127502687&sbomCode=2701010130502",
-        "https://www.vmall.com/product/comdetail/index.html?prdId=10086287244006&sbomCode=2701010123211"
-      ],
       "path": "03_使用与选购指南_KB/选购框架/framework-tablet_平板选购字段与追问框架.md",
-      "characters": 1311,
+      "characters": 1310,
       "estimated_chunks_1200": 2,
-      "sha256": "2574998357e209efe9d153a2da17a321c006a5a5948a59586c07923e9e79229d"
+      "sha256": "17d6d6707b8d0edf21489467bdc6ed6a002b8f25417d1d2f81f9680de61840d8"
     },
     {
       "doc_id": "service-area",
       "title": "华为官方服务范围",
       "intent_node": "配送与安装 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/service-area/"
-      ],
       "path": "04_配送与安装_KB/service-area_华为官方服务范围.md",
       "characters": 2175,
       "estimated_chunks_1200": 2,
@@ -3018,17 +2330,6 @@
       "doc_id": "service-delivery",
       "title": "华为商城发货与配送",
       "intent_node": "配送与安装 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://www.vmall.com/help/faq-16732.html"
-      ],
       "path": "04_配送与安装_KB/service-delivery_华为商城发货与配送.md",
       "characters": 1676,
       "estimated_chunks_1200": 2,
@@ -3038,17 +2339,6 @@
       "doc_id": "service-sign",
       "title": "华为商城查询与签收",
       "intent_node": "配送与安装 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://www.vmall.com/help/faq-16734.html"
-      ],
       "path": "04_配送与安装_KB/service-sign_华为商城查询与签收.md",
       "characters": 1595,
       "estimated_chunks_1200": 2,
@@ -3058,17 +2348,6 @@
       "doc_id": "service-transport",
       "title": "华为商城运输与查询",
       "intent_node": "配送与安装 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://www.vmall.com/help/faq-4367.html"
-      ],
       "path": "04_配送与安装_KB/service-transport_华为商城运输与查询.md",
       "characters": 1403,
       "estimated_chunks_1200": 2,
@@ -3078,59 +2357,60 @@
       "doc_id": "delivery-checklist",
       "title": "配送查询所需信息清单",
       "intent_node": "配送与安装 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本"
-      ],
-      "source_type": "checklist_derived_from_official_policy_pages",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/service-area/",
-        "https://www.vmall.com/help/faq-16732.html",
-        "https://www.vmall.com/help/faq-16734.html",
-        "https://www.vmall.com/help/faq-4367.html"
-      ],
       "path": "04_配送与安装_KB/办理清单/delivery-checklist_配送查询所需信息清单.md",
-      "characters": 664,
+      "characters": 663,
       "estimated_chunks_1200": 1,
-      "sha256": "da12d168bf6fee06f2be01669a47038078753961f1ecfc6e1b3d27353310e077"
+      "sha256": "2a86a8b70f8480aa0bf3c22b682a80d92b76b74fdd88fd03474d2a817bd6ae89"
     },
     {
       "doc_id": "sign-checklist",
       "title": "商品签收验货清单",
       "intent_node": "配送与安装 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本"
-      ],
-      "source_type": "checklist_derived_from_official_policy_pages",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/service-area/",
-        "https://www.vmall.com/help/faq-16732.html",
-        "https://www.vmall.com/help/faq-16734.html",
-        "https://www.vmall.com/help/faq-4367.html"
-      ],
       "path": "04_配送与安装_KB/办理清单/sign-checklist_商品签收验货清单.md",
-      "characters": 670,
+      "characters": 669,
       "estimated_chunks_1200": 1,
-      "sha256": "a4b2897dcf106023e33ce9e50b59310f6ea9457c0403702b829d44ac57ac5143"
+      "sha256": "cefe7044950d9e8e0fd8a1676eb0305ecf50320918f901251cd24f47555e3255"
+    },
+    {
+      "doc_id": "install-category-打印机",
+      "title": "打印机配送安装与验收清单",
+      "intent_node": "配送与安装 KB",
+      "path": "04_配送与安装_KB/品类安装指南/install_打印机.md",
+      "characters": 730,
+      "estimated_chunks_1200": 1,
+      "sha256": "5b0adb471cf0f294418d50d868b87e9097c8a9d145d83efabb3ea4229fdf0fa7"
+    },
+    {
+      "doc_id": "install-category-智慧屏",
+      "title": "智慧屏配送安装与验收清单",
+      "intent_node": "配送与安装 KB",
+      "path": "04_配送与安装_KB/品类安装指南/install_智慧屏.md",
+      "characters": 739,
+      "estimated_chunks_1200": 1,
+      "sha256": "60d9c68e53a1446ff64b165c36e9c2ee27ceda7f832c6b6b74ab82a2585b03fe"
+    },
+    {
+      "doc_id": "install-category-智能门锁",
+      "title": "智能门锁配送安装与验收清单",
+      "intent_node": "配送与安装 KB",
+      "path": "04_配送与安装_KB/品类安装指南/install_智能门锁.md",
+      "characters": 761,
+      "estimated_chunks_1200": 1,
+      "sha256": "3837696566d9d6a99e9a02a3d5bacb39493cd686811f64f3e0a30dd92377b9f4"
+    },
+    {
+      "doc_id": "install-category-路由",
+      "title": "路由配送安装与验收清单",
+      "intent_node": "配送与安装 KB",
+      "path": "04_配送与安装_KB/品类安装指南/install_路由.md",
+      "characters": 721,
+      "estimated_chunks_1200": 1,
+      "sha256": "d0f8f141531243b38d05b2b1f041bef739dc5726627da05f0cbac256407cd293"
     },
     {
       "doc_id": "service-refund",
       "title": "退款方式和周期",
       "intent_node": "退换货与保修 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://www.vmall.com/help/faq-16704.html"
-      ],
       "path": "05_退换货与保修_KB/service-refund_退款方式和周期.md",
       "characters": 1006,
       "estimated_chunks_1200": 1,
@@ -3140,17 +2420,6 @@
       "doc_id": "service-return",
       "title": "华为商城退换货政策",
       "intent_node": "退换货与保修 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://www.vmall.com/help/faq-834.html"
-      ],
       "path": "05_退换货与保修_KB/service-return_华为商城退换货政策.md",
       "characters": 3595,
       "estimated_chunks_1200": 3,
@@ -3160,17 +2429,6 @@
       "doc_id": "service-warranty-pc",
       "title": "笔记本电脑保修政策",
       "intent_node": "退换货与保修 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/warranty-policy/pc/"
-      ],
       "path": "05_退换货与保修_KB/service-warranty-pc_笔记本电脑保修政策.md",
       "characters": 3541,
       "estimated_chunks_1200": 3,
@@ -3180,13 +2438,6 @@
       "doc_id": "service-warranty-phone",
       "title": "华为手机保修政策要点",
       "intent_node": "退换货与保修 KB",
-      "scope": [
-        "手机"
-      ],
-      "source_type": "official_policy_summary",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/"
-      ],
       "path": "05_退换货与保修_KB/service-warranty-phone_华为手机保修政策要点.md",
       "characters": 679,
       "estimated_chunks_1200": 1,
@@ -3196,17 +2447,6 @@
       "doc_id": "service-warranty-tablet",
       "title": "平板保修政策",
       "intent_node": "退换货与保修 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/warranty-policy/tablet/"
-      ],
       "path": "05_退换货与保修_KB/service-warranty-tablet_平板保修政策.md",
       "characters": 2880,
       "estimated_chunks_1200": 3,
@@ -3216,61 +2456,42 @@
       "doc_id": "return-checklist",
       "title": "退换货申请办理清单",
       "intent_node": "退换货与保修 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本"
-      ],
-      "source_type": "checklist_derived_from_official_policy_pages",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/warranty-policy/pc/",
-        "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
-        "https://consumer.huawei.com/cn/support/warranty-policy/tablet/",
-        "https://www.vmall.com/help/faq-16704.html",
-        "https://www.vmall.com/help/faq-834.html"
-      ],
       "path": "05_退换货与保修_KB/办理清单/return-checklist_退换货申请办理清单.md",
-      "characters": 766,
+      "characters": 765,
       "estimated_chunks_1200": 1,
-      "sha256": "c9065f4dd33e5c7109f2cf7ffb7d96c7abd054b8a350e8e53ff33a079b246102"
+      "sha256": "4a5d8d750ff8d64188ce621da9fb9469044f30ab4ac072c3dd57eda79dde3063"
     },
     {
       "doc_id": "warranty-checklist",
       "title": "保修与送修凭证清单",
       "intent_node": "退换货与保修 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本"
-      ],
-      "source_type": "checklist_derived_from_official_policy_pages",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/warranty-policy/pc/",
-        "https://consumer.huawei.com/cn/support/warranty-policy/smartphone/",
-        "https://consumer.huawei.com/cn/support/warranty-policy/tablet/",
-        "https://www.vmall.com/help/faq-16704.html",
-        "https://www.vmall.com/help/faq-834.html"
-      ],
       "path": "05_退换货与保修_KB/办理清单/warranty-checklist_保修与送修凭证清单.md",
-      "characters": 768,
+      "characters": 767,
       "estimated_chunks_1200": 1,
-      "sha256": "b032dacdd6c8b1f431ae57701826aa18e68643e4f4e9635256fa716557fdee9a"
+      "sha256": "b49bd764b8996f9ad1436988e117c13e6d06ce8ebc2ce7355eee9950d1693889"
+    },
+    {
+      "doc_id": "warranty-consumables-and-storage",
+      "title": "打印耗材、配件与家庭存储售后边界",
+      "intent_node": "退换货与保修 KB",
+      "path": "05_退换货与保修_KB/品类售后边界/warranty_consumables-and-storage.md",
+      "characters": 651,
+      "estimated_chunks_1200": 1,
+      "sha256": "7bcb872211c1100604358d20d0e144de463b995a35455d3d9ad5e977e52598ef"
+    },
+    {
+      "doc_id": "warranty-large-installed-products",
+      "title": "智慧屏与智能门锁安装类商品售后边界",
+      "intent_node": "退换货与保修 KB",
+      "path": "05_退换货与保修_KB/品类售后边界/warranty_large-installed-products.md",
+      "characters": 648,
+      "estimated_chunks_1200": 1,
+      "sha256": "4e65ad82cbda96f697b95dd5a3f64005a1a498ae49bfd93cf74391387e918ace"
     },
     {
       "doc_id": "service-battery-repair",
       "title": "平板笔记本电池维修指引",
       "intent_node": "发票与售后 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907329/"
-      ],
       "path": "06_发票与售后_KB/service-battery-repair_平板笔记本电池维修指引.md",
       "characters": 1651,
       "estimated_chunks_1200": 2,
@@ -3280,17 +2501,6 @@
       "doc_id": "service-electronic-warranty",
       "title": "电子三包凭证说明",
       "intent_node": "发票与售后 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn15937870/"
-      ],
       "path": "06_发票与售后_KB/service-electronic-warranty_电子三包凭证说明.md",
       "characters": 883,
       "estimated_chunks_1200": 1,
@@ -3300,17 +2510,6 @@
       "doc_id": "service-invoice",
       "title": "华为商城发票说明",
       "intent_node": "发票与售后 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://www.vmall.com/help/faq-16702.html"
-      ],
       "path": "06_发票与售后_KB/service-invoice_华为商城发票说明.md",
       "characters": 2203,
       "estimated_chunks_1200": 2,
@@ -3320,17 +2519,6 @@
       "doc_id": "service-laptop-benefits",
       "title": "华为笔记本服务权益",
       "intent_node": "发票与售后 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/laptops-service/"
-      ],
       "path": "06_发票与售后_KB/service-laptop-benefits_华为笔记本服务权益.md",
       "characters": 1617,
       "estimated_chunks_1200": 2,
@@ -3340,17 +2528,6 @@
       "doc_id": "service-mail-repair",
       "title": "手机寄修服务",
       "intent_node": "发票与售后 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本",
-        "穿戴（兼容）",
-        "耳机（兼容）"
-      ],
-      "source_type": "official_support_or_policy_page",
-      "source_urls": [
-        "https://www.vmall.com/help/faq-16698.html"
-      ],
       "path": "06_发票与售后_KB/service-mail-repair_手机寄修服务.md",
       "characters": 1723,
       "estimated_chunks_1200": 2,
@@ -3360,45 +2537,19 @@
       "doc_id": "invoice-checklist",
       "title": "发票开具与换开核对清单",
       "intent_node": "发票与售后 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本"
-      ],
-      "source_type": "checklist_derived_from_official_policy_pages",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907329/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15937870/",
-        "https://consumer.huawei.com/cn/support/laptops-service/",
-        "https://www.vmall.com/help/faq-16698.html",
-        "https://www.vmall.com/help/faq-16702.html"
-      ],
       "path": "06_发票与售后_KB/办理清单/invoice-checklist_发票开具与换开核对清单.md",
-      "characters": 769,
+      "characters": 768,
       "estimated_chunks_1200": 1,
-      "sha256": "23c4c9842248b0998b45f27f3600697120d324e21edeb68dac5e19e5d28a6079"
+      "sha256": "486b7a3ae55a752caf4645049306152b1bd383e2f5e2ccbb6c9e909469cb1d90"
     },
     {
       "doc_id": "repair-checklist",
       "title": "寄修与维修前准备清单",
       "intent_node": "发票与售后 KB",
-      "scope": [
-        "手机",
-        "平板",
-        "笔记本"
-      ],
-      "source_type": "checklist_derived_from_official_policy_pages",
-      "source_urls": [
-        "https://consumer.huawei.com/cn/support/content/zh-cn15907329/",
-        "https://consumer.huawei.com/cn/support/content/zh-cn15937870/",
-        "https://consumer.huawei.com/cn/support/laptops-service/",
-        "https://www.vmall.com/help/faq-16698.html",
-        "https://www.vmall.com/help/faq-16702.html"
-      ],
       "path": "06_发票与售后_KB/办理清单/repair-checklist_寄修与维修前准备清单.md",
-      "characters": 763,
+      "characters": 762,
       "estimated_chunks_1200": 1,
-      "sha256": "f6ab0dee0356113f144933759e724e1ee546a3ffa4fd28c200b871a175e24ba4"
+      "sha256": "fde7295508c21ee8c865a020cd45a32e28e1822912b06166f91ce5fb13ef312b"
     }
   ]
 }

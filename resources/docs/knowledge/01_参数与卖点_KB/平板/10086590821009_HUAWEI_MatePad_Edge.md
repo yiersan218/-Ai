@@ -3,7 +3,7 @@ doc_id: "product-10086590821009"
 title: "HUAWEI MatePad Edge 参数与卖点"
 domain: "华为商城导购"
 intent_node: "参数与卖点 KB"
-scope: ["平板", "核心商品"]
+scope: ["平板", "华为硬件"]
 source_type: "official_product_page"
 source_urls: ["https://www.vmall.com/product/comdetail/index.html?prdId=10086590821009&sbomCode=2701010126301"]
 collected_at: "2026-08-02"
@@ -14,7 +14,7 @@ dynamic_price_stock_excluded: true
 
 ## 文档范围
 
-本条目适用于第一版导购范围中的平板产品。颜色、容量、套餐、价格、库存和优惠属于动态信息，不写入知识库。
+本条目适用于当前导购范围中的平板产品。颜色、容量、套餐、价格、库存和优惠属于动态信息，不写入知识库。
 
 ## 官方概述与卖点
 

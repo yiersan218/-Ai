@@ -25,18 +25,21 @@ import io.modelcontextprotocol.spec.McpSchema.JsonSchema;
 import io.modelcontextprotocol.spec.McpSchema.TextContent;
 import io.modelcontextprotocol.spec.McpSchema.CallToolRequest;
 import io.modelcontextprotocol.spec.McpSchema.CallToolResult;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import java.net.URI;
+import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
 import java.time.Duration;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -44,10 +47,14 @@ import java.util.Locale;
 import java.util.Map;
 
 /**
- * You.com 联网搜索 MCP 工具
+ * 华为商城导购场景的 You.com 联网搜索 MCP 工具
  * <p>
  * 基于 You.com Search API（GET <a href="https://ydc-index.io/v1/search">...</a>，X-API-Key 鉴权），
- * 仅检索华为商城域名，返回带来源链接和摘录片段的网页与新闻结果；API Key 从环境变量 YDC_API_KEY 读取
+ * 按查询类型定向检索华为商城和华为消费者业务官网，返回带检索元数据、来源链接和摘录片段的官方网页结果；
+ * API Key 从环境变量 YDC_API_KEY 读取。
+ * <p>
+ * 本工具是公开网页搜索，不是华为商城交易接口。价格、库存、优惠等动态信息只能作为搜索摘要证据返回，
+ * 不保证与用户当前地区、账号或结算页实时状态一致。
  * <p>
  * 仅当环境变量 YDC_API_KEY 存在时才注册本工具（{@code @ConditionalOnProperty}）：工具清单是给 LLM
  * 消费的能力目录，登记一个缺 Key 不可用的工具只会诱导模型调用后失败、污染清单，故「工具存在 ⟺ 可用」，
@@ -57,10 +64,11 @@ import java.util.Map;
  * 因此此处内置精简的 You.com HTTP 调用逻辑，与 bootstrap 的 {@code YouComWebSearchChannel} 属有意重复——
  * 抽公共模块会打破该隔离，故按「服务级重复」处理；修改 You.com 契约（端点 / 参数 / 响应结构）时两处需同步
  */
-@Slf4j
 @Component
 @ConditionalOnProperty(name = "YDC_API_KEY")
 public class YouComSearchMcpExecutor {
+
+    private static final Logger log = LoggerFactory.getLogger(YouComSearchMcpExecutor.class);
 
     private static final String TOOL_ID = "youcom_search";
 
@@ -69,16 +77,39 @@ public class YouComSearchMcpExecutor {
      */
     private static final String ENV_API_KEY = "YDC_API_KEY";
 
+    private static final String VMALL_DOMAIN = "vmall.com";
+
+    private static final String HUAWEI_CONSUMER_DOMAIN = "consumer.huawei.com";
+
     /**
-     * You.com 域名严格白名单。使用注册域名可覆盖 www.vmall.com 等华为商城子域名。
+     * You.com 返回结果的严格白名单。注册域名同时覆盖其子域名。
      */
-    private static final String SEARCH_DOMAIN = "vmall.com";
+    private static final List<String> OFFICIAL_DOMAINS = List.of(VMALL_DOMAIN, HUAWEI_CONSUMER_DOMAIN);
+
+    private static final List<String> VMALL_ONLY_DOMAINS = List.of(VMALL_DOMAIN);
 
     private static final int DEFAULT_COUNT = 5;
 
     private static final int MAX_COUNT = 20;
 
     private static final List<String> FRESHNESS_VALUES = List.of("day", "week", "month", "year");
+
+    private static final String DEFAULT_SEARCH_TYPE = "general";
+
+    private static final List<String> SEARCH_TYPE_VALUES = List.of(
+            DEFAULT_SEARCH_TYPE,
+            "product_search",
+            "specifications",
+            "price_stock",
+            "promotion",
+            "installment_tradein",
+            "compatibility_support",
+            "service_policy"
+    );
+
+    private static final int MAX_QUERY_LENGTH = 500;
+
+    private static final int MAX_PRODUCT_NAME_LENGTH = 120;
 
     private final HttpClient httpClient = HttpClient.newBuilder()
             .connectTimeout(Duration.ofSeconds(10))
@@ -102,7 +133,29 @@ public class YouComSearchMcpExecutor {
 
         properties.put("query", Map.of(
                 "type", "string",
-                "description", "要在华为商城（vmall.com）中检索的商品、参数或问题"
+                "description", "用户要查询的完整商品问题；必须保留产品名、系列名、型号和用户给出的限制条件"
+        ));
+
+        properties.put("search_type", Map.of(
+                "type", "string",
+                "description", "查询主题：general(通用)、product_search(商品搜索)、specifications(参数规格)、price_stock(价格库存)、promotion(优惠活动)、installment_tradein(分期与以旧换新)、compatibility_support(兼容与使用支持)、service_policy(服务政策)",
+                "enum", SEARCH_TYPE_VALUES,
+                "default", DEFAULT_SEARCH_TYPE
+        ));
+
+        properties.put("product_name", Map.of(
+                "type", "string",
+                "description", "用户问题中明确出现的产品、系列或型号原文，例如 HUAWEI Sound X5；不得猜测或改写"
+        ));
+
+        properties.put("prd_id", Map.of(
+                "type", "string",
+                "description", "用户明确提供的华为商城 prdId；未提供时不要生成"
+        ));
+
+        properties.put("sbom_code", Map.of(
+                "type", "string",
+                "description", "用户明确提供的华为商城 sbomCode/SKU 标识；未提供时不要生成"
         ));
 
         properties.put("count", Map.of(
@@ -122,7 +175,7 @@ public class YouComSearchMcpExecutor {
 
         return Tool.builder()
                 .name(TOOL_ID)
-                .description("基于 You.com Search API 检索华为商城（vmall.com），仅返回该域名及其子域名的来源链接和摘录。需要配置 YDC_API_KEY 环境变量")
+                .description("通过 You.com Search API 面向华为商城智能导购检索 vmall.com 和华为官方支持页面：查询商品页、参数规格、价格库存搜索摘要、优惠活动、兼容支持和服务政策。动态信息不等同于交易系统实时结果。需要配置 YDC_API_KEY 环境变量")
                 .inputSchema(inputSchema)
                 .build();
     }
@@ -132,11 +185,29 @@ public class YouComSearchMcpExecutor {
         try {
             Map<String, Object> args = request.arguments() != null ? request.arguments() : Map.of();
             String query = stringArg(args, "query");
+            String searchType = stringArg(args, "search_type");
+            String productName = stringArg(args, "product_name");
+            String prdId = stringArg(args, "prd_id");
+            String sbomCode = stringArg(args, "sbom_code");
             Integer count = intArg(args, "count");
             String freshness = stringArg(args, "freshness");
 
             if (query == null || query.isBlank()) {
                 return errorResult("请提供检索关键词 query");
+            }
+            query = query.trim();
+            if (query.length() > MAX_QUERY_LENGTH) {
+                return errorResult("query 过长，最多允许 " + MAX_QUERY_LENGTH + " 个字符");
+            }
+            if (searchType == null || searchType.isBlank()) searchType = DEFAULT_SEARCH_TYPE;
+            if (!SEARCH_TYPE_VALUES.contains(searchType)) {
+                return errorResult("search_type 参数不合法，可选值：" + String.join("、", SEARCH_TYPE_VALUES));
+            }
+            productName = trimToNull(productName);
+            prdId = trimToNull(prdId);
+            sbomCode = trimToNull(sbomCode);
+            if (productName != null && productName.length() > MAX_PRODUCT_NAME_LENGTH) {
+                return errorResult("product_name 过长，最多允许 " + MAX_PRODUCT_NAME_LENGTH + " 个字符");
             }
             if (count == null || count <= 0) count = DEFAULT_COUNT;
             if (count > MAX_COUNT) count = MAX_COUNT;
@@ -150,10 +221,12 @@ public class YouComSearchMcpExecutor {
                         + "（可在 https://you.com/platform/api-keys 获取），配置后重启 MCP Server 即可使用");
             }
 
-            String result = doSearch(query, count, freshness, apiKey);
+            List<String> domains = resolveSearchDomains(searchType);
+            String effectiveQuery = buildEffectiveQuery(query, searchType, productName, prdId, sbomCode);
+            String result = doSearch(query, effectiveQuery, searchType, count, freshness, domains, apiKey);
 
-            log.info("MCP 工具调用完成, toolId={}, query={}, count={}, elapsed={}ms",
-                    TOOL_ID, query, count, System.currentTimeMillis() - startMs);
+            log.info("MCP 工具调用完成, toolId={}, searchType={}, query={}, count={}, domains={}, elapsed={}ms",
+                    TOOL_ID, searchType, query, count, domains, System.currentTimeMillis() - startMs);
             return successResult(result);
         } catch (Exception e) {
             log.error("MCP 工具调用失败, toolId={}, elapsed={}ms",
@@ -165,12 +238,18 @@ public class YouComSearchMcpExecutor {
     /**
      * 调用 You.com Search API 并格式化结果文本
      */
-    private String doSearch(String query, int count, String freshness, String apiKey) throws Exception {
+    private String doSearch(String originalQuery,
+                            String effectiveQuery,
+                            String searchType,
+                            int count,
+                            String freshness,
+                            List<String> domains,
+                            String apiKey) throws Exception {
         StringBuilder url = new StringBuilder(apiUrl)
-                .append("?query=").append(URLEncoder.encode(query, StandardCharsets.UTF_8))
+                .append("?query=").append(URLEncoder.encode(effectiveQuery, StandardCharsets.UTF_8))
                 .append("&count=").append(count)
                 .append("&include_domains=")
-                .append(URLEncoder.encode(SEARCH_DOMAIN, StandardCharsets.UTF_8));
+                .append(URLEncoder.encode(String.join(",", domains), StandardCharsets.UTF_8));
         if (freshness != null && !freshness.isBlank()) {
             url.append("&freshness=").append(freshness);
         }
@@ -187,7 +266,8 @@ public class YouComSearchMcpExecutor {
             throw new IllegalStateException("You.com API 返回异常状态码: " + response.statusCode());
         }
 
-        return formatResults(objectMapper.readTree(response.body()), count);
+        return formatResults(objectMapper.readTree(response.body()), count, originalQuery,
+                effectiveQuery, searchType, domains, freshness);
     }
 
     /**
@@ -199,30 +279,54 @@ public class YouComSearchMcpExecutor {
      * You.com 的 count 是「每 section」语义（web、news 各最多 count 条），合并两段后统一截断到 count，
      * 使 count 对外表达「返回结果总条数上限」，与直觉一致，也避免多余结果占用 LLM token
      */
-    private String formatResults(JsonNode root, int count) {
+    private String formatResults(JsonNode root,
+                                 int count,
+                                 String originalQuery,
+                                 String effectiveQuery,
+                                 String searchType,
+                                 List<String> domains,
+                                 String freshness) {
         JsonNode results = root.path("results");
         List<JsonNode> items = new ArrayList<>();
-        collectItems(items, results.path("web"));
-        collectItems(items, results.path("news"));
+        collectItems(items, results.path("web"), domains);
+        collectItems(items, results.path("news"), domains);
 
-        if (items.isEmpty()) {
-            return "未检索到相关结果，请尝试更换关键词。";
-        }
         if (items.size() > count) {
             items = items.subList(0, count);
         }
 
         StringBuilder sb = new StringBuilder();
-        sb.append(String.format("检索完成，共 %d 条结果：\n\n", items.size()));
+        sb.append("工具: ").append(TOOL_ID).append('\n');
+        sb.append("查询类型: ").append(searchType).append('\n');
+        sb.append("用户查询: ").append(originalQuery).append('\n');
+        sb.append("实际检索词: ").append(effectiveQuery).append('\n');
+        sb.append("检索时间(UTC): ").append(Instant.now()).append('\n');
+        sb.append("官方来源范围: ").append(String.join(", ", domains)).append('\n');
+        sb.append("时效过滤: ").append(freshness == null || freshness.isBlank() ? "未限定" : freshness).append('\n');
+        sb.append("证据级别: 公开网页搜索摘要（不是商品交易系统实时接口）\n");
+        sb.append("动态信息说明: 价格、库存、优惠及活动状态可能受索引延迟、地区、账号和结算条件影响；仅能作为当前搜索摘要，最终以华为商城商品页或结算页展示为准。\n");
+
+        if (items.isEmpty()) {
+            sb.append("检索结果: 未检索到相关官方网页结果，请核对产品型号或更换关键词。");
+            return sb.toString();
+        }
+
+        sb.append(String.format("检索结果数: %d\n\n", items.size()));
         int index = 1;
         for (JsonNode item : items) {
             String title = item.path("title").asText("(无标题)");
             String url = item.path("url").asText("");
             String excerpt = resolveExcerpt(item);
+            String pageAge = item.path("page_age").asText("");
 
             sb.append(String.format("%d. %s\n", index++, title));
+            sb.append("   来源类型: ").append(resolveSourceType(url)).append('\n');
             if (!url.isBlank()) {
                 sb.append("   链接: ").append(url).append('\n');
+            }
+            appendProductIdentifiers(sb, url);
+            if (!pageAge.isBlank()) {
+                sb.append("   页面时间: ").append(pageAge).append('\n');
             }
             if (!excerpt.isBlank()) {
                 sb.append("   摘录: ").append(excerpt).append('\n');
@@ -247,10 +351,10 @@ public class YouComSearchMcpExecutor {
         return "";
     }
 
-    private void collectItems(List<JsonNode> items, JsonNode array) {
+    private void collectItems(List<JsonNode> items, JsonNode array, List<String> allowedDomains) {
         if (array != null && array.isArray()) {
             array.forEach(item -> {
-                if (isAllowedResult(item)) {
+                if (isAllowedResult(item, allowedDomains)) {
                     items.add(item);
                 }
             });
@@ -260,7 +364,7 @@ public class YouComSearchMcpExecutor {
     /**
      * 对 API 响应做第二层域名校验，避免异常或伪造的站外链接进入 RAG 上下文。
      */
-    private boolean isAllowedResult(JsonNode item) {
+    private boolean isAllowedResult(JsonNode item, List<String> allowedDomains) {
         String url = item.path("url").asText("");
         if (url.isBlank()) {
             return false;
@@ -274,11 +378,111 @@ public class YouComSearchMcpExecutor {
                 return false;
             }
             String normalizedHost = host.toLowerCase(Locale.ROOT);
-            return normalizedHost.equals(SEARCH_DOMAIN)
-                    || normalizedHost.endsWith("." + SEARCH_DOMAIN);
+            return allowedDomains.stream().anyMatch(domain ->
+                    normalizedHost.equals(domain) || normalizedHost.endsWith("." + domain));
         } catch (IllegalArgumentException ignored) {
             return false;
         }
+    }
+
+    private List<String> resolveSearchDomains(String searchType) {
+        return switch (searchType) {
+            case "specifications", "compatibility_support", "service_policy" -> OFFICIAL_DOMAINS;
+            default -> VMALL_ONLY_DOMAINS;
+        };
+    }
+
+    private String buildEffectiveQuery(String query,
+                                       String searchType,
+                                       String productName,
+                                       String prdId,
+                                       String sbomCode) {
+        StringBuilder effective = new StringBuilder();
+        if (productName != null && !containsIgnoreCase(query, productName)) {
+            effective.append(productName).append(' ');
+        }
+        effective.append(query.trim());
+        appendIfMissing(effective, focusTerms(searchType));
+        appendIfMissing(effective, prdId);
+        appendIfMissing(effective, sbomCode);
+        return effective.toString().replaceAll("\\s+", " ").trim();
+    }
+
+    private String focusTerms(String searchType) {
+        return switch (searchType) {
+            case "product_search" -> "商品 在售";
+            case "specifications" -> "参数 规格 功能";
+            case "price_stock" -> "价格 库存 在售";
+            case "promotion" -> "优惠 活动";
+            case "installment_tradein" -> "分期 以旧换新";
+            case "compatibility_support" -> "连接 兼容 支持";
+            case "service_policy" -> "配送 安装 退换货 保修 发票 售后";
+            default -> null;
+        };
+    }
+
+    private void appendIfMissing(StringBuilder target, String value) {
+        if (value == null || value.isBlank() || containsIgnoreCase(target.toString(), value)) {
+            return;
+        }
+        target.append(' ').append(value.trim());
+    }
+
+    private boolean containsIgnoreCase(String text, String value) {
+        return text.toLowerCase(Locale.ROOT).contains(value.toLowerCase(Locale.ROOT));
+    }
+
+    private String resolveSourceType(String url) {
+        try {
+            URI uri = URI.create(url);
+            String host = uri.getHost() == null ? "" : uri.getHost().toLowerCase(Locale.ROOT);
+            String path = uri.getPath() == null ? "" : uri.getPath().toLowerCase(Locale.ROOT);
+            if (host.equals(HUAWEI_CONSUMER_DOMAIN) || host.endsWith("." + HUAWEI_CONSUMER_DOMAIN)) {
+                return path.contains("/support/") ? "华为官方支持页" : "华为消费者业务官网页面";
+            }
+            if (path.contains("comdetail") || path.contains("/product/") || path.contains("/item/")) {
+                return "华为商城商品详情页";
+            }
+            if (path.contains("/search/")) {
+                return "华为商城搜索页";
+            }
+            if (path.contains("/activity/")) {
+                return "华为商城活动页";
+            }
+            return "华为商城公开页面";
+        } catch (IllegalArgumentException ignored) {
+            return "官方公开页面";
+        }
+    }
+
+    private void appendProductIdentifiers(StringBuilder sb, String url) {
+        String prdId = queryParameter(url, "prdId");
+        String sbomCode = queryParameter(url, "sbomCode");
+        if (prdId == null && sbomCode == null) {
+            return;
+        }
+        sb.append("   商品标识:");
+        if (prdId != null) sb.append(" prdId=").append(prdId);
+        if (sbomCode != null) sb.append(" sbomCode=").append(sbomCode);
+        sb.append('\n');
+    }
+
+    private String queryParameter(String url, String expectedName) {
+        try {
+            String rawQuery = URI.create(url).getRawQuery();
+            if (rawQuery == null || rawQuery.isBlank()) return null;
+            for (String pair : rawQuery.split("&")) {
+                int separator = pair.indexOf('=');
+                String rawName = separator >= 0 ? pair.substring(0, separator) : pair;
+                if (!expectedName.equals(URLDecoder.decode(rawName, StandardCharsets.UTF_8))) continue;
+                String rawValue = separator >= 0 ? pair.substring(separator + 1) : "";
+                String value = URLDecoder.decode(rawValue, StandardCharsets.UTF_8).trim();
+                return value.isEmpty() ? null : value;
+            }
+        } catch (IllegalArgumentException ignored) {
+            // 非法 URL 已在白名单校验阶段过滤，这里只做防御式兜底。
+        }
+        return null;
     }
 
     /**
@@ -291,6 +495,12 @@ public class YouComSearchMcpExecutor {
     private static String stringArg(Map<String, Object> args, String key) {
         Object val = args.get(key);
         return val != null ? val.toString() : null;
+    }
+
+    private static String trimToNull(String value) {
+        if (value == null) return null;
+        String trimmed = value.trim();
+        return trimmed.isEmpty() ? null : trimmed;
     }
 
     private static Integer intArg(Map<String, Object> args, String key) {

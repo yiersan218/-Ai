@@ -3,7 +3,7 @@ doc_id: "product-current-matepad-11-5-s-flex-2025"
 title: "HUAWEI MatePad 11.5 S 灵动款 鸿蒙焕新版 参数与卖点"
 domain: "华为商城导购"
 intent_node: "参数与卖点 KB"
-scope: ["平板", "核心商品", "KBplus补充"]
+scope: ["平板", "华为硬件", "华为硬件"]
 source_type: "official_product_or_specs_page"
 source_urls: ["https://consumer.huawei.com/cn/tablets/matepad-11-5-s-2025/specs/", "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E5%25B9%25B3%25E6%259D%25BF&searchHistoryShow=true&searchResultPageProdShow=true"]
 collected_at: "2026-08-02"

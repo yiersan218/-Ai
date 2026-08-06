@@ -24,7 +24,7 @@ dynamic_price_stock_excluded: true
 
 静态参数与卖点进入参数与卖点 KB；兼容问题进入鸿蒙生态兼容 KB；候选搜索、实时对比、价格、库存和优惠进入相应 MCP。
 
-## 第一版候选范围
+## 当前候选范围
 
 - HUAWEI MateBook Pro
 - nova 16 Pro

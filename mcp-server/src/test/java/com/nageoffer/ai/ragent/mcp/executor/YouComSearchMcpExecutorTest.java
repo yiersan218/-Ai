@@ -51,7 +51,7 @@ class YouComSearchMcpExecutorTest {
               "results": {
                 "web": [
                   {
-                    "url": "https://www.vmall.com/product/a",
+                    "url": "https://www.vmall.com/product/comdetail/index.html?prdId=1001&sbomCode=2002",
                     "title": "网页结果A",
                     "description": "描述A",
                     "snippets": ["片段A1"]
@@ -115,6 +115,10 @@ class YouComSearchMcpExecutorTest {
         assertTrue(tool.description().contains("YDC_API_KEY"));
         assertEquals(java.util.List.of("query"), tool.inputSchema().required());
         assertTrue(tool.inputSchema().properties().containsKey("query"));
+        assertTrue(tool.inputSchema().properties().containsKey("search_type"));
+        assertTrue(tool.inputSchema().properties().containsKey("product_name"));
+        assertTrue(tool.inputSchema().properties().containsKey("prd_id"));
+        assertTrue(tool.inputSchema().properties().containsKey("sbom_code"));
         assertTrue(tool.inputSchema().properties().containsKey("count"));
         assertTrue(tool.inputSchema().properties().containsKey("freshness"));
     }
@@ -149,6 +153,16 @@ class YouComSearchMcpExecutorTest {
     }
 
     @Test
+    @DisplayName("search_type 参数不合法返回 errorResult")
+    void invalidSearchTypeReturnsError() {
+        CallToolResult result = executor("k").handleCall(
+                request(Map.of("query", "test", "search_type", "realtime_order")));
+
+        assertTrue(result.isError());
+        assertTrue(text(result).contains("search_type"));
+    }
+
+    @Test
     @DisplayName("成功检索：请求携带 X-API-Key，结果格式化为编号的标题/链接/摘录")
     void successMapping() {
         CallToolResult result = executor("test-key").handleCall(
@@ -162,9 +176,11 @@ class YouComSearchMcpExecutorTest {
         assertEquals("week", lastQueryParams.get().get("freshness"));
 
         String text = text(result);
-        assertTrue(text.contains("共 3 条结果"));
+        assertTrue(text.contains("检索结果数: 3"));
+        assertTrue(text.contains("证据级别: 公开网页搜索摘要"));
         assertTrue(text.contains("1. 网页结果A"));
-        assertTrue(text.contains("链接: https://www.vmall.com/product/a"));
+        assertTrue(text.contains("链接: https://www.vmall.com/product/comdetail/index.html?prdId=1001&sbomCode=2002"));
+        assertTrue(text.contains("商品标识: prdId=1001 sbomCode=2002"));
         assertTrue(text.contains("摘录: 描述A"));
         // description 缺失时回退第一条 snippet
         assertTrue(text.contains("摘录: 片段B1"));
@@ -186,6 +202,48 @@ class YouComSearchMcpExecutorTest {
     }
 
     @Test
+    @DisplayName("价格库存查询保留型号并补充查询主题和商城标识")
+    void priceStockBuildsCommerceQuery() {
+        CallToolResult result = executor("k").handleCall(request(Map.of(
+                "query", "Sound X5 多少钱",
+                "search_type", "price_stock",
+                "product_name", "HUAWEI Sound X5",
+                "prd_id", "10086679107439",
+                "sbom_code", "3102060025003"
+        )));
+
+        assertFalse(result.isError());
+        assertEquals("HUAWEI Sound X5 Sound X5 多少钱 价格 库存 在售 10086679107439 3102060025003",
+                lastQueryParams.get().get("query"));
+        assertEquals("vmall.com", lastQueryParams.get().get("include_domains"));
+        assertTrue(text(result).contains("查询类型: price_stock"));
+        assertTrue(text(result).contains("动态信息说明:"));
+    }
+
+    @Test
+    @DisplayName("参数与兼容查询扩展到华为消费者业务官网并过滤其他站点")
+    void compatibilitySearchUsesOfficialHuaweiDomains() {
+        responseBody = """
+                {"results":{"web":[
+                  {"url":"https://consumer.huawei.com/cn/support/content/zh-cn123/","title":"连接指南","description":"官方支持说明"},
+                  {"url":"https://example.com/fake","title":"站外页面","description":"不应出现"}
+                ]}}
+                """;
+
+        CallToolResult result = executor("k").handleCall(request(Map.of(
+                "query", "Sound X5 怎么连接手机",
+                "search_type", "compatibility_support",
+                "product_name", "Sound X5"
+        )));
+
+        assertFalse(result.isError());
+        assertEquals("vmall.com,consumer.huawei.com", lastQueryParams.get().get("include_domains"));
+        assertTrue(text(result).contains("来源类型: 华为官方支持页"));
+        assertTrue(text(result).contains("consumer.huawei.com"));
+        assertFalse(text(result).contains("example.com"));
+    }
+
+    @Test
     @DisplayName("API 返回非 200 时返回 errorResult 且不抛异常")
     void httpErrorReturnsErrorResult() {
         responseCode = 500;
@@ -202,7 +260,7 @@ class YouComSearchMcpExecutorTest {
         CallToolResult result = executor("k").handleCall(request(Map.of("query", "t")));
 
         assertFalse(result.isError());
-        assertTrue(text(result).contains("未检索到相关结果"));
+        assertTrue(text(result).contains("未检索到相关官方网页结果"));
     }
 
     @Test
@@ -214,7 +272,7 @@ class YouComSearchMcpExecutorTest {
 
         String text = text(result);
         assertFalse(result.isError());
-        assertTrue(text.contains("共 2 条结果"));
+        assertTrue(text.contains("检索结果数: 2"));
         assertTrue(text.contains("1. 网页结果A"));
         assertTrue(text.contains("2. 网页结果B"));
         assertFalse(text.contains("3. "), "count=2 时不应出现第 3 条");

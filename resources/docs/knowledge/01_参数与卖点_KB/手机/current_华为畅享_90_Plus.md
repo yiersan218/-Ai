@@ -3,7 +3,7 @@ doc_id: "product-current-changxiang-90-plus"
 title: "华为畅享 90 Plus 参数与卖点"
 domain: "华为商城导购"
 intent_node: "参数与卖点 KB"
-scope: ["手机", "核心商品", "KBplus补充"]
+scope: ["手机", "华为硬件", "华为硬件"]
 source_type: "official_product_or_specs_page"
 source_urls: ["https://consumer.huawei.com/cn/phones/changxiang-90-plus/specs/", "https://consumer.huawei.com/cn/phones/changxiang-90-plus/", "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2589%258B%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"]
 collected_at: "2026-08-02"

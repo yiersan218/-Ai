@@ -3,7 +3,7 @@ doc_id: "kbplus-earphone-freebuds-se-4-anc"
 title: "HUAWEI FreeBuds SE 4 ANC 兼容与搭配档案"
 domain: "华为商城导购"
 intent_node: "鸿蒙生态兼容 KB"
-scope: ["耳机（兼容）", "生态关联商品", "KBplus补充"]
+scope: ["耳机（兼容）", "华为硬件", "华为硬件"]
 source_type: "official_search_listing_plus_support"
 source_urls: ["https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true", "https://consumer.huawei.com/cn/support/content/zh-cn15868501/", "https://consumer.huawei.com/cn/support/content/zh-cn15907440/"]
 collected_at: "2026-08-02"

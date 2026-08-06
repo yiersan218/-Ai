@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-08-04T23:00:00+08:00",
+  "document_count": 283,
+  "product_profile_count": 167,
+  "product_category_count": 13,
+  "product_categories": [
+    "主要配件",
+    "家庭存储",
+    "平板",
+    "手机",
+    "打印机",
+    "智慧屏",
+    "智能眼镜",
+    "智能门锁",
+    "穿戴",
+    "笔记本",
+    "耳机",
+    "路由",
+    "音箱"
+  ],
+  "product_profiles_by_category": {
+    "主要配件": 20,
+    "家庭存储": 1,
+    "平板": 11,
+    "手机": 28,
+    "打印机": 1,
+    "智慧屏": 18,
+    "智能眼镜": 2,
+    "智能门锁": 7,
+    "穿戴": 25,
+    "笔记本": 9,
+    "耳机": 13,
+    "路由": 26,
+    "音箱": 6
+  },
+  "cjk_character_count": 185654,
+  "ten_thousand_chinese_characters": 18.57,
+  "non_whitespace_character_count": 424097,
+  "strict_sku_dataset_records": 0,
+  "traceable_observed_sku_anchors": 56,
+  "sku_metric_note": "严格 SKU 全量由 MCP 实时查询；traceable_observed_sku_anchors 仅统计文档来源 URL 中可追溯的 prdId+sbomCode 快照，不等于商城全量 SKU。"
+}

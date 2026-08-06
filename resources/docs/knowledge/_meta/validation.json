@@ -1,24 +1,15 @@
 {
-  "documents": 172,
-  "manifest_documents": 172,
-  "specific_product_documents": 48,
-  "kbplus_added_documents": 46,
-  "product_counts": {
-    "手机": 28,
-    "平板": 11,
-    "笔记本": 9
-  },
-  "ecosystem_profile_counts": {
-    "穿戴": 25,
-    "耳机": 13
-  },
-  "empty_or_too_short": [],
-  "missing_files": [],
-  "missing_source_metadata": [],
-  "duplicate_doc_ids": [],
-  "duplicate_paths": [],
-  "duplicate_content_hashes": [],
-  "dynamic_price_promotion_markers_in_kbplus_docs": [],
-  "user_review_markers_in_kbplus_docs": [],
-  "total_bytes": 904572
+  "generated_at": "2026-08-04T23:20:00+08:00",
+  "status": "PASS",
+  "checks": {
+    "forbidden_first_version_phrase_count_all_artifacts": 0,
+    "forbidden_kbplus_phrase_count_all_artifacts": 0,
+    "forbidden_mojibake_marker_count_all_artifacts": 0,
+    "missing_frontmatter_count": 0,
+    "duplicate_doc_id_count": 0,
+    "sources_csv_document_count_matches": true,
+    "manifest_document_count_matches": true,
+    "product_profile_count_matches_catalog": true,
+    "import_text_character_presence": true
+  }
 }

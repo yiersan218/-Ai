@@ -39,7 +39,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class YouComSearchMcpExecutorLiveTest {
 
     @Test
-    @DisplayName("真实检索返回编号结果文本")
+    @DisplayName("真实检索返回带证据边界的编号结果文本")
     void liveSearchReturnsFormattedResults() {
         YouComSearchMcpExecutor executor = new YouComSearchMcpExecutor();
 
@@ -50,6 +50,7 @@ class YouComSearchMcpExecutorLiveTest {
         String text = ((TextContent) result.content().get(0)).text();
         assertTrue(text.contains("1. "), "结果应包含编号列表");
         assertTrue(text.contains("链接: "), "结果应包含来源链接");
+        assertTrue(text.contains("证据级别: 公开网页搜索摘要"), "结果应声明证据边界");
         assertTrue(text.contains("vmall.com"), "结果链接应来自华为商城域名");
         System.out.println("[LIVE] youcom_search 返回:\n" + text);
     }

@@ -1,53 +1,43 @@
 ---
-doc_id: "kbplus-catalog-current-wearables"
-title: "当前在售穿戴兼容档案目录"
+doc_id: "catalog-穿戴"
+title: "穿戴产品知识目录"
 domain: "华为商城导购"
 intent_node: "鸿蒙生态兼容 KB"
-scope: ["穿戴（兼容）", "目录与范围", "KBplus补充"]
-source_type: "official_search_catalog"
-source_urls: ["https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"]
-collected_at: "2026-08-02"
-dynamic_price_stock_excluded: true
+scope: ["穿戴", "目录", "华为硬件"]
+source_type: "knowledge_base_catalog"
+collected_at: "2026-08-04"
+dynamic_product_data_via_mcp: true
 ---
-# 当前在售穿戴兼容档案目录
+# 穿戴产品知识目录
 
-## 收录口径
+本目录收录 25 份产品档案。档案数量按产品家族文档统计，不等于颜色、容量、尺寸、套餐组成的严格 SKU 数量。
 
-- 快照日期：2026-08-02。
-- 仅收录华为商城搜索结果中有明确价格且未标记“暂时缺货”的华为主商品。
-- 排除第三方配件、清洁工具、补配服务、智选商品、官方翻新和无报价占位商品。
-- 本目录不保存价格、库存数量、优惠、分期或赠品；这些信息由 MCP 实时查询。
+| 序号 | 产品 | 文档标识 |
+|---:|---|---|
+| 1 | 华为手环 10 | kbplus-wearable-band-10 |
+| 2 | 华为手环 11 Pro | kbplus-wearable-band-11-pro |
+| 3 | 华为手环 11 | kbplus-wearable-band-11 |
+| 4 | HUAWEI WATCH FIT 4 Pro | kbplus-wearable-fit-4-pro |
+| 5 | HUAWEI WATCH FIT 4 | kbplus-wearable-fit-4 |
+| 6 | HUAWEI WATCH FIT 5 Pro | kbplus-wearable-fit-5-pro |
+| 7 | HUAWEI WATCH FIT 5 | kbplus-wearable-fit-5 |
+| 8 | HUAWEI WATCH GT 6 41mm | kbplus-wearable-gt-6-41 |
+| 9 | HUAWEI WATCH GT 6 46mm | kbplus-wearable-gt-6-46 |
+| 10 | HUAWEI WATCH GT 6 Pro | kbplus-wearable-gt-6-pro |
+| 11 | HUAWEI WATCH GT Runner 2 | kbplus-wearable-gt-runner-2 |
+| 12 | 华为儿童手表 5 活力版 | kbplus-wearable-kids-5-active |
+| 13 | 华为儿童手表 5 新耀版 | kbplus-wearable-kids-5-new |
+| 14 | 华为儿童手表 5 Pro | kbplus-wearable-kids-5-pro |
+| 15 | 华为儿童手表 5X | kbplus-wearable-kids-5x |
+| 16 | 华为儿童手表 5 | kbplus-wearable-kids-5 |
+| 17 | 华为超新星手表 X1 Pro | kbplus-wearable-supernova-x1-pro |
+| 18 | 华为超新星手表 X1 | kbplus-wearable-supernova-x1 |
+| 19 | HUAWEI WATCH Ultimate 2 非凡探索 | kbplus-wearable-ultimate-2 |
+| 20 | HUAWEI WATCH ULTIMATE DESIGN 星钻绽放款 | kbplus-wearable-ultimate-design-diamond |
+| 21 | HUAWEI WATCH ULTIMATE DESIGN 蓝宝石黄金款 | kbplus-wearable-ultimate-design-gold |
+| 22 | HUAWEI WATCH ULTIMATE DESIGN 紫金款 | kbplus-wearable-ultimate-design-purple |
+| 23 | HUAWEI WATCH 5 | kbplus-wearable-watch-5 |
+| 24 | HUAWEI WATCH Buds 2 | kbplus-wearable-watch-buds-2 |
+| 25 | HUAWEI WATCH D2 | kbplus-wearable-watch-d2 |
 
-## 当前商品索引
-
-| 商品 | 类型 | 稳定卖点 | 推荐侧重点 |
-|---|---|---|---|
-| HUAWEI WATCH ULTIMATE DESIGN 星钻绽放款 | 珠宝智能腕表 | 华为首款珠宝智能腕表；99 颗天然钻石手工镶嵌；X-TAP 智感窗 | 追求珠宝设计、高端材质与腕上健康体验的用户 |
-| HUAWEI WATCH Ultimate 2 非凡探索 | 专业户外腕表 | 150 米深潜科技；海豚声呐通信；北斗卫星语音消息 | 潜水、户外探索和专业运动用户 |
-| HUAWEI WATCH FIT 5 | 轻薄运动腕表 | 超轻薄大屏；腕上微运动；强劲续航 | 日常运动、健康记录和轻盈佩戴用户 |
-| HUAWEI WATCH FIT 5 Pro | 进阶运动腕表 | 1.92 英寸窄边框全面屏；户外进阶运动 | 希望兼顾轻薄与进阶户外运动的用户 |
-| 华为超新星手表 X1 Pro | 儿童与青少年智能手表 | 5 天关机定位；掌上相机；纯净社交 | 重视定位、沟通和拍摄能力的家庭 |
-| 华为超新星手表 X1 | 儿童与青少年智能手表 | 5 天关机定位；110° 超广角自拍；纯净社交 | 重视定位、视频沟通和纯净社交的家庭 |
-| HUAWEI WATCH Buds 2 | 手表耳机二合一 | 手表耳机二合一；清晰通话；多维健康管理 | 希望减少随身设备数量并兼顾健康与音频的用户 |
-| HUAWEI WATCH GT Runner 2 | 专业跑步腕表 | 超精准定位；专业马拉松模式；超轻薄钛合金表体 | 跑步、马拉松训练和重视定位精度的用户 |
-| 华为手环 11 | 轻量健康手环 | 8.99 毫米超薄机身；专业睡眠健康监测；便捷生活助手 | 需要低负担睡眠和日常健康记录的用户 |
-| 华为手环 11 Pro | 定位运动手环 | 1.62 英寸高亮大屏；独立 GNSS 五星定位；室外跑骑体验升级 | 希望使用独立定位进行跑步与骑行记录的用户 |
-| HUAWEI WATCH GT 6 41mm | 长续航运动腕表 | 全新骑行体验；14 天超长续航；玄玑感知系统 | 偏好较小表径、骑行和长续航的用户 |
-| HUAWEI WATCH GT 6 46mm | 长续航运动腕表 | 全新骑行体验；21 天超长续航；玄玑感知系统 | 偏好大表径、骑行和更长续航的用户 |
-| HUAWEI WATCH GT 6 Pro | 进阶户外运动腕表 | 全新骑行体验；户外进阶运动；21 天超长续航 | 需要进阶户外运动能力和长续航的用户 |
-| HUAWEI WATCH 5 | 旗舰智能腕表 | X-TAP 智感窗；腕上小艺；手势操控 | 希望体验智能交互、健康感知和腕上助手的用户 |
-| HUAWEI WATCH FIT 4 | 轻薄运动腕表 | 超轻薄大屏；潮流运动体验；强劲续航 | 重视轻薄外观和日常运动记录的用户 |
-| HUAWEI WATCH FIT 4 Pro | 户外进阶腕表 | 户外进阶运动；蓝宝石玻璃大屏；钛金属表圈 | 重视耐用材质和户外运动能力的用户 |
-| 华为手环 10 | 健康手环 | 专业睡眠分析；心律失常提示；情绪健康 | 关注睡眠、心率趋势和情绪记录的用户 |
-| HUAWEI WATCH D2 | 血压管理腕表 | 动态血压监测 | 希望进行便携血压趋势管理并遵循专业健康建议的用户 |
-| HUAWEI WATCH ULTIMATE DESIGN 蓝宝石黄金款 | 高端户外腕表 | 蓝宝石表圈与 18K 金条镶嵌；百米超强防水；北斗卫星消息 | 重视高端材质、潜水与户外通信的用户 |
-| 华为儿童手表 5 Pro | 儿童智能手表 | 离线定位 2.0 | 重视儿童安全定位与家庭沟通的用户 |
-| HUAWEI WATCH ULTIMATE DESIGN 紫金款 | 高端户外腕表 | 复合稀土紫色陶瓷表圈；星钻切割与古法黄金工艺；北斗卫星语音消息 | 重视高端设计、户外能力与卫星通信的用户 |
-| 华为儿童手表 5 新耀版 | 儿童智能手表 | 离线定位；畅连视频通话；快充大电池 | 需要定位、视频沟通和基础智能能力的家庭 |
-| 华为儿童手表 5 | 儿童智能手表 | 离线定位；畅连视频通话；快充大电池 | 需要定位、视频沟通和基础智能能力的家庭 |
-| 华为儿童手表 5 活力版 | 儿童智能手表 | 离线定位；畅连视频通话 | 需要基础定位和视频沟通的家庭 |
-| 华为儿童手表 5X | 可摘取儿童智能手表 | 翻转可摘取 | 希望获得可摘取拍摄与儿童智能沟通形态的家庭 |
-
-## 使用方式
-
-目录用于召回候选商品，具体兼容结论应进入对应“兼容与搭配档案”，并结合手机品牌、系统版本、管理应用、区域和目标功能继续核验。
+实时价格、库存、优惠、可售配置与严格 SKU 由 MCP 查询。
