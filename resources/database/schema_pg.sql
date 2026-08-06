@@ -196,6 +196,7 @@ CREATE TABLE t_knowledge_document (
     schedule_cron    VARCHAR(64),
     chunk_strategy   VARCHAR(32),
     chunk_config     JSONB,
+    metadata         JSONB          NOT NULL DEFAULT '{}'::jsonb,
     pipeline_id      VARCHAR(20),
     created_by       VARCHAR(20)   NOT NULL,
     updated_by       VARCHAR(20),

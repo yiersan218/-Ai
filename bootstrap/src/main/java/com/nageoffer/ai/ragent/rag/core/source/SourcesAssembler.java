@@ -19,6 +19,8 @@ package com.nageoffer.ai.ragent.rag.core.source;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nageoffer.ai.ragent.framework.convention.RetrievedChunk;
 import com.nageoffer.ai.ragent.framework.convention.SourceRef;
 import com.nageoffer.ai.ragent.knowledge.dao.entity.KnowledgeDocumentDO;
@@ -51,6 +53,7 @@ public class SourcesAssembler {
     private static final String SOURCE_TYPE_FEISHU = "feishu";
 
     private final KnowledgeDocumentMapper documentMapper;
+    private final ObjectMapper objectMapper;
 
     /**
      * 由检索上下文的意图分片装配文档级来源列表
@@ -116,11 +119,36 @@ public class SourcesAssembler {
      * 外部原始链接：仅 url/feishu 来源携带 file 走 docId 预览提取正文
      */
     private String resolveUrl(String sourceType, KnowledgeDocumentDO doc) {
-        if (doc == null || sourceType == null) {
+        if (doc == null) {
             return null;
+        }
+        String metadataUrl = resolveMetadataUrl(doc.getMetadata());
+        if (StrUtil.isNotBlank(metadataUrl)) {
+            return metadataUrl;
         }
         if (SOURCE_TYPE_URL.equalsIgnoreCase(sourceType) || SOURCE_TYPE_FEISHU.equalsIgnoreCase(sourceType)) {
             return StrUtil.blankToDefault(doc.getSourceLocation(), null);
+        }
+        return null;
+    }
+
+    private String resolveMetadataUrl(String metadataJson) {
+        if (StrUtil.isBlank(metadataJson)) {
+            return null;
+        }
+        try {
+            Map<String, Object> metadata = objectMapper.readValue(
+                    metadataJson, new TypeReference<Map<String, Object>>() { });
+            Object canonicalUrl = metadata.get("canonical_url");
+            if (canonicalUrl != null && StrUtil.isNotBlank(canonicalUrl.toString())) {
+                return canonicalUrl.toString();
+            }
+            Object sourceUrls = metadata.get("source_urls");
+            if (sourceUrls instanceof List<?> urls && !urls.isEmpty() && urls.get(0) != null) {
+                return StrUtil.blankToDefault(urls.get(0).toString(), null);
+            }
+        } catch (Exception ignored) {
+            // 兼容历史脏数据，来源面板仍可回退到 sourceLocation。
         }
         return null;
     }

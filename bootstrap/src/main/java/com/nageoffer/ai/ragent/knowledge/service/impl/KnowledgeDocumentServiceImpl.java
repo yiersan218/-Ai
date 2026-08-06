@@ -48,6 +48,7 @@ import com.nageoffer.ai.ragent.framework.exception.ClientException;
 import com.nageoffer.ai.ragent.framework.mq.producer.MessageQueueProducer;
 import com.nageoffer.ai.ragent.ingestion.dao.entity.IngestionPipelineDO;
 import com.nageoffer.ai.ragent.ingestion.dao.mapper.IngestionPipelineMapper;
+import com.nageoffer.ai.ragent.ingestion.domain.context.DocumentSource;
 import com.nageoffer.ai.ragent.ingestion.domain.context.IngestionContext;
 import com.nageoffer.ai.ragent.ingestion.domain.pipeline.PipelineDefinition;
 import com.nageoffer.ai.ragent.ingestion.engine.IngestionEngine;
@@ -171,6 +172,7 @@ public class KnowledgeDocumentServiceImpl implements KnowledgeDocumentService {
                 .processMode(modeConfig.processMode().getValue())
                 .chunkStrategy(modeConfig.chunkingMode() != null ? modeConfig.chunkingMode().getValue() : null)
                 .chunkConfig(modeConfig.chunkConfig())
+                .metadata("{}")
                 .pipelineId(modeConfig.pipelineId())
                 .createdBy(UserContext.getUsername())
                 .updatedBy(UserContext.getUsername())
@@ -263,9 +265,12 @@ public class KnowledgeDocumentServiceImpl implements KnowledgeDocumentService {
 
         try {
             List<VectorChunk> chunkResults;
+            Map<String, Object> documentMetadata;
             if (ProcessMode.PIPELINE == processMode) {
                 long start = System.currentTimeMillis();
-                chunkResults = runPipelineProcess(documentDO);
+                PipelineProcessResult result = runPipelineProcess(documentDO);
+                chunkResults = result.chunks();
+                documentMetadata = result.metadata();
                 chunkDuration = System.currentTimeMillis() - start;
             } else {
                 ChunkProcessResult result = runChunkProcess(documentDO);
@@ -273,11 +278,13 @@ public class KnowledgeDocumentServiceImpl implements KnowledgeDocumentService {
                 chunkDuration = result.chunkDuration();
                 embedDuration = result.embedDuration();
                 chunkResults = result.chunks();
+                documentMetadata = result.metadata();
             }
 
             long persistStart = System.currentTimeMillis();
             String collectionName = resolveCollectionName(documentDO.getKbId());
-            int savedCount = persistChunksAndVectorsAtomically(collectionName, docId, chunkResults);
+            int savedCount = persistChunksAndVectorsAtomically(
+                    collectionName, docId, chunkResults, documentMetadata);
             persistDuration = System.currentTimeMillis() - persistStart;
 
             long totalDuration = System.currentTimeMillis() - totalStartTime;
@@ -292,7 +299,9 @@ public class KnowledgeDocumentServiceImpl implements KnowledgeDocumentService {
         }
     }
 
-    private int persistChunksAndVectorsAtomically(String collectionName, String docId, List<VectorChunk> chunkResults) {
+    private int persistChunksAndVectorsAtomically(String collectionName, String docId,
+                                                   List<VectorChunk> chunkResults,
+                                                   Map<String, Object> documentMetadata) {
         List<KnowledgeChunkCreateRequest> chunks = chunkResults.stream()
                 .map(vc -> {
                     KnowledgeChunkCreateRequest req = new KnowledgeChunkCreateRequest();
@@ -311,6 +320,7 @@ public class KnowledgeDocumentServiceImpl implements KnowledgeDocumentService {
                     .id(docId)
                     .chunkCount(chunks.size())
                     .status(DocumentStatus.SUCCESS.getCode())
+                    .metadata(toMetadataJson(documentMetadata))
                     .updatedBy(UserContext.getUsername())
                     .build();
             documentMapper.updateById(updateDocumentDO);
@@ -396,20 +406,25 @@ public class KnowledgeDocumentServiceImpl implements KnowledgeDocumentService {
             long chunkStart = System.currentTimeMillis();
             List<VectorChunk> chunks = structuredChunkingService.chunk(
                     parsed.blocks(), text, chunkingMode, config, rowsPerChunk);
+            attachDocumentMetadata(chunks, parsed.metadata());
             long chunkDuration = System.currentTimeMillis() - chunkStart;
 
             long embedStart = System.currentTimeMillis();
             chunkEmbeddingService.embed(chunks, embeddingModel);
             long embedDuration = System.currentTimeMillis() - embedStart;
 
-            return new ChunkProcessResult(chunks, extractDuration, chunkDuration, embedDuration);
+            return new ChunkProcessResult(chunks, parsed.metadata(), extractDuration, chunkDuration, embedDuration);
         } catch (Exception e) {
             throw new RuntimeException("文档内容提取或分块失败", e);
         }
     }
 
-    private record ChunkProcessResult(List<VectorChunk> chunks, long extractDuration, long chunkDuration,
+    private record ChunkProcessResult(List<VectorChunk> chunks, Map<String, Object> metadata,
+                                      long extractDuration, long chunkDuration,
                                       long embedDuration) {
+    }
+
+    private record PipelineProcessResult(List<VectorChunk> chunks, Map<String, Object> metadata) {
     }
 
     private record ProcessModeConfig(ProcessMode processMode, ChunkingMode chunkingMode, String chunkConfig,
@@ -419,7 +434,7 @@ public class KnowledgeDocumentServiceImpl implements KnowledgeDocumentService {
     /**
      * 使用 Pipeline 处理文档，失败直接抛异常，由 runChunkTask 统一处理错误状态
      */
-    private List<VectorChunk> runPipelineProcess(KnowledgeDocumentDO documentDO) {
+    private PipelineProcessResult runPipelineProcess(KnowledgeDocumentDO documentDO) {
         String docId = String.valueOf(documentDO.getId());
         String pipelineId = documentDO.getPipelineId();
 
@@ -441,8 +456,12 @@ public class KnowledgeDocumentServiceImpl implements KnowledgeDocumentService {
         IngestionContext context = IngestionContext.builder()
                 .taskId(docId)
                 .pipelineId(pipelineId)
+                .source(DocumentSource.builder()
+                        .fileName(documentDO.getDocName())
+                        .location(documentDO.getFileUrl())
+                        .build())
                 .rawBytes(fileBytes)
-                .mimeType(documentDO.getFileType())
+                .mimeType(MimeTypeDetector.detect(fileBytes, documentDO.getDocName()))
                 .vectorSpaceId(VectorSpaceId.builder()
                         .logicalName(kbDO.getCollectionName())
                         .build())
@@ -458,10 +477,35 @@ public class KnowledgeDocumentServiceImpl implements KnowledgeDocumentService {
         List<VectorChunk> chunks = result.getChunks();
         if (chunks == null || chunks.isEmpty()) {
             log.warn("Pipeline执行完成但未产生分块：docId={}", docId);
-            return List.of();
+            return new PipelineProcessResult(List.of(), safeMetadata(result.getMetadata()));
         }
 
-        return chunks;
+        return new PipelineProcessResult(chunks, safeMetadata(result.getMetadata()));
+    }
+
+    private void attachDocumentMetadata(List<VectorChunk> chunks, Map<String, Object> documentMetadata) {
+        if (CollUtil.isEmpty(chunks) || documentMetadata == null || documentMetadata.isEmpty()) {
+            return;
+        }
+        for (VectorChunk chunk : chunks) {
+            Map<String, Object> merged = new HashMap<>(documentMetadata);
+            if (chunk.getMetadata() != null) {
+                merged.putAll(chunk.getMetadata());
+            }
+            chunk.setMetadata(merged);
+        }
+    }
+
+    private Map<String, Object> safeMetadata(Map<String, Object> metadata) {
+        return metadata == null ? Map.of() : new HashMap<>(metadata);
+    }
+
+    private String toMetadataJson(Map<String, Object> metadata) {
+        try {
+            return objectMapper.writeValueAsString(metadata == null ? Map.of() : metadata);
+        } catch (Exception e) {
+            throw new RuntimeException("文档元数据序列化失败", e);
+        }
     }
 
     public void chunkDocument(KnowledgeDocumentDO documentDO) {

@@ -35,7 +35,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 文本分块节点
@@ -72,6 +74,18 @@ public class ChunkerNode implements IngestionNode {
 
         if (chunks.isEmpty()) {
             return NodeResult.fail(new ClientException(hasBlocks ? "分块结果为空" : "可分块文本为空"));
+        }
+
+        // 文档级元数据写入每个向量块，供检索过滤、来源追溯和审计使用。
+        Map<String, Object> documentMetadata = context.getMetadata();
+        if (documentMetadata != null && !documentMetadata.isEmpty()) {
+            for (VectorChunk chunk : chunks) {
+                Map<String, Object> merged = new HashMap<>(documentMetadata);
+                if (chunk.getMetadata() != null) {
+                    merged.putAll(chunk.getMetadata());
+                }
+                chunk.setMetadata(merged);
+            }
         }
 
         // 嵌入：为切分后的文本块生成向量

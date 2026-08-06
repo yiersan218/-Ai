@@ -37,7 +37,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@TableName("t_knowledge_document")
+@TableName(value = "t_knowledge_document", autoResultMap = true)
 public class KnowledgeDocumentDO {
 
     @TableId(type = IdType.ASSIGN_ID)
@@ -117,6 +117,12 @@ public class KnowledgeDocumentDO {
      */
     @TableField(typeHandler = com.nageoffer.ai.ragent.knowledge.dao.handler.JsonbTypeHandler.class)
     private String chunkConfig;
+
+    /**
+     * 解析器提取的文档级元数据（Markdown frontmatter 等）。
+     */
+    @TableField(typeHandler = com.nageoffer.ai.ragent.knowledge.dao.handler.JsonbTypeHandler.class)
+    private String metadata;
 
     /**
      * 数据通道（Pipeline）ID

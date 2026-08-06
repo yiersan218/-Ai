@@ -105,6 +105,11 @@ public class KnowledgeDocumentVO {
     private String chunkConfig;
 
     /**
+     * 文档级元数据（JSON）。
+     */
+    private String metadata;
+
+    /**
      * 数据通道（Pipeline）ID
      * 仅在 processMode=pipeline 时有效
      */

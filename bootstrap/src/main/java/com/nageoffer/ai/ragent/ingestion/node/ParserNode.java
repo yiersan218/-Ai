@@ -106,6 +106,15 @@ public class ParserNode implements IngestionNode {
         ParsedDocument parsed = parser.parseStructured(context.getRawBytes(), mimeType, options);
         List<Block> blocks = parsed.blocks() == null ? List.of() : parsed.blocks();
 
+        Map<String, Object> documentMetadata = new HashMap<>();
+        if (context.getMetadata() != null) {
+            documentMetadata.putAll(context.getMetadata());
+        }
+        if (parsed.metadata() != null) {
+            documentMetadata.putAll(parsed.metadata());
+        }
+        context.setMetadata(documentMetadata);
+
         // 从 blocks 渲染纯文本（给老路径 / ChunkerNode fallback 用）
         String renderedText = BlockTextRenderer.render(blocks);
         context.setRawText(renderedText);
@@ -113,7 +122,7 @@ public class ParserNode implements IngestionNode {
         StructuredDocument document = StructuredDocument.builder()
                 .text(renderedText)
                 .blocks(blocks)
-                .metadata(parsed.metadata())
+                .metadata(documentMetadata)
                 .build();
         context.setDocument(document);
 

@@ -412,6 +412,7 @@ public class IntentTreeServiceImpl extends ServiceImpl<IntentNodeMapper, IntentN
 
             IntentNodeCreateRequest nodeCreateRequest = IntentNodeCreateRequest.builder()
                     .kbId(node.getKbId())
+                    .collectionNames(node.getEffectiveCollectionNames())
                     .intentCode(node.getId())
                     .name(node.getName())
                     .level(mapLevel(node.getLevel()))

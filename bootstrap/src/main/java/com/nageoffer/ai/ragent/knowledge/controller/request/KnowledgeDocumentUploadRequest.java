@@ -57,7 +57,7 @@ public class KnowledgeDocumentUploadRequest {
 
     /**
      * 分块参数JSON，processMode=chunk 时必传
-     * 如 {"chunkSize":512,"overlapSize":128} 或 {"targetChars":1400,"maxChars":1800,"minChars":600,"overlapChars":0}
+     * 如 {"chunkSize":512,"overlapSize":128} 或 {"targetChars":1200,"maxChars":1600,"minChars":400,"overlapChars":150}
      */
     private String chunkConfig;
 

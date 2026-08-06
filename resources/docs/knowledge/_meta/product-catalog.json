@@ -1,1672 +1,1672 @@
 [
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-adapter-140w",
-    "title": "华为超级快充电源适配器（Max 140 W） 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/adapter-140w_华为超级快充电源适配器（Max 140 W）.md",
-    "prd_id": "10086825800605",
-    "observed_sbom_code": "3102020059501",
-    "observed_sku_anchor": "10086825800605+3102020059501",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086825800605&sbomCode=3102020059501"
-  },
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-cable-6a-a-c",
-    "title": "华为 6A 数据线 USB-A 转 USB-C 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/cable-6a-a-c_华为 6A 数据线 USB-A 转 USB-C.md",
-    "prd_id": "10086393994098",
-    "observed_sbom_code": "3102030014001",
-    "observed_sku_anchor": "10086393994098+3102030014001",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086393994098&sbomCode=3102030014001"
-  },
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-cable-6a-c-c",
-    "title": "华为 6A 数据线 USB-C 转 USB-C 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/cable-6a-c-c_华为 6A 数据线 USB-C 转 USB-C.md",
-    "prd_id": "10086739052336",
-    "observed_sbom_code": "3102030017405",
-    "observed_sku_anchor": "10086739052336+3102030017405",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086739052336&sbomCode=3102030017405"
-  },
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-charger-40w",
-    "title": "华为超级快充充电器（Max 40 W） 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/charger-40w_华为超级快充充电器（Max 40 W）.md",
-    "prd_id": "10086822159053",
-    "observed_sbom_code": "3102020071401",
-    "observed_sku_anchor": "10086822159053+3102020071401",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086822159053&sbomCode=3102020071401"
-  },
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-charger-ice-100w",
-    "title": "华为冰糖全能充电器（Max 100 W） 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/charger-ice-100w_华为冰糖全能充电器（Max 100 W）.md",
-    "prd_id": "10086826276433",
-    "observed_sbom_code": "3102020067006",
-    "observed_sku_anchor": "10086826276433+3102020067006",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086826276433&sbomCode=3102020067006"
-  },
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-charger-ice-66w",
-    "title": "华为冰糖全能充电器（Max 66 W） 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/charger-ice-66w_华为冰糖全能充电器（Max 66 W）.md",
-    "prd_id": "10086506294533",
-    "observed_sbom_code": "3102020066502",
-    "observed_sku_anchor": "10086506294533+3102020066502",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086506294533&sbomCode=3102020066502"
-  },
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-charger-multiport-100w-premium",
-    "title": "华为全能充多口充电器（Max 100 W）黑色 尊享版 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/charger-multiport-100w-premium_华为全能充多口充电器（Max 100 W）黑色 尊享版.md",
-    "prd_id": "10086400057044",
-    "observed_sbom_code": "3102020070501",
-    "observed_sku_anchor": "10086400057044+3102020070501",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086400057044&sbomCode=3102020070501"
-  },
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-charger-multiport-100w",
-    "title": "华为全能充多口充电器（Max 100 W） 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/charger-multiport-100w_华为全能充多口充电器（Max 100 W）.md",
-    "prd_id": "10086826293656",
-    "observed_sbom_code": "3102020059201",
-    "observed_sku_anchor": "10086826293656+3102020059201",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086826293656&sbomCode=3102020059201"
-  },
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-m-pen-3-mini",
-    "title": "M-Pen 3 Mini 多功能笔 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/m-pen-3-mini_M-Pen 3 Mini 多功能笔.md",
-    "prd_id": "10086270785193",
-    "observed_sbom_code": "3104230013802",
-    "observed_sku_anchor": "10086270785193+3104230013802",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086270785193&sbomCode=3104230013802"
-  },
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-m-pencil-3-set",
-    "title": "M-Pencil（第三代）平板创作笔套装 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/m-pencil-3-set_M-Pencil（第三代）平板创作笔套装.md",
-    "prd_id": "10086167840443",
-    "observed_sbom_code": "3105030004201",
-    "observed_sku_anchor": "10086167840443+3105030004201",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086167840443&sbomCode=3105030004201"
-  },
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-m-pencil-pro",
-    "title": "M-Pencil Pro 平板创作笔 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/m-pencil-pro_M-Pencil Pro 平板创作笔.md",
-    "prd_id": "10086149128760",
-    "observed_sbom_code": "3105030006601",
-    "observed_sku_anchor": "10086149128760+3105030006601",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086149128760&sbomCode=3105030006601"
-  },
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-magnetic-powerbank",
-    "title": "华为全能充磁吸移动电源 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/magnetic-powerbank_华为全能充磁吸移动电源.md",
-    "prd_id": "10086225014224",
-    "observed_sbom_code": "3102010027101",
-    "observed_sku_anchor": "10086225014224+3102010027101",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086225014224&sbomCode=3102010027101"
-  },
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-mate80-leather-case",
-    "title": "Mate 80/Mate 80 Pro 素皮保护壳 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/mate80-leather-case_Mate 80_Mate 80 Pro 素皮保护壳.md",
-    "prd_id": "10086849542848",
-    "observed_sbom_code": "3103010103904",
-    "observed_sku_anchor": "10086849542848+3103010103904",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086849542848&sbomCode=3103010103904"
-  },
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-matex7-rotating-case",
-    "title": "Mate X7 旋转支架保护壳 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/matex7-rotating-case_Mate X7 旋转支架保护壳.md",
-    "prd_id": "10086442319937",
-    "observed_sbom_code": "3103010104402",
-    "observed_sku_anchor": "10086442319937+3103010104402",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086442319937&sbomCode=3103010104402"
-  },
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-powerbank-100w-12000",
-    "title": "华为自带线全能充移动电源（100 W 12000） 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/powerbank-100w-12000_华为自带线全能充移动电源（100 W 12000）.md",
-    "prd_id": "10086008427264",
-    "observed_sbom_code": "3102010029903",
-    "observed_sku_anchor": "10086008427264+3102010029903",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086008427264&sbomCode=3102010029903"
-  },
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-powerbank-22w5-se",
-    "title": "华为多协议超级快充移动电源 10000 mAh（Max 22.5W SE） 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/powerbank-22w5-se_华为多协议超级快充移动电源 10000 mAh（Max 22.5W SE）.md",
-    "prd_id": "10086554072805",
-    "observed_sbom_code": "3102010021102",
-    "observed_sku_anchor": "10086554072805+3102010021102",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086554072805&sbomCode=3102010021102"
-  },
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-powerbank-66w-12000",
-    "title": "华为自带线全能充移动电源（66 W 12000） 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/powerbank-66w-12000_华为自带线全能充移动电源（66 W 12000）.md",
-    "prd_id": "10086100136965",
-    "observed_sbom_code": "3102010030701",
-    "observed_sku_anchor": "10086100136965+3102010030701",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086100136965&sbomCode=3102010030701"
-  },
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-watch-gt6-pro-strap",
-    "title": "WATCH GT 6 Pro 表带 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/watch-gt6-pro-strap_WATCH GT 6 Pro 表带.md",
-    "prd_id": "10086422365319",
-    "observed_sbom_code": "3101040025703",
-    "observed_sku_anchor": "10086422365319+3101040025703",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086422365319&sbomCode=3101040025703"
-  },
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-wireless-charger-80w",
-    "title": "华为超级快充立式无线充电器（Max 80 W） 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/wireless-charger-80w_华为超级快充立式无线充电器（Max 80 W）.md",
-    "prd_id": "10086257136521",
-    "observed_sbom_code": "3102020057306",
-    "observed_sku_anchor": "10086257136521+3102020057306",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086257136521&sbomCode=3102020057306"
-  },
-  {
-    "category": "主要配件",
-    "doc_id": "product-主要配件-woven-cable-120w",
-    "title": "华为编织数据线（Max 120 W） 产品档案",
-    "path": "01_参数与卖点_KB/主要配件/woven-cable-120w_华为编织数据线（Max 120 W）.md",
-    "prd_id": "10086875293502",
-    "observed_sbom_code": "3102030030601",
-    "observed_sku_anchor": "10086875293502+3102030030601",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086875293502&sbomCode=3102030030601"
-  },
-  {
-    "category": "家庭存储",
-    "doc_id": "product-家庭存储-home-storage",
-    "title": "华为家庭存储 产品档案",
-    "path": "01_参数与卖点_KB/家庭存储/home-storage_华为家庭存储.md",
-    "prd_id": "10086111180187",
-    "observed_sbom_code": "3001070001001",
-    "observed_sku_anchor": "10086111180187+3001070001001",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086111180187&sbomCode=3001070001001"
-  },
-  {
-    "category": "平板",
-    "doc_id": "product-10086106814226",
-    "title": "HUAWEI MatePad Pro 12.2 英寸 参数与卖点",
-    "path": "01_参数与卖点_KB/平板/10086106814226_HUAWEI_MatePad_Pro_12.2_英寸.md",
-    "prd_id": "10086106814226",
-    "observed_sbom_code": "2701010122029",
-    "observed_sku_anchor": "10086106814226+2701010122029",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086106814226&sbomCode=2701010122029"
-  },
-  {
-    "category": "平板",
-    "doc_id": "product-10086120212240",
-    "title": "HUAWEI MatePad Pro 13.2 英寸 参数与卖点",
-    "path": "01_参数与卖点_KB/平板/10086120212240_HUAWEI_MatePad_Pro_13.2_英寸.md",
-    "prd_id": "10086120212240",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086120212240"
-  },
-  {
-    "category": "平板",
-    "doc_id": "product-10086127502687",
-    "title": "HUAWEI MatePad Pro Max 参数与卖点",
-    "path": "01_参数与卖点_KB/平板/10086127502687_HUAWEI_MatePad_Pro_Max.md",
-    "prd_id": "10086127502687",
-    "observed_sbom_code": "2701010130502",
-    "observed_sku_anchor": "10086127502687+2701010130502",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086127502687&sbomCode=2701010130502"
-  },
-  {
-    "category": "平板",
-    "doc_id": "product-10086287244006",
-    "title": "HUAWEI MatePad Mini 参数与卖点",
-    "path": "01_参数与卖点_KB/平板/10086287244006_HUAWEI_MatePad_Mini.md",
-    "prd_id": "10086287244006",
-    "observed_sbom_code": "2701010123211",
-    "observed_sku_anchor": "10086287244006+2701010123211",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086287244006&sbomCode=2701010123211"
-  },
-  {
-    "category": "平板",
-    "doc_id": "product-10086294960453",
-    "title": "HUAWEI MatePad 11.5 参数与卖点",
-    "path": "01_参数与卖点_KB/平板/10086294960453_HUAWEI_MatePad_11.5.md",
-    "prd_id": "10086294960453",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086294960453"
-  },
-  {
-    "category": "平板",
-    "doc_id": "product-10086426290126",
-    "title": "HUAWEI MatePad SE 11英寸 焕新版 参数与卖点",
-    "path": "01_参数与卖点_KB/平板/10086426290126_HUAWEI_MatePad_SE_11英寸_焕新版.md",
-    "prd_id": "10086426290126",
-    "observed_sbom_code": "2701010132701",
-    "observed_sku_anchor": "10086426290126+2701010132701",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086426290126&sbomCode=2701010132701"
-  },
-  {
-    "category": "平板",
-    "doc_id": "product-10086486839777",
-    "title": "HUAWEI MatePad Air 12英寸 鸿蒙焕新版 参数与卖点",
-    "path": "01_参数与卖点_KB/平板/10086486839777_HUAWEI_MatePad_Air_12英寸_鸿蒙焕新版.md",
-    "prd_id": "10086486839777",
-    "observed_sbom_code": "2701010131701",
-    "observed_sku_anchor": "10086486839777+2701010131701",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086486839777&sbomCode=2701010131701"
-  },
-  {
-    "category": "平板",
-    "doc_id": "product-10086518319242",
-    "title": "HUAWEI MatePad 11.5 S 参数与卖点",
-    "path": "01_参数与卖点_KB/平板/10086518319242_HUAWEI_MatePad_11.5_S.md",
-    "prd_id": "10086518319242",
-    "observed_sbom_code": "2701010122623",
-    "observed_sku_anchor": "10086518319242+2701010122623",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086518319242&sbomCode=2701010122623"
-  },
-  {
-    "category": "平板",
-    "doc_id": "product-10086590821009",
-    "title": "HUAWEI MatePad Edge 参数与卖点",
-    "path": "01_参数与卖点_KB/平板/10086590821009_HUAWEI_MatePad_Edge.md",
-    "prd_id": "10086590821009",
-    "observed_sbom_code": "2701010126301",
-    "observed_sku_anchor": "10086590821009+2701010126301",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086590821009&sbomCode=2701010126301"
-  },
-  {
-    "category": "平板",
-    "doc_id": "product-current-matepad-11-5-s-flex-2025",
-    "title": "HUAWEI MatePad 11.5 S 灵动款 鸿蒙焕新版 参数与卖点",
-    "path": "01_参数与卖点_KB/平板/current_HUAWEI_MatePad_11.5_S_灵动款_鸿蒙焕新版.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://consumer.huawei.com/cn/tablets/matepad-11-5-s-2025/specs/"
-  },
-  {
-    "category": "平板",
-    "doc_id": "product-current-matepad-11-5-2026",
-    "title": "HUAWEI MatePad 11.5 鸿蒙焕新版 参数与卖点",
-    "path": "01_参数与卖点_KB/平板/current_HUAWEI_MatePad_11.5_鸿蒙焕新版.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://consumer.huawei.com/cn/tablets/matepad-11-5-2026/specs/"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086061975812",
-    "title": "HUAWEI Pura X 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086061975812_HUAWEI_Pura_X.md",
-    "prd_id": "10086061975812",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086061975812"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086133363559",
-    "title": "HUAWEI Mate 80 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086133363559_HUAWEI_Mate_80.md",
-    "prd_id": "10086133363559",
-    "observed_sbom_code": "2601010586341",
-    "observed_sku_anchor": "10086133363559+2601010586341",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086133363559&sbomCode=2601010586341"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086153236238",
-    "title": "HUAWEI Pura 80 Pro+ 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086153236238_HUAWEI_Pura_80_Pro+.md",
-    "prd_id": "10086153236238",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086153236238"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086174757473",
-    "title": "华为畅享 90 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086174757473_华为畅享_90.md",
-    "prd_id": "10086174757473",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086174757473"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086259366534",
-    "title": "HUAWEI Mate 70 Pro 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086259366534_HUAWEI_Mate_70_Pro.md",
-    "prd_id": "10086259366534",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086259366534"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086270081540",
-    "title": "华为畅享 90 Pro Max 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086270081540_华为畅享_90_Pro_Max.md",
-    "prd_id": "10086270081540",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086270081540"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086316355082",
-    "title": "HUAWEI Pura 80 Pro 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086316355082_HUAWEI_Pura_80_Pro.md",
-    "prd_id": "10086316355082",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086316355082"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086364337052",
-    "title": "HUAWEI Pura 80 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086364337052_HUAWEI_Pura_80.md",
-    "prd_id": "10086364337052",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086364337052"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086384239615",
-    "title": "HUAWEI Mate 70 Air 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086384239615_HUAWEI_Mate_70_Air.md",
-    "prd_id": "10086384239615",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086384239615"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086454848882",
-    "title": "HUAWEI Pura 90 Pro Max 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086454848882_HUAWEI_Pura_90_Pro_Max.md",
-    "prd_id": "10086454848882",
-    "observed_sbom_code": "2601010614324",
-    "observed_sku_anchor": "10086454848882+2601010614324",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086454848882&sbomCode=2601010614324"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086476013098",
-    "title": "HUAWEI Mate 80 Pro 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086476013098_HUAWEI_Mate_80_Pro.md",
-    "prd_id": "10086476013098",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086476013098"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086511284892",
-    "title": "HUAWEI Mate 80 RS 非凡大师 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086511284892_HUAWEI_Mate_80_RS_非凡大师.md",
-    "prd_id": "10086511284892",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086511284892"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086524794571",
-    "title": "nova 16 Ultra 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086524794571_nova_16_Ultra.md",
-    "prd_id": "10086524794571",
-    "observed_sbom_code": "2601010625710",
-    "observed_sku_anchor": "10086524794571+2601010625710",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086524794571&sbomCode=2601010625710"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086621059876",
-    "title": "HUAWEI Pura X Max 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086621059876_HUAWEI_Pura_X_Max.md",
-    "prd_id": "10086621059876",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086621059876"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086658434293",
-    "title": "nova 16z 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086658434293_nova_16z.md",
-    "prd_id": "10086658434293",
-    "observed_sbom_code": "2601010626007",
-    "observed_sku_anchor": "10086658434293+2601010626007",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086658434293&sbomCode=2601010626007"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086724171251",
-    "title": "HUAWEI Mate 80 Pro Max 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086724171251_HUAWEI_Mate_80_Pro_Max.md",
-    "prd_id": "10086724171251",
-    "observed_sbom_code": "2601010586509",
-    "observed_sku_anchor": "10086724171251+2601010586509",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086724171251&sbomCode=2601010586509"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086754422315",
-    "title": "HUAWEI Mate XTs 非凡大师 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086754422315_HUAWEI_Mate_XTs_非凡大师.md",
-    "prd_id": "10086754422315",
-    "observed_sbom_code": "2601010580035",
-    "observed_sku_anchor": "10086754422315+2601010580035",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086754422315&sbomCode=2601010580035"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086838189168",
-    "title": "HUAWEI Mate X7 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086838189168_HUAWEI_Mate_X7.md",
-    "prd_id": "10086838189168",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086838189168"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086839537149",
-    "title": "HUAWEI Pura 80 Ultra 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086839537149_HUAWEI_Pura_80_Ultra.md",
-    "prd_id": "10086839537149",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086839537149"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086843224230",
-    "title": "HUAWEI Mate X6 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086843224230_HUAWEI_Mate_X6.md",
-    "prd_id": "10086843224230",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086843224230"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086850799769",
-    "title": "nova 16 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086850799769_nova_16.md",
-    "prd_id": "10086850799769",
-    "observed_sbom_code": "2601010625916",
-    "observed_sku_anchor": "10086850799769+2601010625916",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086850799769&sbomCode=2601010625916"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086866372688",
-    "title": "HUAWEI Pura 90 Pro 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086866372688_HUAWEI_Pura_90_Pro.md",
-    "prd_id": "10086866372688",
-    "observed_sbom_code": "2601010614420",
-    "observed_sku_anchor": "10086866372688+2601010614420",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086866372688&sbomCode=2601010614420"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086898360689",
-    "title": "HUAWEI Mate 70 Pro 优享版 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086898360689_HUAWEI_Mate_70_Pro_优享版.md",
-    "prd_id": "10086898360689",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086898360689"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086941643085",
-    "title": "nova 16 Pro 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086941643085_nova_16_Pro.md",
-    "prd_id": "10086941643085",
-    "observed_sbom_code": "2601010625815",
-    "observed_sku_anchor": "10086941643085+2601010625815",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086941643085&sbomCode=2601010625815"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086981094378",
-    "title": "HUAWEI Mate 80 Pro Max 风驰版 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086981094378_HUAWEI_Mate_80_Pro_Max_风驰版.md",
-    "prd_id": "10086981094378",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086981094378"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-10086989076790",
-    "title": "HUAWEI Mate 70 Pro+ 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/10086989076790_HUAWEI_Mate_70_Pro+.md",
-    "prd_id": "10086989076790",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086989076790"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-current-pura-90",
-    "title": "HUAWEI Pura 90 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/current_HUAWEI_Pura_90.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://consumer.huawei.com/cn/phones/pura90/specs/"
-  },
-  {
-    "category": "手机",
-    "doc_id": "product-current-changxiang-90-plus",
-    "title": "华为畅享 90 Plus 参数与卖点",
-    "path": "01_参数与卖点_KB/手机/current_华为畅享_90_Plus.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://consumer.huawei.com/cn/phones/changxiang-90-plus/specs/"
-  },
-  {
-    "category": "打印机",
-    "doc_id": "product-打印机-bisheng-laser-x1",
-    "title": "华为毕昇激光打印机 X1 产品档案",
-    "path": "01_参数与卖点_KB/打印机/bisheng-laser-x1_华为毕昇激光打印机 X1.md",
-    "prd_id": "10086607543515",
-    "observed_sbom_code": "3703010008009",
-    "observed_sku_anchor": "10086607543515+3703010008009",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086607543515&sbomCode=3703010008009"
-  },
-  {
-    "category": "智慧屏",
-    "doc_id": "product-智慧屏-matetv-max",
-    "title": "华为智慧屏 MateTV Max 产品档案",
-    "path": "01_参数与卖点_KB/智慧屏/matetv-max_华为智慧屏 MateTV Max.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智慧屏",
-    "doc_id": "product-智慧屏-matetv-pro",
-    "title": "华为智慧屏 MateTV Pro 产品档案",
-    "path": "01_参数与卖点_KB/智慧屏/matetv-pro_华为智慧屏 MateTV Pro.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智慧屏",
-    "doc_id": "product-智慧屏-matetv",
-    "title": "华为智慧屏 MateTV 产品档案",
-    "path": "01_参数与卖点_KB/智慧屏/matetv_华为智慧屏 MateTV.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智慧屏",
-    "doc_id": "product-智慧屏-s6-pro",
-    "title": "华为智慧屏 S6 Pro 产品档案",
-    "path": "01_参数与卖点_KB/智慧屏/s6-pro_华为智慧屏 S6 Pro.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智慧屏",
-    "doc_id": "product-智慧屏-s7-pro",
-    "title": "华为智慧屏 S7 Pro 产品档案",
-    "path": "01_参数与卖点_KB/智慧屏/s7-pro_华为智慧屏 S7 Pro.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智慧屏",
-    "doc_id": "product-智慧屏-s7",
-    "title": "华为智慧屏 S7 产品档案",
-    "path": "01_参数与卖点_KB/智慧屏/s7_华为智慧屏 S7.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智慧屏",
-    "doc_id": "product-智慧屏-s7x-pro",
-    "title": "华为智慧屏 S7X Pro 产品档案",
-    "path": "01_参数与卖点_KB/智慧屏/s7x-pro_华为智慧屏 S7X Pro.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智慧屏",
-    "doc_id": "product-智慧屏-se43",
-    "title": "华为智慧屏 SE43 产品档案",
-    "path": "01_参数与卖点_KB/智慧屏/se43_华为智慧屏 SE43.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智慧屏",
-    "doc_id": "product-智慧屏-v6",
-    "title": "华为智慧屏 V6 产品档案",
-    "path": "01_参数与卖点_KB/智慧屏/v6_华为智慧屏 V6.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智慧屏",
-    "doc_id": "product-智慧屏-vision-4-new",
-    "title": "华为Vision智慧屏 4 New 产品档案",
-    "path": "01_参数与卖点_KB/智慧屏/vision-4-new_华为Vision智慧屏 4 New.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智慧屏",
-    "doc_id": "product-智慧屏-vision-5-pro",
-    "title": "华为Vision智慧屏 5 Pro 产品档案",
-    "path": "01_参数与卖点_KB/智慧屏/vision-5-pro_华为Vision智慧屏 5 Pro.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智慧屏",
-    "doc_id": "product-智慧屏-vision-5-se-enjoy",
-    "title": "华为Vision智慧屏 5 SE 优享版 产品档案",
-    "path": "01_参数与卖点_KB/智慧屏/vision-5-se-enjoy_华为Vision智慧屏 5 SE 优享版.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智慧屏",
-    "doc_id": "product-智慧屏-vision-5-se",
-    "title": "华为Vision智慧屏 5 SE 产品档案",
-    "path": "01_参数与卖点_KB/智慧屏/vision-5-se_华为Vision智慧屏 5 SE.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智慧屏",
-    "doc_id": "product-智慧屏-vision-5",
-    "title": "华为Vision智慧屏 5 产品档案",
-    "path": "01_参数与卖点_KB/智慧屏/vision-5_华为Vision智慧屏 5.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智慧屏",
-    "doc_id": "product-智慧屏-vision-6-pro",
-    "title": "华为Vision智慧屏 6 Pro 产品档案",
-    "path": "01_参数与卖点_KB/智慧屏/vision-6-pro_华为Vision智慧屏 6 Pro.md",
-    "prd_id": "10086252930264",
-    "observed_sbom_code": "3301010099301",
-    "observed_sku_anchor": "10086252930264+3301010099301",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086252930264&sbomCode=3301010099301"
-  },
-  {
-    "category": "智慧屏",
-    "doc_id": "product-智慧屏-vision-6-se-rgb",
-    "title": "华为Vision智慧屏 6 SE RGB 产品档案",
-    "path": "01_参数与卖点_KB/智慧屏/vision-6-se-rgb_华为Vision智慧屏 6 SE RGB.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智慧屏",
-    "doc_id": "product-智慧屏-vision-6-se",
-    "title": "华为Vision智慧屏 6 SE 产品档案",
-    "path": "01_参数与卖点_KB/智慧屏/vision-6-se_华为Vision智慧屏 6 SE.md",
-    "prd_id": "10086896314296",
-    "observed_sbom_code": "3301010094801",
-    "observed_sku_anchor": "10086896314296+3301010094801",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086896314296&sbomCode=3301010094801"
-  },
-  {
-    "category": "智慧屏",
-    "doc_id": "product-智慧屏-vision-6",
-    "title": "华为Vision智慧屏 6 产品档案",
-    "path": "01_参数与卖点_KB/智慧屏/vision-6_华为Vision智慧屏 6.md",
-    "prd_id": "10086077897388",
-    "observed_sbom_code": "3301010094701",
-    "observed_sku_anchor": "10086077897388+3301010094701",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086077897388&sbomCode=3301010094701"
-  },
-  {
-    "category": "智能眼镜",
-    "doc_id": "product-智能眼镜-ai-glasses",
-    "title": "华为 AI 眼镜 产品档案",
-    "path": "01_参数与卖点_KB/智能眼镜/ai-glasses_华为 AI 眼镜.md",
-    "prd_id": "10086316021639",
-    "observed_sbom_code": "3102180011101",
-    "observed_sku_anchor": "10086316021639+3102180011101",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086316021639&sbomCode=3102180011101"
-  },
-  {
-    "category": "智能眼镜",
-    "doc_id": "product-智能眼镜-smart-glasses-2",
-    "title": "华为智能眼镜 2 产品档案",
-    "path": "01_参数与卖点_KB/智能眼镜/smart-glasses-2_华为智能眼镜 2.md",
-    "prd_id": "10086533095852",
-    "observed_sbom_code": "3102180007605",
-    "observed_sku_anchor": "10086533095852+3102180007605",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086533095852&sbomCode=3102180007605"
-  },
-  {
-    "category": "智能门锁",
-    "doc_id": "product-智能门锁-lock-2-enjoy",
-    "title": "华为智能门锁 2 悦享版 产品档案",
-    "path": "01_参数与卖点_KB/智能门锁/lock-2-enjoy_华为智能门锁 2 悦享版.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E8%2583%25BD%25E9%2597%25A8%25E9%2594%2581&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智能门锁",
-    "doc_id": "product-智能门锁-lock-2-premium",
-    "title": "华为智能门锁 2 尊享版 产品档案",
-    "path": "01_参数与卖点_KB/智能门锁/lock-2-premium_华为智能门锁 2 尊享版.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E8%2583%25BD%25E9%2597%25A8%25E9%2594%2581&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智能门锁",
-    "doc_id": "product-智能门锁-lock-2-pro",
-    "title": "华为智能门锁 2 Pro 产品档案",
-    "path": "01_参数与卖点_KB/智能门锁/lock-2-pro_华为智能门锁 2 Pro.md",
-    "prd_id": "10086098826302",
-    "observed_sbom_code": "4405010024201",
-    "observed_sku_anchor": "10086098826302+4405010024201",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086098826302&sbomCode=4405010024201"
-  },
-  {
-    "category": "智能门锁",
-    "doc_id": "product-智能门锁-lock-2-ultra",
-    "title": "华为智能门锁 2 Ultra 产品档案",
-    "path": "01_参数与卖点_KB/智能门锁/lock-2-ultra_华为智能门锁 2 Ultra.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E8%2583%25BD%25E9%2597%25A8%25E9%2594%2581&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智能门锁",
-    "doc_id": "product-智能门锁-lock-2",
-    "title": "华为智能门锁 2 产品档案",
-    "path": "01_参数与卖点_KB/智能门锁/lock-2_华为智能门锁 2.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E8%2583%25BD%25E9%2597%25A8%25E9%2594%2581&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智能门锁",
-    "doc_id": "product-智能门锁-lock-m2",
-    "title": "华为智能门锁 M2 产品档案",
-    "path": "01_参数与卖点_KB/智能门锁/lock-m2_华为智能门锁 M2.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E8%2583%25BD%25E9%2597%25A8%25E9%2594%2581&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "智能门锁",
-    "doc_id": "product-智能门锁-lock-x1",
-    "title": "华为智能门锁 X1 产品档案",
-    "path": "01_参数与卖点_KB/智能门锁/lock-x1_华为智能门锁 X1.md",
-    "prd_id": "10086825479546",
-    "observed_sbom_code": "4405010027402",
-    "observed_sku_anchor": "10086825479546+4405010027402",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086825479546&sbomCode=4405010027402"
-  },
-  {
-    "category": "笔记本",
-    "doc_id": "product-10086032697504",
-    "title": "HUAWEI MateBook D 14 参数与卖点",
-    "path": "01_参数与卖点_KB/笔记本/10086032697504_HUAWEI_MateBook_D_14.md",
-    "prd_id": "10086032697504",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086032697504"
-  },
-  {
-    "category": "笔记本",
-    "doc_id": "product-10086097339191",
-    "title": "HUAWEI MateBook 14 鸿蒙版 参数与卖点",
-    "path": "01_参数与卖点_KB/笔记本/10086097339191_HUAWEI_MateBook_14_鸿蒙版.md",
-    "prd_id": "10086097339191",
-    "observed_sbom_code": "2801010196902",
-    "observed_sku_anchor": "10086097339191+2801010196902",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086097339191&sbomCode=2801010196902"
-  },
-  {
-    "category": "笔记本",
-    "doc_id": "product-10086159780677",
-    "title": "HUAWEI MateBook D 14 SE 参数与卖点",
-    "path": "01_参数与卖点_KB/笔记本/10086159780677_HUAWEI_MateBook_D_14_SE.md",
-    "prd_id": "10086159780677",
-    "observed_sbom_code": "2801010170615",
-    "observed_sku_anchor": "10086159780677+2801010170615",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086159780677&sbomCode=2801010170615"
-  },
-  {
-    "category": "笔记本",
-    "doc_id": "product-10086297718748",
-    "title": "HUAWEI MateBook Fold 非凡大师 参数与卖点",
-    "path": "01_参数与卖点_KB/笔记本/10086297718748_HUAWEI_MateBook_Fold_非凡大师.md",
-    "prd_id": "10086297718748",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086297718748"
-  },
-  {
-    "category": "笔记本",
-    "doc_id": "product-10086309170231",
-    "title": "HUAWEI MateBook GT 14 酷睿 Ultra 参数与卖点",
-    "path": "01_参数与卖点_KB/笔记本/10086309170231_HUAWEI_MateBook_GT_14_酷睿_Ultra.md",
-    "prd_id": "10086309170231",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086309170231"
-  },
-  {
-    "category": "笔记本",
-    "doc_id": "product-10086600621238",
-    "title": "HUAWEI MateBook D 16 SE 参数与卖点",
-    "path": "01_参数与卖点_KB/笔记本/10086600621238_HUAWEI_MateBook_D_16_SE.md",
-    "prd_id": "10086600621238",
-    "observed_sbom_code": "2801010152845",
-    "observed_sku_anchor": "10086600621238+2801010152845",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086600621238&sbomCode=2801010152845"
-  },
-  {
-    "category": "笔记本",
-    "doc_id": "product-10086627212823",
-    "title": "HUAWEI MateBook 14 酷睿 Ultra 参数与卖点",
-    "path": "01_参数与卖点_KB/笔记本/10086627212823_HUAWEI_MateBook_14_酷睿_Ultra.md",
-    "prd_id": "10086627212823",
-    "observed_sbom_code": "2801010174936",
-    "observed_sku_anchor": "10086627212823+2801010174936",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086627212823&sbomCode=2801010174936"
-  },
-  {
-    "category": "笔记本",
-    "doc_id": "product-10086702263930",
-    "title": "HUAWEI MateBook Pro 参数与卖点",
-    "path": "01_参数与卖点_KB/笔记本/10086702263930_HUAWEI_MateBook_Pro.md",
-    "prd_id": "10086702263930",
-    "observed_sbom_code": "2801010187204",
-    "observed_sku_anchor": "10086702263930+2801010187204",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086702263930&sbomCode=2801010187204"
-  },
-  {
-    "category": "笔记本",
-    "doc_id": "product-10086715793338",
-    "title": "HUAWEI MateBook D 16 参数与卖点",
-    "path": "01_参数与卖点_KB/笔记本/10086715793338_HUAWEI_MateBook_D_16.md",
-    "prd_id": "10086715793338",
-    "observed_sbom_code": "2801010168126",
-    "observed_sku_anchor": "10086715793338+2801010168126",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086715793338&sbomCode=2801010168126"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-ax1",
-    "title": "华为路由 AX1 产品档案",
-    "path": "01_参数与卖点_KB/路由/ax1_华为路由 AX1.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-ax2-pro",
-    "title": "华为路由 AX2 Pro 产品档案",
-    "path": "01_参数与卖点_KB/路由/ax2-pro_华为路由 AX2 Pro.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-ax3-pro-enjoy",
-    "title": "华为路由 AX3 Pro 悦享版 产品档案",
-    "path": "01_参数与卖点_KB/路由/ax3-pro-enjoy_华为路由 AX3 Pro 悦享版.md",
-    "prd_id": "10086199300779",
-    "observed_sbom_code": "3001010071301",
-    "observed_sku_anchor": "10086199300779+3001010071301",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086199300779&sbomCode=3001010071301"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-ax3",
-    "title": "华为路由 AX3 产品档案",
-    "path": "01_参数与卖点_KB/路由/ax3_华为路由 AX3.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-ax6-new",
-    "title": "华为路由 AX6 new 产品档案",
-    "path": "01_参数与卖点_KB/路由/ax6-new_华为路由 AX6 new.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-ax6-pro",
-    "title": "华为路由 AX6 Pro 产品档案",
-    "path": "01_参数与卖点_KB/路由/ax6-pro_华为路由 AX6 Pro.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-be3-pro-plus",
-    "title": "华为路由 BE3 Pro+ 产品档案",
-    "path": "01_参数与卖点_KB/路由/be3-pro-plus_华为路由 BE3 Pro+.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-be3-pro-thunder",
-    "title": "华为路由 BE3 Pro 雷电版 产品档案",
-    "path": "01_参数与卖点_KB/路由/be3-pro-thunder_华为路由 BE3 Pro 雷电版.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-be3-pro-wind",
-    "title": "华为路由 BE3 Pro 疾风版 产品档案",
-    "path": "01_参数与卖点_KB/路由/be3-pro-wind_华为路由 BE3 Pro 疾风版.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-be7-pro",
-    "title": "华为路由 BE7 Pro 产品档案",
-    "path": "01_参数与卖点_KB/路由/be7-pro_华为路由 BE7 Pro.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-be7",
-    "title": "华为路由 BE7 产品档案",
-    "path": "01_参数与卖点_KB/路由/be7_华为路由 BE7.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-mobile-router-2",
-    "title": "华为移动路由 2 产品档案",
-    "path": "01_参数与卖点_KB/路由/mobile-router-2_华为移动路由 2.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-mobile-router-5",
-    "title": "华为移动路由 5 产品档案",
-    "path": "01_参数与卖点_KB/路由/mobile-router-5_华为移动路由 5.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-mobile-router-pro",
-    "title": "华为移动路由 Pro 产品档案",
-    "path": "01_参数与卖点_KB/路由/mobile-router-pro_华为移动路由 Pro.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-mobile-wifi-3-pro",
-    "title": "华为随行 WiFi 3 Pro 产品档案",
-    "path": "01_参数与卖点_KB/路由/mobile-wifi-3-pro_华为随行 WiFi 3 Pro.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-mobile-wifi-5",
-    "title": "华为随行 WiFi 5 产品档案",
-    "path": "01_参数与卖点_KB/路由/mobile-wifi-5_华为随行 WiFi 5.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-mobile-wifi-x",
-    "title": "华为随行 WiFi X 产品档案",
-    "path": "01_参数与卖点_KB/路由/mobile-wifi-x_华为随行 WiFi X.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-q6-ethernet-enjoy",
-    "title": "华为凌霄子母路由 Q6 网线版 优享版 产品档案",
-    "path": "01_参数与卖点_KB/路由/q6-ethernet-enjoy_华为凌霄子母路由 Q6 网线版 优享版.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-q6",
-    "title": "华为凌霄子母路由 Q6 产品档案",
-    "path": "01_参数与卖点_KB/路由/q6_华为凌霄子母路由 Q6.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-q6e",
-    "title": "华为凌霄子母路由 Q6E 产品档案",
-    "path": "01_参数与卖点_KB/路由/q6e_华为凌霄子母路由 Q6E.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-q7-ethernet",
-    "title": "华为凌霄子母路由 Q7 网线版 产品档案",
-    "path": "01_参数与卖点_KB/路由/q7-ethernet_华为凌霄子母路由 Q7 网线版.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-q7-powerline",
-    "title": "华为凌霄子母路由 Q7 电线版 产品档案",
-    "path": "01_参数与卖点_KB/路由/q7-powerline_华为凌霄子母路由 Q7 电线版.md",
-    "prd_id": "10086832972917",
-    "observed_sbom_code": "3001010071001",
-    "observed_sku_anchor": "10086832972917+3001010071001",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086832972917&sbomCode=3001010071001"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-x1-pro-gaming",
-    "title": "华为路由 X1 Pro 电竞涂装版 产品档案",
-    "path": "01_参数与卖点_KB/路由/x1-pro-gaming_华为路由 X1 Pro 电竞涂装版.md",
-    "prd_id": "10086097701208",
-    "observed_sbom_code": "3001010071101",
-    "observed_sku_anchor": "10086097701208+3001010071101",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086097701208&sbomCode=3001010071101"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-x1-pro",
-    "title": "华为路由 X1 Pro 产品档案",
-    "path": "01_参数与卖点_KB/路由/x1-pro_华为路由 X1 Pro.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-x1",
-    "title": "华为路由 X1 产品档案",
-    "path": "01_参数与卖点_KB/路由/x1_华为路由 X1.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "路由",
-    "doc_id": "product-路由-x3-pro",
-    "title": "华为路由 X3 Pro 日照金山 产品档案",
-    "path": "01_参数与卖点_KB/路由/x3-pro_华为路由 X3 Pro 日照金山.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%25B7%25AF%25E7%2594%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "音箱",
-    "doc_id": "product-音箱-ai-speaker-2e-home",
-    "title": "华为AI音箱 2e 全屋版 产品档案",
-    "path": "01_参数与卖点_KB/音箱/ai-speaker-2e-home_华为AI音箱 2e 全屋版.md",
-    "prd_id": "10086122913106",
-    "observed_sbom_code": "3102060025701",
-    "observed_sku_anchor": "10086122913106+3102060025701",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086122913106&sbomCode=3102060025701"
-  },
-  {
-    "category": "音箱",
-    "doc_id": "product-音箱-home-theater",
-    "title": "华为悦彰家庭影院 产品档案",
-    "path": "01_参数与卖点_KB/音箱/home-theater_华为悦彰家庭影院.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E9%259F%25B3%25E7%25AE%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "音箱",
-    "doc_id": "product-音箱-sound-joy-2",
-    "title": "HUAWEI Sound Joy 2 产品档案",
-    "path": "01_参数与卖点_KB/音箱/sound-joy-2_HUAWEI Sound Joy 2.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E9%259F%25B3%25E7%25AE%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "音箱",
-    "doc_id": "product-音箱-sound-x-gold-theater",
-    "title": "HUAWEI Sound X 鎏金剧院版 产品档案",
-    "path": "01_参数与卖点_KB/音箱/sound-x-gold-theater_HUAWEI Sound X 鎏金剧院版.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E9%259F%25B3%25E7%25AE%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "音箱",
-    "doc_id": "product-音箱-sound-x4",
-    "title": "HUAWEI Sound X4 产品档案",
-    "path": "01_参数与卖点_KB/音箱/sound-x4_HUAWEI Sound X4.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E9%259F%25B3%25E7%25AE%25B1&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "音箱",
-    "doc_id": "product-音箱-sound-x5",
-    "title": "HUAWEI Sound X5 产品档案",
-    "path": "01_参数与卖点_KB/音箱/sound-x5_HUAWEI Sound X5.md",
-    "prd_id": "10086679107439",
-    "observed_sbom_code": "3102060025003",
-    "observed_sku_anchor": "10086679107439+3102060025003",
-    "source_url": "https://www.vmall.com/product/comdetail/index.html?prdId=10086679107439&sbomCode=3102060025003"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-band-10",
-    "title": "华为手环 10 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/band-10_华为手环_10.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-band-11-pro",
-    "title": "华为手环 11 Pro 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/band-11-pro_华为手环_11_Pro.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-band-11",
-    "title": "华为手环 11 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/band-11_华为手环_11.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-fit-4-pro",
-    "title": "HUAWEI WATCH FIT 4 Pro 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/fit-4-pro_HUAWEI_WATCH_FIT_4_Pro.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-fit-4",
-    "title": "HUAWEI WATCH FIT 4 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/fit-4_HUAWEI_WATCH_FIT_4.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-fit-5-pro",
-    "title": "HUAWEI WATCH FIT 5 Pro 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/fit-5-pro_HUAWEI_WATCH_FIT_5_Pro.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-fit-5",
-    "title": "HUAWEI WATCH FIT 5 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/fit-5_HUAWEI_WATCH_FIT_5.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-gt-6-41",
-    "title": "HUAWEI WATCH GT 6 41mm 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/gt-6-41_HUAWEI_WATCH_GT_6_41mm.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-gt-6-46",
-    "title": "HUAWEI WATCH GT 6 46mm 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/gt-6-46_HUAWEI_WATCH_GT_6_46mm.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-gt-6-pro",
-    "title": "HUAWEI WATCH GT 6 Pro 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/gt-6-pro_HUAWEI_WATCH_GT_6_Pro.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-gt-runner-2",
-    "title": "HUAWEI WATCH GT Runner 2 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/gt-runner-2_HUAWEI_WATCH_GT_Runner_2.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-kids-5-active",
-    "title": "华为儿童手表 5 活力版 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/kids-5-active_华为儿童手表_5_活力版.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-kids-5-new",
-    "title": "华为儿童手表 5 新耀版 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/kids-5-new_华为儿童手表_5_新耀版.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-kids-5-pro",
-    "title": "华为儿童手表 5 Pro 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/kids-5-pro_华为儿童手表_5_Pro.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-kids-5",
-    "title": "华为儿童手表 5 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/kids-5_华为儿童手表_5.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-kids-5x",
-    "title": "华为儿童手表 5X 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/kids-5x_华为儿童手表_5X.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-supernova-x1-pro",
-    "title": "华为超新星手表 X1 Pro 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/supernova-x1-pro_华为超新星手表_X1_Pro.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-supernova-x1",
-    "title": "华为超新星手表 X1 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/supernova-x1_华为超新星手表_X1.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-ultimate-2",
-    "title": "HUAWEI WATCH Ultimate 2 非凡探索 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/ultimate-2_HUAWEI_WATCH_Ultimate_2_非凡探索.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-ultimate-design-diamond",
-    "title": "HUAWEI WATCH ULTIMATE DESIGN 星钻绽放款 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/ultimate-design-diamond_HUAWEI_WATCH_ULTIMATE_DESIGN_星钻绽放款.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-ultimate-design-gold",
-    "title": "HUAWEI WATCH ULTIMATE DESIGN 蓝宝石黄金款 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/ultimate-design-gold_HUAWEI_WATCH_ULTIMATE_DESIGN_蓝宝石黄金款.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-ultimate-design-purple",
-    "title": "HUAWEI WATCH ULTIMATE DESIGN 紫金款 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/ultimate-design-purple_HUAWEI_WATCH_ULTIMATE_DESIGN_紫金款.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-watch-5",
-    "title": "HUAWEI WATCH 5 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/watch-5_HUAWEI_WATCH_5.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-watch-buds-2",
-    "title": "HUAWEI WATCH Buds 2 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/watch-buds-2_HUAWEI_WATCH_Buds_2.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "穿戴",
-    "doc_id": "kbplus-wearable-watch-d2",
-    "title": "HUAWEI WATCH D2 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/穿戴/watch-d2_HUAWEI_WATCH_D2.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E7%25A9%25BF%25E6%2588%25B4&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "耳机",
-    "doc_id": "kbplus-earphone-classic-usbc",
-    "title": "华为经典耳机（USB Type-C版） 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/耳机/classic-usbc_华为经典耳机（USB_Type-C版）.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "耳机",
-    "doc_id": "kbplus-earphone-freearc",
-    "title": "HUAWEI FreeArc 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/耳机/freearc_HUAWEI_FreeArc.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "耳机",
-    "doc_id": "kbplus-earphone-freebuds-6",
-    "title": "HUAWEI FreeBuds 6 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/耳机/freebuds-6_HUAWEI_FreeBuds_6.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "耳机",
-    "doc_id": "kbplus-earphone-freebuds-6i",
-    "title": "HUAWEI FreeBuds 6i 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/耳机/freebuds-6i_HUAWEI_FreeBuds_6i.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "耳机",
-    "doc_id": "kbplus-earphone-freebuds-7i",
-    "title": "HUAWEI FreeBuds 7i 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/耳机/freebuds-7i_HUAWEI_FreeBuds_7i.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "耳机",
-    "doc_id": "kbplus-earphone-freebuds-pro-5",
-    "title": "HUAWEI FreeBuds Pro 5 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/耳机/freebuds-pro-5_HUAWEI_FreeBuds_Pro_5.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "耳机",
-    "doc_id": "kbplus-earphone-freebuds-se-2",
-    "title": "HUAWEI FreeBuds SE 2 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/耳机/freebuds-se-2_HUAWEI_FreeBuds_SE_2.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "耳机",
-    "doc_id": "kbplus-earphone-freebuds-se-3",
-    "title": "HUAWEI FreeBuds SE 3 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/耳机/freebuds-se-3_HUAWEI_FreeBuds_SE_3.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "耳机",
-    "doc_id": "kbplus-earphone-freebuds-se-4-anc",
-    "title": "HUAWEI FreeBuds SE 4 ANC 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/耳机/freebuds-se-4-anc_HUAWEI_FreeBuds_SE_4_ANC.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "耳机",
-    "doc_id": "kbplus-earphone-freeclip-2-collectors",
-    "title": "HUAWEI FreeClip 2 典藏版 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/耳机/freeclip-2-collectors_HUAWEI_FreeClip_2_典藏版.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "耳机",
-    "doc_id": "kbplus-earphone-freeclip-2",
-    "title": "HUAWEI FreeClip 2 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/耳机/freeclip-2_HUAWEI_FreeClip_2.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "耳机",
-    "doc_id": "kbplus-earphone-freeclip",
-    "title": "HUAWEI FreeClip 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/耳机/freeclip_HUAWEI_FreeClip.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"
-  },
-  {
-    "category": "耳机",
-    "doc_id": "kbplus-earphone-freelace-active",
-    "title": "HUAWEI FreeLace 活力版 兼容与搭配档案",
-    "path": "02_鸿蒙生态兼容_KB/耳机/freelace-active_HUAWEI_FreeLace_活力版.md",
-    "prd_id": "",
-    "observed_sbom_code": "",
-    "observed_sku_anchor": "",
-    "source_url": "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"
-  }
+    {
+        "category":  "笔记本",
+        "doc_id":  "product-10086032697504",
+        "title":  "HUAWEI MateBook D 14 参数与卖点",
+        "path":  "01_参数与卖点_KB/笔记本/10086032697504_HUAWEI_MateBook_D_14.md",
+        "prd_id":  "10086032697504",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086032697504"
+    },
+    {
+        "category":  "笔记本",
+        "doc_id":  "product-10086097339191",
+        "title":  "HUAWEI MateBook 14 鸿蒙版 参数与卖点",
+        "path":  "01_参数与卖点_KB/笔记本/10086097339191_HUAWEI_MateBook_14_鸿蒙版.md",
+        "prd_id":  "10086097339191",
+        "observed_sbom_code":  "2801010196902",
+        "observed_sku_anchor":  "10086097339191+2801010196902",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086097339191\u0026sbomCode=2801010196902"
+    },
+    {
+        "category":  "笔记本",
+        "doc_id":  "product-10086159780677",
+        "title":  "HUAWEI MateBook D 14 SE 参数与卖点",
+        "path":  "01_参数与卖点_KB/笔记本/10086159780677_HUAWEI_MateBook_D_14_SE.md",
+        "prd_id":  "10086159780677",
+        "observed_sbom_code":  "2801010170615",
+        "observed_sku_anchor":  "10086159780677+2801010170615",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086159780677\u0026sbomCode=2801010170615"
+    },
+    {
+        "category":  "笔记本",
+        "doc_id":  "product-10086297718748",
+        "title":  "HUAWEI MateBook Fold 非凡大师 参数与卖点",
+        "path":  "01_参数与卖点_KB/笔记本/10086297718748_HUAWEI_MateBook_Fold_非凡大师.md",
+        "prd_id":  "10086297718748",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086297718748"
+    },
+    {
+        "category":  "笔记本",
+        "doc_id":  "product-10086309170231",
+        "title":  "HUAWEI MateBook GT 14 酷睿 Ultra 参数与卖点",
+        "path":  "01_参数与卖点_KB/笔记本/10086309170231_HUAWEI_MateBook_GT_14_酷睿_Ultra.md",
+        "prd_id":  "10086309170231",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086309170231"
+    },
+    {
+        "category":  "笔记本",
+        "doc_id":  "product-10086600621238",
+        "title":  "HUAWEI MateBook D 16 SE 参数与卖点",
+        "path":  "01_参数与卖点_KB/笔记本/10086600621238_HUAWEI_MateBook_D_16_SE.md",
+        "prd_id":  "10086600621238",
+        "observed_sbom_code":  "2801010152845",
+        "observed_sku_anchor":  "10086600621238+2801010152845",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086600621238\u0026sbomCode=2801010152845"
+    },
+    {
+        "category":  "笔记本",
+        "doc_id":  "product-10086627212823",
+        "title":  "HUAWEI MateBook 14 酷睿 Ultra 参数与卖点",
+        "path":  "01_参数与卖点_KB/笔记本/10086627212823_HUAWEI_MateBook_14_酷睿_Ultra.md",
+        "prd_id":  "10086627212823",
+        "observed_sbom_code":  "2801010174936",
+        "observed_sku_anchor":  "10086627212823+2801010174936",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086627212823\u0026sbomCode=2801010174936"
+    },
+    {
+        "category":  "笔记本",
+        "doc_id":  "product-10086702263930",
+        "title":  "HUAWEI MateBook Pro 参数与卖点",
+        "path":  "01_参数与卖点_KB/笔记本/10086702263930_HUAWEI_MateBook_Pro.md",
+        "prd_id":  "10086702263930",
+        "observed_sbom_code":  "2801010187204",
+        "observed_sku_anchor":  "10086702263930+2801010187204",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086702263930\u0026sbomCode=2801010187204"
+    },
+    {
+        "category":  "笔记本",
+        "doc_id":  "product-10086715793338",
+        "title":  "HUAWEI MateBook D 16 参数与卖点",
+        "path":  "01_参数与卖点_KB/笔记本/10086715793338_HUAWEI_MateBook_D_16.md",
+        "prd_id":  "10086715793338",
+        "observed_sbom_code":  "2801010168126",
+        "observed_sku_anchor":  "10086715793338+2801010168126",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086715793338\u0026sbomCode=2801010168126"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-band-10",
+        "title":  "华为手环 10 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/band-10_华为手环_10.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-band-11",
+        "title":  "华为手环 11 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/band-11_华为手环_11.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-band-11-pro",
+        "title":  "华为手环 11 Pro 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/band-11-pro_华为手环_11_Pro.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-fit-4",
+        "title":  "HUAWEI WATCH FIT 4 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/fit-4_HUAWEI_WATCH_FIT_4.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-fit-4-pro",
+        "title":  "HUAWEI WATCH FIT 4 Pro 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/fit-4-pro_HUAWEI_WATCH_FIT_4_Pro.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-fit-5",
+        "title":  "HUAWEI WATCH FIT 5 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/fit-5_HUAWEI_WATCH_FIT_5.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-fit-5-pro",
+        "title":  "HUAWEI WATCH FIT 5 Pro 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/fit-5-pro_HUAWEI_WATCH_FIT_5_Pro.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-gt-6-41",
+        "title":  "HUAWEI WATCH GT 6 41mm 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/gt-6-41_HUAWEI_WATCH_GT_6_41mm.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-gt-6-46",
+        "title":  "HUAWEI WATCH GT 6 46mm 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/gt-6-46_HUAWEI_WATCH_GT_6_46mm.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-gt-6-pro",
+        "title":  "HUAWEI WATCH GT 6 Pro 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/gt-6-pro_HUAWEI_WATCH_GT_6_Pro.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-gt-runner-2",
+        "title":  "HUAWEI WATCH GT Runner 2 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/gt-runner-2_HUAWEI_WATCH_GT_Runner_2.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-kids-5",
+        "title":  "华为儿童手表 5 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/kids-5_华为儿童手表_5.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-kids-5-active",
+        "title":  "华为儿童手表 5 活力版 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/kids-5-active_华为儿童手表_5_活力版.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-kids-5-new",
+        "title":  "华为儿童手表 5 新耀版 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/kids-5-new_华为儿童手表_5_新耀版.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-kids-5-pro",
+        "title":  "华为儿童手表 5 Pro 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/kids-5-pro_华为儿童手表_5_Pro.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-kids-5x",
+        "title":  "华为儿童手表 5X 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/kids-5x_华为儿童手表_5X.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-supernova-x1",
+        "title":  "华为超新星手表 X1 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/supernova-x1_华为超新星手表_X1.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-supernova-x1-pro",
+        "title":  "华为超新星手表 X1 Pro 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/supernova-x1-pro_华为超新星手表_X1_Pro.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-ultimate-2",
+        "title":  "HUAWEI WATCH Ultimate 2 非凡探索 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/ultimate-2_HUAWEI_WATCH_Ultimate_2_非凡探索.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-ultimate-design-diamond",
+        "title":  "HUAWEI WATCH ULTIMATE DESIGN 星钻绽放款 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/ultimate-design-diamond_HUAWEI_WATCH_ULTIMATE_DESIGN_星钻绽放款.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-ultimate-design-gold",
+        "title":  "HUAWEI WATCH ULTIMATE DESIGN 蓝宝石黄金款 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/ultimate-design-gold_HUAWEI_WATCH_ULTIMATE_DESIGN_蓝宝石黄金款.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-ultimate-design-purple",
+        "title":  "HUAWEI WATCH ULTIMATE DESIGN 紫金款 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/ultimate-design-purple_HUAWEI_WATCH_ULTIMATE_DESIGN_紫金款.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-watch-5",
+        "title":  "HUAWEI WATCH 5 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/watch-5_HUAWEI_WATCH_5.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-watch-buds-2",
+        "title":  "HUAWEI WATCH Buds 2 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/watch-buds-2_HUAWEI_WATCH_Buds_2.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "穿戴",
+        "doc_id":  "product-wearable-watch-d2",
+        "title":  "HUAWEI WATCH D2 产品档案",
+        "path":  "01_参数与卖点_KB/穿戴/watch-d2_HUAWEI_WATCH_D2.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E7%25A9%25BF%25E6%2588%25B4\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "打印机",
+        "doc_id":  "product-打印机-bisheng-laser-x1",
+        "title":  "华为毕昇激光打印机 X1 产品档案",
+        "path":  "01_参数与卖点_KB/打印机/bisheng-laser-x1_华为毕昇激光打印机 X1.md",
+        "prd_id":  "10086607543515",
+        "observed_sbom_code":  "3703010008009",
+        "observed_sku_anchor":  "10086607543515+3703010008009",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086607543515\u0026sbomCode=3703010008009"
+    },
+    {
+        "category":  "耳机",
+        "doc_id":  "product-earphone-classic-usbc",
+        "title":  "华为经典耳机（USB Type-C版） 产品档案",
+        "path":  "01_参数与卖点_KB/耳机/classic-usbc_华为经典耳机（USB_Type-C版）.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%2580%25B3%25E6%259C%25BA\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "耳机",
+        "doc_id":  "product-earphone-freearc",
+        "title":  "HUAWEI FreeArc 产品档案",
+        "path":  "01_参数与卖点_KB/耳机/freearc_HUAWEI_FreeArc.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%2580%25B3%25E6%259C%25BA\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "耳机",
+        "doc_id":  "product-earphone-freebuds-6",
+        "title":  "HUAWEI FreeBuds 6 产品档案",
+        "path":  "01_参数与卖点_KB/耳机/freebuds-6_HUAWEI_FreeBuds_6.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%2580%25B3%25E6%259C%25BA\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "耳机",
+        "doc_id":  "product-earphone-freebuds-6i",
+        "title":  "HUAWEI FreeBuds 6i 产品档案",
+        "path":  "01_参数与卖点_KB/耳机/freebuds-6i_HUAWEI_FreeBuds_6i.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%2580%25B3%25E6%259C%25BA\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "耳机",
+        "doc_id":  "product-earphone-freebuds-7i",
+        "title":  "HUAWEI FreeBuds 7i 产品档案",
+        "path":  "01_参数与卖点_KB/耳机/freebuds-7i_HUAWEI_FreeBuds_7i.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%2580%25B3%25E6%259C%25BA\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "耳机",
+        "doc_id":  "product-earphone-freebuds-pro-5",
+        "title":  "HUAWEI FreeBuds Pro 5 产品档案",
+        "path":  "01_参数与卖点_KB/耳机/freebuds-pro-5_HUAWEI_FreeBuds_Pro_5.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%2580%25B3%25E6%259C%25BA\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "耳机",
+        "doc_id":  "product-earphone-freebuds-se-2",
+        "title":  "HUAWEI FreeBuds SE 2 产品档案",
+        "path":  "01_参数与卖点_KB/耳机/freebuds-se-2_HUAWEI_FreeBuds_SE_2.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%2580%25B3%25E6%259C%25BA\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "耳机",
+        "doc_id":  "product-earphone-freebuds-se-3",
+        "title":  "HUAWEI FreeBuds SE 3 产品档案",
+        "path":  "01_参数与卖点_KB/耳机/freebuds-se-3_HUAWEI_FreeBuds_SE_3.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%2580%25B3%25E6%259C%25BA\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "耳机",
+        "doc_id":  "product-earphone-freebuds-se-4-anc",
+        "title":  "HUAWEI FreeBuds SE 4 ANC 产品档案",
+        "path":  "01_参数与卖点_KB/耳机/freebuds-se-4-anc_HUAWEI_FreeBuds_SE_4_ANC.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%2580%25B3%25E6%259C%25BA\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "耳机",
+        "doc_id":  "product-earphone-freeclip",
+        "title":  "HUAWEI FreeClip 产品档案",
+        "path":  "01_参数与卖点_KB/耳机/freeclip_HUAWEI_FreeClip.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%2580%25B3%25E6%259C%25BA\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "耳机",
+        "doc_id":  "product-earphone-freeclip-2",
+        "title":  "HUAWEI FreeClip 2 产品档案",
+        "path":  "01_参数与卖点_KB/耳机/freeclip-2_HUAWEI_FreeClip_2.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%2580%25B3%25E6%259C%25BA\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "耳机",
+        "doc_id":  "product-earphone-freeclip-2-collectors",
+        "title":  "HUAWEI FreeClip 2 典藏版 产品档案",
+        "path":  "01_参数与卖点_KB/耳机/freeclip-2-collectors_HUAWEI_FreeClip_2_典藏版.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%2580%25B3%25E6%259C%25BA\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "耳机",
+        "doc_id":  "product-earphone-freelace-active",
+        "title":  "HUAWEI FreeLace 活力版 产品档案",
+        "path":  "01_参数与卖点_KB/耳机/freelace-active_HUAWEI_FreeLace_活力版.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%2580%25B3%25E6%259C%25BA\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "家庭存储",
+        "doc_id":  "product-家庭存储-home-storage",
+        "title":  "华为家庭存储 产品档案",
+        "path":  "01_参数与卖点_KB/家庭存储/home-storage_华为家庭存储.md",
+        "prd_id":  "10086111180187",
+        "observed_sbom_code":  "3001070001001",
+        "observed_sku_anchor":  "10086111180187+3001070001001",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086111180187\u0026sbomCode=3001070001001"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-ax1",
+        "title":  "华为路由 AX1 产品档案",
+        "path":  "01_参数与卖点_KB/路由/ax1_华为路由 AX1.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-ax2-pro",
+        "title":  "华为路由 AX2 Pro 产品档案",
+        "path":  "01_参数与卖点_KB/路由/ax2-pro_华为路由 AX2 Pro.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-ax3",
+        "title":  "华为路由 AX3 产品档案",
+        "path":  "01_参数与卖点_KB/路由/ax3_华为路由 AX3.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-ax3-pro-enjoy",
+        "title":  "华为路由 AX3 Pro 悦享版 产品档案",
+        "path":  "01_参数与卖点_KB/路由/ax3-pro-enjoy_华为路由 AX3 Pro 悦享版.md",
+        "prd_id":  "10086199300779",
+        "observed_sbom_code":  "3001010071301",
+        "observed_sku_anchor":  "10086199300779+3001010071301",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086199300779\u0026sbomCode=3001010071301"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-ax6-new",
+        "title":  "华为路由 AX6 new 产品档案",
+        "path":  "01_参数与卖点_KB/路由/ax6-new_华为路由 AX6 new.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-ax6-pro",
+        "title":  "华为路由 AX6 Pro 产品档案",
+        "path":  "01_参数与卖点_KB/路由/ax6-pro_华为路由 AX6 Pro.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-be3-pro-plus",
+        "title":  "华为路由 BE3 Pro+ 产品档案",
+        "path":  "01_参数与卖点_KB/路由/be3-pro-plus_华为路由 BE3 Pro+.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-be3-pro-thunder",
+        "title":  "华为路由 BE3 Pro 雷电版 产品档案",
+        "path":  "01_参数与卖点_KB/路由/be3-pro-thunder_华为路由 BE3 Pro 雷电版.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-be3-pro-wind",
+        "title":  "华为路由 BE3 Pro 疾风版 产品档案",
+        "path":  "01_参数与卖点_KB/路由/be3-pro-wind_华为路由 BE3 Pro 疾风版.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-be7",
+        "title":  "华为路由 BE7 产品档案",
+        "path":  "01_参数与卖点_KB/路由/be7_华为路由 BE7.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-be7-pro",
+        "title":  "华为路由 BE7 Pro 产品档案",
+        "path":  "01_参数与卖点_KB/路由/be7-pro_华为路由 BE7 Pro.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-mobile-router-2",
+        "title":  "华为移动路由 2 产品档案",
+        "path":  "01_参数与卖点_KB/路由/mobile-router-2_华为移动路由 2.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-mobile-router-5",
+        "title":  "华为移动路由 5 产品档案",
+        "path":  "01_参数与卖点_KB/路由/mobile-router-5_华为移动路由 5.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-mobile-router-pro",
+        "title":  "华为移动路由 Pro 产品档案",
+        "path":  "01_参数与卖点_KB/路由/mobile-router-pro_华为移动路由 Pro.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-mobile-wifi-3-pro",
+        "title":  "华为随行 WiFi 3 Pro 产品档案",
+        "path":  "01_参数与卖点_KB/路由/mobile-wifi-3-pro_华为随行 WiFi 3 Pro.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-mobile-wifi-5",
+        "title":  "华为随行 WiFi 5 产品档案",
+        "path":  "01_参数与卖点_KB/路由/mobile-wifi-5_华为随行 WiFi 5.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-mobile-wifi-x",
+        "title":  "华为随行 WiFi X 产品档案",
+        "path":  "01_参数与卖点_KB/路由/mobile-wifi-x_华为随行 WiFi X.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-q6",
+        "title":  "华为凌霄子母路由 Q6 产品档案",
+        "path":  "01_参数与卖点_KB/路由/q6_华为凌霄子母路由 Q6.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-q6e",
+        "title":  "华为凌霄子母路由 Q6E 产品档案",
+        "path":  "01_参数与卖点_KB/路由/q6e_华为凌霄子母路由 Q6E.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-q6-ethernet-enjoy",
+        "title":  "华为凌霄子母路由 Q6 网线版 优享版 产品档案",
+        "path":  "01_参数与卖点_KB/路由/q6-ethernet-enjoy_华为凌霄子母路由 Q6 网线版 优享版.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-q7-ethernet",
+        "title":  "华为凌霄子母路由 Q7 网线版 产品档案",
+        "path":  "01_参数与卖点_KB/路由/q7-ethernet_华为凌霄子母路由 Q7 网线版.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-q7-powerline",
+        "title":  "华为凌霄子母路由 Q7 电线版 产品档案",
+        "path":  "01_参数与卖点_KB/路由/q7-powerline_华为凌霄子母路由 Q7 电线版.md",
+        "prd_id":  "10086832972917",
+        "observed_sbom_code":  "3001010071001",
+        "observed_sku_anchor":  "10086832972917+3001010071001",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086832972917\u0026sbomCode=3001010071001"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-x1",
+        "title":  "华为路由 X1 产品档案",
+        "path":  "01_参数与卖点_KB/路由/x1_华为路由 X1.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-x1-pro",
+        "title":  "华为路由 X1 Pro 产品档案",
+        "path":  "01_参数与卖点_KB/路由/x1-pro_华为路由 X1 Pro.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-x1-pro-gaming",
+        "title":  "华为路由 X1 Pro 电竞涂装版 产品档案",
+        "path":  "01_参数与卖点_KB/路由/x1-pro-gaming_华为路由 X1 Pro 电竞涂装版.md",
+        "prd_id":  "10086097701208",
+        "observed_sbom_code":  "3001010071101",
+        "observed_sku_anchor":  "10086097701208+3001010071101",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086097701208\u0026sbomCode=3001010071101"
+    },
+    {
+        "category":  "路由",
+        "doc_id":  "product-路由-x3-pro",
+        "title":  "华为路由 X3 Pro 日照金山 产品档案",
+        "path":  "01_参数与卖点_KB/路由/x3-pro_华为路由 X3 Pro 日照金山.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E8%25B7%25AF%25E7%2594%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "平板",
+        "doc_id":  "product-10086106814226",
+        "title":  "HUAWEI MatePad Pro 12.2 英寸 参数与卖点",
+        "path":  "01_参数与卖点_KB/平板/10086106814226_HUAWEI_MatePad_Pro_12.2_英寸.md",
+        "prd_id":  "10086106814226",
+        "observed_sbom_code":  "2701010122029",
+        "observed_sku_anchor":  "10086106814226+2701010122029",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086106814226\u0026sbomCode=2701010122029"
+    },
+    {
+        "category":  "平板",
+        "doc_id":  "product-10086120212240",
+        "title":  "HUAWEI MatePad Pro 13.2 英寸 参数与卖点",
+        "path":  "01_参数与卖点_KB/平板/10086120212240_HUAWEI_MatePad_Pro_13.2_英寸.md",
+        "prd_id":  "10086120212240",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086120212240"
+    },
+    {
+        "category":  "平板",
+        "doc_id":  "product-10086127502687",
+        "title":  "HUAWEI MatePad Pro Max 参数与卖点",
+        "path":  "01_参数与卖点_KB/平板/10086127502687_HUAWEI_MatePad_Pro_Max.md",
+        "prd_id":  "10086127502687",
+        "observed_sbom_code":  "2701010130502",
+        "observed_sku_anchor":  "10086127502687+2701010130502",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086127502687\u0026sbomCode=2701010130502"
+    },
+    {
+        "category":  "平板",
+        "doc_id":  "product-10086287244006",
+        "title":  "HUAWEI MatePad Mini 参数与卖点",
+        "path":  "01_参数与卖点_KB/平板/10086287244006_HUAWEI_MatePad_Mini.md",
+        "prd_id":  "10086287244006",
+        "observed_sbom_code":  "2701010123211",
+        "observed_sku_anchor":  "10086287244006+2701010123211",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086287244006\u0026sbomCode=2701010123211"
+    },
+    {
+        "category":  "平板",
+        "doc_id":  "product-10086294960453",
+        "title":  "HUAWEI MatePad 11.5 参数与卖点",
+        "path":  "01_参数与卖点_KB/平板/10086294960453_HUAWEI_MatePad_11.5.md",
+        "prd_id":  "10086294960453",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086294960453"
+    },
+    {
+        "category":  "平板",
+        "doc_id":  "product-10086426290126",
+        "title":  "HUAWEI MatePad SE 11英寸 焕新版 参数与卖点",
+        "path":  "01_参数与卖点_KB/平板/10086426290126_HUAWEI_MatePad_SE_11英寸_焕新版.md",
+        "prd_id":  "10086426290126",
+        "observed_sbom_code":  "2701010132701",
+        "observed_sku_anchor":  "10086426290126+2701010132701",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086426290126\u0026sbomCode=2701010132701"
+    },
+    {
+        "category":  "平板",
+        "doc_id":  "product-10086486839777",
+        "title":  "HUAWEI MatePad Air 12英寸 鸿蒙焕新版 参数与卖点",
+        "path":  "01_参数与卖点_KB/平板/10086486839777_HUAWEI_MatePad_Air_12英寸_鸿蒙焕新版.md",
+        "prd_id":  "10086486839777",
+        "observed_sbom_code":  "2701010131701",
+        "observed_sku_anchor":  "10086486839777+2701010131701",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086486839777\u0026sbomCode=2701010131701"
+    },
+    {
+        "category":  "平板",
+        "doc_id":  "product-10086518319242",
+        "title":  "HUAWEI MatePad 11.5 S 参数与卖点",
+        "path":  "01_参数与卖点_KB/平板/10086518319242_HUAWEI_MatePad_11.5_S.md",
+        "prd_id":  "10086518319242",
+        "observed_sbom_code":  "2701010122623",
+        "observed_sku_anchor":  "10086518319242+2701010122623",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086518319242\u0026sbomCode=2701010122623"
+    },
+    {
+        "category":  "平板",
+        "doc_id":  "product-10086590821009",
+        "title":  "HUAWEI MatePad Edge 参数与卖点",
+        "path":  "01_参数与卖点_KB/平板/10086590821009_HUAWEI_MatePad_Edge.md",
+        "prd_id":  "10086590821009",
+        "observed_sbom_code":  "2701010126301",
+        "observed_sku_anchor":  "10086590821009+2701010126301",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086590821009\u0026sbomCode=2701010126301"
+    },
+    {
+        "category":  "平板",
+        "doc_id":  "product-current-matepad-11-5-s-flex-2025",
+        "title":  "HUAWEI MatePad 11.5 S 灵动款 鸿蒙焕新版 参数与卖点",
+        "path":  "01_参数与卖点_KB/平板/current_HUAWEI_MatePad_11.5_S_灵动款_鸿蒙焕新版.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://consumer.huawei.com/cn/tablets/matepad-11-5-s-2025/specs/"
+    },
+    {
+        "category":  "平板",
+        "doc_id":  "product-current-matepad-11-5-2026",
+        "title":  "HUAWEI MatePad 11.5 鸿蒙焕新版 参数与卖点",
+        "path":  "01_参数与卖点_KB/平板/current_HUAWEI_MatePad_11.5_鸿蒙焕新版.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://consumer.huawei.com/cn/tablets/matepad-11-5-2026/specs/"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086061975812",
+        "title":  "HUAWEI Pura X 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086061975812_HUAWEI_Pura_X.md",
+        "prd_id":  "10086061975812",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086061975812"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086133363559",
+        "title":  "HUAWEI Mate 80 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086133363559_HUAWEI_Mate_80.md",
+        "prd_id":  "10086133363559",
+        "observed_sbom_code":  "2601010586341",
+        "observed_sku_anchor":  "10086133363559+2601010586341",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086133363559\u0026sbomCode=2601010586341"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086153236238",
+        "title":  "HUAWEI Pura 80 Pro+ 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086153236238_HUAWEI_Pura_80_Pro+.md",
+        "prd_id":  "10086153236238",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086153236238"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086174757473",
+        "title":  "华为畅享 90 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086174757473_华为畅享_90.md",
+        "prd_id":  "10086174757473",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086174757473"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086259366534",
+        "title":  "HUAWEI Mate 70 Pro 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086259366534_HUAWEI_Mate_70_Pro.md",
+        "prd_id":  "10086259366534",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086259366534"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086270081540",
+        "title":  "华为畅享 90 Pro Max 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086270081540_华为畅享_90_Pro_Max.md",
+        "prd_id":  "10086270081540",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086270081540"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086316355082",
+        "title":  "HUAWEI Pura 80 Pro 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086316355082_HUAWEI_Pura_80_Pro.md",
+        "prd_id":  "10086316355082",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086316355082"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086364337052",
+        "title":  "HUAWEI Pura 80 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086364337052_HUAWEI_Pura_80.md",
+        "prd_id":  "10086364337052",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086364337052"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086384239615",
+        "title":  "HUAWEI Mate 70 Air 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086384239615_HUAWEI_Mate_70_Air.md",
+        "prd_id":  "10086384239615",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086384239615"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086454848882",
+        "title":  "HUAWEI Pura 90 Pro Max 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086454848882_HUAWEI_Pura_90_Pro_Max.md",
+        "prd_id":  "10086454848882",
+        "observed_sbom_code":  "2601010614324",
+        "observed_sku_anchor":  "10086454848882+2601010614324",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086454848882\u0026sbomCode=2601010614324"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086476013098",
+        "title":  "HUAWEI Mate 80 Pro 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086476013098_HUAWEI_Mate_80_Pro.md",
+        "prd_id":  "10086476013098",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086476013098"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086511284892",
+        "title":  "HUAWEI Mate 80 RS 非凡大师 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086511284892_HUAWEI_Mate_80_RS_非凡大师.md",
+        "prd_id":  "10086511284892",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086511284892"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086524794571",
+        "title":  "nova 16 Ultra 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086524794571_nova_16_Ultra.md",
+        "prd_id":  "10086524794571",
+        "observed_sbom_code":  "2601010625710",
+        "observed_sku_anchor":  "10086524794571+2601010625710",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086524794571\u0026sbomCode=2601010625710"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086621059876",
+        "title":  "HUAWEI Pura X Max 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086621059876_HUAWEI_Pura_X_Max.md",
+        "prd_id":  "10086621059876",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086621059876"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086658434293",
+        "title":  "nova 16z 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086658434293_nova_16z.md",
+        "prd_id":  "10086658434293",
+        "observed_sbom_code":  "2601010626007",
+        "observed_sku_anchor":  "10086658434293+2601010626007",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086658434293\u0026sbomCode=2601010626007"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086724171251",
+        "title":  "HUAWEI Mate 80 Pro Max 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086724171251_HUAWEI_Mate_80_Pro_Max.md",
+        "prd_id":  "10086724171251",
+        "observed_sbom_code":  "2601010586509",
+        "observed_sku_anchor":  "10086724171251+2601010586509",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086724171251\u0026sbomCode=2601010586509"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086754422315",
+        "title":  "HUAWEI Mate XTs 非凡大师 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086754422315_HUAWEI_Mate_XTs_非凡大师.md",
+        "prd_id":  "10086754422315",
+        "observed_sbom_code":  "2601010580035",
+        "observed_sku_anchor":  "10086754422315+2601010580035",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086754422315\u0026sbomCode=2601010580035"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086838189168",
+        "title":  "HUAWEI Mate X7 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086838189168_HUAWEI_Mate_X7.md",
+        "prd_id":  "10086838189168",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086838189168"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086839537149",
+        "title":  "HUAWEI Pura 80 Ultra 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086839537149_HUAWEI_Pura_80_Ultra.md",
+        "prd_id":  "10086839537149",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086839537149"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086843224230",
+        "title":  "HUAWEI Mate X6 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086843224230_HUAWEI_Mate_X6.md",
+        "prd_id":  "10086843224230",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086843224230"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086850799769",
+        "title":  "nova 16 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086850799769_nova_16.md",
+        "prd_id":  "10086850799769",
+        "observed_sbom_code":  "2601010625916",
+        "observed_sku_anchor":  "10086850799769+2601010625916",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086850799769\u0026sbomCode=2601010625916"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086866372688",
+        "title":  "HUAWEI Pura 90 Pro 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086866372688_HUAWEI_Pura_90_Pro.md",
+        "prd_id":  "10086866372688",
+        "observed_sbom_code":  "2601010614420",
+        "observed_sku_anchor":  "10086866372688+2601010614420",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086866372688\u0026sbomCode=2601010614420"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086898360689",
+        "title":  "HUAWEI Mate 70 Pro 优享版 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086898360689_HUAWEI_Mate_70_Pro_优享版.md",
+        "prd_id":  "10086898360689",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086898360689"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086941643085",
+        "title":  "nova 16 Pro 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086941643085_nova_16_Pro.md",
+        "prd_id":  "10086941643085",
+        "observed_sbom_code":  "2601010625815",
+        "observed_sku_anchor":  "10086941643085+2601010625815",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086941643085\u0026sbomCode=2601010625815"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086981094378",
+        "title":  "HUAWEI Mate 80 Pro Max 风驰版 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086981094378_HUAWEI_Mate_80_Pro_Max_风驰版.md",
+        "prd_id":  "10086981094378",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086981094378"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-10086989076790",
+        "title":  "HUAWEI Mate 70 Pro+ 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/10086989076790_HUAWEI_Mate_70_Pro+.md",
+        "prd_id":  "10086989076790",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086989076790"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-current-pura-90",
+        "title":  "HUAWEI Pura 90 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/current_HUAWEI_Pura_90.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://consumer.huawei.com/cn/phones/pura90/specs/"
+    },
+    {
+        "category":  "手机",
+        "doc_id":  "product-current-changxiang-90-plus",
+        "title":  "华为畅享 90 Plus 参数与卖点",
+        "path":  "01_参数与卖点_KB/手机/current_华为畅享_90_Plus.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://consumer.huawei.com/cn/phones/changxiang-90-plus/specs/"
+    },
+    {
+        "category":  "音箱",
+        "doc_id":  "product-音箱-ai-speaker-2e-home",
+        "title":  "华为AI音箱 2e 全屋版 产品档案",
+        "path":  "01_参数与卖点_KB/音箱/ai-speaker-2e-home_华为AI音箱 2e 全屋版.md",
+        "prd_id":  "10086122913106",
+        "observed_sbom_code":  "3102060025701",
+        "observed_sku_anchor":  "10086122913106+3102060025701",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086122913106\u0026sbomCode=3102060025701"
+    },
+    {
+        "category":  "音箱",
+        "doc_id":  "product-音箱-home-theater",
+        "title":  "华为悦彰家庭影院 产品档案",
+        "path":  "01_参数与卖点_KB/音箱/home-theater_华为悦彰家庭影院.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E9%259F%25B3%25E7%25AE%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "音箱",
+        "doc_id":  "product-音箱-sound-joy-2",
+        "title":  "HUAWEI Sound Joy 2 产品档案",
+        "path":  "01_参数与卖点_KB/音箱/sound-joy-2_HUAWEI Sound Joy 2.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E9%259F%25B3%25E7%25AE%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "音箱",
+        "doc_id":  "product-音箱-sound-x4",
+        "title":  "HUAWEI Sound X4 产品档案",
+        "path":  "01_参数与卖点_KB/音箱/sound-x4_HUAWEI Sound X4.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E9%259F%25B3%25E7%25AE%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "音箱",
+        "doc_id":  "product-音箱-sound-x5",
+        "title":  "HUAWEI Sound X5 产品档案",
+        "path":  "01_参数与卖点_KB/音箱/sound-x5_HUAWEI Sound X5.md",
+        "prd_id":  "10086679107439",
+        "observed_sbom_code":  "3102060025003",
+        "observed_sku_anchor":  "10086679107439+3102060025003",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086679107439\u0026sbomCode=3102060025003"
+    },
+    {
+        "category":  "音箱",
+        "doc_id":  "product-音箱-sound-x-gold-theater",
+        "title":  "HUAWEI Sound X 鎏金剧院版 产品档案",
+        "path":  "01_参数与卖点_KB/音箱/sound-x-gold-theater_HUAWEI Sound X 鎏金剧院版.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E9%259F%25B3%25E7%25AE%25B1\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智慧屏",
+        "doc_id":  "product-智慧屏-matetv",
+        "title":  "华为智慧屏 MateTV 产品档案",
+        "path":  "01_参数与卖点_KB/智慧屏/matetv_华为智慧屏 MateTV.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智慧屏",
+        "doc_id":  "product-智慧屏-matetv-max",
+        "title":  "华为智慧屏 MateTV Max 产品档案",
+        "path":  "01_参数与卖点_KB/智慧屏/matetv-max_华为智慧屏 MateTV Max.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智慧屏",
+        "doc_id":  "product-智慧屏-matetv-pro",
+        "title":  "华为智慧屏 MateTV Pro 产品档案",
+        "path":  "01_参数与卖点_KB/智慧屏/matetv-pro_华为智慧屏 MateTV Pro.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智慧屏",
+        "doc_id":  "product-智慧屏-s6-pro",
+        "title":  "华为智慧屏 S6 Pro 产品档案",
+        "path":  "01_参数与卖点_KB/智慧屏/s6-pro_华为智慧屏 S6 Pro.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智慧屏",
+        "doc_id":  "product-智慧屏-s7",
+        "title":  "华为智慧屏 S7 产品档案",
+        "path":  "01_参数与卖点_KB/智慧屏/s7_华为智慧屏 S7.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智慧屏",
+        "doc_id":  "product-智慧屏-s7-pro",
+        "title":  "华为智慧屏 S7 Pro 产品档案",
+        "path":  "01_参数与卖点_KB/智慧屏/s7-pro_华为智慧屏 S7 Pro.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智慧屏",
+        "doc_id":  "product-智慧屏-s7x-pro",
+        "title":  "华为智慧屏 S7X Pro 产品档案",
+        "path":  "01_参数与卖点_KB/智慧屏/s7x-pro_华为智慧屏 S7X Pro.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智慧屏",
+        "doc_id":  "product-智慧屏-se43",
+        "title":  "华为智慧屏 SE43 产品档案",
+        "path":  "01_参数与卖点_KB/智慧屏/se43_华为智慧屏 SE43.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智慧屏",
+        "doc_id":  "product-智慧屏-v6",
+        "title":  "华为智慧屏 V6 产品档案",
+        "path":  "01_参数与卖点_KB/智慧屏/v6_华为智慧屏 V6.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智慧屏",
+        "doc_id":  "product-智慧屏-vision-4-new",
+        "title":  "华为Vision智慧屏 4 New 产品档案",
+        "path":  "01_参数与卖点_KB/智慧屏/vision-4-new_华为Vision智慧屏 4 New.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智慧屏",
+        "doc_id":  "product-智慧屏-vision-5",
+        "title":  "华为Vision智慧屏 5 产品档案",
+        "path":  "01_参数与卖点_KB/智慧屏/vision-5_华为Vision智慧屏 5.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智慧屏",
+        "doc_id":  "product-智慧屏-vision-5-pro",
+        "title":  "华为Vision智慧屏 5 Pro 产品档案",
+        "path":  "01_参数与卖点_KB/智慧屏/vision-5-pro_华为Vision智慧屏 5 Pro.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智慧屏",
+        "doc_id":  "product-智慧屏-vision-5-se",
+        "title":  "华为Vision智慧屏 5 SE 产品档案",
+        "path":  "01_参数与卖点_KB/智慧屏/vision-5-se_华为Vision智慧屏 5 SE.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智慧屏",
+        "doc_id":  "product-智慧屏-vision-5-se-enjoy",
+        "title":  "华为Vision智慧屏 5 SE 优享版 产品档案",
+        "path":  "01_参数与卖点_KB/智慧屏/vision-5-se-enjoy_华为Vision智慧屏 5 SE 优享版.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智慧屏",
+        "doc_id":  "product-智慧屏-vision-6",
+        "title":  "华为Vision智慧屏 6 产品档案",
+        "path":  "01_参数与卖点_KB/智慧屏/vision-6_华为Vision智慧屏 6.md",
+        "prd_id":  "10086077897388",
+        "observed_sbom_code":  "3301010094701",
+        "observed_sku_anchor":  "10086077897388+3301010094701",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086077897388\u0026sbomCode=3301010094701"
+    },
+    {
+        "category":  "智慧屏",
+        "doc_id":  "product-智慧屏-vision-6-pro",
+        "title":  "华为Vision智慧屏 6 Pro 产品档案",
+        "path":  "01_参数与卖点_KB/智慧屏/vision-6-pro_华为Vision智慧屏 6 Pro.md",
+        "prd_id":  "10086252930264",
+        "observed_sbom_code":  "3301010099301",
+        "observed_sku_anchor":  "10086252930264+3301010099301",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086252930264\u0026sbomCode=3301010099301"
+    },
+    {
+        "category":  "智慧屏",
+        "doc_id":  "product-智慧屏-vision-6-se",
+        "title":  "华为Vision智慧屏 6 SE 产品档案",
+        "path":  "01_参数与卖点_KB/智慧屏/vision-6-se_华为Vision智慧屏 6 SE.md",
+        "prd_id":  "10086896314296",
+        "observed_sbom_code":  "3301010094801",
+        "observed_sku_anchor":  "10086896314296+3301010094801",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086896314296\u0026sbomCode=3301010094801"
+    },
+    {
+        "category":  "智慧屏",
+        "doc_id":  "product-智慧屏-vision-6-se-rgb",
+        "title":  "华为Vision智慧屏 6 SE RGB 产品档案",
+        "path":  "01_参数与卖点_KB/智慧屏/vision-6-se-rgb_华为Vision智慧屏 6 SE RGB.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智能门锁",
+        "doc_id":  "product-智能门锁-lock-2",
+        "title":  "华为智能门锁 2 产品档案",
+        "path":  "01_参数与卖点_KB/智能门锁/lock-2_华为智能门锁 2.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E8%2583%25BD%25E9%2597%25A8%25E9%2594%2581\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智能门锁",
+        "doc_id":  "product-智能门锁-lock-2-enjoy",
+        "title":  "华为智能门锁 2 悦享版 产品档案",
+        "path":  "01_参数与卖点_KB/智能门锁/lock-2-enjoy_华为智能门锁 2 悦享版.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E8%2583%25BD%25E9%2597%25A8%25E9%2594%2581\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智能门锁",
+        "doc_id":  "product-智能门锁-lock-2-premium",
+        "title":  "华为智能门锁 2 尊享版 产品档案",
+        "path":  "01_参数与卖点_KB/智能门锁/lock-2-premium_华为智能门锁 2 尊享版.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E8%2583%25BD%25E9%2597%25A8%25E9%2594%2581\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智能门锁",
+        "doc_id":  "product-智能门锁-lock-2-pro",
+        "title":  "华为智能门锁 2 Pro 产品档案",
+        "path":  "01_参数与卖点_KB/智能门锁/lock-2-pro_华为智能门锁 2 Pro.md",
+        "prd_id":  "10086098826302",
+        "observed_sbom_code":  "4405010024201",
+        "observed_sku_anchor":  "10086098826302+4405010024201",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086098826302\u0026sbomCode=4405010024201"
+    },
+    {
+        "category":  "智能门锁",
+        "doc_id":  "product-智能门锁-lock-2-ultra",
+        "title":  "华为智能门锁 2 Ultra 产品档案",
+        "path":  "01_参数与卖点_KB/智能门锁/lock-2-ultra_华为智能门锁 2 Ultra.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E8%2583%25BD%25E9%2597%25A8%25E9%2594%2581\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智能门锁",
+        "doc_id":  "product-智能门锁-lock-m2",
+        "title":  "华为智能门锁 M2 产品档案",
+        "path":  "01_参数与卖点_KB/智能门锁/lock-m2_华为智能门锁 M2.md",
+        "prd_id":  "",
+        "observed_sbom_code":  "",
+        "observed_sku_anchor":  "",
+        "source_url":  "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult\u0026searchWord=%25E6%2599%25BA%25E8%2583%25BD%25E9%2597%25A8%25E9%2594%2581\u0026searchHistoryShow=true\u0026searchResultPageProdShow=true"
+    },
+    {
+        "category":  "智能门锁",
+        "doc_id":  "product-智能门锁-lock-x1",
+        "title":  "华为智能门锁 X1 产品档案",
+        "path":  "01_参数与卖点_KB/智能门锁/lock-x1_华为智能门锁 X1.md",
+        "prd_id":  "10086825479546",
+        "observed_sbom_code":  "4405010027402",
+        "observed_sku_anchor":  "10086825479546+4405010027402",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086825479546\u0026sbomCode=4405010027402"
+    },
+    {
+        "category":  "智能眼镜",
+        "doc_id":  "product-智能眼镜-ai-glasses",
+        "title":  "华为 AI 眼镜 产品档案",
+        "path":  "01_参数与卖点_KB/智能眼镜/ai-glasses_华为 AI 眼镜.md",
+        "prd_id":  "10086316021639",
+        "observed_sbom_code":  "3102180011101",
+        "observed_sku_anchor":  "10086316021639+3102180011101",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086316021639\u0026sbomCode=3102180011101"
+    },
+    {
+        "category":  "智能眼镜",
+        "doc_id":  "product-智能眼镜-smart-glasses-2",
+        "title":  "华为智能眼镜 2 产品档案",
+        "path":  "01_参数与卖点_KB/智能眼镜/smart-glasses-2_华为智能眼镜 2.md",
+        "prd_id":  "10086533095852",
+        "observed_sbom_code":  "3102180007605",
+        "observed_sku_anchor":  "10086533095852+3102180007605",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086533095852\u0026sbomCode=3102180007605"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-adapter-140w",
+        "title":  "华为超级快充电源适配器（Max 140 W） 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/adapter-140w_华为超级快充电源适配器（Max 140 W）.md",
+        "prd_id":  "10086825800605",
+        "observed_sbom_code":  "3102020059501",
+        "observed_sku_anchor":  "10086825800605+3102020059501",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086825800605\u0026sbomCode=3102020059501"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-cable-6a-a-c",
+        "title":  "华为 6A 数据线 USB-A 转 USB-C 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/cable-6a-a-c_华为 6A 数据线 USB-A 转 USB-C.md",
+        "prd_id":  "10086393994098",
+        "observed_sbom_code":  "3102030014001",
+        "observed_sku_anchor":  "10086393994098+3102030014001",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086393994098\u0026sbomCode=3102030014001"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-cable-6a-c-c",
+        "title":  "华为 6A 数据线 USB-C 转 USB-C 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/cable-6a-c-c_华为 6A 数据线 USB-C 转 USB-C.md",
+        "prd_id":  "10086739052336",
+        "observed_sbom_code":  "3102030017405",
+        "observed_sku_anchor":  "10086739052336+3102030017405",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086739052336\u0026sbomCode=3102030017405"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-charger-40w",
+        "title":  "华为超级快充充电器（Max 40 W） 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/charger-40w_华为超级快充充电器（Max 40 W）.md",
+        "prd_id":  "10086822159053",
+        "observed_sbom_code":  "3102020071401",
+        "observed_sku_anchor":  "10086822159053+3102020071401",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086822159053\u0026sbomCode=3102020071401"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-charger-ice-100w",
+        "title":  "华为冰糖全能充电器（Max 100 W） 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/charger-ice-100w_华为冰糖全能充电器（Max 100 W）.md",
+        "prd_id":  "10086826276433",
+        "observed_sbom_code":  "3102020067006",
+        "observed_sku_anchor":  "10086826276433+3102020067006",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086826276433\u0026sbomCode=3102020067006"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-charger-ice-66w",
+        "title":  "华为冰糖全能充电器（Max 66 W） 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/charger-ice-66w_华为冰糖全能充电器（Max 66 W）.md",
+        "prd_id":  "10086506294533",
+        "observed_sbom_code":  "3102020066502",
+        "observed_sku_anchor":  "10086506294533+3102020066502",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086506294533\u0026sbomCode=3102020066502"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-charger-multiport-100w",
+        "title":  "华为全能充多口充电器（Max 100 W） 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/charger-multiport-100w_华为全能充多口充电器（Max 100 W）.md",
+        "prd_id":  "10086826293656",
+        "observed_sbom_code":  "3102020059201",
+        "observed_sku_anchor":  "10086826293656+3102020059201",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086826293656\u0026sbomCode=3102020059201"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-charger-multiport-100w-premium",
+        "title":  "华为全能充多口充电器（Max 100 W）黑色 尊享版 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/charger-multiport-100w-premium_华为全能充多口充电器（Max 100 W）黑色 尊享版.md",
+        "prd_id":  "10086400057044",
+        "observed_sbom_code":  "3102020070501",
+        "observed_sku_anchor":  "10086400057044+3102020070501",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086400057044\u0026sbomCode=3102020070501"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-magnetic-powerbank",
+        "title":  "华为全能充磁吸移动电源 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/magnetic-powerbank_华为全能充磁吸移动电源.md",
+        "prd_id":  "10086225014224",
+        "observed_sbom_code":  "3102010027101",
+        "observed_sku_anchor":  "10086225014224+3102010027101",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086225014224\u0026sbomCode=3102010027101"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-mate80-leather-case",
+        "title":  "Mate 80/Mate 80 Pro 素皮保护壳 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/mate80-leather-case_Mate 80_Mate 80 Pro 素皮保护壳.md",
+        "prd_id":  "10086849542848",
+        "observed_sbom_code":  "3103010103904",
+        "observed_sku_anchor":  "10086849542848+3103010103904",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086849542848\u0026sbomCode=3103010103904"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-matex7-rotating-case",
+        "title":  "Mate X7 旋转支架保护壳 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/matex7-rotating-case_Mate X7 旋转支架保护壳.md",
+        "prd_id":  "10086442319937",
+        "observed_sbom_code":  "3103010104402",
+        "observed_sku_anchor":  "10086442319937+3103010104402",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086442319937\u0026sbomCode=3103010104402"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-m-pen-3-mini",
+        "title":  "M-Pen 3 Mini 多功能笔 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/m-pen-3-mini_M-Pen 3 Mini 多功能笔.md",
+        "prd_id":  "10086270785193",
+        "observed_sbom_code":  "3104230013802",
+        "observed_sku_anchor":  "10086270785193+3104230013802",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086270785193\u0026sbomCode=3104230013802"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-m-pencil-3-set",
+        "title":  "M-Pencil（第三代）平板创作笔套装 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/m-pencil-3-set_M-Pencil（第三代）平板创作笔套装.md",
+        "prd_id":  "10086167840443",
+        "observed_sbom_code":  "3105030004201",
+        "observed_sku_anchor":  "10086167840443+3105030004201",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086167840443\u0026sbomCode=3105030004201"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-m-pencil-pro",
+        "title":  "M-Pencil Pro 平板创作笔 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/m-pencil-pro_M-Pencil Pro 平板创作笔.md",
+        "prd_id":  "10086149128760",
+        "observed_sbom_code":  "3105030006601",
+        "observed_sku_anchor":  "10086149128760+3105030006601",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086149128760\u0026sbomCode=3105030006601"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-powerbank-100w-12000",
+        "title":  "华为自带线全能充移动电源（100 W 12000） 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/powerbank-100w-12000_华为自带线全能充移动电源（100 W 12000）.md",
+        "prd_id":  "10086008427264",
+        "observed_sbom_code":  "3102010029903",
+        "observed_sku_anchor":  "10086008427264+3102010029903",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086008427264\u0026sbomCode=3102010029903"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-powerbank-22w5-se",
+        "title":  "华为多协议超级快充移动电源 10000 mAh（Max 22.5W SE） 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/powerbank-22w5-se_华为多协议超级快充移动电源 10000 mAh（Max 22.5W SE）.md",
+        "prd_id":  "10086554072805",
+        "observed_sbom_code":  "3102010021102",
+        "observed_sku_anchor":  "10086554072805+3102010021102",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086554072805\u0026sbomCode=3102010021102"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-powerbank-66w-12000",
+        "title":  "华为自带线全能充移动电源（66 W 12000） 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/powerbank-66w-12000_华为自带线全能充移动电源（66 W 12000）.md",
+        "prd_id":  "10086100136965",
+        "observed_sbom_code":  "3102010030701",
+        "observed_sku_anchor":  "10086100136965+3102010030701",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086100136965\u0026sbomCode=3102010030701"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-watch-gt6-pro-strap",
+        "title":  "WATCH GT 6 Pro 表带 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/watch-gt6-pro-strap_WATCH GT 6 Pro 表带.md",
+        "prd_id":  "10086422365319",
+        "observed_sbom_code":  "3101040025703",
+        "observed_sku_anchor":  "10086422365319+3101040025703",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086422365319\u0026sbomCode=3101040025703"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-wireless-charger-80w",
+        "title":  "华为超级快充立式无线充电器（Max 80 W） 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/wireless-charger-80w_华为超级快充立式无线充电器（Max 80 W）.md",
+        "prd_id":  "10086257136521",
+        "observed_sbom_code":  "3102020057306",
+        "observed_sku_anchor":  "10086257136521+3102020057306",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086257136521\u0026sbomCode=3102020057306"
+    },
+    {
+        "category":  "主要配件",
+        "doc_id":  "product-主要配件-woven-cable-120w",
+        "title":  "华为编织数据线（Max 120 W） 产品档案",
+        "path":  "01_参数与卖点_KB/主要配件/woven-cable-120w_华为编织数据线（Max 120 W）.md",
+        "prd_id":  "10086875293502",
+        "observed_sbom_code":  "3102030030601",
+        "observed_sku_anchor":  "10086875293502+3102030030601",
+        "source_url":  "https://www.vmall.com/product/comdetail/index.html?prdId=10086875293502\u0026sbomCode=3102030030601"
+    }
 ]

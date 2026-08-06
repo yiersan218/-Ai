@@ -55,6 +55,7 @@ import org.springframework.stereotype.Component;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
@@ -75,6 +76,12 @@ import java.util.UUID;
 @Order(Ordered.HIGHEST_PRECEDENCE + 20)
 public class MarkdownDocumentParser implements DocumentParser {
 
+    private final MarkdownFrontMatterParser frontMatterParser;
+
+    public MarkdownDocumentParser(MarkdownFrontMatterParser frontMatterParser) {
+        this.frontMatterParser = frontMatterParser;
+    }
+
     /**
      * 解析器（线程安全,共享）
      */
@@ -94,26 +101,30 @@ public class MarkdownDocumentParser implements DocumentParser {
         }
 
         String text = new String(content, StandardCharsets.UTF_8);
+        MarkdownFrontMatterParser.Result frontmatter = frontMatterParser.parse(text);
         Provenance prov = Provenance.ofFile(extractSourceFile(options));
 
-        Document doc = (Document) PARSER.parse(text);
+        Document doc = (Document) PARSER.parse(frontmatter.body());
         BlockExtractingVisitor visitor = new BlockExtractingVisitor(prov);
         doc.accept(visitor);
 
-        return ParsedDocument.of(visitor.getBlocks(), Map.of(
-                "parser", getParserType(),
-                "mimeType", mimeType == null ? "" : mimeType,
-                "blocks", visitor.getBlocks().size()
-        ));
+        Map<String, Object> metadata = new LinkedHashMap<>(frontmatter.metadata());
+        metadata.put("parser", getParserType());
+        metadata.put("mimeType", mimeType == null ? "" : mimeType);
+        metadata.put("blocks", visitor.getBlocks().size());
+        return ParsedDocument.of(visitor.getBlocks(), Map.copyOf(metadata));
     }
 
     @Override
     public boolean supports(String mimeType) {
-        return mimeType != null && (
-                mimeType.equals("text/markdown") ||
-                        mimeType.equals("text/x-markdown") ||
-                        mimeType.equals("text/plain")
-        );
+        if (mimeType == null) {
+            return false;
+        }
+        String lower = mimeType.toLowerCase(java.util.Locale.ROOT);
+        return lower.startsWith("text/markdown")
+                || lower.startsWith("text/x-markdown")
+                || lower.startsWith("text/x-web-markdown")
+                || lower.startsWith("text/plain");
     }
 
     private static String extractSourceFile(Map<String, Object> options) {

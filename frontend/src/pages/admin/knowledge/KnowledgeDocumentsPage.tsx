@@ -1117,22 +1117,22 @@ export function KnowledgeDocumentsPage() {
                     <div className="grid gap-4 md:grid-cols-2">
                       <div>
                         <div className="text-sm font-medium mb-2">理想块大小</div>
-                        <Input type="number" value={detailConfigValues["targetChars"] ?? "1400"}
+                        <Input type="number" value={detailConfigValues["targetChars"] ?? "1200"}
                           onChange={e => setDetailConfigValues(v => ({ ...v, targetChars: e.target.value }))} />
                       </div>
                       <div>
                         <div className="text-sm font-medium mb-2">块上限</div>
-                        <Input type="number" value={detailConfigValues["maxChars"] ?? "1800"}
+                        <Input type="number" value={detailConfigValues["maxChars"] ?? "1600"}
                           onChange={e => setDetailConfigValues(v => ({ ...v, maxChars: e.target.value }))} />
                       </div>
                       <div>
                         <div className="text-sm font-medium mb-2">块下限</div>
-                        <Input type="number" value={detailConfigValues["minChars"] ?? "600"}
+                        <Input type="number" value={detailConfigValues["minChars"] ?? "400"}
                           onChange={e => setDetailConfigValues(v => ({ ...v, minChars: e.target.value }))} />
                       </div>
                       <div>
                         <div className="text-sm font-medium mb-2">重叠大小</div>
-                        <Input type="number" value={detailConfigValues["overlapChars"] ?? "0"}
+                        <Input type="number" value={detailConfigValues["overlapChars"] ?? "150"}
                           onChange={e => setDetailConfigValues(v => ({ ...v, overlapChars: e.target.value }))} />
                       </div>
                     </div>
@@ -1431,14 +1431,14 @@ function UploadDialog({ open, onOpenChange, onSubmit }: UploadDialogProps) {
       scheduleEnabled: false,
       scheduleCron: "",
       processMode: "chunk",
-      chunkStrategy: "fixed_size",
+      chunkStrategy: "structure_aware",
       pipelineId: "",
       chunkSize: "512",
       overlapSize: "128",
-      targetChars: "1400",
-      maxChars: "1800",
-      minChars: "600",
-      overlapChars: "0",
+      targetChars: "1200",
+      maxChars: "1600",
+      minChars: "400",
+      overlapChars: "150",
       rowsPerChunk: "50",
       excelParser: "poi"
     }
@@ -1480,14 +1480,14 @@ function UploadDialog({ open, onOpenChange, onSubmit }: UploadDialogProps) {
         scheduleEnabled: false,
         scheduleCron: "",
         processMode: "chunk",
-        chunkStrategy: "fixed_size",
+        chunkStrategy: "structure_aware",
         pipelineId: "",
         chunkSize: "512",
         overlapSize: "128",
-        targetChars: "1400",
-        maxChars: "1800",
-        minChars: "600",
-        overlapChars: "0",
+        targetChars: "1200",
+        maxChars: "1600",
+        minChars: "400",
+        overlapChars: "150",
         rowsPerChunk: "50",
         excelParser: "poi"
       });

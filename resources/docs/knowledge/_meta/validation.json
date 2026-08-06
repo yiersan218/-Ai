@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-08-04T23:20:00+08:00",
-  "status": "PASS",
-  "checks": {
-    "forbidden_first_version_phrase_count_all_artifacts": 0,
-    "forbidden_kbplus_phrase_count_all_artifacts": 0,
-    "forbidden_mojibake_marker_count_all_artifacts": 0,
-    "missing_frontmatter_count": 0,
-    "duplicate_doc_id_count": 0,
-    "sources_csv_document_count_matches": true,
-    "manifest_document_count_matches": true,
-    "product_profile_count_matches_catalog": true,
-    "import_text_character_presence": true
-  }
+    "generated_at":  "2026-08-06T12:15:29+08:00",
+    "status":  "passed",
+    "document_count":  283,
+    "required_frontmatter_missing":  [
+
+                                     ],
+    "duplicate_doc_ids":  [
+
+                          ],
+    "intent_directory_mismatches":  [
+
+                                    ],
+    "forbidden_kbplus_occurrences":  [
+
+                                     ],
+    "static_price_stock_claims":  [
+
+                                  ],
+    "documents_without_source_urls":  [
+
+                                      ],
+    "intent_eval_cases":  42,
+    "intent_eval_invalid":  [
+
+                            ],
+    "errors":  0,
+    "warnings":  0
 }

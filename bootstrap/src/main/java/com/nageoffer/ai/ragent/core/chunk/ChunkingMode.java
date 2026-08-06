@@ -59,19 +59,19 @@ public enum ChunkingMode {
         @Override
         public ChunkingOptions createOptions(Map<String, Object> config) {
             return new TextBoundaryOptions(
-                    toInt(config, "targetChars", 1400),
-                    toInt(config, "overlapChars", 0),
-                    toInt(config, "maxChars", 1800),
-                    toInt(config, "minChars", 600));
+                    toInt(config, "targetChars", 1200),
+                    toInt(config, "overlapChars", 150),
+                    toInt(config, "maxChars", 1600),
+                    toInt(config, "minChars", 400));
         }
 
         @Override
         public ChunkingOptions createDefaultOptions(Integer targetSize, Integer overlapSize) {
             return new TextBoundaryOptions(
-                    targetSize != null ? targetSize : 1400,
-                    overlapSize != null ? overlapSize : 0,
-                    1800,
-                    600);
+                    targetSize != null ? targetSize : 1200,
+                    overlapSize != null ? overlapSize : 150,
+                    1600,
+                    400);
         }
     };
 

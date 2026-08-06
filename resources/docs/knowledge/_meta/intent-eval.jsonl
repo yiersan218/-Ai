@@ -1,0 +1,42 @@
+{"query":"HUAWEI WATCH 5 有哪些主要卖点","expected_intents":["kb-product-parameters"]}
+{"query":"Pura 90 Pro 的影像参数是什么","expected_intents":["kb-product-parameters"]}
+{"query":"华为手环 11 适合关注睡眠的人吗","expected_intents":["kb-product-parameters"]}
+{"query":"Sound X5 怎么连接手机","expected_intents":["kb-harmony-compatibility"]}
+{"query":"FreeBuds 可以同时连接手机和电脑吗","expected_intents":["kb-harmony-compatibility"]}
+{"query":"M-Pencil Pro 能不能搭配我的平板","expected_intents":["kb-harmony-compatibility"]}
+{"query":"华为路由器怎么恢复出厂设置","expected_intents":["kb-usage-guide"]}
+{"query":"智慧屏日常应该怎么清洁","expected_intents":["kb-usage-guide"]}
+{"query":"新手机的数据怎么迁移","expected_intents":["kb-usage-guide"]}
+{"query":"预算 5000 元推荐拍照好的华为手机","expected_intents":["kb-buying-decision"]}
+{"query":"办公学习适合买哪类 MateBook","expected_intents":["kb-buying-decision"]}
+{"query":"给父母推荐一款关注健康的华为穿戴设备","expected_intents":["kb-buying-decision"]}
+{"query":"Mate 80 和 Pura 90 Pro 怎么选","expected_intents":["kb-product-comparison"]}
+{"query":"比较两款华为平板的办公能力","expected_intents":["kb-product-comparison"]}
+{"query":"WATCH GT 6 和 WATCH 5 有什么取舍","expected_intents":["kb-product-comparison"]}
+{"query":"帮我找 Sound X5 的华为商城商品页","expected_intents":["mcp-vmall-search"]}
+{"query":"商城里有哪些 Pura 系列商品页面","expected_intents":["mcp-vmall-search"]}
+{"query":"查一下华为手环的公开在售入口","expected_intents":["mcp-vmall-search"]}
+{"query":"Mate 80 Pro 现在页面标价多少","expected_intents":["mcp-price-stock"]}
+{"query":"商城搜索结果显示这款还在售吗","expected_intents":["mcp-price-stock"]}
+{"query":"上海地区这款手机当前有货吗","expected_intents":["mcp-price-stock"]}
+{"query":"Pura 系列现在有什么优惠页面","expected_intents":["mcp-promotion"]}
+{"query":"最近华为商城有哪些公开活动","expected_intents":["mcp-promotion"]}
+{"query":"这款耳机有没有赠品活动","expected_intents":["mcp-promotion"]}
+{"query":"MateBook 14 有几期免息页面","expected_intents":["mcp-installment-tradein"]}
+{"query":"华为商城以旧换新入口在哪里","expected_intents":["mcp-installment-tradein"]}
+{"query":"这款手机是否有公开分期说明","expected_intents":["mcp-installment-tradein"]}
+{"query":"智慧屏支持上门安装吗","expected_intents":["kb-delivery-installation"]}
+{"query":"签收华为商城包裹时需要检查什么","expected_intents":["kb-delivery-installation"]}
+{"query":"华为商城退货需要满足什么条件","expected_intents":["kb-return-refund"]}
+{"query":"退款原路返回一般要多久","expected_intents":["kb-return-refund"]}
+{"query":"手机保修需要哪些凭证","expected_intents":["kb-warranty-repair"]}
+{"query":"寄修之前需要做什么准备","expected_intents":["kb-warranty-repair"]}
+{"query":"华为商城电子发票如何开具","expected_intents":["kb-invoice"]}
+{"query":"发票信息填错了如何换开","expected_intents":["kb-invoice"]}
+{"query":"你好，你能帮我做什么","expected_intents":["sys-welcome-capabilities"]}
+{"query":"你能查我的订单物流吗","expected_intents":["sys-service-boundary"]}
+{"query":"Mate 80 的主要参数和当前页面标价","expected_intents":["kb-product-parameters","mcp-price-stock"]}
+{"query":"预算 5000 元，推荐现在页面上还能找到的拍照手机","expected_intents":["kb-buying-decision","mcp-vmall-search"]}
+{"query":"比较 Pura 90 和 Mate 80，并看看当前优惠","expected_intents":["kb-product-comparison","mcp-promotion"]}
+{"query":"Sound X5 的卖点和当前是否在售","expected_intents":["kb-product-parameters","mcp-price-stock"]}
+{"query":"FreeBuds Pro 5 怎么连接电脑，现在有什么优惠","expected_intents":["kb-harmony-compatibility","mcp-promotion"]}
