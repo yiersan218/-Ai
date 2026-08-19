@@ -16,7 +16,7 @@
 {"query":"帮我找 Sound X5 的华为商城商品页","expected_intents":["mcp-vmall-search"]}
 {"query":"商城里有哪些 Pura 系列商品页面","expected_intents":["mcp-vmall-search"]}
 {"query":"查一下华为手环的公开在售入口","expected_intents":["mcp-vmall-search"]}
-{"query":"Mate 80 Pro 现在页面标价多少","expected_intents":["mcp-price-stock"]}
+{"query":"Mate 80 Pro 现在页面标价多少","expected_intents":["kb-product-parameters","mcp-price-stock"]}
 {"query":"商城搜索结果显示这款还在售吗","expected_intents":["mcp-price-stock"]}
 {"query":"上海地区这款手机当前有货吗","expected_intents":["mcp-price-stock"]}
 {"query":"Pura 系列现在有什么优惠页面","expected_intents":["mcp-promotion"]}
@@ -29,10 +29,17 @@
 {"query":"签收华为商城包裹时需要检查什么","expected_intents":["kb-delivery-installation"]}
 {"query":"华为商城退货需要满足什么条件","expected_intents":["kb-return-refund"]}
 {"query":"退款原路返回一般要多久","expected_intents":["kb-return-refund"]}
+{"query":"七天无理由退货拆封后还能退吗","expected_intents":["kb-return-refund"]}
+{"query":"第三方商品退货运费谁承担","expected_intents":["kb-return-refund"]}
+{"query":"极速退款为什么少于实付金额","expected_intents":["kb-return-refund"]}
+{"query":"退款后积分和优惠券会退回吗","expected_intents":["kb-return-refund"]}
 {"query":"手机保修需要哪些凭证","expected_intents":["kb-warranty-repair"]}
 {"query":"寄修之前需要做什么准备","expected_intents":["kb-warranty-repair"]}
 {"query":"华为商城电子发票如何开具","expected_intents":["kb-invoice"]}
 {"query":"发票信息填错了如何换开","expected_intents":["kb-invoice"]}
+{"query":"电子发票能用于报销吗","expected_intents":["kb-invoice"]}
+{"query":"如何查验华为商城发票真伪","expected_intents":["kb-invoice"]}
+{"query":"发票丢了还能办理设备保修吗","expected_intents":["kb-invoice"]}
 {"query":"你好，你能帮我做什么","expected_intents":["sys-welcome-capabilities"]}
 {"query":"你能查我的订单物流吗","expected_intents":["sys-service-boundary"]}
 {"query":"Mate 80 的主要参数和当前页面标价","expected_intents":["kb-product-parameters","mcp-price-stock"]}

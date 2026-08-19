@@ -19,6 +19,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
+import { siteConfig } from "@/config/site";
 import { useAuthStore } from "@/stores/authStore";
 
 const productHighlights = [
@@ -431,15 +432,17 @@ function AuthPage({ mode }: { mode: AuthMode }) {
               </Button>
             </form>
 
-            <div className="mt-7 flex flex-wrap items-center justify-center gap-x-2 gap-y-3 border-t border-slate-100 pt-6 text-sm text-slate-500 dark:border-white/10 dark:text-slate-400">
-              <span>{isRegister ? "已经有账号？" : "还没有账号？"}</span>
-              <Link
-                to={isRegister ? "/login" : "/register"}
-                className="inline-flex min-h-11 items-center rounded-lg px-2 font-semibold text-indigo-600 transition-colors hover:bg-indigo-50 hover:text-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:text-indigo-300 dark:hover:bg-indigo-400/10 dark:hover:text-indigo-200 motion-reduce:transition-none"
-              >
-                {isRegister ? "返回登录" : "立即注册"}
-              </Link>
-            </div>
+            {siteConfig.registrationEnabled ? (
+              <div className="mt-7 flex flex-wrap items-center justify-center gap-x-2 gap-y-3 border-t border-slate-100 pt-6 text-sm text-slate-500 dark:border-white/10 dark:text-slate-400">
+                <span>{isRegister ? "已经有账号？" : "还没有账号？"}</span>
+                <Link
+                  to={isRegister ? "/login" : "/register"}
+                  className="inline-flex min-h-11 items-center rounded-lg px-2 font-semibold text-indigo-600 transition-colors hover:bg-indigo-50 hover:text-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:text-indigo-300 dark:hover:bg-indigo-400/10 dark:hover:text-indigo-200 motion-reduce:transition-none"
+                >
+                  {isRegister ? "返回登录" : "立即注册"}
+                </Link>
+              </div>
+            ) : null}
           </div>
         </section>
       </div>

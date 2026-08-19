@@ -1,7 +1,6 @@
 import * as React from "react";
 import { differenceInCalendarDays, isValid } from "date-fns";
 import {
-  BookOpen,
   Bot,
   LogOut,
   MessageSquare,
@@ -413,17 +412,6 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
               </button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start" side="top" sideOffset={8} className="w-48">
-              <DropdownMenuItem asChild>
-                <a
-                  href="https://ncnr64zcbo47.feishu.cn/wiki/NTThwFpLxigNNYkZ9ihciksznlh?from=from_copylink"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex items-center"
-                >
-                  <BookOpen className="mr-2 h-4 w-4" />
-                  项目文档
-                </a>
-              </DropdownMenuItem>
               <DropdownMenuItem
                 onClick={() => logout()}
                 className="text-rose-600 focus:text-rose-600"

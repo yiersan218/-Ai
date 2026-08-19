@@ -24,7 +24,18 @@ $collectionMap = [ordered]@{
 }
 
 function Write-Utf8NoBom([string]$Path, [string]$Content) {
-    [System.IO.File]::WriteAllText($Path, $Content, $utf8NoBom)
+    $Content = [regex]::Replace($Content, "`r`n?|`n", "`n")
+    $lastError = $null
+    for ($attempt = 1; $attempt -le 12; $attempt++) {
+        try {
+            [System.IO.File]::WriteAllText($Path, $Content, $utf8NoBom)
+            return
+        } catch [System.IO.IOException] {
+            $lastError = $_
+            Start-Sleep -Milliseconds 250
+        }
+    }
+    throw $lastError
 }
 
 function Get-Sha256([string]$Path) {
@@ -106,7 +117,7 @@ foreach ($document in $documents) {
         estimated_chunks_1200 = $estimatedChunks
         sha256 = Get-Sha256 $document.File.FullName
     }
-    $urlList = @($metadata.source_urls)
+    $urlList = @($metadata.source_urls | ForEach-Object { $_ })
     $sources += [ordered]@{
         doc_id = $metadata.doc_id
         intent_node = $metadata.intent_node
@@ -122,7 +133,7 @@ foreach ($document in $documents) {
         $prd = [regex]::Match($sourceUrl, '(?:\?|&)prdId=([^&]+)').Groups[1].Value
         $sbom = [regex]::Match($sourceUrl, '(?:\?|&)sbomCode=([^&]+)').Groups[1].Value
         $products += [ordered]@{
-            category = @($metadata.scope)[0]
+            category = @($metadata.scope | ForEach-Object { $_ })[0]
             doc_id = $metadata.doc_id
             title = $metadata.title
             path = $document.Path
@@ -157,11 +168,26 @@ foreach ($product in $products) {
 Write-Utf8NoBom (Join-Path $metaRoot "product-catalog.csv") (($productCsv -join "`n") + "`n")
 
 $categoryCounts = [ordered]@{}
-foreach ($group in ($products | Group-Object category | Sort-Object Name)) { $categoryCounts[$group.Name] = $group.Count }
+foreach ($group in ($products | Group-Object { $_['category'] } | Sort-Object Name)) { $categoryCounts[$group.Name] = $group.Count }
 $allContent = $allText.ToString()
 $cjkCount = [regex]::Matches($allContent, '[\u3400-\u4DBF\u4E00-\u9FFF]').Count
 $nonWhitespaceCount = [regex]::Matches($allContent, '\S').Count
-$traceableSkuCount = @($products | Where-Object { $_.observed_sku_anchor }).Count
+$traceableSkuCount = @($products | Where-Object { $_['observed_sku_anchor'] }).Count
+$productSnapshotDocumentCount = @($documents | Where-Object { $_.Metadata.doc_id -match '^product-' -and $_.Metadata.dynamic_product_snapshot -eq $true }).Count
+$detailSnapshotProductCount = 0
+$strictSkuCount = 0
+$pricedSkuCount = 0
+$detailCachePath = Join-Path $metaRoot "vmall-product-detail-cache.json"
+if (Test-Path -LiteralPath $detailCachePath) {
+    try {
+        $detailCache = ConvertFrom-Json -InputObject ([System.IO.File]::ReadAllText($detailCachePath, [Text.Encoding]::UTF8))
+        $detailSnapshotProductCount = @($detailCache.products).Count
+        $strictSkuCount = @($detailCache.products | ForEach-Object { @($_.skus) }).Count
+        $pricedSkuCount = @($detailCache.products | ForEach-Object { @($_.skus) } | Where-Object { $null -ne $_.price }).Count
+    } catch {
+        throw "商品详情快照解析失败: $detailCachePath"
+    }
+}
 $statistics = [ordered]@{
     generated_at = $generatedAt
     document_count = $documents.Count
@@ -173,9 +199,12 @@ $statistics = [ordered]@{
     cjk_character_count = $cjkCount
     ten_thousand_chinese_characters = [Math]::Round($cjkCount / 10000.0, 2)
     non_whitespace_character_count = $nonWhitespaceCount
-    strict_sku_dataset_records = 0
+    product_snapshot_document_count = $productSnapshotDocumentCount
+    detail_snapshot_product_count = $detailSnapshotProductCount
+    strict_sku_dataset_records = $strictSkuCount
+    priced_sku_snapshot_records = $pricedSkuCount
     traceable_observed_sku_anchors = $traceableSkuCount
-    sku_metric_note = "严格 SKU、当前价格和库存不写入静态 KB；可追溯锚点仅用于来源审计。"
+    sku_metric_note = "严格 SKU 与页面价格以带采集时间的官网快照写入 KB；真实库存、最终结算价和个人交易数据不作静态事实。"
 }
 foreach ($directory in $collectionMap.Keys) {
     $statistics.documents_by_collection[$collectionMap[$directory].collection_name] = @($documents | Where-Object Directory -eq $directory).Count
@@ -189,6 +218,10 @@ $statsLines = @(
     "",
     "- 可入库 Markdown：$($documents.Count)",
     "- 产品档案：$($products.Count)",
+    "- 含官网详情快照的产品档案：$productSnapshotDocumentCount",
+    "- 官网详情商品：$detailSnapshotProductCount",
+    "- 严格 SKU 快照：$strictSkuCount",
+    "- 含页面标价的 SKU 快照：$pricedSkuCount",
     "- 产品品类：$($categoryCounts.Count)",
     "- CJK 字符：$cjkCount",
     "- 1200 字符估算分块：$($manifest.estimated_chunks_1200)",
@@ -202,7 +235,7 @@ foreach ($directory in $collectionMap.Keys) {
     $collection = $collectionMap[$directory].collection_name
     $statsLines += "| ``$collection`` | $($statistics.documents_by_collection[$collection]) |"
 }
-$statsLines += @("", "动态 SKU、当前价格、真实库存和个人交易数据不计入静态知识库统计。")
+$statsLines += @("", "严格 SKU、页面标价和活动价按采集时间计入官网快照；真实库存、最终结算价和个人交易数据不作为静态事实。")
 Write-Utf8NoBom (Join-Path $metaRoot "statistics.md") (($statsLines -join "`n") + "`n")
 
 $requiredFields = @('doc_id','title','domain','intent_node','scope','source_type','collected_at')
@@ -211,6 +244,8 @@ $intentMismatches = @()
 $staticDynamicClaims = @()
 $forbiddenKbplus = @()
 $missingSources = @()
+$missingProductSnapshots = @()
+$invalidProductSnapshots = @()
 foreach ($document in $documents) {
     foreach ($field in $requiredFields) {
         if (-not $document.HeaderFound -or -not $document.Metadata.Contains($field) -or [string]::IsNullOrWhiteSpace([string]$document.Metadata[$field])) {
@@ -223,7 +258,23 @@ foreach ($document in $documents) {
     }
     if ($document.Content -match '(?i)\bkbplus-') { $forbiddenKbplus += $document.Path }
     if ($document.Content -match '在售核验|未标记[“"]?暂时缺货|当前有货') { $staticDynamicClaims += $document.Path }
-    if (@($document.Metadata.source_urls).Count -eq 0) { $missingSources += $document.Path }
+    $documentSourceUrls = @($document.Metadata.source_urls | ForEach-Object { $_ })
+    if ($documentSourceUrls.Count -eq 0) { $missingSources += $document.Path }
+    if ($document.Metadata.doc_id -match '^product-' -and $document.Metadata.intent_node -eq "参数与卖点 KB") {
+        if ($document.Metadata.dynamic_product_snapshot -eq $true) {
+            $refreshAfter = [string]$document.Metadata.snapshot_refresh_after
+            $snapshotSource = $documentSourceUrls | Where-Object { $_ -match 'vmall\.com/product/comdetail/' }
+            if ($document.Content -notmatch '<!-- VMALL_PRODUCT_SNAPSHOT:START -->' -or
+                $document.Content -notmatch '<!-- VMALL_PRODUCT_SNAPSHOT:END -->' -or
+                [string]::IsNullOrWhiteSpace([string]$document.Metadata.snapshot_collected_at) -or
+                [string]::IsNullOrWhiteSpace($refreshAfter) -or
+                @($snapshotSource).Count -eq 0) {
+                $invalidProductSnapshots += $document.Path
+            }
+        } else {
+            $missingProductSnapshots += $document.Path
+        }
+    }
 }
 $duplicateIds = @($documents | Group-Object { $_.Metadata.doc_id } | Where-Object Count -gt 1 | ForEach-Object Name)
 $validIntentCodes = @(
@@ -256,7 +307,7 @@ if (Test-Path -LiteralPath $intentEvalPath) {
         }
     }
 }
-$errors = @($missingFields) + @($intentMismatches) + @($forbiddenKbplus) + @($staticDynamicClaims) + @($duplicateIds) + @($intentEvalInvalid)
+$errors = @($missingFields) + @($intentMismatches) + @($forbiddenKbplus) + @($staticDynamicClaims) + @($duplicateIds) + @($intentEvalInvalid) + @($invalidProductSnapshots)
 $validation = [ordered]@{
     generated_at = $generatedAt
     status = $(if ($errors.Count -eq 0) { "passed" } else { "failed" })
@@ -267,10 +318,12 @@ $validation = [ordered]@{
     forbidden_kbplus_occurrences = $forbiddenKbplus
     static_price_stock_claims = $staticDynamicClaims
     documents_without_source_urls = $missingSources
+    product_documents_without_detail_snapshot = $missingProductSnapshots
+    invalid_product_detail_snapshots = $invalidProductSnapshots
     intent_eval_cases = $intentEvalCount
     intent_eval_invalid = $intentEvalInvalid
     errors = $errors.Count
-    warnings = $missingSources.Count
+    warnings = $missingSources.Count + $missingProductSnapshots.Count
 }
 Write-Utf8NoBom (Join-Path $metaRoot "validation.json") (($validation | ConvertTo-Json -Depth 8) + "`n")
 
@@ -281,6 +334,9 @@ $buildLines = @(
     "- 校验状态：$($validation.status)",
     "- 文档数：$($documents.Count)",
     "- 产品档案：$($products.Count)",
+    "- 含官网详情快照的产品档案：$productSnapshotDocumentCount",
+    "- 严格 SKU 快照：$strictSkuCount",
+    "- 未取得详情快照的产品档案：$($missingProductSnapshots.Count)",
     "- Collection：$($collectionMap.Count)",
     "- 意图评测样例：$intentEvalCount",
     "- 错误：$($validation.errors)",

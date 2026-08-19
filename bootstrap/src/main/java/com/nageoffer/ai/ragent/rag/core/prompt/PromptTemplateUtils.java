@@ -33,7 +33,8 @@ public final class PromptTemplateUtils {
         if (prompt == null) {
             return "";
         }
-        return MULTI_BLANK_LINES.matcher(prompt).replaceAll("\n\n").trim();
+        String normalized = prompt.replace("\r\n", "\n").replace('\r', '\n');
+        return MULTI_BLANK_LINES.matcher(normalized).replaceAll("\n\n").trim();
     }
 
     public static String fillSlots(String template, Map<String, String> slots) {

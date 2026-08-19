@@ -17,6 +17,7 @@
 
 package com.nageoffer.ai.ragent.user.config;
 
+import com.nageoffer.ai.ragent.framework.exception.ClientException;
 import com.nageoffer.ai.ragent.user.service.RegistrationRateLimiter;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -31,12 +32,16 @@ public class RegistrationRequestRateLimitInterceptor implements HandlerIntercept
 
     private final RegistrationRateLimiter registrationRateLimiter;
     private final ClientIpResolver clientIpResolver;
+    private final RegistrationProperties registrationProperties;
 
     @Override
     public boolean preHandle(@NonNull HttpServletRequest request,
                              @NonNull HttpServletResponse response,
                              @NonNull Object handler) {
         if ("POST".equalsIgnoreCase(request.getMethod())) {
+            if (!registrationProperties.isEnabled()) {
+                throw new ClientException("注册功能暂未开放");
+            }
             registrationRateLimiter.recordRequest(clientIpResolver.resolve(request));
         }
         return true;

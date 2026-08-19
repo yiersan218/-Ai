@@ -30,6 +30,11 @@ import org.springframework.validation.annotation.Validated;
 public class RegistrationProperties {
 
     /**
+     * 注册总开关。关闭后保留实现代码，但拒绝所有注册请求。
+     */
+    private boolean enabled = true;
+
+    /**
      * 仅当应用只接受来自可信反向代理的流量，且代理会覆盖客户端传入的转发头时开启。
      */
     private boolean trustForwardedHeaders;

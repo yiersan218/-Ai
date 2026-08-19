@@ -19,8 +19,13 @@ package com.nageoffer.ai.ragent.rag.dto;
 
 import com.nageoffer.ai.ragent.framework.convention.RetrievedChunk;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.IdentityHashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * KB 检索结果
@@ -29,6 +34,38 @@ import java.util.Map;
  * @param intentChunks   意图 ID -> 分片列表
  */
 public record KbResult(String groupedContext, Map<String, List<RetrievedChunk>> intentChunks) {
+
+    /**
+     * 返回去重后的原始命中片段，供知识证据质量判定使用。
+     * 同一批 chunks 可能被分配给多个 KB 意图，不能按 map.values 直接计数。
+     */
+    public List<RetrievedChunk> chunks() {
+        if (intentChunks == null || intentChunks.isEmpty()) {
+            return List.of();
+        }
+        Map<String, RetrievedChunk> chunksById = new LinkedHashMap<>();
+        Set<RetrievedChunk> anonymousChunks = Collections.newSetFromMap(new IdentityHashMap<>());
+        List<RetrievedChunk> unique = new ArrayList<>();
+        for (List<RetrievedChunk> chunks : intentChunks.values()) {
+            if (chunks == null) {
+                continue;
+            }
+            for (RetrievedChunk chunk : chunks) {
+                if (chunk == null) {
+                    continue;
+                }
+                if (chunk.getId() != null) {
+                    if (chunksById.putIfAbsent(chunk.getId(), chunk) == null) {
+                        unique.add(chunk);
+                    }
+                } else if (anonymousChunks.add(chunk)) {
+                    unique.add(chunk);
+                }
+            }
+        }
+        return List.copyOf(unique);
+    }
+
     /**
      * 空结果
      */

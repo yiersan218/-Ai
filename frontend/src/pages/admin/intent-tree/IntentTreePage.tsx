@@ -826,7 +826,7 @@ function IntentNodeDialog({
                           <FormItem>
                             <FormLabel>MCP 工具ID（必填）</FormLabel>
                             <FormControl>
-                              <Input placeholder="例如：youcom_search" {...field} />
+                              <Input placeholder="例如：tencent_search" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>

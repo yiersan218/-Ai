@@ -4,3 +4,7 @@ server:
 spring:
   application:
     name: ragent-mcp-server
+  config:
+    import:
+      - optional:file:.env[.properties]
+      - optional:file:../.env[.properties]

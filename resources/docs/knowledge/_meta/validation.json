@@ -1,7 +1,7 @@
 {
-    "generated_at":  "2026-08-06T12:15:29+08:00",
+    "generated_at":  "2026-08-08T10:06:56+08:00",
     "status":  "passed",
-    "document_count":  283,
+    "document_count":  288,
     "required_frontmatter_missing":  [
 
                                      ],
@@ -20,10 +20,17 @@
     "documents_without_source_urls":  [
 
                                       ],
-    "intent_eval_cases":  42,
+    "product_documents_without_detail_snapshot":  [
+                                                      "01_参数与卖点_KB/笔记本/10086297718748_HUAWEI_MateBook_Fold_非凡大师.md",
+                                                      "01_参数与卖点_KB/笔记本/10086702263930_HUAWEI_MateBook_Pro.md"
+                                                  ],
+    "invalid_product_detail_snapshots":  [
+
+                                         ],
+    "intent_eval_cases":  49,
     "intent_eval_invalid":  [
 
                             ],
     "errors":  0,
-    "warnings":  0
+    "warnings":  2
 }

@@ -5,12 +5,13 @@ domain: "华为商城导购"
 intent_node: "参数与卖点 KB"
 scope: ["手机", "目录", "华为硬件"]
 source_type: "knowledge_base_catalog"
-collected_at: "2026-08-04"
-dynamic_product_data_via_mcp: true
+collected_at: "2026-08-06"
+product_detail_snapshots_in_kb: true
+mcp_fallback_when_kb_insufficient: true
 ---
 # 手机产品知识目录
 
-本目录收录 28 份产品档案。档案数量按产品家族文档统计，不等于颜色、容量、尺寸、套餐组成的严格 SKU 数量。
+本目录收录 28 份产品档案。档案数量按产品家族文档统计；颜色、容量、尺寸、套餐组成的严格 SKU 数量和明细见各产品档案的官网快照。
 
 | 序号 | 产品 | 文档标识 |
 |---:|---|---|
@@ -43,4 +44,4 @@ dynamic_product_data_via_mcp: true
 | 27 | HUAWEI Pura 90 | product-current-pura-90 |
 | 28 | 华为畅享 90 Plus | product-current-changxiang-90-plus |
 
-实时价格、库存、优惠、可售配置与严格 SKU 由 MCP 查询。
+页面价格、优惠、可售配置与严格 SKU 已写入具体产品档案的带时间官网快照；实时库存、最终结算价或快照证据不足时再回退 MCP。

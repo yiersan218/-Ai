@@ -166,7 +166,7 @@ public class StreamChatPipeline {
             return false;
         }
         StreamCallback callback = ctx.getCallback();
-        callback.onContent("未检索到与问题相关的文档内容。");
+        callback.onContent("当前可用信息不足以回答该问题。");
         callback.onComplete();
         return true;
     }

@@ -5,15 +5,79 @@ domain: "华为商城导购"
 intent_node: "参数与卖点 KB"
 scope: ["智慧屏", "华为硬件", "产品家族档案"]
 source_type: "official_vmall_catalog_or_product_page"
-source_urls: ["https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F&searchHistoryShow=true&searchResultPageProdShow=true", "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2599%25BA%25E6%2585%25A7%25E5%25B1%258F&searchHistoryShow=true&searchResultPageProdShow=true"]
-collected_at: "2026-08-04"
-dynamic_product_data_via_mcp: true
+source_urls: ["https://www.vmall.com/product/comdetail/index.html?prdId=10086707541272&sbomCode=3301010094501"]
+collected_at: "2026-08-06"
+dynamic_product_snapshot: true
+snapshot_collected_at: "2026-08-06T18:25:24+08:00"
+snapshot_refresh_after: "2026-08-13"
+snapshot_region: "CN"
+mcp_fallback_when_kb_insufficient: true
 ---
 # 华为智慧屏 MateTV Max 产品档案
 
+<!-- VMALL_PRODUCT_SNAPSHOT:START -->
+## 华为商城商品基础信息快照（2026-08-06）
+
+> 本节来自华为商城中国区公开商品页，采集时间为 2026-08-06T18:25:24+08:00。价格、促销、购买入口和评价会变化；页面标价不等于最终到手价或结算价，地区库存、账号权益和最终可售状态以实际商品页及结算页为准。
+
+| 字段 | 官网快照 |
+|---|---|
+| 官网商品名称 | 华为智慧屏 MateTV Max |
+| 商品编号（prdId） | 10086707541272 |
+| 品牌 | 华为 |
+| 销售 SKU 数量 | 1 |
+| 建议刷新日期 | 2026-08-13；超过该日期的时效性问题视为证据不足 |
+| 默认 SKU | 3301010094501；华为智慧屏 MateTV Max 110英寸 |
+| SKU 页面标价区间（抓取时） | ¥64999 |
+| 商城搜索列表促销价（抓取时） | ¥64999 |
+| 店铺 | 华为商城自营 |
+| 官网卖点摘要 | 华为黑钻屏；旗舰手机级性能；灵犀创新交互 |
+| 用户评价快照（抓取时） | 好评率 100%；评价数 1 |
+| 官网商品页 | https://www.vmall.com/product/comdetail/index.html?prdId=10086707541272 |
+
+### 可选规格维度
+
+| 维度 | 官网可选项 |
+|---|---|
+| 尺寸 | 110英寸 |
+
+### 官网核心属性
+
+| 属性 | 官网值 |
+|---|---|
+| 分辨率 | 3840×2160像素 |
+| 能效等级 | 1级 |
+| 屏幕尺寸 | 110英寸 |
+| 屏幕类型 | MiniLED |
+| 刷新率 | 120Hz |
+| 扬声器数量 | 5个20W扬声器（碳纤维双驱全频单元）；3个20W扬声器（天然蚕丝振膜球顶高频单元）；1个60W扬声器（差分悬挂低频单元） |
+
+### SKU 明细
+
+| SKU 编码 | 商品/版本 | 配置属性 | 页面标价 | 限时活动价与有效期 | 商品页入口 |
+|---|---|---|---:|---|---|
+| 3301010094501 | 华为智慧屏 MateTV Max 110英寸（默认） | 尺寸=110英寸 | ¥64999 |  | 显示购买入口 |
+
+### 官网权益与活动摘要（抓取时）
+
+- 0分期利息：12期0分期利息
+- 赠品
+- 赠送积分：订单完成后可获赠积分，积分可抵现
+
+### SKU 官方卖点补充
+
+- 华为黑钻屏，旗舰手机级性能，灵犀创新交互；购机享免费安装服务权益
+
+### 快照使用边界
+
+- 本节可用于回答已列出的商品名称、商品编号、SKU、颜色/版本等选项、页面标价、限时活动价、核心属性和公开权益。
+- buttonMode 仅反映采集时商品页是否显示购买入口，不等于地区实时库存。页面未给出的到手价、券后价、库存数量、配送时效和个人资格不能据此推断。
+- 用户明确询问“现在/此刻”的价格、库存、优惠或结算结果，而本快照已过期或证据不足时，才回退到 MCP 查询，并仍以华为商城实际结算页为准。
+<!-- VMALL_PRODUCT_SNAPSHOT:END -->
+
 ## 文档用途
 
-本档案用于知源 AI 识别产品家族、解释稳定定位、组织选购追问并触发生态兼容判断。实时价格、库存、优惠、配送地区、颜色、尺寸、套餐和全部 SKU 组合不写入静态知识库，应由 MCP 查询。
+本档案用于知源 AI 识别产品家族、解释稳定定位、组织选购追问并触发生态兼容判断。颜色、尺寸、套餐、全部 SKU、页面价格与优惠已按采集时间写入官网快照；实时库存、配送地区、最终结算价与个人权益在快照证据不足时再回退 MCP。
 
 ## 稳定定位与公开卖点
 

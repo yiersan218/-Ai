@@ -5,15 +5,91 @@ domain: "华为商城导购"
 intent_node: "参数与卖点 KB"
 scope: ["平板", "华为硬件", "华为硬件"]
 source_type: "official_product_or_specs_page"
-source_urls: ["https://consumer.huawei.com/cn/tablets/matepad-11-5-s-2025/specs/", "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E5%25B9%25B3%25E6%259D%25BF&searchHistoryShow=true&searchResultPageProdShow=true"]
-collected_at: "2026-08-02"
-dynamic_price_stock_excluded: true
+source_urls: ["https://www.vmall.com/product/comdetail/index.html?prdId=10086693978514&sbomCode=2701010131801", "https://consumer.huawei.com/cn/tablets/matepad-11-5-s-2025/specs/"]
+collected_at: "2026-08-06"
+dynamic_product_snapshot: true
+snapshot_collected_at: "2026-08-06T18:25:24+08:00"
+snapshot_refresh_after: "2026-08-13"
+snapshot_region: "CN"
+mcp_fallback_when_kb_insufficient: true
 ---
 # HUAWEI MatePad 11.5 S 灵动款 鸿蒙焕新版 参数与卖点
 
+<!-- VMALL_PRODUCT_SNAPSHOT:START -->
+## 华为商城商品基础信息快照（2026-08-06）
+
+> 本节来自华为商城中国区公开商品页，采集时间为 2026-08-06T18:25:24+08:00。价格、促销、购买入口和评价会变化；页面标价不等于最终到手价或结算价，地区库存、账号权益和最终可售状态以实际商品页及结算页为准。
+
+| 字段 | 官网快照 |
+|---|---|
+| 官网商品名称 | HUAWEI MatePad 11.5 S 灵动款 鸿蒙焕新版 |
+| 商品编号（prdId） | 10086693978514 |
+| 品牌 | 华为 |
+| 销售 SKU 数量 | 8 |
+| 建议刷新日期 | 2026-08-13；超过该日期的时效性问题视为证据不足 |
+| 默认 SKU | 2701010131801；HUAWEI MatePad 11.5 S 灵动款 鸿蒙焕新版 WiFi 8GB+256GB 深空灰 |
+| SKU 页面标价区间（抓取时） | ¥2999 ～ ¥3999 |
+| 商城搜索列表促销价（抓取时） | ¥2999 |
+| 店铺 | 华为商城自营 |
+| 官网卖点摘要 | 144 Hz 高刷全面屏；华为笔记；鸿蒙 AI 高效学习 |
+| 用户评价快照（抓取时） | 好评率 100%；评价数 7 |
+| 官网商品页 | https://www.vmall.com/product/comdetail/index.html?prdId=10086693978514 |
+
+### 可选规格维度
+
+| 维度 | 官网可选项 |
+|---|---|
+| 版本 | WiFi 12GB+256GB 灵动款、WiFi 12GB+256GB 灵动款 柔光版、WiFi 12GB+512GB 灵动款 柔光版、WiFi 8GB+256GB 灵动款 |
+| 颜色 | 冰霜银、深空灰、羽砂紫、原野绿 |
+
+### 官网核心属性
+
+| 属性 | 官网值 |
+|---|---|
+| 操作系统 | HarmonyOS 6.0 |
+| 存储容量（ROM） | 256GB；512GB |
+| 电池容量 | 8800 mAh（典型值）；8800mAh（典型值） |
+| 机身重量 | 约515g（含电池） |
+| 屏幕尺寸 | 11.5英寸 |
+| 屏幕类型 | LCD |
+| 数据传输接口 | USB、WIFI、蓝牙、星闪 |
+| 特色功能 | 支持华为笔记、天生会画、分布式通信、自由多窗等功能 |
+| 星闪 | 支持 |
+| 音效 | Huawei Histen |
+
+### SKU 明细
+
+| SKU 编码 | 商品/版本 | 配置属性 | 页面标价 | 限时活动价与有效期 | 商品页入口 |
+|---|---|---|---:|---|---|
+| 2701010131801 | HUAWEI MatePad 11.5 S 灵动款 鸿蒙焕新版 WiFi 8GB+256GB 深空灰（默认） | 版本=WiFi 8GB+256GB 灵动款；颜色=深空灰 | ¥2999 |  | 显示购买入口 |
+| 2701010131802 | HUAWEI MatePad 11.5 S 灵动款 鸿蒙焕新版 WiFi 12GB+256GB 深空灰 | 版本=WiFi 12GB+256GB 灵动款；颜色=深空灰 | ¥3299 |  | 显示购买入口 |
+| 2701010131803 | HUAWEI MatePad 11.5 S 灵动款 鸿蒙焕新版 WiFi 12GB+256GB 冰霜银 | 版本=WiFi 12GB+256GB 灵动款；颜色=冰霜银 | ¥3299 |  | 显示购买入口 |
+| 2701010131804 | HUAWEI MatePad 11.5 S 灵动款 鸿蒙焕新版 柔光版 WiFi 12GB+256GB 深空灰 | 版本=WiFi 12GB+256GB 灵动款 柔光版；颜色=深空灰 | ¥3599 |  | 显示购买入口 |
+| 2701010131805 | HUAWEI MatePad 11.5 S 灵动款 鸿蒙焕新版 柔光版 WiFi 12GB+256GB 冰霜银 | 版本=WiFi 12GB+256GB 灵动款 柔光版；颜色=冰霜银 | ¥3599 |  | 显示购买入口 |
+| 2701010131806 | HUAWEI MatePad 11.5 S 灵动款 鸿蒙焕新版 柔光版 WiFi 12GB+256GB 原野绿 | 版本=WiFi 12GB+256GB 灵动款 柔光版；颜色=原野绿 | ¥3599 |  | 显示购买入口 |
+| 2701010131807 | HUAWEI MatePad 11.5 S 灵动款 鸿蒙焕新版 柔光版 WiFi 12GB+256GB 羽砂紫 | 版本=WiFi 12GB+256GB 灵动款 柔光版；颜色=羽砂紫 | ¥3599 |  | 显示购买入口 |
+| 2701010131808 | HUAWEI MatePad 11.5 S 灵动款 鸿蒙焕新版 柔光版 WiFi 12GB+512GB 深空灰 | 版本=WiFi 12GB+512GB 灵动款 柔光版；颜色=深空灰 | ¥3999 |  | 显示购买入口 |
+
+### 官网权益与活动摘要（抓取时）
+
+- 以旧换新补贴：换新至高补贴 800 元，限 App 端（HarmonyOS/安卓版）参与，回收至高补贴 500 元
+- 赠送积分：订单完成后可获赠积分，积分可抵现
+
+### SKU 官方卖点补充
+
+- 144 Hz 高刷全面屏，华为笔记，鸿蒙 AI 高效学习
+- 超清护眼云晰柔光屏，华为笔记，鸿蒙 AI 高效学习
+
+### 快照使用边界
+
+- 本节可用于回答已列出的商品名称、商品编号、SKU、颜色/版本等选项、页面标价、限时活动价、核心属性和公开权益。
+- buttonMode 仅反映采集时商品页是否显示购买入口，不等于地区实时库存。页面未给出的到手价、券后价、库存数量、配送时效和个人资格不能据此推断。
+- 用户明确询问“现在/此刻”的价格、库存、优惠或结算结果，而本快照已过期或证据不足时，才回退到 MCP 查询，并仍以华为商城实际结算页为准。
+<!-- VMALL_PRODUCT_SNAPSHOT:END -->
+
 ## 文档范围
 
-本条目用于知源 AI 的静态商品知识检索，记录官方规格、稳定卖点、适用人群和选购边界。价格、库存、优惠、分期、赠品与以旧换新资格均为动态信息，应由 MCP 实时查询。
+本条目用于知源 AI 的静态商品知识检索，记录官方规格、稳定卖点、适用人群和选购边界。价格、优惠、分期、赠品与以旧换新线索优先使用本档案的带时间官网快照；实时库存、最终结算价与个人资格在快照证据不足时再回退 MCP。
 
 ## 官方定位与核心卖点
 

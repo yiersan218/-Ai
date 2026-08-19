@@ -1,27 +1,54 @@
 {
-    "generated_at":  "2026-08-06T12:15:29+08:00",
-    "document_count":  283,
+    "generated_at":  "2026-08-08T10:06:56+08:00",
+    "document_count":  288,
     "documents_by_collection":  {
-                                    "hwmallproduct":  180,
+                                    "hwmallproduct":  179,
                                     "hwmallcompat":  22,
                                     "hwmallguide":  55,
                                     "hwmalldelivery":  10,
-                                    "hwmallreturn":  3,
+                                    "hwmallreturn":  7,
                                     "hwmallwarranty":  11,
-                                    "hwmallinvoice":  2
+                                    "hwmallinvoice":  4
                                 },
-    "product_profile_count":  167,
-    "product_category_count":  1,
+    "product_profile_count":  166,
+    "product_category_count":  13,
     "product_categories":  [
-                               ""
+                               "笔记本",
+                               "穿戴",
+                               "打印机",
+                               "耳机",
+                               "家庭存储",
+                               "路由",
+                               "平板",
+                               "手机",
+                               "音箱",
+                               "智慧屏",
+                               "智能门锁",
+                               "智能眼镜",
+                               "主要配件"
                            ],
     "product_profiles_by_category":  {
-                                         "":  167
+                                         "笔记本":  9,
+                                         "穿戴":  24,
+                                         "打印机":  1,
+                                         "耳机":  13,
+                                         "家庭存储":  1,
+                                         "路由":  26,
+                                         "平板":  11,
+                                         "手机":  28,
+                                         "音箱":  6,
+                                         "智慧屏":  18,
+                                         "智能门锁":  7,
+                                         "智能眼镜":  2,
+                                         "主要配件":  20
                                      },
-    "cjk_character_count":  184488,
-    "ten_thousand_chinese_characters":  18.45,
-    "non_whitespace_character_count":  422291,
-    "strict_sku_dataset_records":  0,
-    "traceable_observed_sku_anchors":  56,
-    "sku_metric_note":  "严格 SKU、当前价格和库存不写入静态 KB；可追溯锚点仅用于来源审计。"
+    "cjk_character_count":  319752,
+    "ten_thousand_chinese_characters":  31.98,
+    "non_whitespace_character_count":  734886,
+    "product_snapshot_document_count":  164,
+    "detail_snapshot_product_count":  164,
+    "strict_sku_dataset_records":  780,
+    "priced_sku_snapshot_records":  780,
+    "traceable_observed_sku_anchors":  165,
+    "sku_metric_note":  "严格 SKU 与页面价格以带采集时间的官网快照写入 KB；真实库存、最终结算价和个人交易数据不作静态事实。"
 }

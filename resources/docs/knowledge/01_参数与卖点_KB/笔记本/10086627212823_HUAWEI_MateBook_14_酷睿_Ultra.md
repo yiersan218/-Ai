@@ -5,16 +5,100 @@ domain: "华为商城导购"
 intent_node: "参数与卖点 KB"
 scope: ["笔记本", "华为硬件"]
 source_type: "official_product_page"
-source_urls: ["https://www.vmall.com/product/comdetail/index.html?prdId=10086627212823&sbomCode=2801010174936"]
-collected_at: "2026-08-02"
-dynamic_price_stock_excluded: true
+source_urls: ["https://www.vmall.com/product/comdetail/index.html?prdId=10086627212823&sbomCode=2801010174935"]
+collected_at: "2026-08-06"
+dynamic_product_snapshot: true
+snapshot_collected_at: "2026-08-06T18:25:24+08:00"
+snapshot_refresh_after: "2026-08-13"
+snapshot_region: "CN"
+mcp_fallback_when_kb_insufficient: true
 ---
 
 # HUAWEI MateBook 14 酷睿 Ultra 参数与卖点
 
+<!-- VMALL_PRODUCT_SNAPSHOT:START -->
+## 华为商城商品基础信息快照（2026-08-06）
+
+> 本节来自华为商城中国区公开商品页，采集时间为 2026-08-06T18:25:24+08:00。价格、促销、购买入口和评价会变化；页面标价不等于最终到手价或结算价，地区库存、账号权益和最终可售状态以实际商品页及结算页为准。
+
+| 字段 | 官网快照 |
+|---|---|
+| 官网商品名称 | HUAWEI MateBook 14 酷睿 Ultra |
+| 商品编号（prdId） | 10086627212823 |
+| 品牌 | 华为 |
+| 销售 SKU 数量 | 14 |
+| 建议刷新日期 | 2026-08-13；超过该日期的时效性问题视为证据不足 |
+| 默认 SKU | 2801010174935；HUAWEI MateBook 14 Linux V20 酷睿 Ultra 5 24GB 1TB 原野绿 |
+| SKU 页面标价区间（抓取时） | ¥6299 ～ ¥8299 |
+| SKU 限时活动价区间（抓取时） | ¥7199 |
+| 商城搜索列表促销价（抓取时） | ¥7199 |
+| 店铺 | 华为商城自营 |
+| 官网卖点摘要 | 2.8K OLED 屏；轻薄机身；酷睿 Ultra 高性能处理器 |
+| 用户评价快照（抓取时） | 好评率 97%；评价数 3982 |
+| 官网商品页 | https://www.vmall.com/product/comdetail/index.html?prdId=10086627212823 |
+
+### 可选规格维度
+
+| 维度 | 官网可选项 |
+|---|---|
+| 系统 | Linux V20、Windows |
+| 配置 | Ultra 5/16GB/1TB、Ultra 5/24GB/1TB、Ultra 5/32GB/1TB、Ultra 7/32GB/1TB |
+| 颜色 | 皓月银、深空灰、原野绿 |
+
+### 官网核心属性
+
+| 属性 | 官网值 |
+|---|---|
+| CPU型号 | 英特尔® 酷睿™ Ultra 5 125H处理器；英特尔® 酷睿™ Ultra 7 155H处理器 |
+| 操作系统 | Linux V20；Windows11 64位 家庭中文版 |
+| 存储容量 | 1TB |
+| 电池容量 | 70Wh (额定容量） |
+| 分辨率 | 2880×1920 |
+| 机身重量 | 约1.31kg（含电池） |
+| 屏幕尺寸 | 14.2英寸 |
+| 屏幕类型 | OLED |
+| 屏幕色彩 | 100% sRGB 、100% DCI-P3、95% Adobe RGB 多色域（典型值）；P3 |
+| 运行内存 | 16GB；24GB；32GB |
+
+### SKU 明细
+
+| SKU 编码 | 商品/版本 | 配置属性 | 页面标价 | 限时活动价与有效期 | 商品页入口 |
+|---|---|---|---:|---|---|
+| 2801010174935 | HUAWEI MateBook 14 Linux V20 酷睿 Ultra 5 24GB 1TB 原野绿（默认） | 系统=Linux V20；配置=Ultra 5/24GB/1TB；颜色=原野绿 | ¥7499 | ¥7199（直降300元；2026-08-01 00:00:00+0800 至 2026-08-31 23:59:59+0800） | 显示购买入口 |
+| 2801010174903 | HUAWEI MateBook 14 酷睿 Ultra 5 16GB 1TB 深空灰 | 系统=Windows；配置=Ultra 5/16GB/1TB；颜色=深空灰 | ¥6299 |  | 显示购买入口 |
+| 2801010174904 | HUAWEI MateBook 14 酷睿 Ultra 5 16GB 1TB 皓月银 | 系统=Windows；配置=Ultra 5/16GB/1TB；颜色=皓月银 | ¥6299 |  | 显示购买入口 |
+| 2801010174906 | HUAWEI MateBook 14 酷睿 Ultra 5 32GB 1TB 深空灰 | 系统=Windows；配置=Ultra 5/32GB/1TB；颜色=深空灰 | ¥6999 |  | 显示购买入口 |
+| 2801010174908 | HUAWEI MateBook 14 酷睿 Ultra 7 32GB 1TB 原野绿 | 系统=Windows；配置=Ultra 7/32GB/1TB；颜色=原野绿 | ¥8299 |  | 显示购买入口 |
+| 2801010174909 | HUAWEI MateBook 14 酷睿 Ultra 7 32GB 1TB 深空灰 | 系统=Windows；配置=Ultra 7/32GB/1TB；颜色=深空灰 | ¥8299 |  | 显示购买入口 |
+| 2801010174919 | HUAWEI MateBook 14 酷睿 Ultra 5 16GB 1TB 原野绿 | 系统=Windows；配置=Ultra 5/16GB/1TB；颜色=原野绿 | ¥6299 |  | 显示购买入口 |
+| 2801010174932 | HUAWEI MateBook 14 Linux V20 酷睿 Ultra 5 16GB 1TB 深空灰 | 系统=Linux V20；配置=Ultra 5/16GB/1TB；颜色=深空灰 | ¥6799 |  | 显示购买入口 |
+| 2801010174933 | HUAWEI MateBook 14 Linux V20 酷睿 Ultra 5 16GB 1TB 皓月银 | 系统=Linux V20；配置=Ultra 5/16GB/1TB；颜色=皓月银 | ¥6799 |  | 显示购买入口 |
+| 2801010174934 | HUAWEI MateBook 14 Linux V20 酷睿 Ultra 5 16GB 1TB 原野绿 | 系统=Linux V20；配置=Ultra 5/16GB/1TB；颜色=原野绿 | ¥6799 |  | 显示购买入口 |
+| 2801010174936 | HUAWEI MateBook 14 Linux V20 酷睿 Ultra 5 24GB 1TB 深空灰 | 系统=Linux V20；配置=Ultra 5/24GB/1TB；颜色=深空灰 | ¥7499 | ¥7199（直降300元；2026-08-01 00:00:00+0800 至 2026-08-31 23:59:59+0800） | 显示购买入口 |
+| 2801010174937 | HUAWEI MateBook 14 Linux V20 酷睿 Ultra 5 32GB 1TB 深空灰 | 系统=Linux V20；配置=Ultra 5/32GB/1TB；颜色=深空灰 | ¥7599 |  | 显示购买入口 |
+| 2801010174938 | HUAWEI MateBook 14 Linux V20 酷睿 Ultra 5 32GB 1TB 皓月银 | 系统=Linux V20；配置=Ultra 5/32GB/1TB；颜色=皓月银 | ¥7599 |  | 显示购买入口 |
+| 2801010174939 | HUAWEI MateBook 14 Linux V20 酷睿 Ultra 5 32GB 1TB 原野绿 | 系统=Linux V20；配置=Ultra 5/32GB/1TB；颜色=原野绿 | ¥7599 |  | 显示购买入口 |
+
+### 官网权益与活动摘要（抓取时）
+
+- 赠送积分：订单完成后可获赠积分，积分可抵现
+- 直降300元：直降300元
+
+### SKU 官方卖点补充
+
+- 2.8K OLED 触控手写屏，轻薄机身，酷睿 Ultra 高性能处理器
+- 2.8K OLED 屏，轻薄机身，酷睿 Ultra 高性能处理器
+
+### 快照使用边界
+
+- 本节可用于回答已列出的商品名称、商品编号、SKU、颜色/版本等选项、页面标价、限时活动价、核心属性和公开权益。
+- buttonMode 仅反映采集时商品页是否显示购买入口，不等于地区实时库存。页面未给出的到手价、券后价、库存数量、配送时效和个人资格不能据此推断。
+- 用户明确询问“现在/此刻”的价格、库存、优惠或结算结果，而本快照已过期或证据不足时，才回退到 MCP 查询，并仍以华为商城实际结算页为准。
+<!-- VMALL_PRODUCT_SNAPSHOT:END -->
+
 ## 文档范围
 
-本条目适用于当前导购范围中的笔记本产品。颜色、容量、套餐、价格、库存和优惠属于动态信息，不写入知识库。
+本条目适用于当前导购范围中的笔记本产品。颜色、容量、套餐及页面价格以本档案带采集时间的官网快照为准；实时库存、最终结算价与个人权益在快照证据不足时再回退 MCP。
 
 ## 官方概述与卖点
 
@@ -207,4 +291,4 @@ USB-C电源适配器 (适配器和充电线一体式连接) × 1
 
 ## 检索提示
 
-适合回答该产品的硬件参数、系统能力、屏幕、影像、续航、接口、重量、包装清单和静态卖点。实时价格、库存、活动和分期必须调用对应 MCP。
+适合回答该产品的硬件参数、系统能力、屏幕、影像、续航、接口、重量、包装清单和静态卖点。页面价格、活动和分期优先使用本档案的带时间官网快照；实时库存、最终结算价或快照证据不足时再回退 MCP。

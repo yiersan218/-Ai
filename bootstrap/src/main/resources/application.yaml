@@ -135,6 +135,29 @@ rag:
       - name: default
         url: http://localhost:9099
 
+  # 所有业务问题统一先查知识库；仅当 Rerank 证据不足或商品型号不匹配时，才通过 MCP 查询官方公开页面。
+  # 价格、库存、优惠、分期、以旧换新等 MCP 意图也必须先走全局知识库检索，不再直达 MCP。
+  mcp-fallback:
+    enabled: true
+    min-rerank-score: 0.5
+    min-relevant-chunks: 1
+    require-entity-match: true
+    max-calls-per-turn: 2
+    mcp-failure-kb-fallback:
+      enabled: true
+      min-rerank-score: 0.4
+      top-k: 3
+    intent-mappings:
+      kb-buying-decision: product_search
+      kb-product-comparison: specifications
+      kb-product-parameters: specifications
+      kb-harmony-compatibility: compatibility_support
+      kb-usage-guide: compatibility_support
+      kb-delivery-installation: service_policy
+      kb-return-refund: service_policy
+      kb-warranty-repair: service_policy
+      kb-invoice: service_policy
+
   search:
     # 检索漏斗三段预算，各自独立、单调收窄，启动时校验 recall-budget ≥ default-top-k 且 rerank-candidate-limit ≥ default-top-k
     default-top-k: 10           # ③ 最终进 LLM 的条数（产品语义的 topK）
@@ -254,6 +277,7 @@ ai:
         timeout-ms: 120000
 
   embedding:
+    timeout-ms: ${EMBEDDING_TIMEOUT_MS:10000}
     default-model: qwen-emb-8b
     candidates:
       - id: qwen-emb-8b
@@ -318,6 +342,7 @@ sa-token:
 app:
   demo-mode: false
   registration:
+    enabled: ${REGISTRATION_ENABLED:true}
     # 仅当应用位于可信反向代理之后，且代理会覆盖外部传入的 X-Forwarded-For 时开启
     trust-forwarded-headers: ${REGISTRATION_TRUST_FORWARDED_HEADERS:false}
     window-seconds: 600

@@ -5,15 +5,69 @@ domain: "华为商城导购"
 intent_node: "参数与卖点 KB"
 scope: ["主要配件", "华为硬件", "产品家族档案"]
 source_type: "official_vmall_catalog_or_product_page"
-source_urls: ["https://www.vmall.com/product/comdetail/index.html?prdId=10086442319937&sbomCode=3103010104402", "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E5%258D%258E%25E4%25B8%25BA%25E9%2585%258D%25E4%25BB%25B6&searchHistoryShow=true&searchResultPageProdShow=true"]
-collected_at: "2026-08-04"
-dynamic_product_data_via_mcp: true
+source_urls: ["https://www.vmall.com/product/comdetail/index.html?prdId=10086442319937&sbomCode=3103010104402"]
+collected_at: "2026-08-06"
+dynamic_product_snapshot: true
+snapshot_collected_at: "2026-08-06T18:25:24+08:00"
+snapshot_refresh_after: "2026-08-13"
+snapshot_region: "CN"
+mcp_fallback_when_kb_insufficient: true
 ---
 # Mate X7 旋转支架保护壳 产品档案
 
+<!-- VMALL_PRODUCT_SNAPSHOT:START -->
+## 华为商城商品基础信息快照（2026-08-06）
+
+> 本节来自华为商城中国区公开商品页，采集时间为 2026-08-06T18:25:24+08:00。价格、促销、购买入口和评价会变化；页面标价不等于最终到手价或结算价，地区库存、账号权益和最终可售状态以实际商品页及结算页为准。
+
+| 字段 | 官网快照 |
+|---|---|
+| 官网商品名称 | HUAWEI Mate X7 旋转支架保护壳 |
+| 商品编号（prdId） | 10086442319937 |
+| 品牌 | 华为 |
+| 销售 SKU 数量 | 3 |
+| 建议刷新日期 | 2026-08-13；超过该日期的时效性问题视为证据不足 |
+| 默认 SKU | 3103010104402；HUAWEI Mate X7 旋转支架保护壳 红色 |
+| SKU 页面标价区间（抓取时） | ¥199 |
+| 商城搜索列表促销价（抓取时） | ¥199 |
+| 店铺 | 华为商城自营 |
+| 官网卖点摘要 | 横看竖看；放松点看 |
+| 用户评价快照（抓取时） | 好评率 97%；评价数 1011 |
+| 官网商品页 | https://www.vmall.com/product/comdetail/index.html?prdId=10086442319937 |
+
+### 可选规格维度
+
+| 维度 | 官网可选项 |
+|---|---|
+| 颜色 | 黑色、红色、蓝色 |
+
+### SKU 明细
+
+| SKU 编码 | 商品/版本 | 配置属性 | 页面标价 | 限时活动价与有效期 | 商品页入口 |
+|---|---|---|---:|---|---|
+| 3103010104402 | HUAWEI Mate X7 旋转支架保护壳 红色（默认） | 颜色=红色 | ¥199 |  | 显示购买入口 |
+| 3103010104401 | HUAWEI Mate X7 旋转支架保护壳 黑色 | 颜色=黑色 | ¥199 |  | 显示购买入口 |
+| 3103010104405 | HUAWEI Mate X7 旋转支架保护壳 蓝色 | 颜色=蓝色 | ¥199 |  | 显示购买入口 |
+
+### 官网权益与活动摘要（抓取时）
+
+- 免运费：购买商品即享包邮服务
+- 赠送积分：订单完成后可获赠积分，积分可抵现
+
+### SKU 官方卖点补充
+
+- 横看竖看，放松点看
+
+### 快照使用边界
+
+- 本节可用于回答已列出的商品名称、商品编号、SKU、颜色/版本等选项、页面标价、限时活动价、核心属性和公开权益。
+- buttonMode 仅反映采集时商品页是否显示购买入口，不等于地区实时库存。页面未给出的到手价、券后价、库存数量、配送时效和个人资格不能据此推断。
+- 用户明确询问“现在/此刻”的价格、库存、优惠或结算结果，而本快照已过期或证据不足时，才回退到 MCP 查询，并仍以华为商城实际结算页为准。
+<!-- VMALL_PRODUCT_SNAPSHOT:END -->
+
 ## 文档用途
 
-本档案用于知源 AI 识别产品家族、解释稳定定位、组织选购追问并触发生态兼容判断。实时价格、库存、优惠、配送地区、颜色、尺寸、套餐和全部 SKU 组合不写入静态知识库，应由 MCP 查询。
+本档案用于知源 AI 识别产品家族、解释稳定定位、组织选购追问并触发生态兼容判断。颜色、尺寸、套餐、全部 SKU、页面价格与优惠已按采集时间写入官网快照；实时库存、配送地区、最终结算价与个人权益在快照证据不足时再回退 MCP。
 
 ## 稳定定位与公开卖点
 
@@ -36,7 +90,7 @@ dynamic_product_data_via_mcp: true
 - 充电器、数据线和终端共同决定实际充电功率
 - 保护壳、表带、笔和键盘通常需要精确到机型或尺寸
 - 无线充电需确认终端协议、功率和散热条件
-- 商品套装、颜色和可售状态由 MCP 查询
+- 商品套装、颜色和页面价格优先使用本档案的带时间官网快照；实时可售状态或快照证据不足时再回退 MCP
 
 ## MCP 查询字段
 

@@ -18,9 +18,11 @@
 package com.nageoffer.ai.ragent.rag.config;
 
 import okhttp3.OkHttpClient;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.util.Assert;
 
 import java.time.Duration;
 
@@ -55,6 +57,27 @@ public class HttpClientConfig {
                 .writeTimeout(Duration.ofSeconds(30))
                 .readTimeout(Duration.ofSeconds(30))
                 .callTimeout(Duration.ofSeconds(45))
+                .retryOnConnectionFailure(true)
+                .build();
+    }
+
+    /**
+     * Embedding 专用 HTTP 客户端。
+     *
+     * <p>查询向量生成位于用户首字节之前，必须设置总调用上限，避免外部 Embedding
+     * 服务卡顿时拖住已经完成的关键词召回。该客户端独立命名，防止被 {@link Primary}
+     * 流式客户端的无限 read/call timeout 覆盖。</p>
+     */
+    @Bean
+    public OkHttpClient embeddingHttpClient(
+            @Value("${ai.embedding.timeout-ms:10000}") long timeoutMs) {
+        Assert.isTrue(timeoutMs > 0, "ai.embedding.timeout-ms must be greater than zero");
+        Duration timeout = Duration.ofMillis(timeoutMs);
+        return new OkHttpClient.Builder()
+                .connectTimeout(timeout)
+                .writeTimeout(timeout)
+                .readTimeout(timeout)
+                .callTimeout(timeout)
                 .retryOnConnectionFailure(true)
                 .build();
     }

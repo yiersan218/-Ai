@@ -21,6 +21,7 @@ import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
 import com.nageoffer.ai.ragent.framework.convention.RetrievedChunk;
 import com.nageoffer.ai.ragent.framework.trace.RagTraceNode;
+import com.nageoffer.ai.ragent.rag.config.McpFallbackProperties;
 import com.nageoffer.ai.ragent.rag.config.SearchChannelProperties;
 import com.nageoffer.ai.ragent.rag.core.intent.IntentNode;
 import com.nageoffer.ai.ragent.rag.core.intent.NodeScore;
@@ -42,14 +43,20 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.Set;
+import java.util.TreeMap;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Executor;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 import static com.nageoffer.ai.ragent.rag.constant.RAGConstant.CONTEXT_FORMAT_PATH;
@@ -64,12 +71,26 @@ import static com.nageoffer.ai.ragent.rag.constant.RAGConstant.MULTI_CHANNEL_KEY
 @RequiredArgsConstructor
 public class RetrievalEngine {
 
+    private static final Set<String> DYNAMIC_MCP_INTENTS = Set.of(
+            "mcp-vmall-search",
+            "mcp-price-stock",
+            "mcp-promotion",
+            "mcp-installment-tradein"
+    );
+
+    private static final String LOW_CONFIDENCE_KB_RULES =
+            "本次官方公开页面查询失败，当前知识库证据相关度较低。只能回答资料明确支持的内容，"
+                    + "并说明现有信息可能不完整；不得使用外部知识补充，不得推断实时价格、库存、优惠或未出现的型号事实。";
+
     private final SearchChannelProperties searchProperties;
     private final ContextFormatter contextFormatter;
     private final PromptTemplateLoader templateLoader;
     private final McpParameterExtractor mcpParameterExtractor;
     private final McpToolRegistry mcpToolRegistry;
     private final MultiChannelRetrievalEngine multiChannelRetrievalEngine;
+    private final KnowledgeEvidenceEvaluator knowledgeEvidenceEvaluator;
+    private final McpFallbackPolicy mcpFallbackPolicy;
+    private final McpFallbackProperties mcpFallbackProperties;
     private final Executor ragContextExecutor;
     private final Executor mcpBatchExecutor;
 
@@ -92,11 +113,12 @@ public class RetrievalEngine {
                 searchProperties.getFusion().getRerankCandidateLimit(),
                 contextTopK
         );
+        McpExecutionScope mcpScope = new McpExecutionScope(mcpFallbackProperties.getMaxCallsPerTurn());
         List<CompletableFuture<SubQuestionContext>> tasks = subIntents.stream()
                 .map(si -> CompletableFuture.supplyAsync(
                         () -> {
                             try {
-                                return buildSubQuestionContext(si, budget);
+                                return buildSubQuestionContext(si, budget, mcpScope);
                             } catch (Exception e) {
                                 log.error("子问题上下文构建失败，降级为空上下文，question：{}", si.subQuestion(), e);
                                 return new SubQuestionContext(si.subQuestion(), "", "", Map.of());
@@ -159,17 +181,140 @@ public class RetrievalEngine {
                 .build();
     }
 
-    private SubQuestionContext buildSubQuestionContext(SubQuestionIntent intent, RetrievalBudget budget) {
+    private SubQuestionContext buildSubQuestionContext(SubQuestionIntent intent,
+                                                       RetrievalBudget budget,
+                                                       McpExecutionScope mcpScope) {
         List<NodeScore> kbIntents = NodeScoreFilters.kb(intent.nodeScores());
-        List<NodeScore> mcpIntents = NodeScoreFilters.mcp(intent.nodeScores());
+        List<NodeScore> classifiedMcpIntents = NodeScoreFilters.mcp(intent.nodeScores());
 
-        KbResult kbResult = retrieveAndRerank(intent, kbIntents, budget);
+        // 无任何意图时保留原有全局 KB 兜底；没有 KB 意图映射，故不会继续回退 MCP。
+        if (CollUtil.isEmpty(kbIntents) && CollUtil.isEmpty(classifiedMcpIntents)) {
+            KbResult globalKbResult = retrieveAndRerank(intent, kbIntents, budget);
+            return new SubQuestionContext(intent.subQuestion(), globalKbResult.groupedContext(), "",
+                    globalKbResult.intentChunks());
+        }
 
-        String mcpContext = CollUtil.isNotEmpty(mcpIntents)
-                ? executeMcpAndMerge(intent.subQuestion(), mcpIntents)
-                : "";
+        // 所有业务意图统一先检索 KB。MCP 节点只描述 KB MISS 后应调用的工具，不再代表直达工具。
+        KbResult kbResult;
+        KnowledgeEvidenceEvaluator.Assessment assessment;
+        List<NodeScore> evidenceIntents = new ArrayList<>(kbIntents);
+        evidenceIntents.addAll(classifiedMcpIntents);
+        try {
+            kbResult = retrieveAndRerank(intent, kbIntents, budget);
+            assessment = knowledgeEvidenceEvaluator.evaluate(intent.subQuestion(), evidenceIntents, kbResult);
+        } catch (Exception e) {
+            log.warn("知识库检索失败，按 MISS 进入 MCP 回退判定, question={}, reason={}",
+                    intent.subQuestion(), e.getClass().getSimpleName());
+            kbResult = KbResult.empty();
+            assessment = KnowledgeEvidenceEvaluator.Assessment.miss("retrieval_error");
+        }
 
-        return new SubQuestionContext(intent.subQuestion(), kbResult.groupedContext(), mcpContext, kbResult.intentChunks());
+        List<NodeScore> fallbackIntents = assessment.isHit()
+                ? List.of()
+                : mcpFallbackPolicy.buildFallbackIntents(kbIntents);
+        List<NodeScore> allMcpIntents = new ArrayList<>();
+        if (!assessment.isHit()) {
+            allMcpIntents.addAll(classifiedMcpIntents);
+            allMcpIntents.addAll(fallbackIntents);
+        }
+        Map<String, List<CallToolResult>> toolResults = executeMcpTools(
+                intent.subQuestion(), allMcpIntents, mcpScope);
+        McpOutcome mcpOutcome = resolveMcpOutcome(allMcpIntents, toolResults);
+
+        KbResult effectiveKbResult = KbResult.empty();
+        String mcpContext = "";
+        String route;
+        String fallbackEvidenceReason = "not_evaluated";
+        if (assessment.isHit()) {
+            effectiveKbResult = kbResult;
+            route = "KB_HIT";
+        } else if (mcpOutcome == McpOutcome.SUCCESS) {
+            mcpContext = formatMcpContext(toolResults, allMcpIntents);
+            route = "KB_MISS_MCP_FALLBACK";
+        } else if (mcpOutcome == McpOutcome.FAILED
+                && "low_score".equals(assessment.reason())
+                && !containsDynamicMcpIntent(classifiedMcpIntents)) {
+            KnowledgeEvidenceEvaluator.Assessment fallbackAssessment =
+                    knowledgeEvidenceEvaluator.evaluateMcpFailureFallback(
+                            intent.subQuestion(), evidenceIntents, kbResult);
+            fallbackEvidenceReason = fallbackAssessment.reason();
+            if (fallbackAssessment.isHit()) {
+                effectiveKbResult = buildMcpFailureKbFallback(kbIntents, kbResult);
+            }
+            route = effectiveKbResult.chunks().isEmpty()
+                    ? "MCP_FAILED_NO_CONTEXT"
+                    : "MCP_FAILED_LOW_SCORE_KB_FALLBACK";
+        } else {
+            route = mcpOutcome == McpOutcome.FAILED ? "MCP_FAILED_NO_CONTEXT" : "KB_MISS";
+        }
+
+        log.info("子问题检索路由 - question={}, route={}, kbIntents={}, classifiedMcpIntents={}, "
+                        + "fallbackMcpIntents={}, mcpOutcome={}, evidenceReason={}, fallbackEvidenceReason={}, "
+                        + "relevantChunks={}, topScore={}",
+                intent.subQuestion(), route,
+                intentIds(kbIntents), intentIds(classifiedMcpIntents), intentIds(fallbackIntents),
+                mcpOutcome, assessment.reason(), fallbackEvidenceReason,
+                assessment.relevantChunks(), assessment.topScore());
+
+        return new SubQuestionContext(intent.subQuestion(), effectiveKbResult.groupedContext(), mcpContext,
+                effectiveKbResult.intentChunks());
+    }
+
+    private McpOutcome resolveMcpOutcome(List<NodeScore> mcpIntents,
+                                         Map<String, List<CallToolResult>> toolResults) {
+        if (CollUtil.isEmpty(mcpIntents)) {
+            return McpOutcome.NOT_ATTEMPTED;
+        }
+        boolean hasSuccess = toolResults.values().stream()
+                .filter(Objects::nonNull)
+                .flatMap(List::stream)
+                .filter(Objects::nonNull)
+                .anyMatch(result -> !Boolean.TRUE.equals(result.isError()));
+        return hasSuccess ? McpOutcome.SUCCESS : McpOutcome.FAILED;
+    }
+
+    private boolean containsDynamicMcpIntent(List<NodeScore> intents) {
+        return CollUtil.isNotEmpty(intents) && intents.stream()
+                .map(NodeScore::getNode)
+                .filter(Objects::nonNull)
+                .map(IntentNode::getId)
+                .anyMatch(DYNAMIC_MCP_INTENTS::contains);
+    }
+
+    private KbResult buildMcpFailureKbFallback(List<NodeScore> kbIntents, KbResult kbResult) {
+        McpFallbackProperties.McpFailureKbFallback fallback =
+                mcpFallbackProperties.getMcpFailureKbFallback();
+        List<RetrievedChunk> selectedChunks = kbResult.chunks().stream()
+                .filter(chunk -> chunk != null && StrUtil.isNotBlank(chunk.getText()))
+                .filter(chunk -> chunk.getScore() != null
+                        && chunk.getScore() >= fallback.getMinRerankScore())
+                .sorted(Comparator.comparing(RetrievedChunk::getScore).reversed())
+                .limit(fallback.getTopK())
+                .toList();
+        if (selectedChunks.isEmpty()) {
+            return KbResult.empty();
+        }
+
+        Map<String, List<RetrievedChunk>> intentChunks = new LinkedHashMap<>();
+        if (CollUtil.isNotEmpty(kbIntents)) {
+            for (NodeScore kbIntent : kbIntents) {
+                intentChunks.put(kbIntent.getNode().getId(), selectedChunks);
+            }
+        } else {
+            intentChunks.put(MULTI_CHANNEL_KEY, selectedChunks);
+        }
+
+        String kbContext = contextFormatter.formatKbContext(
+                kbIntents, intentChunks, fallback.getTopK());
+        if (StrUtil.isBlank(kbContext)) {
+            return KbResult.empty();
+        }
+        String fallbackRules = templateLoader.renderSection(
+                CONTEXT_FORMAT_PATH, "snippet-rules", Map.of("rules", LOW_CONFIDENCE_KB_RULES));
+        String groupedContext = StrUtil.isBlank(fallbackRules)
+                ? kbContext
+                : fallbackRules.trim() + "\n" + kbContext;
+        return new KbResult(groupedContext, intentChunks);
     }
 
     private void appendSection(StringBuilder builder, String section, int index, String question, String context) {
@@ -183,12 +328,8 @@ public class RetrievalEngine {
         )));
     }
 
-    private String executeMcpAndMerge(String question, List<NodeScore> mcpIntents) {
-        if (CollUtil.isEmpty(mcpIntents)) {
-            return "";
-        }
-
-        Map<String, List<CallToolResult>> toolResults = executeMcpTools(question, mcpIntents);
+    private String formatMcpContext(Map<String, List<CallToolResult>> toolResults,
+                                    List<NodeScore> mcpIntents) {
         if (toolResults.isEmpty()) {
             return "";
         }
@@ -229,7 +370,8 @@ public class RetrievalEngine {
      * 执行 MCP 工具调用，返回按 toolId 分组的结果
      */
     private Map<String, List<CallToolResult>> executeMcpTools(String question,
-                                                              List<NodeScore> mcpIntentScores) {
+                                                              List<NodeScore> mcpIntentScores,
+                                                              McpExecutionScope mcpScope) {
         if (CollUtil.isEmpty(mcpIntentScores)) {
             return Map.of();
         }
@@ -239,7 +381,7 @@ public class RetrievalEngine {
                         () -> {
                             String toolId = ns.getNode().getMcpToolId();
                             try {
-                                CallToolResult result = executeSingleMcpTool(question, ns.getNode());
+                                CallToolResult result = executeSingleMcpTool(question, ns.getNode(), mcpScope);
                                 return result == null ? null : new ToolOutput(toolId, result);
                             } catch (Exception e) {
                                 log.error("MCP 工具调用异常, toolId: {}", toolId, e);
@@ -258,11 +400,20 @@ public class RetrievalEngine {
                 .filter(Objects::nonNull)
                 .collect(Collectors.groupingBy(
                         ToolOutput::toolId,
-                        Collectors.mapping(ToolOutput::result, Collectors.toList())
+                        LinkedHashMap::new,
+                        Collectors.mapping(
+                                ToolOutput::result,
+                                Collectors.collectingAndThen(
+                                        Collectors.toCollection(java.util.LinkedHashSet::new),
+                                        ArrayList::new
+                                )
+                        )
                 ));
     }
 
-    private CallToolResult executeSingleMcpTool(String question, IntentNode intentNode) {
+    private CallToolResult executeSingleMcpTool(String question,
+                                                IntentNode intentNode,
+                                                McpExecutionScope mcpScope) {
         String toolId = intentNode.getMcpToolId();
         Optional<McpToolExecutor> executorOpt = mcpToolRegistry.getExecutor(toolId);
         if (executorOpt.isEmpty()) {
@@ -278,10 +429,31 @@ public class RetrievalEngine {
 
         // 按提参结局分流：仅 SUCCESS 才真正调用远端工具，缺必填参 / 提取失败均不调用、改注入提示进上下文
         return switch (extraction.status()) {
-            case SUCCESS -> executor.execute(extraction.params() != null ? extraction.params() : new HashMap<>());
+            case SUCCESS -> {
+                Map<String, Object> params = extraction.params() != null
+                        ? extraction.params()
+                        : new HashMap<>();
+                String invocationKey = invocationKey(toolId, params);
+                yield mcpScope.execute(invocationKey, () -> executor.execute(params));
+            }
             case NEED_CLARIFICATION -> clarificationResult(toolId, extraction.missingRequired());
             case FAILED -> extractionFailedResult(toolId);
         };
+    }
+
+    private String invocationKey(String toolId, Map<String, Object> params) {
+        return toolId + '|' + new TreeMap<>(params);
+    }
+
+    private List<String> intentIds(List<NodeScore> intents) {
+        if (CollUtil.isEmpty(intents)) {
+            return List.of();
+        }
+        return intents.stream()
+                .map(NodeScore::getNode)
+                .filter(Objects::nonNull)
+                .map(IntentNode::getId)
+                .toList();
     }
 
     /**
@@ -313,6 +485,52 @@ public class RetrievalEngine {
     }
 
     private record ToolOutput(String toolId, CallToolResult result) {
+    }
+
+    private enum McpOutcome {
+        NOT_ATTEMPTED,
+        SUCCESS,
+        FAILED
+    }
+
+    /** 单轮请求共享：对相同工具参数复用结果，并限制实际远程调用次数。 */
+    private static final class McpExecutionScope {
+
+        private final int maxCalls;
+        private final AtomicInteger callCount = new AtomicInteger();
+        private final ConcurrentHashMap<String, CompletableFuture<CallToolResult>> calls = new ConcurrentHashMap<>();
+
+        private McpExecutionScope(int maxCalls) {
+            this.maxCalls = maxCalls;
+        }
+
+        private CallToolResult execute(String key, Supplier<CallToolResult> invocation) {
+            CompletableFuture<CallToolResult> own = new CompletableFuture<>();
+            CompletableFuture<CallToolResult> existing = calls.putIfAbsent(key, own);
+            if (existing != null) {
+                return existing.join();
+            }
+
+            int sequence = callCount.incrementAndGet();
+            if (sequence > maxCalls) {
+                CallToolResult limited = CallToolResult.builder()
+                        .content(List.of(new TextContent("本轮动态查询数量已达到上限，未继续发起重复或额外查询。")))
+                        .isError(true)
+                        .build();
+                own.complete(limited);
+                log.warn("MCP 单轮调用达到上限, maxCalls={}, invocationKey={}", maxCalls, key);
+                return limited;
+            }
+
+            try {
+                CallToolResult result = invocation.get();
+                own.complete(result);
+                return result;
+            } catch (RuntimeException | Error throwable) {
+                own.completeExceptionally(throwable);
+                throw throwable;
+            }
+        }
     }
 
     private record SubQuestionContext(String question,

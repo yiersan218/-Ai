@@ -48,9 +48,8 @@ import java.util.List;
  * 任何失败（网络异常、非 2xx、响应格式异常、超时）只记录 warn 日志并返回空结果，
  * 绝不让联网检索故障影响本地检索链路
  * <p>
- * 注：mcp-server 的 {@code YouComSearchMcpExecutor} 内含一份并行的 You.com 调用实现，与此处属有意重复——
- * mcp-server 是零内部依赖、可独立部署的服务（与本模块不在同一 JVM、面向不同消费者），抽公共模块会打破其隔离，
- * 故按「服务级重复」处理；修改 You.com 契约（端点 / 参数 / 响应结构）时两处需同步
+ * 注：该通道是 bootstrap 内可选的旧 You.com 直连通道；MCP Server 已独立切换为腾讯云联网搜索，
+ * 两者职责和运行边界独立，启用本通道不会改变 MCP 工具的搜索提供方。
  */
 @Slf4j
 @Component

@@ -63,7 +63,7 @@ class RAGPromptServiceTest {
         assertTrue(result.contains("由两份资料共同支撑。[1](#cite-1)[3](#cite-3)"));
 
         // 出处只允许数字角标：文档名与内部标签的禁令由基础模板统一声明，引用规则只声明自己是它的唯一例外
-        assertTrue(result.contains("**也不得报出处。**"));
+        assertTrue(result.contains("用户主动追问来源时同样不报名称"));
         assertTrue(result.contains("标签属性、内部编号"));
         assertTrue(result.contains("除角标外仍不得报文档名、不得罗列来源清单"));
     }
@@ -85,6 +85,8 @@ class RAGPromptServiceTest {
 
             assertTrue(result.contains("# 链接、图片与附件处理"));
             assertTrue(result.contains("# HTML 表格处理"));
+            assertTrue(result.contains("动态快照时可以转述"));
+            assertTrue(result.contains("采集/更新时间和有效期边界"));
             // HTML 表格章节声明压过格式建议，必须排在基础模板的格式章节之后
             assertTrue(result.indexOf("# 格式与 Markdown 规范") < result.indexOf("# HTML 表格处理"));
         }
@@ -122,6 +124,8 @@ class RAGPromptServiceTest {
         assertTrue(result.contains("# 链接、图片与附件处理"));
         assertTrue(result.contains("# HTML 表格处理"));
         assertTrue(result.contains("# 行内引用规则"));
+        assertTrue(result.contains("可转述 `<documents>` 或 `<tool-data>`"));
+        assertTrue(result.contains("采集/更新时间和有效期边界"));
         assertTrue(result.indexOf("# HTML 表格处理") < result.indexOf("# 行内引用规则"));
     }
 

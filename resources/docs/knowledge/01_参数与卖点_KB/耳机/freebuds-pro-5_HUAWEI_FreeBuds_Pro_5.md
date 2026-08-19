@@ -5,11 +5,82 @@ domain: "华为商城导购"
 intent_node: "参数与卖点 KB"
 scope: ["耳机", "华为硬件", "产品家族档案"]
 source_type: "official_search_listing_plus_support"
-source_urls: ["https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E8%2580%25B3%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true", "https://consumer.huawei.com/cn/support/content/zh-cn15868501/", "https://consumer.huawei.com/cn/support/content/zh-cn15907440/"]
-collected_at: "2026-08-02"
-dynamic_product_data_via_mcp: true
+source_urls: ["https://www.vmall.com/product/comdetail/index.html?prdId=10086903289940&sbomCode=3102050086901", "https://consumer.huawei.com/cn/support/content/zh-cn15868501/", "https://consumer.huawei.com/cn/support/content/zh-cn15907440/"]
+collected_at: "2026-08-06"
+dynamic_product_snapshot: true
+snapshot_collected_at: "2026-08-06T18:25:24+08:00"
+snapshot_refresh_after: "2026-08-13"
+snapshot_region: "CN"
+mcp_fallback_when_kb_insufficient: true
 ---
 # HUAWEI FreeBuds Pro 5 产品档案
+
+<!-- VMALL_PRODUCT_SNAPSHOT:START -->
+## 华为商城商品基础信息快照（2026-08-06）
+
+> 本节来自华为商城中国区公开商品页，采集时间为 2026-08-06T18:25:24+08:00。价格、促销、购买入口和评价会变化；页面标价不等于最终到手价或结算价，地区库存、账号权益和最终可售状态以实际商品页及结算页为准。
+
+| 字段 | 官网快照 |
+|---|---|
+| 官网商品名称 | HUAWEI FreeBuds Pro 5 |
+| 商品编号（prdId） | 10086903289940 |
+| 品牌 | 华为 |
+| 销售 SKU 数量 | 5 |
+| 建议刷新日期 | 2026-08-13；超过该日期的时效性问题视为证据不足 |
+| 默认 SKU | 3102050086901；HUAWEI FreeBuds Pro 5 悦彰耳机 雪域白 |
+| SKU 页面标价区间（抓取时） | ¥1499 |
+| SKU 限时活动价区间（抓取时） | ¥1249 |
+| 商城搜索列表促销价（抓取时） | ¥1249 |
+| 店铺 | 华为商城自营 |
+| 官网卖点摘要 | 母带级无损音质；双擎 AI 感知降噪；星闪™超稳定连接 |
+| 用户评价快照（抓取时） | 好评率 99%；评价数 7693 |
+| 官网商品页 | https://www.vmall.com/product/comdetail/index.html?prdId=10086903289940 |
+
+### 可选规格维度
+
+| 维度 | 官网可选项 |
+|---|---|
+| 颜色 | 冰霜银、大地金、马年典藏版 雪域白、穹宇蓝、雪域白 |
+
+### 官网核心属性
+
+| 属性 | 官网值 |
+|---|---|
+| HarmonyOS 多设备连接 | 支持 |
+| 空间音频 | 支持 |
+| 通话降噪 | 支持，双向静谧通话 |
+| 语音助手 | 支持 |
+| 主动降噪 | 支持 |
+
+### SKU 明细
+
+| SKU 编码 | 商品/版本 | 配置属性 | 页面标价 | 限时活动价与有效期 | 商品页入口 |
+|---|---|---|---:|---|---|
+| 3102050086901 | HUAWEI FreeBuds Pro 5 悦彰耳机 雪域白（默认） | 颜色=雪域白 | ¥1499 | ¥1249（直降250元；2026-08-01 00:00:00+0800 至 2026-08-31 23:59:59+0800） | 显示购买入口 |
+| 3102050086902 | HUAWEI FreeBuds Pro 5 悦彰耳机 冰霜银 | 颜色=冰霜银 | ¥1499 | ¥1249（直降250元；2026-08-01 00:00:00+0800 至 2026-08-31 23:59:59+0800） | 显示购买入口 |
+| 3102050086903 | HUAWEI FreeBuds Pro 5 悦彰耳机 大地金 | 颜色=大地金 | ¥1499 | ¥1249（直降250元；2026-08-01 00:00:00+0800 至 2026-08-31 23:59:59+0800） | 显示购买入口 |
+| 3102050086904 | HUAWEI FreeBuds Pro 5 悦彰耳机 穹宇蓝 | 颜色=穹宇蓝 | ¥1499 | ¥1249（直降250元；2026-08-01 00:00:00+0800 至 2026-08-31 23:59:59+0800） | 显示购买入口 |
+| 3102050086909 | HUAWEI FreeBuds Pro 5 马年典藏版 | 颜色=马年典藏版 雪域白 | ¥1499 | ¥1249（直降250元；2026-08-01 00:00:00+0800 至 2026-08-31 23:59:59+0800） | 显示购买入口 |
+
+### 官网权益与活动摘要（抓取时）
+
+- 0分期利息：6期0分期利息
+- 积分8倍抵现：积分8倍抵现，至高多抵50元
+- 以旧换新补贴：换新至高补贴 800 元，限 App 端（HarmonyOS/安卓版）参与，回收至高补贴 500 元
+- 赠送积分：订单完成后可获赠积分，积分可抵现
+- 直降250元：直降250元
+
+### SKU 官方卖点补充
+
+- 母带级无损音质，双擎 AI 感知降噪，星闪™超稳定连接
+- 母带级无损音质，双擎 AI 感知降噪，星闪™超稳定连接；雪域白享镌刻服务，限 App 端（HarmonyOS/安卓版）参与
+
+### 快照使用边界
+
+- 本节可用于回答已列出的商品名称、商品编号、SKU、颜色/版本等选项、页面标价、限时活动价、核心属性和公开权益。
+- buttonMode 仅反映采集时商品页是否显示购买入口，不等于地区实时库存。页面未给出的到手价、券后价、库存数量、配送时效和个人资格不能据此推断。
+- 用户明确询问“现在/此刻”的价格、库存、优惠或结算结果，而本快照已过期或证据不足时，才回退到 MCP 查询，并仍以华为商城实际结算页为准。
+<!-- VMALL_PRODUCT_SNAPSHOT:END -->
 
 ## 商品定位
 
@@ -36,6 +107,6 @@ dynamic_product_data_via_mcp: true
 
 ## 回答边界
 
-- 价格、库存、颜色、套餐、赠品和分期由 MCP 实时查询。
+- 颜色、表带或版本、套餐、页面价格、赠品和分期优先使用本档案的带时间官网快照；实时库存、最终结算价或快照证据不足时再回退 MCP。
 - 不能根据系列名称推断所有编解码、星闪、空间音频或 AI 功能均可用。
 - 防尘抗水等级不等于适用于游泳或长期浸水，须遵循具体型号说明。

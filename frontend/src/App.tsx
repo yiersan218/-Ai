@@ -8,10 +8,12 @@ import { siteConfig } from "@/config/site";
 import { router } from "@/router";
 
 export default function App() {
-  const hasIcpNumber = Boolean(siteConfig.icpNumber);
+  const hasFilingInformation = Boolean(
+    siteConfig.icpNumber || siteConfig.publicSecurityRecordNumber
+  );
 
   return (
-    <div className={hasIcpNumber ? "app-shell app-shell--with-icp" : "app-shell"}>
+    <div className={hasFilingInformation ? "app-shell app-shell--with-icp" : "app-shell"}>
       <div className="app-shell__content">
         <ErrorBoundary>
           <Suspense

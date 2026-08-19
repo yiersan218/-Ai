@@ -5,15 +5,89 @@ domain: "华为商城导购"
 intent_node: "参数与卖点 KB"
 scope: ["手机", "华为硬件", "华为硬件"]
 source_type: "official_product_or_specs_page"
-source_urls: ["https://consumer.huawei.com/cn/phones/changxiang-90-plus/specs/", "https://consumer.huawei.com/cn/phones/changxiang-90-plus/", "https://www.vmall.com/portal/search/index.html?targetRoute=searchresult&searchWord=%25E6%2589%258B%25E6%259C%25BA&searchHistoryShow=true&searchResultPageProdShow=true"]
-collected_at: "2026-08-02"
-dynamic_price_stock_excluded: true
+source_urls: ["https://www.vmall.com/product/comdetail/index.html?prdId=10086756705081&sbomCode=2601010611610", "https://consumer.huawei.com/cn/phones/changxiang-90-plus/specs/", "https://consumer.huawei.com/cn/phones/changxiang-90-plus/"]
+collected_at: "2026-08-06"
+dynamic_product_snapshot: true
+snapshot_collected_at: "2026-08-06T18:25:24+08:00"
+snapshot_refresh_after: "2026-08-13"
+snapshot_region: "CN"
+mcp_fallback_when_kb_insufficient: true
 ---
 # 华为畅享 90 Plus 参数与卖点
 
+<!-- VMALL_PRODUCT_SNAPSHOT:START -->
+## 华为商城商品基础信息快照（2026-08-06）
+
+> 本节来自华为商城中国区公开商品页，采集时间为 2026-08-06T18:25:24+08:00。价格、促销、购买入口和评价会变化；页面标价不等于最终到手价或结算价，地区库存、账号权益和最终可售状态以实际商品页及结算页为准。
+
+| 字段 | 官网快照 |
+|---|---|
+| 官网商品名称 | 华为畅享 90 Plus |
+| 商品编号（prdId） | 10086756705081 |
+| 品牌 | 华为 |
+| 销售 SKU 数量 | 6 |
+| 建议刷新日期 | 2026-08-13；超过该日期的时效性问题视为证据不足 |
+| 默认 SKU | 2601010611610；华为畅享 90 Plus 128GB 星空黑 |
+| SKU 页面标价区间（抓取时） | ¥1499 ～ ¥1799 |
+| 商城搜索列表促销价（抓取时） | ¥1499 |
+| 店铺 | 华为商城自营 |
+| 官网卖点摘要 | 麒麟 8 系芯片 丝滑超好用；支持 Wi-Fi 7 |
+| 用户评价快照（抓取时） | 好评率 97%；评价数 421 |
+| 官网商品页 | https://www.vmall.com/product/comdetail/index.html?prdId=10086756705081 |
+
+### 可选规格维度
+
+| 维度 | 官网可选项 |
+|---|---|
+| 颜色 | 星海蓝、星空黑、羽沙白 |
+| 版本 | 128GB、256GB |
+
+### 官网核心属性
+
+| 属性 | 官网值 |
+|---|---|
+| 玻璃材质 | 铝硅玻璃 |
+| 操作系统 | HarmonyOS 6.0 |
+| 充电 | 有线充电：支持最大超级快充40W Turbo（10V/4A），兼容4.5V/5A或5V/4.5A超级快充，兼容 9V/2A快充；无线充电：不支持 |
+| 电池容量 | 6620mAh（典型值） |
+| 后置摄像头 | 5000万像素摄像头（F1.8光圈） |
+| 机身内存（ROM） | 128GB；256GB |
+| 机身重量 | 约212克（含电池） |
+| 屏幕尺寸 | 6.67英寸 |
+| 屏幕类型 | LCD |
+| 前置摄像头 | 800万像素摄像头（F2.0光圈） |
+
+### SKU 明细
+
+| SKU 编码 | 商品/版本 | 配置属性 | 页面标价 | 限时活动价与有效期 | 商品页入口 |
+|---|---|---|---:|---|---|
+| 2601010611610 | 华为畅享 90 Plus 128GB 星空黑（默认） | 颜色=星空黑；版本=128GB | ¥1499 |  | 显示购买入口 |
+| 2601010611611 | 华为畅享 90 Plus 128GB 星海蓝 | 颜色=星海蓝；版本=128GB | ¥1499 |  | 显示购买入口 |
+| 2601010611612 | 华为畅享 90 Plus 128GB 羽沙白 | 颜色=羽沙白；版本=128GB | ¥1499 |  | 显示购买入口 |
+| 2601010611613 | 华为畅享 90 Plus 256GB 星空黑 | 颜色=星空黑；版本=256GB | ¥1799 |  | 显示购买入口 |
+| 2601010611614 | 华为畅享 90 Plus 256GB 星海蓝 | 颜色=星海蓝；版本=256GB | ¥1799 |  | 显示购买入口 |
+| 2601010611615 | 华为畅享 90 Plus 256GB 羽沙白 | 颜色=羽沙白；版本=256GB | ¥1799 |  | 显示购买入口 |
+
+### 官网权益与活动摘要（抓取时）
+
+- 0分期利息：6期0分期利息
+- 以旧换新补贴：换新至高补贴 800 元，限 App 端（HarmonyOS/安卓版）参与，回收至高补贴 500 元
+- 赠送积分：订单完成后可获赠积分，积分可抵现
+
+### SKU 官方卖点补充
+
+- 麒麟 8 系芯片 丝滑超好用，支持 Wi-Fi 7
+
+### 快照使用边界
+
+- 本节可用于回答已列出的商品名称、商品编号、SKU、颜色/版本等选项、页面标价、限时活动价、核心属性和公开权益。
+- buttonMode 仅反映采集时商品页是否显示购买入口，不等于地区实时库存。页面未给出的到手价、券后价、库存数量、配送时效和个人资格不能据此推断。
+- 用户明确询问“现在/此刻”的价格、库存、优惠或结算结果，而本快照已过期或证据不足时，才回退到 MCP 查询，并仍以华为商城实际结算页为准。
+<!-- VMALL_PRODUCT_SNAPSHOT:END -->
+
 ## 文档范围
 
-本条目用于知源 AI 的静态商品知识检索，记录官方规格、稳定卖点、适用人群和选购边界。价格、库存、优惠、分期、赠品与以旧换新资格均为动态信息，应由 MCP 实时查询。
+本条目用于知源 AI 的静态商品知识检索，记录官方规格、稳定卖点、适用人群和选购边界。价格、优惠、分期、赠品与以旧换新线索优先使用本档案的带时间官网快照；实时库存、最终结算价与个人资格在快照证据不足时再回退 MCP。
 
 ## 官方定位与核心卖点
 

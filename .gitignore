@@ -50,3 +50,6 @@ resources/docker/graphrag/.env
 ### Tmp Out ###
 .output/
 docs/temp
+
+### Local deployment packages ###
+/.codex-deploy/*.tar.gz

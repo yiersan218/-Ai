@@ -1,6 +1,7 @@
 import { lazy } from "react";
 import { Navigate, createBrowserRouter } from "react-router-dom";
 
+import { siteConfig } from "@/config/site";
 import { useAuthStore } from "@/stores/authStore";
 
 const LoginPage = lazy(() =>
@@ -154,10 +155,12 @@ export const router = createBrowserRouter([
   },
   {
     path: "/register",
-    element: (
+    element: siteConfig.registrationEnabled ? (
       <RedirectIfAuth>
         <RegisterPage />
       </RedirectIfAuth>
+    ) : (
+      <Navigate to="/login" replace />
     )
   },
   {
