@@ -45,10 +45,6 @@ import org.springframework.web.servlet.HandlerInterceptor;
  *   <li>在请求完成后清理 UserContext，防止线程复用时的数据污染</li>
  *   <li>跳过异步调度请求（如 SSE 完成回调），避免 SaToken 上下文丢失问题</li>
  * </ul>
- *
- * @author nageoffer
- * @see UserContext
- * @see LoginUser
  */
 @Component
 @RequiredArgsConstructor
